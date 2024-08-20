@@ -1,20 +1,20 @@
 <?php
+
 /**
  * The footer
  *
  * @package Bathe
  */
-
+defined('ABSPATH') || exit;
 ?>
-</main>
-
-	<?php get_sidebar(); ?>
+<?php get_template_part('template-parts/layout', 'footer'); ?>
+</div>
 </div>
 
-<footer class="footer">
-	<p class="copyright">© 2020 the contributors of Bathe under the GPLv2 license.</p>
-</footer>
+</main>
+<canvas id="preview"></canvas>
 
 <?php wp_footer(); ?>
 </body>
+
 </html>

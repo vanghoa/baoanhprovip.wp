@@ -1,10 +1,10 @@
-<?php if ( have_posts() ) : ?>
+<?php if (have_posts()) : ?>
 
 	<ul>
 
-		<?php while ( have_posts() ) : ?>
+		<?php while (have_posts()) : ?>
 			<?php the_post(); ?>
-
+			loopas
 			<li>
 				<h1 class="text-2xl font-bold hover:underline">
 					<a href="<?php the_permalink(); ?>">
@@ -18,5 +18,5 @@
 
 	</ul>
 
-	<?php
+<?php
 endif;

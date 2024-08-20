@@ -1,0 +1,12 @@
+@use '../global' as *;
+
+.story {
+	.imgwrapper {
+		max-height: 80svh;
+		img {
+			object-fit: cover;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}

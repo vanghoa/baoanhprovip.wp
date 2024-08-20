@@ -1,3 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		font-size: 17px;
+		--scrlbrwd: 0px;
+	}
+
+	@media screen and (max-width: 600px) {
+		#wpadminbar {
+			position: fixed;
+		}
+	}
+
+	* {
+		@apply text-xs;
+		color: inherit;
+		font-family: inherit;
+		font-optical-sizing: inherit;
+		font-style: inherit;
+		position: relative;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply text-hilight;
+	}
+
+	main,
+	#copy {
+		@apply w-screen h-svh fixed left-0 top-0 overflow-hidden;
+	}
+
+	main {
+		/* @apply pointer-events-none invisible; */
+	}
+
+	#copy {
+		/* @apply [&_*]:!text-transparent; */
+		@apply opacity-0;
+	}
+
+	#copy .realheight {
+		@apply pb-16;
+	}
+
+	#copy .text-2xl {
+		@apply !text-base;
+	}
+
+	canvas#preview {
+		@apply hidden;
+	}
+}

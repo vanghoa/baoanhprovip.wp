@@ -9,7 +9,7 @@
   ],
   "config": {
     "browsersync": {
-      "proxy": "localhost:8888",
+      "proxy": "wordpress-personal.test",
       "port": 3000
     },
     "image": {
@@ -17,7 +17,10 @@
       "dist": "assets/images"
     },
     "js": {
-      "entry": "src/js/main.js",
+      "entry": [
+        "src/js/main.js",
+        "src/js/start.js"
+      ],
       "output": "assets/js"
     },
     "css": {
@@ -37,7 +40,7 @@
     "build": "run-p imagemin css vite",
     "css": "run-p sass tailwind",
     "imagemin": "cross-conf-env node imagemin.mjs \"$npm_package_config_image_src/**/*\" $npm_package_config_image_dist",
-    "presass": "cross-conf-env stylelint \"$npm_package_config_css_src/**/*\" --fix",
+    "presass_": "cross-conf-env stylelint \"$npm_package_config_css_src/**/*\" --fix",
     "sass": "cross-conf-env sass $npm_package_config_css_src:$npm_package_config_css_dist --style=compressed",
     "postsass": "cross-conf-env postcss $npm_package_config_css_dist/*.css --use=autoprefixer --dir=$npm_package_config_css_dist $npm_package_config_css_map",
     "tailwind": "cross-conf-env tailwindcss -i $npm_package_config_tailwind_src -o $npm_package_config_tailwind_dist --minify",

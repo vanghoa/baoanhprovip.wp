@@ -12,9 +12,14 @@ export default defineConfig(({ mode }) => {
           dir: output,
           entryFileNames: '[name].js',
         },
+        treeshake: false,
       },
       sourcemap: mode === 'development',
       minify: mode === 'production',
+      esbuild: {
+        minifySyntax: true, // Enables syntax minification
+        treeShaking: false, // Disables tree shaking (unused code removal)
+      },
     },
   };
 });

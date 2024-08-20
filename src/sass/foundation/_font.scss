@@ -1,0 +1,11 @@
+@use '../global' as *;
+
+@each $weight in (100, 200, 300, 400, 500, 600, 700, 800, 900) {
+	.mono-#{$weight} {
+		font-family: 'Chivo Mono', monospace;
+		font-kerning: normal;
+		font-optical-sizing: auto;
+		font-style: normal;
+		font-weight: $weight;
+	}
+}

@@ -1,0 +1,48 @@
+const root = document.querySelector(":root");
+const rootstyle = root.style;
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
+const $create = document.createElement.bind(document);
+const $createcomment = document.createComment.bind(document);
+const setprop = rootstyle.setProperty.bind(rootstyle);
+root.classList.add(
+  getRandItem(Array.from({ length: 2 }, (v, i) => `color_${i + 1}`))
+);
+function getRandItem(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+function isPage(check) {
+  return document.body.classList.contains(check);
+}
+function $createFrag() {
+  return new DocumentFragment();
+}
+function throttle_debounce(fn, delay) {
+  let time = Date.now();
+  let timeoutId;
+  return () => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(), delay);
+    if (time + delay - Date.now() <= 0) {
+      fn();
+      time = Date.now();
+    }
+  };
+}
+function wait(delay) {
+  return new Promise((resolve) => setTimeout(resolve, delay));
+}
+function getScrollbarWidth() {
+  const outer = document.createElement("div");
+  outer.style.visibility = "hidden";
+  outer.style.overflow = "scroll";
+  outer.style.msOverflowStyle = "scrollbar";
+  document.body.appendChild(outer);
+  const inner = document.createElement("div");
+  outer.appendChild(inner);
+  const scrollbarWidth = outer.offsetWidth - inner.offsetWidth;
+  outer.parentNode.removeChild(outer);
+  setprop("--scrlbrwd", `${scrollbarWidth}px`);
+  return scrollbarWidth;
+}
+//# sourceMappingURL=start.js.map

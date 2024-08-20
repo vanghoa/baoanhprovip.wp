@@ -1,0 +1,16 @@
+@use '../global' as *;
+
+:root {
+	@each $name, $color in ('1': rgb(128, 231, 97), '2': rgb(98, 224, 241)) {
+		&.color#{$name} {
+			--color-bg: #{twcolor(darken($color, 46%))};
+			--color-text: #{twcolor(lighten(compcolor($color), 8%))};
+			--color-hilight: #{twcolor(lighten(compcolor($color), 22%))};
+		}
+	}
+
+	--color-bg: #{twcolor(#f5f5e6)};
+	--color-bg2: #{twcolor(#e3e3ca)};
+	--color-text: #{twcolor(#51514a)};
+	--color-hilight: #{twcolor(#000000)};
+}
