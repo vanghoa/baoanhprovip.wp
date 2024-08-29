@@ -1,1 +1,1 @@
-<div class="top-padding text-5xl w-full p-4 h-20 static"></div>
+<div class="top-padding text-5xl w-full p-4 h-20 static shrink-0"></div>

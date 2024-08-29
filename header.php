@@ -6,8 +6,13 @@
  * @package Bathe
  */
 defined('ABSPATH') || exit;
+global $flowtype, $is_story, $is_designer, $is_developer, $is_storyq;
 get_template_part('template-parts/layout', 'style');
-$is_story = is_page('story') || isset($_GET['story']);
+$is_storyq = isset($_GET['story']);
+$is_designer = is_page('designer');
+$is_developer = is_page('developer');
+$is_story = is_page('story') || $is_storyq || $is_designer || $is_developer;
+$is_work =  is_singular('work');
 ?>
 <!DOCTYPE html>
 <html class="bg-bg text-text mono-400 overflow-hidden" <?php language_attributes(); ?>>
@@ -18,28 +23,61 @@ $is_story = is_page('story') || isset($_GET['story']);
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class($flowtype ? 'page-' . $flowtype : ''); ?>>
 	<?php
 	wp_body_open();
 	global $post; ?>
 	<div id="copy"></div>
 
 	<main id="main">
-		<nav class="absolute left-0 top-0 w-full z-20 p-4 h-20">
-			<ul class="mx-auto w-full max-w-56 <?php outline() ?> p-4 flex justify-between content-center items-center h-full [&_li.active]:text-hilight">
+		<nav class="absolute left-0 top-0 w-full z-20 p-4 h-20 pointer-events-none">
+			<ul class="mx-auto w-full max-w-56 <?php outline() ?> p-4 flex justify-between content-center items-center h-full [&_li.active]:text-hilight pointer-events-auto">
 				<li class="<?php echo is_home() || is_page('story') ? 'active' : '' ?>">
-					<a class="txt-layer" href=" <?php echo esc_url($is_story ? '/index.php/story' : home_url('/')); ?>">Home</a>
+					<a class="txt-layer" href=" <?= home_url('/' . ($is_story ? 'index.php/story' : '')); ?>">Home</a>
 				</li>
-				<li class="baoanhbui flex flex-col justify-center text-center">
+				<li class="baoanhbui flex flex-col justify-center text-center ">
 					<div class="baoanh txt-layer">Bảo<span class="inline-block"></span> Anh</div>
 					<div class="hidden txt-layer bui">Bùi</div>
 				</li>
 				<li class="<?php echo is_page('info') ? 'active' : '' ?>">
-					<a class="txt-layer" href=" <?php echo esc_url($is_story ? '/index.php/info/?story=true' : home_url('/index.php/info')); ?>">Info</a>
+					<a class="txt-layer" href="<?= home_url('/info' . setStoryPerma()); ?>">Info</a>
 				</li>
 			</ul>
 		</nav>
+		<?php
+		if ($is_storyq && $is_work) {
+			$story = get_query_var('story');
+			$settings = pods('settings');
+			$parts = explode('-', $story);
+			$type = $parts[0] ?? null;
+			$num = $parts[1] ?? null;
+			if (!is_null($type) && !is_null($num)) {
+				$flow = null;
+				$flow = $settings->field($type . '_flow');
+
+				if ($flow[$num + 1] ?? null) {
+					$num++;
+				} else {
+					$num = 0;
+				}
+				$podsflow = pods('work', $flow[$num]['ID']);
+				$permalink = $podsflow->display('permalink') . '?story=' . $type . '-' . ($num);
+		?>
+				<section class="storysection absolute pointer-events-none bottom-4 flex flex-row-reverse px-4">
+					<a href="<?= $permalink ?>" class="block w-full max-w-56 mx-auto pointer-events-auto <?php outline(['noBgLayer' => true, 'bgClass' => 'bg-bg3']) ?> bg-layer-fixed overflow-hidden">
+						<div class="imgwrapper-fixed hidden">
+							<?php echo $podsflow->field('featured_images._img')[0]; ?>
+						</div>
+						<div class="text-center m-4 flex flex-col gap-4 justify-center items-center">
+							<div class="txt-layer-fixed">Next work -> <h3><?= $podsflow->display('title') ?></h3>
+							</div>
+						</div>
+					</a>
+				</section>
+		<?php
+			}
+		} ?>
 		<div class="absolute left-0 top-0 bottom-0 right-0 bg-black bg-opacity-50 z-10 imgholder"></div>
-		<div class="mainbody absolute left-0 top-0 w-full h-full overflow-x-hidden overflow-y-auto">
-			<div class="realheight px-8 pb-8 min-h-full">
+		<div class="mainbody absolute left-0 top-0 w-full h-full overflow-x-hidden overflow-y-auto <?= $is_storyq && $is_work ? 'is_storysection' : '' ?>">
+			<div class="realheight min-h-full px-4">
 				<?php get_template_part('template-parts/layout', 'top-padding'); ?>

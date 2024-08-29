@@ -45,4 +45,24 @@ function getScrollbarWidth() {
   setprop("--scrlbrwd", `${scrollbarWidth}px`);
   return scrollbarWidth;
 }
+window.renderCache = {};
+function hasCache(key) {
+  if (!key) {
+    return false;
+  }
+  return key in window.renderCache;
+}
+function setCache(key, obj) {
+  if (!key) {
+    return false;
+  }
+  window.renderCache[key] = obj;
+}
+function getCache(key) {
+  console.log(`get cache image #` + key + ` successful`);
+  return window.renderCache[key];
+}
+function deleteCache(key) {
+  delete window.renderCache[key];
+}
 //# sourceMappingURL=start.js.map

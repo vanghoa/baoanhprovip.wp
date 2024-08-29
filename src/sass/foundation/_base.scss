@@ -22,7 +22,7 @@
 		align-items: center;
 		pointer-events: none;
 		visibility: hidden;
-		padding: 7rem calc(2rem + var(--scrlbrwd)) 2rem 2rem;
+		padding: 7rem 2rem 2rem 2rem;
 		img {
 			width: 100%;
 			max-width: 900px;
@@ -30,4 +30,8 @@
 			object-fit: contain;
 		}
 	}
+}
+
+.mainbody {
+	scrollbar-gutter: stable both-edges;
 }

@@ -29,6 +29,35 @@
 		line-height: 1;
 		height: 6rem /* 96px */;
 	}
+	.long-description {
+		min-width: 13rem;
+	}
+	.realheight {
+		padding-left: 2rem /* 32px */;
+		padding-right: 2rem /* 32px */;
+	}
+	.storysection {
+		padding-left: 2rem /* 32px */;
+		padding-right: 2rem /* 32px */;
+		.bg-layer-fixed {
+			margin: unset;
+			width: 10rem;
+
+			.imgwrapper-fixed,
+			h3,
+			.short_description {
+				display: block;
+			}
+			.mobile_des {
+				display: none;
+			}
+
+			.imgwrapper-fixed img {
+				height: 6rem;
+				object-fit: cover;
+			}
+		}
+	}
 	.single-work-head {
 		margin-top: 0;
 		margin-bottom: 1rem;
@@ -45,6 +74,14 @@
 	.single-work-body {
 		flex-direction: row;
 	}
+	.is_storysection {
+		footer {
+			padding-bottom: 3rem;
+		}
+	}
+	.homegrid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
 }
 
 @include respond-to(md) {
@@ -54,8 +91,10 @@
 	.desktop {
 		display: block;
 	}
-	.homegrid {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+	.story {
+		.storygrid {
+			column-gap: 2rem;
+		}
 	}
 }
 
@@ -65,9 +104,17 @@
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 	}
+	.story {
+		.storygrid {
+			column-gap: 4rem;
+		}
+	}
 }
 
 @include respond-to(xl) {
+	.homegrid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
 	.single-work-body {
 		.the-content {
 			grid-template-columns: repeat(3, minmax(0, 1fr));

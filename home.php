@@ -1,4 +1,5 @@
-<?php defined('ABSPATH') || exit; ?>
+<?php defined('ABSPATH') || exit;
+$taxonomy_name = 'bigtag'; ?>
 
 <?php get_header(); ?>
 

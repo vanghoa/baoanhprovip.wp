@@ -9,8 +9,7 @@
   ],
   "config": {
     "browsersync": {
-      "proxy": "wordpress-personal.test",
-      "port": 3000
+      "proxy": "wordpress-personal.test"
     },
     "image": {
       "src": "src/images",

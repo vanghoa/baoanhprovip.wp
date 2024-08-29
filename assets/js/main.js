@@ -8,31 +8,38 @@ const rx = 2;
 const ry = 1;
 const ctx = imgcanvas.getContext("2d", { willReadFrequently: true });
 ctx.fillStyle = "#e3e3ca";
-const isHome = isPage("home") || isPage("archive");
+const isDeveloper = isPage("page-developer");
+const isDesigner = isPage("page-designer");
+const isHome = isPage("home") || isPage("archive") || isDeveloper || isDesigner;
 const isWork = isPage("single-work");
 const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
 const hratio = 2.1;
 const scaleX = 7.4;
 const scaleY = scaleX * hratio;
 const widthLimit = scaleX * 35;
+let lazyList = {};
 const char = {
   bg: "`",
   bg2: "_",
   trans: null,
   // prettier-ignore
   lbtn: nullifySpace([
-    ` █`,
-    `██`,
-    ` █`
+    ` █ `,
+    `█◄█`,
+    ` █ `
   ]),
   // prettier-ignore
   rbtn: nullifySpace([
-    `█ `,
-    `██`,
-    `█ `
+    ` █ `,
+    `█►█`,
+    ` █ `
   ]),
-  idc: "█",
+  idc: "●",
   mouse: "█"
+};
+const cacheKey = {
+  imgH: { name: "imgHolder", allkeys: [] },
+  storyS: { name: "storySection" }
 };
 let grayRamp = "█▒░@%*=--..__";
 const grayRampObj = {
@@ -94,19 +101,26 @@ const allImgHome = Array.from($$("#copy .imgwrapper"), (el, k) => {
     idc,
     hoverlayer: allImgHomeMain[k].nextElementSibling.querySelector(".hover-layer"),
     hoverchild: el.nextElementSibling.querySelector(".hover-child"),
-    idcascii: [
+    idcascii: idc && [
       Array(idc.childElementCount).fill([char.idc, char.trans]).flat()
     ]
   };
 });
-const allImg = [...$$("#copy img")];
-const allImgMain = [...$$("#main img")];
+const allImg = [...$$("#copy *:not(.imgwrapper-fixed) > img")];
+const allImgMain = [...$$("#main *:not(.imgwrapper-fixed) > img")];
 const allTxt = [
   ...$$("#copy .mainbody .txt-layer"),
   ...$$("#copy .mainbody .txtp-layer > *:not(figure)")
 ];
+const storySection = {
+  img: [...$$("#copy .storysection .imgwrapper-fixed img")],
+  bg: $("#copy .storysection .bg-layer-fixed"),
+  txt: [...$$("#copy .storysection .txt-layer-fixed")]
+};
+getScrollbarWidth();
 window.onload = duoResponsive;
 onresize = throttle_debounce(function() {
+  getScrollbarWidth();
   duoResponsive();
 }, 400);
 function setEvent(el, on, fn) {
@@ -155,11 +169,14 @@ function mouseMove(e) {
     )}`);
   }
 }
-function scrollResponsive() {
+async function scrollResponsive() {
   if (stopEvething) {
     return;
   }
   calcScrollTop();
+  for (const i in lazyList) {
+    await lazyList[i]();
+  }
   cmtRenderScreen();
 }
 function mouseEnter(i) {
@@ -194,7 +211,7 @@ if (isHome) {
       cur.value = curnow;
     }
   };
-  console.log("home");
+  console.log("home page");
   const imgwrappers = $$("main .homegrid .imgwrapper");
   window.imgsecs = $$("main .homegrid .imgsec");
   const projects = $$("main .homegrid .project");
@@ -221,7 +238,7 @@ if (isHome) {
     });
   });
 } else if (isWork) {
-  console.log("single-work");
+  console.log("single-work page");
   const imgcopyarr = [];
   {
     const frag = $createFrag();
@@ -245,26 +262,28 @@ if (isHome) {
       const div = $create("div");
       const imgcopy = img.cloneNode(true);
       img.copy = imgcopyarr[i];
+      const formattedKey = `${cacheKey.imgH.name}-${i}`;
+      cacheKey.imgH.allkeys.push(formattedKey);
       img.onclick = () => {
-        toggle(img.copy, imgcopy);
+        toggle(img.copy, imgcopy, formattedKey);
       };
       div.appendChild(imgcopy);
       frag.appendChild(div);
     }
     imgHolderMain.appendChild(frag);
-    async function toggle(curImgHolder, curImgHolderChild) {
+    async function toggle(curImgHolder, curImgHolderChild, key) {
       curImgHolderChild && (curchild = curImgHolderChild);
       imgHolderMain.classList[curImgHolder ? "add" : "remove"]("open");
       curchild.style.visibility = curImgHolder ? "visible" : "hidden";
       window.curImgHolder = curImgHolder;
       if (!stopEvething) {
-        await drawAbsoluteLayer(curImgHolder ? 3 : null);
+        await drawAbsoluteLayer(curImgHolder ? 3 : null, key);
         cmtRenderScreen();
       }
     }
   }
 }
-async function drawAbsoluteLayer(intensity = 3) {
+async function drawAbsoluteLayer(intensity = 3, key) {
   const vl = intensity ? {
     intensity: 3
   } : null;
@@ -272,11 +291,13 @@ async function drawAbsoluteLayer(intensity = 3) {
     { length: screenlength },
     () => Array.from({ length: window.fixedLayer[0].length }, () => vl)
   );
-  drawNav();
+  await drawNav(intensity);
   intensity && (window.imgHolder = await drawImg(
     window.fixedLayer,
     [window.curImgHolder],
-    canvas2CanvasArrNoMask.bind({ isOL: true })
+    canvas2CanvasArrNoMask.bind({ isOL: true }),
+    false,
+    key
   ));
 }
 function stopSlideAscii() {
@@ -287,7 +308,7 @@ function stopSlideAscii() {
 function slideAscii(i, curnow, curprev, time) {
   stopSlideAscii();
   let stop = false;
-  if (!imgsecs[i].ascii || stop || curnow == curprev) {
+  if (!imgsecs[i].ascii || stop || curnow == curprev || !imgsecs[i].ascii.arr) {
     return;
   }
   const delay_ = 100;
@@ -382,7 +403,7 @@ async function duoResponsivehtml2canvas() {
   cmtRender(ascii);
 }
 async function duoResponsive() {
-  getScrollbarWidth();
+  lazyList = {};
   stopSlideAscii();
   const width = Math.max(outerWidth - innerWidth - 100, 0);
   if (width < widthLimit) {
@@ -394,19 +415,21 @@ async function duoResponsive() {
       { length: screenlength },
       () => Array.from({ length: "This-is-too-small".length }, () => null)
     );
-    calcScrollTop();
     cmtRenderScreen();
     stopEvething = true;
     setEvent(mainbody, "onscroll", null);
     setEvent(document, "onmousemove", null);
     allImgHome.forEach(({ hoverlayer }) => {
+      if (!hoverlayer) {
+        return;
+      }
       setEvent(hoverlayer, "onmouseenter", null);
       setEvent(hoverlayer, "onmouseleave", null);
     });
     return;
   }
   stopEvething = false;
-  console.log("responsive");
+  console.log("responsive rerender");
   copy.style.width = `${width}px`;
   manualResponsive(copy);
   const canvas = {
@@ -429,6 +452,7 @@ async function duoResponsive() {
     { length: canvas.h },
     () => Array.from({ length: canvas.w }, () => char.trans)
   );
+  calcScrollTop();
   drawRect(window.canvasData, allBg2);
   if (isHome) {
     await drawImgHome(window.canvasData, allImgHome);
@@ -436,23 +460,46 @@ async function duoResponsive() {
     await drawImg(
       window.canvasData,
       allImg,
-      canvas2CanvasArr.bind({ isOL: true })
+      canvas2CanvasArr.bind({ isOL: true }),
+      true
     );
   }
   drawTxt(window.canvasData, allTxt);
   calcScrollTop();
-  window.curImgHolder ? await drawAbsoluteLayer() : drawNav();
+  cacheKey.imgH.allkeys.forEach((key) => {
+    deleteCache(key);
+  });
+  deleteCache(cacheKey.storyS.name);
+  await (window.curImgHolder ? drawAbsoluteLayer() : drawNav());
   cmtRenderScreen();
   setEvent(mainbody, "onscroll", scrollResponsive);
   setEvent(document, "onmousemove", mouseMove);
   allImgHome.forEach(({ hoverlayer }, i) => {
+    if (!hoverlayer) {
+      return;
+    }
     setEvent(hoverlayer, "onmouseenter", () => mouseEnter(i));
     setEvent(hoverlayer, "onmouseleave", () => mouseLeave(i));
   });
 }
-function drawNav() {
+async function drawNav(intensity = null) {
   drawRect(window.fixedLayer, [nav]);
   drawTxt(window.fixedLayer, navTxt);
+  if (storySection.bg) {
+    const charbg = filterGrayRamp(char.bg2, intensity);
+    drawFewRect(window.fixedLayer, [storySection.bg], null, charbg);
+    drawTxt(window.fixedLayer, storySection.txt);
+    const { display } = getComputedStyle(storySection.img[0].parentElement);
+    if (display != "none") {
+      await drawImg(
+        window.fixedLayer,
+        storySection.img,
+        canvas2CanvasArr.bind({ isOL: false, intensityF: intensity, charbg }),
+        false,
+        cacheKey.storyS.name
+      );
+    }
+  }
 }
 function getRect(el) {
   const obj = el.getBoundingClientRect();
@@ -572,43 +619,63 @@ function reMsrX(num) {
 function reMsrY(num) {
   return Math.floor(num / scaleY);
 }
-async function drawImg(data, allImg2, canvas2CanvasFunc = canvas2CanvasArr) {
+async function drawImg(data, allImg2, canvas2CanvasFunc = canvas2CanvasArr, lazyLoad = false, cacheKey2 = null) {
   let returnobj;
   for (let i = 0; i < allImg2.length; i++) {
     const img = allImg2[i];
-    const { objectFit } = getComputedStyle(img);
-    const isCover = objectFit == "cover";
     const { leftright, topbot, left, top, width, height } = getRect(img);
-    ctx.clearRect(0, 0, imgcanvas.width, imgcanvas.height);
-    imgcanvas.width = width;
-    imgcanvas.height = height;
-    const containObj = await image2Canvas(img, width, height, 0, isCover);
-    const grayScales = convertToGrayScales(
-      ctx,
-      imgcanvas.width,
-      imgcanvas.height
-    );
-    const ascii = drawAscii(grayScales, imgcanvas.width);
-    canvas2CanvasFunc(
-      top,
-      topbot,
-      left,
-      leftright,
-      data,
-      ascii,
-      0,
-      0,
-      isCover ? 0 : containObj.top,
-      isCover ? 0 : containObj.left
-    );
-    returnobj = {
-      top,
-      topbot,
-      left,
-      leftright,
-      maskTop: isCover ? 0 : containObj.top,
-      maskLeft: isCover ? 0 : containObj.left
-    };
+    lazyList[i] = lazyDrawImg;
+    await lazyDrawImg();
+    async function lazyDrawImg() {
+      if (lazyLoad && (top >= scrollTop + screenlength || topbot <= scrollTop)) {
+        return;
+      }
+      delete lazyList[i];
+      let objectFit, isCover, containObj, ascii;
+      if (hasCache(cacheKey2)) {
+        ({ objectFit, isCover, containObj, ascii } = getCache(cacheKey2));
+      } else {
+        ({ objectFit } = getComputedStyle(img));
+        isCover = objectFit == "cover";
+        ctx.clearRect(0, 0, imgcanvas.width, imgcanvas.height);
+        imgcanvas.width = width;
+        imgcanvas.height = height;
+        containObj = await image2Canvas(img, width, height, 0, isCover);
+        const grayScales = convertToGrayScales(
+          ctx,
+          imgcanvas.width,
+          imgcanvas.height
+        );
+        ascii = drawAscii(grayScales, imgcanvas.width);
+        setCache(cacheKey2, {
+          objectFit,
+          isCover,
+          containObj,
+          ascii
+        });
+      }
+      canvas2CanvasFunc(
+        top,
+        topbot,
+        left,
+        leftright,
+        data,
+        ascii,
+        0,
+        0,
+        isCover ? 0 : containObj.top,
+        isCover ? 0 : containObj.left
+      );
+      returnobj = {
+        top,
+        topbot,
+        left,
+        leftright,
+        maskTop: isCover ? 0 : containObj.top,
+        maskLeft: isCover ? 0 : containObj.left
+      };
+      lazyLoad && console.log(`lazyload image successful`);
+    }
   }
   return returnobj;
 }
@@ -622,37 +689,48 @@ async function drawImgHome(data, allImg2) {
     w: width
   };
   for (let igroup = 0; igroup < allImg2.length; igroup++) {
+    imgsecs[igroup].ascii = {};
     ctx.clearRect(0, 0, imgcanvas.width, imgcanvas.height);
     const { group, el, lbtn, rbtn, idcascii, idc, hoverlayer, hoverchild } = allImg2[igroup];
     imgcanvas.width = base.w * group.length;
     imgcanvas.height = base.h;
-    for (let iimg = 0; iimg < group.length; iimg++) {
-      const img = group[iimg];
-      const { objectFit } = getComputedStyle(img);
-      await image2Canvas(
-        img,
-        base.w,
-        base.h,
-        base.w * iimg,
-        objectFit == "cover"
-      );
-    }
-    const grayScales = convertToGrayScales(
-      ctx,
-      imgcanvas.width,
-      imgcanvas.height
-    );
-    const ascii = drawAscii(grayScales, imgcanvas.width);
     const { top: top2, left: left2, topbot: topbot2, leftright: leftright2, width: width2, height: height2 } = getRect(el);
-    canvas2CanvasArr(
-      top2,
-      topbot2,
-      left2,
-      leftright2,
-      data,
-      ascii,
-      (curs[igroup].value - 1) * base.w
-    );
+    lazyList[igroup] = lazyDrawImg;
+    await lazyDrawImg();
+    async function lazyDrawImg() {
+      if (top2 >= scrollTop + screenlength || topbot2 <= scrollTop) {
+        return;
+      }
+      delete lazyList[igroup];
+      for (let iimg = 0; iimg < group.length; iimg++) {
+        const img = group[iimg];
+        const { objectFit } = getComputedStyle(img);
+        await image2Canvas(
+          img,
+          base.w,
+          base.h,
+          base.w * iimg,
+          objectFit == "cover"
+        );
+      }
+      const grayScales = convertToGrayScales(
+        ctx,
+        imgcanvas.width,
+        imgcanvas.height
+      );
+      const ascii = drawAscii(grayScales, imgcanvas.width);
+      canvas2CanvasArr(
+        top2,
+        topbot2,
+        left2,
+        leftright2,
+        data,
+        ascii,
+        (curs[igroup].value - 1) * base.w
+      );
+      imgsecs[igroup].ascii.arr = ascii;
+      console.log("lazyload image successful");
+    }
     drawAbs(lbtn, char.lbtn);
     drawAbs(rbtn, char.rbtn);
     drawAbs(idc, idcascii);
@@ -666,8 +744,8 @@ async function drawImgHome(data, allImg2) {
       topbot: topbot2,
       left: left2,
       leftright: leftright2,
-      arr: ascii,
-      baseW: base.w
+      baseW: base.w,
+      ...imgsecs[igroup].ascii
     };
   }
 }
@@ -738,7 +816,7 @@ function drawTxt(data, allTxt2) {
     pt = reMsrY(+pt.slice(0, -2));
     pb = reMsrY(+pb.slice(0, -2));
     const output = [];
-    let { top, left, ogwidth } = getRect(txt);
+    let { top, left, ogwidth, topbot } = getRect(txt);
     top += pt + 1;
     left += pl;
     ogwidth -= pl + pr;
@@ -761,14 +839,19 @@ function drawTxt(data, allTxt2) {
           }
         }
         extracted = extracted.trim();
+        content2 = content2.trim();
         if (textAlign == "center") {
-          const rest = (ogwidth - extracted.length) / 2;
+          extracted = `${extracted}${output.length == topbot - top && content2.length > 0 ? "…" : ""}`;
+          let rest = (ogwidth - extracted.length) / 2;
+          rest = rest > 0 ? rest : 0;
           extracted = `${` `.repeat(Math.ceil(rest))}${extracted}${` `.repeat(
             Math.floor(rest)
           )}`;
         }
         output.push(extracted);
-        content2 = content2.trim();
+        if (output.length > topbot - top) {
+          break;
+        }
       }
     }
     for (let y = top; y < top + output.length; y++) {
@@ -820,16 +903,19 @@ function image2Canvas(img, cW, cH, posX = 0, isCover = true) {
         left: Math.round(posX + x)
       });
     };
+    image.crossOrigin = "";
     image.src = img.src;
   });
 }
 function canvas2CanvasArr(top, topbot, left, leftright, data, ascii, offsetX = 0, offsetY = 0) {
   var _a, _b;
+  const intensityF = this.intensityF;
+  const charbg = this.charbg ?? char.bg2;
   for (let y = top; y <= topbot; y++) {
     for (let x = left; x <= leftright; x++) {
       const newchar = (_a = ascii[y - top + offsetY]) == null ? void 0 : _a[x - left + offsetX];
-      if (((_b = data[y]) == null ? void 0 : _b[x]) && data[y][x] == char.bg2 && newchar) {
-        data[y][x] = newchar;
+      if (((_b = data[y]) == null ? void 0 : _b[x]) && data[y][x] == charbg && newchar) {
+        data[y][x] = intensityF ? filterGrayRamp(newchar, intensityF) : newchar;
       } else {
       }
     }

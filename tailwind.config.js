@@ -21,6 +21,7 @@ export const theme = {
     ...colors,
     bg: 'rgb(var(--color-bg) / <alpha-value>)',
     bg2: 'rgb(var(--color-bg2) / <alpha-value>)',
+    bg3: 'rgb(var(--color-bg3) / <alpha-value>)',
     text: 'rgb(var(--color-text) / <alpha-value>)',
     hilight: 'rgb(var(--color-hilight) / <alpha-value>)',
   },

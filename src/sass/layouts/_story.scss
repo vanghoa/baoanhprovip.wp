@@ -2,11 +2,17 @@
 
 .story {
 	.imgwrapper {
-		max-height: 80svh;
+		height: 20rem;
+		max-height: 40svh;
 		img {
 			object-fit: cover;
 			height: 100%;
 			width: 100%;
 		}
 	}
+}
+.storysection {
+	z-index: 2;
+	left: var(--scrlbrwd);
+	width: calc(100% - 2 * var(--scrlbrwd));
 }

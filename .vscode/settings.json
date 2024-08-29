@@ -6,5 +6,6 @@
   "phpsab.standard": "WordPress",
   "[php]": {
     "editor.defaultFormatter": "valeryanm.vscode-phpsab"
-  }
+  },
+  "intelephense.stubs": ["wordpress"]
 }

@@ -138,3 +138,25 @@ function add_active_class_to_nav_menu($classes)
 	}
 	return $classes;
 }
+
+add_action('init', 'add_get_val');
+function add_get_val()
+{
+	global $wp;
+	$wp->add_query_var('story');
+}
+
+// Hook onto 'oembed_dataparse' and get 2 parameters
+add_filter('oembed_dataparse', 'responsive_wrap_oembed_dataparse', 10, 2);
+
+function responsive_wrap_oembed_dataparse($html, $data)
+{
+	if (! is_object($data) || empty($data->type))
+		return $html;
+	if (!($data->type == 'video'))
+		return $html;
+	// Strip width and height from html
+	$html = preg_replace('/(width|height)="\d*"\s/', "", $html);
+	// Return code
+	return '<div style="--width:' . $data->width . '; --height:' . $data->height . ';" ><img style="--twidth:' . $data->thumbnail_width . '; --theight:' . $data->thumbnail_height . ';" alt="thumbnail" src="' . $data->thumbnail_url . '"/>' . $html . '</div>';
+}
