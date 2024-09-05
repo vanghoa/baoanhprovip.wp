@@ -1,8 +1,7 @@
 <?php
 get_template_part('template-parts/layout', 'style');
 
-// Check if we're on a taxonomy page
-$is_tax = is_tax();
+global $pods, $term_id, $taxonomy, $taxonomy_name, $is_story, $flowtype, $storymode, $is_tax;
 
 // Set up query parameters
 $params = array(
@@ -13,15 +12,8 @@ $params = array(
 	'cache_mode' => null,
 );
 
-global $pods, $term_id, $taxonomy, $taxonomy_name, $is_story, $flowtype, $storymode;
-
 if ($is_tax) {
 	// For taxonomy pages
-	global $term_id, $taxonomy, $taxonomy_name;
-	$queried_object = get_queried_object();
-	$term_id = esc_sql($queried_object->term_id);
-	$taxonomy = esc_sql($queried_object->taxonomy);
-	$taxonomy_name = $taxonomy;
 	$params['where'] = "{$taxonomy}.term_id = {$term_id}";
 }
 
@@ -37,7 +29,7 @@ $pods = pods('work', $params);
 ?>
 
 <div class="max-w-md mx-auto text-center mb-8 mt-4">
-	<p class="txt-layer mb-4"><?= is_tax() ? 'these are my works in' : $hometext ?></p>
+	<p class="txt-layer mb-4"><?= $is_tax ? 'these are my works in' : $hometext ?></p>
 	<?php
 	get_template_part('template-parts/layout', 'homefilter'); ?>
 </div>

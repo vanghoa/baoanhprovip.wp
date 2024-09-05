@@ -3,7 +3,7 @@
 $storymode2 = ($is_storyq && ($is_designer || $is_developer));
 
 ?>
-<p class="txt-layer"> | <a href="<?= $storymode || $storymode2 ? home_url('/' . $flowtype . setStoryPerma()) : get_home_url() ?>" class="hover:underline <?= is_home() || ($is_designer || $is_developer) ? 'underline' : '' ?>">everything</a> |
+<p class="txt-layer"> | <a href="<?= $storymode || $storymode2 ? home_url('/' . $flowtype . setStoryPerma()) . '#everything' : get_home_url() ?>" class="hover:underline <?= is_home() || ($is_designer || $is_developer) ? 'underline' : '' ?>">everything</a> |
 	<?php $tags = pods($taxonomy_name)->find();
 	$length = $tags->total_found();
 	$cur = 0;

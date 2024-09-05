@@ -79,6 +79,18 @@ let stopEvething = true;
     return cmt;
   });
   html.before(fragcmt);
+  if (window.location.hash == "#everything") {
+    const el = $("#main .everything");
+    const parent = $("#main .mainbody");
+    const nav2 = $("#main nav");
+    if (el) {
+      parent.scrollTo({
+        top: el.offsetTop - nav2.clientHeight,
+        left: 0,
+        behavior: "smooth"
+      });
+    }
+  }
 }
 const realh = $("#copy .realheight");
 const realhmain = $("main .realheight");
@@ -91,7 +103,8 @@ const allBg2 = [
 const imgHolder = $("#copy .imgholder");
 const imgHolderMain = $("#main .imgholder");
 const allImgHomeMain = $$("#main .imgwrapper");
-const allImgHome = Array.from($$("#copy .imgwrapper"), (el, k) => {
+const allImgWrapper = [...$$("#copy .imgwrapper")];
+const allImgHome = Array.from(allImgWrapper, (el, k) => {
   const idc = el.nextElementSibling.querySelector(`.indicator`);
   return {
     el,
@@ -119,10 +132,14 @@ const storySection = {
 };
 getScrollbarWidth();
 window.onload = duoResponsive;
-onresize = throttle_debounce(function() {
-  getScrollbarWidth();
-  duoResponsive();
-}, 400);
+onresize = throttle_debounce(
+  function(isFinal) {
+    isFinal && getScrollbarWidth();
+    duoResponsive(isFinal);
+  },
+  100,
+  400
+);
 function setEvent(el, on, fn) {
   if (fn) {
     !el[on] && (el[on] = fn);
@@ -283,7 +300,7 @@ if (isHome) {
     }
   }
 }
-async function drawAbsoluteLayer(intensity = 3, key) {
+async function drawAbsoluteLayer(intensity = 3, key, isFinal = true) {
   const vl = intensity ? {
     intensity: 3
   } : null;
@@ -291,13 +308,14 @@ async function drawAbsoluteLayer(intensity = 3, key) {
     { length: screenlength },
     () => Array.from({ length: window.fixedLayer[0].length }, () => vl)
   );
-  await drawNav(intensity);
+  await drawNav(intensity, isFinal);
   intensity && (window.imgHolder = await drawImg(
     window.fixedLayer,
     [window.curImgHolder],
     canvas2CanvasArrNoMask.bind({ isOL: true }),
     false,
-    key
+    key,
+    isFinal
   ));
 }
 function stopSlideAscii() {
@@ -402,7 +420,7 @@ async function duoResponsivehtml2canvas() {
   console.log(ascii);
   cmtRender(ascii);
 }
-async function duoResponsive() {
+async function duoResponsive(isFinal = true) {
   lazyList = {};
   stopSlideAscii();
   const width = Math.max(outerWidth - innerWidth - 100, 0);
@@ -429,7 +447,7 @@ async function duoResponsive() {
     return;
   }
   stopEvething = false;
-  console.log("responsive rerender");
+  isFinal && console.log("responsive rerender");
   copy.style.width = `${width}px`;
   manualResponsive(copy);
   const canvas = {
@@ -453,28 +471,35 @@ async function duoResponsive() {
     () => Array.from({ length: canvas.w }, () => char.trans)
   );
   calcScrollTop();
-  drawRect(window.canvasData, allBg2);
-  if (isHome) {
-    await drawImgHome(window.canvasData, allImgHome);
+  drawFewRect(window.canvasData, allBg2, null, char.bg2, isFinal);
+  if (isFinal) {
+    if (isHome) {
+      await drawImgHome(window.canvasData, allImgHome);
+    } else {
+      await drawImg(
+        window.canvasData,
+        allImg,
+        canvas2CanvasArr.bind({ isOL: true }),
+        true
+      );
+    }
   } else {
-    await drawImg(
-      window.canvasData,
-      allImg,
-      canvas2CanvasArr.bind({ isOL: true }),
-      true
-    );
+    if (isHome) {
+      drawFewRect(window.canvasData, allImgWrapper, null, char.mouse, isFinal);
+    } else {
+      drawFewRect(window.canvasData, allImg, null, char.mouse, isFinal);
+    }
   }
-  drawTxt(window.canvasData, allTxt);
-  calcScrollTop();
-  cacheKey.imgH.allkeys.forEach((key) => {
+  drawTxt(window.canvasData, allTxt, isFinal);
+  isFinal && cacheKey.imgH.allkeys.forEach((key) => {
     deleteCache(key);
   });
-  deleteCache(cacheKey.storyS.name);
-  await (window.curImgHolder ? drawAbsoluteLayer() : drawNav());
+  isFinal && deleteCache(cacheKey.storyS.name);
+  await (window.curImgHolder ? drawAbsoluteLayer(3, null, isFinal) : drawNav(null, isFinal));
   cmtRenderScreen();
-  setEvent(mainbody, "onscroll", scrollResponsive);
-  setEvent(document, "onmousemove", mouseMove);
-  allImgHome.forEach(({ hoverlayer }, i) => {
+  isFinal && setEvent(mainbody, "onscroll", scrollResponsive);
+  isFinal && setEvent(document, "onmousemove", mouseMove);
+  isFinal && allImgHome.forEach(({ hoverlayer }, i) => {
     if (!hoverlayer) {
       return;
     }
@@ -482,12 +507,12 @@ async function duoResponsive() {
     setEvent(hoverlayer, "onmouseleave", () => mouseLeave(i));
   });
 }
-async function drawNav(intensity = null) {
+async function drawNav(intensity = null, isFinal = true) {
   drawRect(window.fixedLayer, [nav]);
   drawTxt(window.fixedLayer, navTxt);
   if (storySection.bg) {
     const charbg = filterGrayRamp(char.bg2, intensity);
-    drawFewRect(window.fixedLayer, [storySection.bg], null, charbg);
+    drawFewRect(window.fixedLayer, [storySection.bg], null, charbg, isFinal);
     drawTxt(window.fixedLayer, storySection.txt);
     const { display } = getComputedStyle(storySection.img[0].parentElement);
     if (display != "none") {
@@ -496,7 +521,8 @@ async function drawNav(intensity = null) {
         storySection.img,
         canvas2CanvasArr.bind({ isOL: false, intensityF: intensity, charbg }),
         false,
-        cacheKey.storyS.name
+        cacheKey.storyS.name,
+        isFinal
       );
     }
   }
@@ -569,10 +595,13 @@ function filterGrayRamp(char2, intensity) {
   let index = grayRampObj[char2] - intensity;
   return grayRamp[index] || grayRamp[0];
 }
-function drawFewRect(data, allRect, rectArr, rectchar = char.bg2) {
+function drawFewRect(data, allRect, rectArr, rectchar = char.bg2, isFinal = true) {
   !rectArr && (rectArr = allRect.map((el) => getRect(el)));
   for (let i = 0; i < rectArr.length; i++) {
     const { leftright, topbot, left, top } = rectArr[i];
+    if (isLazy(!isFinal, top, topbot)) {
+      continue;
+    }
     for (let y = top; y <= topbot; y++) {
       const line = data[y];
       for (let x = left; x <= leftright; x++) {
@@ -583,7 +612,7 @@ function drawFewRect(data, allRect, rectArr, rectchar = char.bg2) {
     }
   }
 }
-function drawRect(data, allRect) {
+function drawRect(data, allRect, char_ = char.bg2) {
   const rectArr = allRect.map((el) => getRect(el));
   let rectCount = 0;
   for (let y = 0; y < data.length; y++) {
@@ -596,7 +625,7 @@ function drawRect(data, allRect) {
           }
           const { leftright, topbot, left, top } = rect;
           if (checkRoundedRect(x, y, top, topbot, left, leftright, rx, ry)) {
-            line[x] = char.bg2;
+            line[x] = char_;
             if (y == topbot && x == leftright - rx) {
               rect.done = true;
               rectCount++;
@@ -619,18 +648,23 @@ function reMsrX(num) {
 function reMsrY(num) {
   return Math.floor(num / scaleY);
 }
-async function drawImg(data, allImg2, canvas2CanvasFunc = canvas2CanvasArr, lazyLoad = false, cacheKey2 = null) {
+async function drawImg(data, allImg2, canvas2CanvasFunc = canvas2CanvasArr, lazyLoad = false, cacheKey2 = null, isFinal = true) {
   let returnobj;
+  if (!isFinal) {
+    drawFewRect(data, allImg2, null, char.mouse);
+    return;
+  }
   for (let i = 0; i < allImg2.length; i++) {
     const img = allImg2[i];
     const { leftright, topbot, left, top, width, height } = getRect(img);
-    lazyList[i] = lazyDrawImg;
+    const lazyKey = `${i}${leftright + topbot + left + top}${Math.random().toString(16).slice(2)}`;
+    lazyList[lazyKey] = lazyDrawImg;
     await lazyDrawImg();
     async function lazyDrawImg() {
-      if (lazyLoad && (top >= scrollTop + screenlength || topbot <= scrollTop)) {
+      if (isLazy(lazyLoad, top, topbot)) {
         return;
       }
-      delete lazyList[i];
+      delete lazyList[lazyKey];
       let objectFit, isCover, containObj, ascii;
       if (hasCache(cacheKey2)) {
         ({ objectFit, isCover, containObj, ascii } = getCache(cacheKey2));
@@ -695,13 +729,14 @@ async function drawImgHome(data, allImg2) {
     imgcanvas.width = base.w * group.length;
     imgcanvas.height = base.h;
     const { top: top2, left: left2, topbot: topbot2, leftright: leftright2, width: width2, height: height2 } = getRect(el);
-    lazyList[igroup] = lazyDrawImg;
+    const lazyKey = `${igroup}${leftright2 + topbot2 + left2 + top2}${Math.random().toString(16).slice(2)}`;
+    lazyList[lazyKey] = lazyDrawImg;
     await lazyDrawImg();
     async function lazyDrawImg() {
       if (top2 >= scrollTop + screenlength || topbot2 <= scrollTop) {
         return;
       }
-      delete lazyList[igroup];
+      delete lazyList[lazyKey];
       for (let iimg = 0; iimg < group.length; iimg++) {
         const img = group[iimg];
         const { objectFit } = getComputedStyle(img);
@@ -794,10 +829,14 @@ function drawAscii(grayScales, width) {
 function getCharacterForGrayScale(grayScale) {
   return grayRamp[Math.ceil((rampLength - 1) * grayScale / 255)];
 }
-function drawTxt(data, allTxt2) {
+function drawTxt(data, allTxt2, isFinal = true) {
   var _a;
   for (let i = 0; i < allTxt2.length; i++) {
     const txt = allTxt2[i];
+    let { top, left, ogwidth, topbot } = getRect(txt);
+    if (isLazy(!isFinal, top, topbot)) {
+      continue;
+    }
     let {
       display,
       textAlign,
@@ -816,7 +855,6 @@ function drawTxt(data, allTxt2) {
     pt = reMsrY(+pt.slice(0, -2));
     pb = reMsrY(+pb.slice(0, -2));
     const output = [];
-    let { top, left, ogwidth, topbot } = getRect(txt);
     top += pt + 1;
     left += pl;
     ogwidth -= pl + pr;
@@ -966,9 +1004,11 @@ function clearRect(top, topbot, left, leftright, data, char2) {
 }
 function calcMousePos(e) {
   const mouseX = Math.floor(
-    e.clientX * realh.clientWidth / realhmain.clientWidth / scaleX
+    e.clientX * copy.clientWidth / main.clientWidth / scaleX
   );
-  const mouseY = reMsrY(e.clientY);
+  const mouseY = Math.floor(
+    e.clientY * copy.clientHeight / main.clientHeight / scaleY
+  );
   if (window.mouseX == mouseX && window.mouseY == mouseY) {
     return false;
   }
@@ -986,5 +1026,8 @@ function calcScrollTop() {
   ) || 0;
   const scrollTop2 = screenlength > canvasData.length - actualScroll ? canvasData.length - screenlength : actualScroll;
   window.scrollTop = scrollTop2;
+}
+function isLazy(lazyLoad, top, topbot) {
+  return lazyLoad && (top >= window.scrollTop + screenlength || topbot <= window.scrollTop);
 }
 //# sourceMappingURL=main.js.map

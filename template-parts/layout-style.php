@@ -6,12 +6,11 @@ if (!function_exists('outline')) {
 	{
 		$singleWork = $options['singleWork'] ?? false;
 		$noBgLayer = $options['noBgLayer'] ?? false;
-		$bgClass = $options['bgClass'] ?? 'bg-bg2';
 		if ($singleWork) {
-			echo "[&>*]:" . $bgClass . " [&>*]:rounded-lg [&>*]:overflow-hidden cp-layer";
+			echo "[&>*]:bg-bg2 [&>*]:rounded-lg [&>*]:overflow-hidden cp-layer";
 			return;
 		}
-		echo $bgClass . " rounded-lg overflow-hidden" . ($noBgLayer ? '' : ' bg-layer');
+		echo "bg-bg2 rounded-lg overflow-hidden" . ($noBgLayer ? '' : ' bg-layer');
 		// echo "outline-[1px] outline-text outline outline-offset-[-.5px]";
 	}
 }

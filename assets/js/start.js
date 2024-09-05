@@ -17,14 +17,15 @@ function isPage(check) {
 function $createFrag() {
   return new DocumentFragment();
 }
-function throttle_debounce(fn, delay) {
+function throttle_debounce(fn, delay1, delay2) {
   let time = Date.now();
   let timeoutId;
+  delay2 = delay1 < delay2 ? delay2 : delay1;
   return () => {
     clearTimeout(timeoutId);
-    timeoutId = setTimeout(() => fn(), delay);
-    if (time + delay - Date.now() <= 0) {
-      fn();
+    timeoutId = setTimeout(() => fn(true), delay2);
+    if (time + delay1 - Date.now() <= 0) {
+      fn(false);
       time = Date.now();
     }
   };

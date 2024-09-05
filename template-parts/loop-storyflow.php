@@ -21,7 +21,7 @@ $taxonomy_name = $flowtype . 'tag';
 	</ul>
 </div>
 
-<div class="max-w-md mx-auto text-center mb-8">
+<div class="max-w-md mx-auto text-center mb-8 everything">
 	<div class="<?php outline() ?> p-4 mb-4 w-fit mx-auto">
 		<p class="txt-layer">view other <?= $flowtype == 'developer' ? 'development' : 'design' ?> works</p>
 	</div>

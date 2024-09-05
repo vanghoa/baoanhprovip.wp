@@ -55,7 +55,6 @@
 			}
 		}
 		button {
-			fill: rgb(var(--color-bg2));
 			display: flex;
 			align-items: center;
 			&.rbtn {
@@ -63,6 +62,7 @@
 			}
 			svg {
 				height: 1.2rem;
+				fill: rgb(var(--color-bg));
 			}
 		}
 		[isfirst='true'] .lbtn,

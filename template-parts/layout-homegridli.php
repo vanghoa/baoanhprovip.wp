@@ -17,8 +17,8 @@
 				<button class="px-4 lbtn basis-full shrink ">
 					<?php get_template_part('template-parts/layout', 'arrow') ?>
 				</button>
-				<a href="<?= $permalink ?>" class="basis-1/5 shrink-0 flex justify-center items-center group hover-layer">
-					<div class="group-hover:opacity-100 hover-child opacity-0 h-fit w-fit <?= outline(['noBgLayer' => true]) ?> flex justify-center items-center p-2 text-center">
+				<a href="<?= $permalink ?>" class="basis-1/3 shrink-0 flex justify-center items-center group hover-layer">
+					<div class="group-hover:opacity-100 hover-child opacity-0 h-fit w-fit <?= outline(['noBgLayer' => true]) ?> flex justify-center items-center p-2 text-center break-all">
 						see this <br> project
 					</div>
 				</a>
@@ -45,7 +45,9 @@
 										if ($tags) : foreach ($tags as $k => $tag) { ?>
 							<a class="hover:underline <?php if ($tag['term_id'] == $term_id && $taxonomy == $taxonomy_name) {
 															echo 'underline';
-														} ?>" href="<?= get_term_link($tag['slug'], $taxonomy_name) . setStoryPerma() ?>"><?php echo $tag['name']; ?></a> |
+														} ?>" href="<?php
+																	$is_story = $is_story && true;
+																	echo get_term_link($tag['slug'], $taxonomy_name) . setStoryPerma() ?>"><?php echo $tag['name']; ?></a> |
 					<?php }
 										endif; ?>
 				</p>
