@@ -1,27 +1,33 @@
-name: Test
+name: Deploy WordPress Theme to InfinityFree
 
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: ['**']
+    branches:
+      - main # You can change this to any branch you prefer
 
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node: [20.x, 18.x]
-
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node }}
-      - run: npm install
-      - run: npm run build
-      - run: npm i -g @wordpress/env
-      - run: wp-env start
-      - run: wp-env run cli wp theme activate baoanhprovip.wp
+      # Checkout the code from your repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Install FTP client (lftp)
+      - name: Install lftp
+        run: sudo apt-get install lftp
+
+      # Deploy theme via FTP
+      - name: FTP Deploy WordPress Theme
+        env:
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_PORT: ${{ secrets.FTP_PORT }} # Add FTP port as a secret if necessary
+        run: |
+          lftp -e "
+            open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST -p $FTP_PORT;
+            mirror -R --delete ./ /htdocs/wp-content/themes/baoanhprovip.wp-main;
+            bye
+          "

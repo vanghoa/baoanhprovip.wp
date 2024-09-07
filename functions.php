@@ -112,22 +112,6 @@ add_action(
 );
 
 
-// UnderStrap's includes directory.
-$understrap_inc_dir = 'function-parts';
-
-// Array of files to include.
-$understrap_includes = array(
-	'/custom-enqueue.php',                   // Enqueue custom scripts & styles
-	'/cbf/cbf-setup.php',
-	'/widgets.php',                         // Register widget area.
-);
-
-
-// Include files.
-foreach ($understrap_includes as $file) {
-	require_once get_theme_file_path($understrap_inc_dir . $file);
-}
-
 add_filter('nav_menu_css_class', 'add_active_class_to_nav_menu');
 
 function add_active_class_to_nav_menu($classes)
