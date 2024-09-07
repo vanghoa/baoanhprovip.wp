@@ -1,7 +1,6 @@
 <?php
-get_template_part('template-parts/layout', 'style');
 
-global $pods, $term_id, $taxonomy, $taxonomy_name, $is_story, $flowtype, $storymode, $is_tax;
+global $pods, $term_id, $taxonomy, $taxonomy_name, $is_story, $flowtype, $storymode, $is_tax, $flows;
 
 // Set up query parameters
 $params = array(
@@ -31,12 +30,13 @@ $pods = pods('work', $params);
 <div class="max-w-md mx-auto text-center mb-8 mt-4">
 	<p class="txt-layer mb-4"><?= $is_tax ? 'these are my works in' : $hometext ?></p>
 	<?php
-	get_template_part('template-parts/layout', 'homefilter'); ?>
+	get_template_part('template-parts/layout', 'homefilter');
+	?>
 </div>
 
-<ul class="homegrid grid grid-cols-1 gap-8 w-fit mx-auto">
-	<?php
-
+<?php function mapLi($part = 'homegridli')
+{
+	global $storymode, $pods, $flows, $flowtype, $is_story;
 	if ($storymode) {
 		$podsdata = $pods->data();
 		$checkarr = [];
@@ -48,12 +48,14 @@ $pods = pods('work', $params);
 			$id = $flow['ID'];
 			if ($checkarr[$id] ?? false) {
 				$pods->fetch($id);
-				get_template_part('template-parts/layout', 'homegridli');
+				get_template_part('template-parts/layout', $part);
 			}
 		}
 	} else {
 		while ($pods->fetch()) :
-			get_template_part('template-parts/layout', 'homegridli');
+			get_template_part('template-parts/layout', $part);
 		endwhile;
-	} ?>
-</ul>
+		$pods->reset();
+	}
+}
+get_template_part('template-parts/layout', 'homegrid'); ?>

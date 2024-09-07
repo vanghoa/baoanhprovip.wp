@@ -15,15 +15,15 @@
 			</div>
 			<div class="flex justify-between items-stretch absolute left-0 top-0 h-full w-full">
 				<button class="px-4 lbtn basis-full shrink ">
-					<?php get_template_part('template-parts/layout', 'arrow') ?>
+					<?php pods_view('template-parts/layout-arrow.php', null, YEAR_IN_SECONDS, 'transient'); ?>
 				</button>
 				<a href="<?= $permalink ?>" class="basis-1/3 shrink-0 flex justify-center items-center group hover-layer">
-					<div class="group-hover:opacity-100 hover-child opacity-0 h-fit w-fit <?= outline(['noBgLayer' => true]) ?> flex justify-center items-center p-2 text-center break-all">
+					<div class="group-hover:opacity-100 hover-child opacity-0 h-fit w-fit <?= outline(['noBgLayer' => true]) ?> flex justify-center items-center p-3 text-center break-all">
 						see this <br> project
 					</div>
 				</a>
 				<button class="px-4 rbtn basis-full shrink">
-					<?php get_template_part('template-parts/layout', 'arrow') ?>
+					<?php pods_view('template-parts/layout-arrow.php', null, YEAR_IN_SECONDS, 'transient'); ?>
 				</button>
 				<div class="w-full absolute bottom-4">
 					<ul class="indicator mx-auto w-fit flex gap-2 justify-center">
@@ -40,16 +40,7 @@
 				<h3 class="txt-layer">
 					<?= $pods->display('title') ?>
 				</h3>
-				<p class="txt-layer"> | <?php
-										$tags = $pods->field($taxonomy_name);
-										if ($tags) : foreach ($tags as $k => $tag) { ?>
-							<a class="hover:underline <?php if ($tag['term_id'] == $term_id && $taxonomy == $taxonomy_name) {
-															echo 'underline';
-														} ?>" href="<?php
-																	$is_story = $is_story && true;
-																	echo get_term_link($tag['slug'], $taxonomy_name) . setStoryPerma() ?>"><?php echo $tag['name']; ?></a> |
-					<?php }
-										endif; ?>
+				<p class="txt-layer"><?php outputTaxonomy() ?>
 				</p>
 			</div>
 			<a href="<?= $permalink ?>" class="block max-w-md text-center txt-layer">

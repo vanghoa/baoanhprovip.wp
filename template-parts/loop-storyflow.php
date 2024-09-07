@@ -1,6 +1,5 @@
 <?php
-global $flowtype, $is_story, $pods, $term_id, $taxonomy, $taxonomy_name;
-get_template_part('template-parts/layout', 'style');
+global $flowtype, $is_story, $pods, $term_id, $taxonomy, $taxonomy_name, $flows;
 $settings = pods('settings');
 $flows = $settings->field($flowtype . '_flow');
 $pods = pods('work');
@@ -29,14 +28,17 @@ $taxonomy_name = $flowtype . 'tag';
 	get_template_part('template-parts/layout', 'homefilter'); ?>
 </div>
 
-<ul class="homegrid grid grid-cols-1 gap-8 w-fit mx-auto">
-	<?php foreach ($flows as $k => $flow) {
+<?php function mapLi($part = 'homegridli')
+{
+	global $storymode, $pods, $flows, $flowtype, $is_story;
+	foreach ($flows as $k => $flow) {
 		if ($k == 0) {
 			continue;
 		}
 		$is_story = $flowtype . '-' . $k;
 		$id = $flow['ID'];
 		$pods->fetch($id);
-		get_template_part('template-parts/layout', 'homegridli');
-	} ?>
-</ul>
+		get_template_part('template-parts/layout', $part);
+	}
+}
+get_template_part('template-parts/layout', 'homegrid'); ?>

@@ -7,7 +7,8 @@
  */
 defined('ABSPATH') || exit;
 ?>
-<?php get_template_part('template-parts/layout', 'footer'); ?>
+</div>
+<?php pods_view('template-parts/layout-footer.php', null, YEAR_IN_SECONDS, 'transient'); ?>
 </div>
 </div>
 

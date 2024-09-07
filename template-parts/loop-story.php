@@ -23,7 +23,7 @@ if (!empty($desflow) && !empty($devflow)) {
 
 <div class="absolute top-0 left-0 w-full h-fit">
 	<div class="h-svh w-full flex flex-col px-4 story">
-		<?php get_template_part('template-parts/layout', 'top-padding'); ?>
+		<?php pods_view('template-parts/layout-top-padding.php', null, YEAR_IN_SECONDS, 'transient'); ?>
 		<section class="basis-full flex justify-center items-center pt-4 gap-5 w-fit mx-auto">
 			<div class="storygrid grid grid-cols-2 gap-4 justify-items-center">
 				<p class="col-span-2 text-center mb-4 txt-layer max-w-[80%]"><?= $storytxt ?></p>
@@ -50,6 +50,6 @@ if (!empty($desflow) && !empty($devflow)) {
 				} ?>
 			</div>
 		</section>
-		<?php get_template_part('template-parts/layout', 'footer'); ?>
+		<?php pods_view('template-parts/layout-footer.php', null, YEAR_IN_SECONDS, 'transient'); ?>
 	</div>
 </div>

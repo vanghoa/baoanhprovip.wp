@@ -7,7 +7,7 @@
  */
 defined('ABSPATH') || exit;
 global $flowtype, $is_story, $is_designer, $is_developer, $is_storyq, $term_id, $taxonomy, $taxonomy_name, $is_tax;
-get_template_part('template-parts/layout', 'style');
+get_template_part('template-parts/layout', 'function');
 $is_storyq = isset($_GET['story']);
 $is_designer = is_page('designer');
 $is_developer = is_page('developer');
@@ -88,7 +88,7 @@ if ($is_designer || ($is_work && $type == 'designer') || ($is_storyq && $taxonom
 			$podsflow = pods('work', $flow[$num]['ID']);
 			$permalink = $podsflow->display('permalink') . '?story=' . $type . '-' . ($num);
 		?>
-			<section class="storysection absolute pointer-events-none bottom-4 flex flex-row-reverse px-4">
+			<section class="storysection absolute pointer-events-none bottom-8 flex flex-row-reverse px-4">
 				<a href="<?= $permalink ?>" class="block w-full max-w-56 mx-auto pointer-events-auto <?php outline(['noBgLayer' => true, 'bgClass' => 'bg-bg3']) ?> bg-layer-fixed overflow-hidden">
 					<div class="imgwrapper-fixed hidden">
 						<?php echo $podsflow->field('featured_images._img')[0]; ?>
@@ -104,5 +104,6 @@ if ($is_designer || ($is_work && $type == 'designer') || ($is_storyq && $taxonom
 		?>
 		<div class="absolute left-0 top-0 bottom-0 right-0 bg-black bg-opacity-50 z-10 imgholder"></div>
 		<div class="mainbody absolute left-0 top-0 w-full h-full overflow-x-hidden overflow-y-auto <?= $is_storyq && $is_work ? 'is_storysection' : '' ?>">
-			<div class="realheight min-h-full px-4">
-				<?php get_template_part('template-parts/layout', 'top-padding'); ?>
+			<div class="realheight min-h-full px-4 flex flex-col">
+				<div class="grow">
+					<?php pods_view('template-parts/layout-top-padding.php', null, YEAR_IN_SECONDS, 'transient'); ?>

@@ -9,6 +9,7 @@ defined('ABSPATH') || exit;
 ?>
 </div>
 </div>
+</div>
 
 </main>
 <canvas id="preview"></canvas>

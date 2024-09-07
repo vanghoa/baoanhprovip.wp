@@ -41,6 +41,7 @@ const char = {
   ]),
   idc: '●',
   mouse: '█',
+  divider: '|',
 };
 const cacheKey = {
   imgH: { name: 'imgHolder', allkeys: [] },
@@ -69,11 +70,13 @@ function nullifySpace(arr) {
   return arr;
 }
 
-const screenlength = reMsrY(innerHeight);
+let screenlength = 0;
 let cmts = [];
 const cmtsScreen = [];
 let stopEvething = true;
 
+const mainmainbody = $('#main .mainbody');
+const mainnav = $('#main nav');
 {
   // setup
   const fragcopy = $createFrag();
@@ -82,26 +85,43 @@ let stopEvething = true;
   }
   copy.appendChild(fragcopy);
   //
-  const fragcmt = $createFrag();
-  cmts = Array.from({ length: screenlength }, () => {
-    const cmt = $createcomment('');
-    fragcmt.append(cmt);
-    return cmt;
-  });
-  html.before(fragcmt);
+  reSetup();
   //
   if (window.location.hash == '#everything') {
     const el = $('#main .everything');
-    const parent = $('#main .mainbody');
-    const nav = $('#main nav');
     if (el) {
-      parent.scrollTo({
-        top: el.offsetTop - nav.clientHeight,
+      mainmainbody.scrollTo({
+        top: el.offsetTop - mainnav.clientHeight,
         left: 0,
         behavior: 'smooth',
       });
     }
   }
+}
+
+function reSetup() {
+  const newscreenlength = reMsrY(innerHeight);
+  if (newscreenlength !== screenlength) {
+    screenlength = newscreenlength;
+    const fragcmt = $createFrag();
+    cmts.forEach((cmt) => {
+      cmt.remove();
+    });
+    cmts = Array.from({ length: screenlength }, () => {
+      const cmt = $createcomment('');
+      fragcmt.append(cmt);
+      return cmt;
+    });
+    html.before(fragcmt);
+  }
+}
+
+function scrollToTop() {
+  mainmainbody.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth',
+  });
 }
 const realh = $('#copy .realheight');
 const realhmain = $('main .realheight');
@@ -110,6 +130,7 @@ const navTxt = [...$$('#copy nav .txt-layer')];
 const allBg2 = [
   ...$$('#copy .mainbody .bg-layer'),
   ...$$('#copy .mainbody .cp-layer > *'),
+  ...$$('#copy .odd-layer > :nth-child(odd)'),
 ];
 const imgHolder = $('#copy .imgholder');
 const imgHolderMain = $('#main .imgholder');
@@ -137,11 +158,25 @@ const allTxt = [
   ...$$('#copy .mainbody .txt-layer'),
   ...$$('#copy .mainbody .txtp-layer > *:not(figure)'),
 ];
+const allDivider = [...$$('#copy .divider')];
 const storySection = {
   img: [...$$('#copy .storysection .imgwrapper-fixed img')],
   bg: $('#copy .storysection .bg-layer-fixed'),
   txt: [...$$('#copy .storysection .txt-layer-fixed')],
 };
+const homelist = [...$$('.homegrid + .homelist')];
+const homegrid = homelist.map((el) => el.previousElementSibling);
+const viewmode = {
+  gallery: $('#main .viewmode .galleryview'),
+  list: $('#main .viewmode .listview'),
+};
+function toggleViewmode(isGallery) {
+  viewmode.gallery.classList.toggle('underline', isGallery);
+  viewmode.list.classList.toggle('underline', !isGallery);
+  homegrid.forEach((a) => a.classList.toggle('hidden', !isGallery));
+  homelist.forEach((a) => a.classList.toggle('hidden', isGallery));
+  duoResponsive();
+}
 
 getScrollbarWidth();
 window.onload = duoResponsive;
@@ -510,6 +545,7 @@ async function duoResponsive(isFinal = true) {
     });
     return;
   }
+  reSetup();
   stopEvething = false;
   isFinal && console.log('responsive rerender');
   copy.style.width = `${width}px`;
@@ -535,6 +571,11 @@ async function duoResponsive(isFinal = true) {
   // draw rects
   // drawRect(window.canvasData, allBg2);
   drawFewRect(window.canvasData, allBg2, null, char.bg2, isFinal);
+  // draw dividers
+  drawFewRect(window.canvasData, allDivider, null, char.divider, isFinal, {
+    rx_: 0,
+    ry_: 0,
+  });
   // draw images
   if (isFinal) {
     if (isHome) {
@@ -581,7 +622,7 @@ async function duoResponsive(isFinal = true) {
 }
 
 async function drawNav(intensity = null, isFinal = true) {
-  drawRect(window.fixedLayer, [nav]);
+  drawFewRect(window.fixedLayer, [nav]);
   drawTxt(window.fixedLayer, navTxt);
   if (storySection.bg) {
     const charbg = filterGrayRamp(char.bg2, intensity);
@@ -681,19 +722,20 @@ function drawFewRect(
   allRect,
   rectArr,
   rectchar = char.bg2,
-  isFinal = true
+  isFinal = true,
+  { rx_, ry_ } = { rx_: rx, ry_: ry }
 ) {
   !rectArr && (rectArr = allRect.map((el) => getRect(el)));
   for (let i = 0; i < rectArr.length; i++) {
     const { leftright, topbot, left, top } = rectArr[i];
-    if (isLazy(!isFinal, top, topbot)) {
+    if (isLazy(!isFinal, top, topbot) || (top == 0 && topbot == 0)) {
       continue;
     }
     for (let y = top; y <= topbot; y++) {
       const line = data[y];
       for (let x = left; x <= leftright; x++) {
-        if (checkRoundedRect(x, y, top, topbot, left, leftright, rx, ry)) {
-          line[x] = rectchar;
+        if (checkRoundedRect(x, y, top, topbot, left, leftright, rx_, ry_)) {
+          line && (line[x] = rectchar);
         }
       }
     }
@@ -715,7 +757,7 @@ function drawRect(data, allRect, char_ = char.bg2) {
           const { leftright, topbot, left, top } = rect;
 
           if (checkRoundedRect(x, y, top, topbot, left, leftright, rx, ry)) {
-            line[x] = char_;
+            line && (line[x] = char_);
             if (y == topbot && x == leftright - rx) {
               rect.done = true;
               rectCount++;
@@ -728,7 +770,7 @@ function drawRect(data, allRect, char_ = char.bg2) {
   }
 }
 
-function checkRoundedRect(x, y, top, topbot, left, leftright) {
+function checkRoundedRect(x, y, top, topbot, left, leftright, rx, ry) {
   if (
     (y >= top && y <= topbot && x >= left + rx && x <= leftright - rx) ||
     (y >= top + ry && y <= topbot - ry && x >= left && x <= leftright)
@@ -1173,15 +1215,15 @@ function canvas2CanvasArrNoMask(
 function addOL(isOL, data, top, left, topbot, leftright) {
   if (isOL) {
     for (let y = top + 1; y <= topbot - 1; y++) {
-      data[y][left] != char.bg && (data[y][left] = data[y][leftright] = '║');
+      data[y]?.[left] != char.bg && (data[y][left] = data[y][leftright] = '║');
     }
     for (let x = left + 1; x <= leftright - 1; x++) {
-      data[top][x] != char.bg && (data[top][x] = data[topbot][x] = '═');
+      data[top]?.[x] != char.bg && (data[top][x] = data[topbot][x] = '═');
     }
-    data[top][left] != char.bg && (data[top][left] = '╔');
-    data[top][leftright] != char.bg && (data[top][leftright] = '╗');
-    data[topbot][left] != char.bg && (data[topbot][left] = '╚');
-    data[topbot][leftright] != char.bg && (data[topbot][leftright] = '╝');
+    data[top]?.[left] != char.bg && (data[top][left] = '╔');
+    data[top]?.[leftright] != char.bg && (data[top][leftright] = '╗');
+    data[topbot]?.[left] != char.bg && (data[topbot][left] = '╚');
+    data[topbot]?.[leftright] != char.bg && (data[topbot][leftright] = '╝');
   }
 }
 
@@ -1228,7 +1270,7 @@ function calcScrollTop() {
     screenlength > canvasData.length - actualScroll
       ? canvasData.length - screenlength
       : actualScroll;
-  window.scrollTop = scrollTop;
+  window.scrollTop = scrollTop <= 0 ? 0 : scrollTop;
 }
 
 function isLazy(lazyLoad, top, topbot) {

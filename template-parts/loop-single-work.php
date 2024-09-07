@@ -1,6 +1,6 @@
 <?php
+global $taxonomy, $pods;
 $pods = pods('work', get_the_ID());
-global $taxonomy;
 ?>
 
 <section class="single-work-head mt-12 mb-12 flex flex-col justify-between items-center gap-4">
@@ -22,7 +22,7 @@ global $taxonomy;
 			foreach ($tags as $k => $tag) { ?>
 				<?php
 				if ($k !== 0) {
-					echo " | "; // Add a comma after each item except the last
+					echo " ` "; // Add a comma after each item except the last
 				} ?>
 				<a class="hover:underline" href="<?= get_term_link($tag['slug'], $taxonomy) . setStoryPerma() ?>"><?php echo $tag['name']; ?></a>
 		<?php }
@@ -30,19 +30,7 @@ global $taxonomy;
 		?>
 	</div>
 	<p class="timeframe italic text-center">
-		<?php
-		$times = $pods->field('timeframe');
-		if ($times) :
-			foreach ($times as $key => $time) { ?>
-				<span class="text-nowrap whitespace-nowrap txt-layer">
-					<?php
-					if ($key !== 0) {
-						echo " — "; // Add a comma after each item except the last
-					}
-					echo (new DateTime($time))->format('M Y'); ?>
-				</span>
-		<?php }
-		endif; ?>
+		<?php formatTimeframe() ?>
 	</p>
 </section>
 <section class="single-work-body flex flex-col single-work gap-6">
