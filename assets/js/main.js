@@ -156,7 +156,7 @@ const viewmode = {
   gallery: $("#main .viewmode .galleryview"),
   list: $("#main .viewmode .listview")
 };
-sessionStorage.getItem("viewmode") == "list" ? toggleViewmode() : toggleViewmode(true);
+viewmode.gallery && viewmode.list && (sessionStorage.getItem("viewmode") == "list" ? toggleViewmode() : toggleViewmode(true));
 function toggleViewmode(isGallery) {
   viewmode.gallery.classList.toggle("underline", isGallery);
   viewmode.list.classList.toggle("underline", !isGallery);
