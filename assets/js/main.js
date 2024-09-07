@@ -156,14 +156,14 @@ const viewmode = {
   gallery: $("#main .viewmode .galleryview"),
   list: $("#main .viewmode .listview")
 };
-viewmode.gallery && viewmode.list && (sessionStorage.getItem("viewmode") == "list" ? toggleViewmode() : toggleViewmode(true));
-function toggleViewmode(isGallery) {
+viewmode.gallery && viewmode.list && (sessionStorage.getItem("viewmode") == "list" ? toggleViewmode(false, true) : toggleViewmode(true, true));
+function toggleViewmode(isGallery, init = false) {
   viewmode.gallery.classList.toggle("underline", isGallery);
   viewmode.list.classList.toggle("underline", !isGallery);
   homegrid.forEach((a) => a.classList.toggle("hidden", !isGallery));
   homelist.forEach((a) => a.classList.toggle("hidden", isGallery));
   sessionStorage.setItem("viewmode", isGallery ? "gallery" : "list");
-  duoResponsive();
+  init || duoResponsive();
 }
 getScrollbarWidth();
 window.onload = duoResponsive;
