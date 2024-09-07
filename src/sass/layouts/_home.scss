@@ -74,16 +74,21 @@
 }
 
 .homelist {
-	:nth-child(even) {
+	:nth-child(odd) {
 		background-color: transparent;
 	}
 	.timeframe {
 		width: fit-content;
+		max-width: 25%;
 		* {
 			display: none;
 		}
 		.responsive {
 			display: inline;
 		}
+	}
+	.title {
+		max-width: 30%;
+		width: 25rem;
 	}
 }

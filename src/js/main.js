@@ -130,7 +130,7 @@ const navTxt = [...$$('#copy nav .txt-layer')];
 const allBg2 = [
   ...$$('#copy .mainbody .bg-layer'),
   ...$$('#copy .mainbody .cp-layer > *'),
-  ...$$('#copy .odd-layer > :nth-child(odd)'),
+  ...$$('#copy .odd-layer > :nth-child(even)'),
 ];
 const imgHolder = $('#copy .imgholder');
 const imgHolderMain = $('#main .imgholder');
@@ -170,11 +170,15 @@ const viewmode = {
   gallery: $('#main .viewmode .galleryview'),
   list: $('#main .viewmode .listview'),
 };
+sessionStorage.getItem('viewmode') == 'list'
+  ? toggleViewmode()
+  : toggleViewmode(true);
 function toggleViewmode(isGallery) {
   viewmode.gallery.classList.toggle('underline', isGallery);
   viewmode.list.classList.toggle('underline', !isGallery);
   homegrid.forEach((a) => a.classList.toggle('hidden', !isGallery));
   homelist.forEach((a) => a.classList.toggle('hidden', isGallery));
+  sessionStorage.setItem('viewmode', isGallery ? 'gallery' : 'list');
   duoResponsive();
 }
 
@@ -1058,8 +1062,7 @@ function drawTxt(data, allTxt, isFinal = true) {
     top += pt + 1;
     left += pl;
     ogwidth -= pl + pr;
-    ogwidth = ogwidth > 0 ? ogwidth : 0;
-    if (ogwidth < 2) {
+    if (ogwidth < 1) {
       continue;
     }
     for (let k = 0; k < arrcontent.length; k++) {

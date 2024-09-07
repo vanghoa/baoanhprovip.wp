@@ -4,7 +4,7 @@ $pods = pods('work', get_the_ID());
 ?>
 
 <section class="single-work-head mt-12 mb-12 flex flex-col justify-between items-center gap-4">
-	<h1 class="text-2xl text-center mono-500 txt-layer"><?php echo get_the_title(); ?></h1>
+	<h1 class="text-2xl text-center mono-600 txt-layer"><?php echo get_the_title(); ?></h1>
 	<div class="big-tags text-nowrap whitespace-nowrap desktop">
 		<?php $tags = $pods->field($taxonomy);
 		if ($tags) :
@@ -29,7 +29,7 @@ $pods = pods('work', get_the_ID());
 		endif;
 		?>
 	</div>
-	<p class="timeframe italic text-center">
+	<p class="timeframe text-center">
 		<?php formatTimeframe() ?>
 	</p>
 </section>
