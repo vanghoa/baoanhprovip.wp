@@ -473,59 +473,6 @@ function manualResponsive(el) {
   } ${w > 768 ? 'md' : ''} ${w > 640 ? 'sm' : ''}`;
 }
 
-async function duoResponsivehtml2canvas() {
-  const originalDrawImage = ctx.drawImage;
-  ctx.drawImage = function (image, sx, sy, sw, sh, dx, dy, dw, dh) {
-    if (image instanceof HTMLImageElement) {
-      if (sw / dw < sh / dh) {
-        const _dh = dh;
-        dh = sh * (dw / sw);
-        dy = dy + (_dh - dh) / 2;
-      } else {
-        const _dw = dw;
-        dw = sw * (dh / sh);
-        dx = dx + (_dw - dw) / 2;
-      }
-    }
-    return originalDrawImage.call(ctx, image, sx, sy, sw, sh, dx, dy, dw, dh);
-  };
-  grayRamp = '█▒░@%*=--..__`';
-  const width = Math.max(outerWidth - innerWidth - 100, 0);
-  manualResponsive(main);
-  copy.style.width = `${width}px`;
-  manualResponsive(copy);
-  // canvas
-  const canvas = {
-    w: reMsrX(width),
-    h: reMsrY(realh.clientHeight),
-  };
-  canvas.data = Array.from({ length: canvas.h }, () =>
-    Array.from({ length: canvas.w }, () => char.bg)
-  );
-  imgcanvas.width = canvas.w;
-  imgcanvas.height = canvas.h;
-  ctx.fillStyle = '#f5f5e6';
-  ctx.fillRect(0, 0, canvas.w, canvas.h);
-  console.log(canvas.w, canvas.h);
-  await html2canvas(realh, {
-    canvas: imgcanvas,
-    scale: 1 / 7.3,
-    backgroundColor: null,
-    width: canvas.w,
-    height: canvas.h,
-    windowHeight: innerHeight / hratio,
-  });
-  const grayScales = convertToGrayScales(
-    ctx,
-    imgcanvas.width,
-    imgcanvas.height
-  );
-  const ascii = drawAscii(grayScales, imgcanvas.width);
-  console.log(ascii);
-  // final render
-  cmtRender(ascii);
-}
-
 async function duoResponsive(isFinal = true) {
   lazyList = {};
   stopSlideAscii();
@@ -744,34 +691,6 @@ function drawFewRect(
           line && (line[x] = rectchar);
         }
       }
-    }
-  }
-}
-
-function drawRect(data, allRect, char_ = char.bg2) {
-  const rectArr = allRect.map((el) => getRect(el));
-  let rectCount = 0;
-  for (let y = 0; y < data.length; y++) {
-    const line = data[y];
-    for (let x = 0; x < line.length; x++) {
-      //
-      if (rectCount < rectArr.length) {
-        for (const rect of rectArr) {
-          if (rect.done) {
-            continue;
-          }
-          const { leftright, topbot, left, top } = rect;
-
-          if (checkRoundedRect(x, y, top, topbot, left, leftright, rx, ry)) {
-            line && (line[x] = char_);
-            if (y == topbot && x == leftright - rx) {
-              rect.done = true;
-              rectCount++;
-            }
-          }
-        }
-      }
-      //
     }
   }
 }
