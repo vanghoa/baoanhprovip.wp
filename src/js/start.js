@@ -87,3 +87,24 @@ function getCache(key) {
 function deleteCache(key) {
   delete window.renderCache[key];
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const lazyImages = document.querySelectorAll('#main img[data-src]');
+
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.getAttribute('data-src'); // Load the actual image
+        img.srcset = img.getAttribute('data-srcset'); // Load the srcset if available
+        img.removeAttribute('data-src'); // Clean up after loading
+        img.removeAttribute('data-srcset'); // Clean up after loading
+        observer.unobserve(img);
+      }
+    });
+  });
+
+  lazyImages.forEach((image) => {
+    imageObserver.observe(image);
+  });
+});

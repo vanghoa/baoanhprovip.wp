@@ -66,4 +66,22 @@ function getCache(key) {
 function deleteCache(key) {
   delete window.renderCache[key];
 }
+document.addEventListener("DOMContentLoaded", function() {
+  const lazyImages = document.querySelectorAll("#main img[data-src]");
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.getAttribute("data-src");
+        img.srcset = img.getAttribute("data-srcset");
+        img.removeAttribute("data-src");
+        img.removeAttribute("data-srcset");
+        observer.unobserve(img);
+      }
+    });
+  });
+  lazyImages.forEach((image) => {
+    imageObserver.observe(image);
+  });
+});
 //# sourceMappingURL=start.js.map

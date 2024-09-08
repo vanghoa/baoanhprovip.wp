@@ -144,3 +144,40 @@ function responsive_wrap_oembed_dataparse($html, $data)
 	// Return code
 	return '<div style="--width:' . $data->width . '; --height:' . $data->height . ';" ><img style="--twidth:' . $data->thumbnail_width . '; --theight:' . $data->thumbnail_height . ';" alt="thumbnail" src="' . $data->thumbnail_url . '"/>' . $html . '</div>';
 }
+function lazyimg($content)
+{
+	if (empty($content)) {
+		return $content; // Return the original content if it's empty
+	}
+	// Create a new DOMDocument object
+	$dom = new DOMDocument();
+
+	// Suppress errors and load the HTML content
+	@$dom->loadHTML(mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8'));
+
+	// Loop through all <img> tags
+	foreach ($dom->getElementsByTagName('img') as $node) {
+		// Get the current src attribute
+		$oldsrc = $node->getAttribute('src');
+		$oldsrcset = $node->getAttribute('srcset');
+
+		// Set the data-original attribute to the old src value
+		$node->setAttribute("data-src", $oldsrc);
+		$node->setAttribute("data-srcset", $oldsrcset);
+
+		// Set the new placeholder src (for lazy loading)
+		$node->setAttribute("src", '');
+		$node->setAttribute("srcset", '');
+	}
+
+	// Save the modified HTML content
+	$newHtml = $dom->saveHTML();
+
+	return $newHtml;
+}
+
+// Apply the filter to post content and widgets
+add_filter('the_content', 'lazyimg', 20);
+add_filter('widget_text', 'lazyimg', 20);
+add_filter('post_thumbnail_html', 'lazyimg', 20);
+add_filter('get_avatar', 'lazyimg', 20);

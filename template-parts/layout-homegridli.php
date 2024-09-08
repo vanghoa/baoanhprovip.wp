@@ -4,12 +4,12 @@
 	<div class="<?php outline();
 				$permalink = $pods->display('permalink') . setStoryPerma(); ?>">
 		<div isfirst="true" islast="<?php
-									$imgs = array_slice($pods->field('featured_images._img'), 0, 5);
+									$imgs = $pods->field('featured_images._img');
 									echo count($imgs) == 1 ? 'true' : 'false'; ?>" class="imgsec w-full mx-auto">
 			<div class="imgwrapper">
 				<?php
 				foreach ($imgs as $k => $img) { ?>
-					<?php echo $img ?>
+					<?php echo lazyimg($img) ?>
 				<?php }
 				?>
 			</div>
@@ -27,8 +27,7 @@
 				</button>
 				<div class="w-full absolute bottom-4">
 					<ul class="indicator mx-auto w-fit flex gap-2 justify-center">
-						<?php $imgs = $pods->field('featured_images._img');
-						foreach ($imgs as $k => $img) { ?>
+						<?php foreach ($imgs as $k => $img) { ?>
 							<li class="text-bg rounded-lg <?php echo $k == 0 ? '' : 'opacity-50' ?>">●</li>
 						<?php } ?>
 					</ul>

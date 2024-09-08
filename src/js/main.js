@@ -1159,7 +1159,7 @@ function image2Canvas(img, cW, cH, posX = 0, isCover = true) {
       });
     };
     image.crossOrigin = '';
-    image.src = img.src;
+    image.src = img.originsrc ?? (img.originsrc = img.getAttribute('data-src'));
   });
 }
 

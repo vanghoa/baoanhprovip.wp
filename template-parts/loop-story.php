@@ -38,7 +38,7 @@ if (!empty($desflow) && !empty($devflow)) {
 						<a class="block max-w-96 basis-1/2 w-full <?php outline();
 																	echo ' ' . $colorscheme[$k]; ?> overflow-hidden" href="<?= $permalink ?>">
 							<div class="imgwrapper">
-								<?= $settings->field($flow . '_img._img'); ?>
+								<?= lazyimg($settings->field($flow . '_img._img')); ?>
 							</div>
 							<div class="text-center m-4 flex flex-col gap-4 justify-center items-center">
 								<p class="short_description line-clamp-4 max-w-md text-center txt-layer">

@@ -91,7 +91,7 @@ if ($is_designer || ($is_work && $type == 'designer') || ($is_storyq && $taxonom
 			<section class="storysection absolute pointer-events-none bottom-8 flex flex-row-reverse px-4">
 				<a href="<?= $permalink ?>" class="block w-full max-w-56 mx-auto pointer-events-auto <?php outline(['noBgLayer' => true, 'bgClass' => 'bg-bg3']) ?> bg-layer-fixed overflow-hidden">
 					<div class="imgwrapper-fixed hidden">
-						<?php echo $podsflow->field('featured_images._img')[0]; ?>
+						<?php echo lazyimg($podsflow->field('featured_images._img')[0]); ?>
 					</div>
 					<div class="text-center m-4 flex flex-col gap-4 justify-center items-center">
 						<div class="txt-layer-fixed">Next work -> <h3><?= $podsflow->display('title') ?></h3>
