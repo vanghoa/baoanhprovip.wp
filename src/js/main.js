@@ -1159,7 +1159,9 @@ function image2Canvas(img, cW, cH, posX = 0, isCover = true) {
       });
     };
     image.crossOrigin = '';
-    image.src = img.originsrc ?? (img.originsrc = img.getAttribute('data-src'));
+    image.src =
+      img.originsrc ??
+      (img.originsrc = img.getAttribute('data-src') || img.src);
   });
 }
 
@@ -1220,15 +1222,21 @@ function canvas2CanvasArrNoMask(
 function addOL(isOL, data, top, left, topbot, leftright) {
   if (isOL) {
     for (let y = top + 1; y <= topbot - 1; y++) {
-      data[y]?.[left] != char.bg && (data[y][left] = data[y][leftright] = '║');
+      data[y] !== undefined &&
+        data[y]?.[left] != char.bg &&
+        (data[y][left] = data[y][leftright] = '║');
     }
-    for (let x = left + 1; x <= leftright - 1; x++) {
-      data[top]?.[x] != char.bg && (data[top][x] = data[topbot][x] = '═');
+    if (data[top] !== undefined) {
+      for (let x = left + 1; x <= leftright - 1; x++) {
+        data[top][x] != char.bg && (data[top][x] = data[topbot][x] = '═');
+      }
+      data[top][left] != char.bg && (data[top][left] = '╔');
+      data[top][leftright] != char.bg && (data[top][leftright] = '╗');
     }
-    data[top]?.[left] != char.bg && (data[top][left] = '╔');
-    data[top]?.[leftright] != char.bg && (data[top][leftright] = '╗');
-    data[topbot]?.[left] != char.bg && (data[topbot][left] = '╚');
-    data[topbot]?.[leftright] != char.bg && (data[topbot][leftright] = '╝');
+    if (data[topbot] !== undefined) {
+      data[topbot][left] != char.bg && (data[topbot][left] = '╚');
+      data[topbot][leftright] != char.bg && (data[topbot][leftright] = '╝');
+    }
   }
 }
 

@@ -981,7 +981,7 @@ function image2Canvas(img, cW, cH, posX = 0, isCover = true) {
       });
     };
     image.crossOrigin = "";
-    image.src = img.originsrc ?? (img.originsrc = img.getAttribute("data-src"));
+    image.src = img.originsrc ?? (img.originsrc = img.getAttribute("data-src") || img.src);
   });
 }
 function canvas2CanvasArr(top, topbot, left, leftright, data, ascii, offsetX = 0, offsetY = 0) {
@@ -1017,18 +1017,22 @@ function canvas2CanvasArrNoMask(top, topbot, left, leftright, data, ascii, offse
   addOL(this.isOL, data, compTop, compLeft, topbot, leftright);
 }
 function addOL(isOL, data, top, left, topbot, leftright) {
-  var _a, _b, _c, _d, _e, _f;
+  var _a;
   if (isOL) {
     for (let y = top + 1; y <= topbot - 1; y++) {
-      ((_a = data[y]) == null ? void 0 : _a[left]) != char.bg && (data[y][left] = data[y][leftright] = "║");
+      data[y] !== void 0 && ((_a = data[y]) == null ? void 0 : _a[left]) != char.bg && (data[y][left] = data[y][leftright] = "║");
     }
-    for (let x = left + 1; x <= leftright - 1; x++) {
-      ((_b = data[top]) == null ? void 0 : _b[x]) != char.bg && (data[top][x] = data[topbot][x] = "═");
+    if (data[top] !== void 0) {
+      for (let x = left + 1; x <= leftright - 1; x++) {
+        data[top][x] != char.bg && (data[top][x] = data[topbot][x] = "═");
+      }
+      data[top][left] != char.bg && (data[top][left] = "╔");
+      data[top][leftright] != char.bg && (data[top][leftright] = "╗");
     }
-    ((_c = data[top]) == null ? void 0 : _c[left]) != char.bg && (data[top][left] = "╔");
-    ((_d = data[top]) == null ? void 0 : _d[leftright]) != char.bg && (data[top][leftright] = "╗");
-    ((_e = data[topbot]) == null ? void 0 : _e[left]) != char.bg && (data[topbot][left] = "╚");
-    ((_f = data[topbot]) == null ? void 0 : _f[leftright]) != char.bg && (data[topbot][leftright] = "╝");
+    if (data[topbot] !== void 0) {
+      data[topbot][left] != char.bg && (data[topbot][left] = "╚");
+      data[topbot][leftright] != char.bg && (data[topbot][leftright] = "╝");
+    }
   }
 }
 function clearRect(top, topbot, left, leftright, data, char2) {

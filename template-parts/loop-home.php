@@ -48,12 +48,14 @@ $pods = pods('work', $params);
 			$id = $flow['ID'];
 			if ($checkarr[$id] ?? false) {
 				$pods->fetch($id);
-				get_template_part('template-parts/layout', $part);
+				pods_view('template-parts/layout-' . $part . '.php', ['liIndex' => $k]);
 			}
 		}
 	} else {
+		$liIndex = 0;
 		while ($pods->fetch()) :
-			get_template_part('template-parts/layout', $part);
+			pods_view('template-parts/layout-' . $part . '.php', ['liIndex' => $liIndex]);
+			$liIndex++;
 		endwhile;
 		$pods->reset();
 	}

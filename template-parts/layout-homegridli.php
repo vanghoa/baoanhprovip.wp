@@ -9,7 +9,7 @@
 			<div class="imgwrapper">
 				<?php
 				foreach ($imgs as $k => $img) { ?>
-					<?php echo lazyimg($img) ?>
+					<?php echo $liIndex < 2 && $k < 2 ? $img : lazyimg($img, false) ?>
 				<?php }
 				?>
 			</div>

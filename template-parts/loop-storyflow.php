@@ -14,9 +14,10 @@ $taxonomy_name = $flowtype . 'tag';
 	<ul class="homegrid grid grid-cols-1 gap-8 w-fit">
 		<?php
 		$is_story = $flowtype . '-0';
+		$liIndex = 0;
 		$id = $flows[0]['ID'];
 		$pods->fetch($id);
-		get_template_part('template-parts/layout', 'homegridli'); ?>
+		pods_view('template-parts/layout-homegridli.php', ['liIndex' => $liIndex]); ?>
 	</ul>
 </div>
 
@@ -38,7 +39,7 @@ $taxonomy_name = $flowtype . 'tag';
 		$is_story = $flowtype . '-' . $k;
 		$id = $flow['ID'];
 		$pods->fetch($id);
-		get_template_part('template-parts/layout', $part);
+		pods_view('template-parts/layout-' . $part . '.php', ['liIndex' => $k]);
 	}
 }
 get_template_part('template-parts/layout', 'homegrid'); ?>
