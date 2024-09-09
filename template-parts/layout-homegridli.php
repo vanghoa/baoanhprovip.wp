@@ -14,7 +14,7 @@
 				?>
 			</div>
 			<div class="flex justify-between items-stretch absolute left-0 top-0 h-full w-full">
-				<button class="px-4 lbtn basis-full shrink ">
+				<button class="px-4 lbtn basis-full shrink " aria-label="sliding left">
 					<?php pods_view('template-parts/layout-arrow.php', null, YEAR_IN_SECONDS, 'transient'); ?>
 				</button>
 				<a href="<?= $permalink ?>" class="basis-1/3 shrink-0 flex justify-center items-center group hover-layer">
@@ -22,7 +22,7 @@
 						see this <br> project
 					</div>
 				</a>
-				<button class="px-4 rbtn basis-full shrink">
+				<button class="px-4 rbtn basis-full shrink" aria-label="sliding right">
 					<?php pods_view('template-parts/layout-arrow.php', null, YEAR_IN_SECONDS, 'transient'); ?>
 				</button>
 				<div class="w-full absolute bottom-4">
