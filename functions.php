@@ -164,6 +164,13 @@ function lazyimg($content, $isContent = true)
 		$node->setAttribute("src", '');
 		$node->setAttribute("srcset", '');
 	}
+	// iframe
+	foreach ($dom->getElementsByTagName('iframe') as $node) {
+		$oldsrc = $node->getAttribute('src');
+		$node->setAttribute("data-src", $oldsrc);
+		$node->setAttribute("src", '');
+	}
+
 	$newHtml = $dom->saveHTML();
 	return $newHtml;
 }

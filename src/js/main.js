@@ -376,6 +376,9 @@ if (isHome) {
       curImgHolderChild && (curchild = curImgHolderChild);
       imgHolderMain.classList[curImgHolder ? 'add' : 'remove']('open');
       curchild.style.visibility = curImgHolder ? 'visible' : 'hidden';
+      curchild.srcset == '' &&
+        curImgHolder &&
+        (curchild.srcset = getOriginSrc(curchild, 'srcset'));
       window.curImgHolder = curImgHolder;
       if (!stopEvething) {
         await drawAbsoluteLayer(curImgHolder ? 3 : null, key);
@@ -1078,10 +1081,15 @@ function image2Canvas(img, cW, cH, posX = 0, isCover = true) {
       });
     };
     image.crossOrigin = '';
-    image.src =
-      img.originsrc ??
-      (img.originsrc = img.getAttribute('data-src') || img.src);
+    image.src = getOriginSrc(img);
   });
+}
+
+function getOriginSrc(img, key = 'src') {
+  return (
+    img[`origin${key}`] ??
+    (img[`origin${key}`] = img.getAttribute(`data-${key}`) || img[key])
+  );
 }
 
 function canvas2CanvasArr(
