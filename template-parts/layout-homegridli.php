@@ -2,7 +2,7 @@
 ?>
 <li class="project flex items-stretch">
 	<div class="<?php outline();
-				$permalink = $pods->display('permalink') . setStoryPerma(); ?>">
+				$permalink = $pods->display('permalink') . setStoryPerma(); ?> w-full">
 		<div isfirst="true" islast="<?php
 									$imgs = $pods->field('featured_images._img');
 									echo count($imgs) == 1 ? 'true' : 'false'; ?>" class="imgsec w-full mx-auto">
