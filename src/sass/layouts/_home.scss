@@ -1,5 +1,11 @@
 @use '../global' as *;
 
+#main .viewmode {
+	.galleryview {
+		text-decoration: underline;
+	}
+}
+
 .homegrid {
 	//ul {
 	//	li:first-child {
@@ -74,6 +80,7 @@
 }
 
 .homelist {
+	display: none;
 	:nth-child(odd) {
 		background-color: transparent;
 	}
@@ -90,5 +97,25 @@
 	.title {
 		max-width: 30%;
 		width: 25rem;
+	}
+}
+
+html.isList {
+	#main .viewmode {
+		.galleryview {
+			text-decoration: unset;
+		}
+		.galleryview:hover {
+			text-decoration: underline;
+		}
+		.listview {
+			text-decoration: underline;
+		}
+	}
+	.homegrid.withlist {
+		display: none;
+	}
+	.homegrid + .homelist {
+		display: block;
 	}
 }

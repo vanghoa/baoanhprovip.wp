@@ -108,3 +108,12 @@ document.addEventListener('DOMContentLoaded', function () {
     imageObserver.observe(image);
   });
 });
+
+sessionStorage.getItem('view') === 'l'
+  ? toggleViewmode(true, true)
+  : toggleViewmode(false, true);
+function toggleViewmode(isList, init = false) {
+  document.documentElement.classList.toggle('isList', isList);
+  sessionStorage.setItem('view', isList ? 'l' : 'g');
+  init || duoResponsive();
+}

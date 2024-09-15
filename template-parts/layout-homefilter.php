@@ -20,4 +20,4 @@ $storymode2 = ($is_storyq && ($is_designer || $is_developer));
 	<?php endwhile; ?> `
 </p>
 
-<p class="txt-layer mb-4 viewmode">in <button onclick="toggleViewmode(true)" class="galleryview hover:underline underline">gallery</button> ` <button onclick="toggleViewmode(false)" class="listview hover:underline">list</button> view</p>
+<p class="txt-layer mb-4 viewmode">in <button onclick="toggleViewmode(false)" class="galleryview hover:underline underline">gallery</button> ` <button onclick="toggleViewmode(true)" class="listview hover:underline">list</button> view</p>

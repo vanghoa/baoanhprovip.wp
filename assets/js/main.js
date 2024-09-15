@@ -75,7 +75,6 @@ const mainnav = $("#main nav");
     fragcopy.appendChild(childElement.cloneNode(true));
   }
   copy.appendChild(fragcopy);
-  reSetup();
   if (window.location.hash == "#everything") {
     const el = $("#main .everything");
     if (el) {
@@ -95,8 +94,10 @@ function reSetup() {
     cmts.forEach((cmt) => {
       cmt.remove();
     });
-    cmts = Array.from({ length: screenlength }, () => {
-      const cmt = $createcomment("");
+    cmts = Array.from({ length: screenlength }, (v, k) => {
+      const cmt = $createcomment(
+        window.canvasData[k] ? window.canvasData[k].join("") : ""
+      );
       fragcmt.append(cmt);
       return cmt;
     });
@@ -150,21 +151,6 @@ const storySection = {
   bg: $("#copy .storysection .bg-layer-fixed"),
   txt: [...$$("#copy .storysection .txt-layer-fixed")]
 };
-const homelist = [...$$(".homegrid + .homelist")];
-const homegrid = homelist.map((el) => el.previousElementSibling);
-const viewmode = {
-  gallery: $("#main .viewmode .galleryview"),
-  list: $("#main .viewmode .listview")
-};
-viewmode.gallery && viewmode.list && (sessionStorage.getItem("viewmode") == "list" ? toggleViewmode(false, true) : toggleViewmode(true, true));
-function toggleViewmode(isGallery, init = false) {
-  viewmode.gallery.classList.toggle("underline", isGallery);
-  viewmode.list.classList.toggle("underline", !isGallery);
-  homegrid.forEach((a) => a.classList.toggle("hidden", !isGallery));
-  homelist.forEach((a) => a.classList.toggle("hidden", isGallery));
-  sessionStorage.setItem("viewmode", isGallery ? "gallery" : "list");
-  init || duoResponsive();
-}
 getScrollbarWidth();
 window.onload = duoResponsive;
 onresize = throttle_debounce(
@@ -369,7 +355,7 @@ function slideAscii(i, curnow, curprev, time) {
   let { top, topbot, left, leftright, arr: ascii, baseW } = imgsecs[i].ascii;
   const lim = time / delay_;
   let count = 1;
-  let myrequest = requestAnimationFrame(animation);
+  requestAnimationFrame(animation);
   async function animation(now) {
     var _a, _b;
     const percentage = Math.round(
@@ -406,6 +392,7 @@ function manualResponsive(el) {
   el.className = `${w > 1536 ? "xxl" : ""} ${w > 1280 ? "xl" : ""} ${w > 1024 ? "lg" : ""} ${w > 768 ? "md" : ""} ${w > 640 ? "sm" : ""}`;
 }
 async function duoResponsive(isFinal = true) {
+  stopEvething = true;
   lazyList = {};
   stopSlideAscii();
   const width = Math.max(outerWidth - innerWidth - 100, 0);
@@ -419,7 +406,6 @@ async function duoResponsive(isFinal = true) {
       () => Array.from({ length: "This-is-too-small".length }, () => null)
     );
     cmtRenderScreen();
-    stopEvething = true;
     setEvent(mainbody, "onscroll", null);
     setEvent(document, "onmousemove", null);
     allImgHome.forEach(({ hoverlayer }) => {
@@ -431,8 +417,6 @@ async function duoResponsive(isFinal = true) {
     });
     return;
   }
-  reSetup();
-  stopEvething = false;
   isFinal && console.log("responsive rerender");
   copy.style.width = `${width}px`;
   manualResponsive(copy);
@@ -444,6 +428,7 @@ async function duoResponsive(isFinal = true) {
     { length: canvas.h },
     () => Array.from({ length: canvas.w }, () => char.bg)
   );
+  reSetup();
   window.absoluteLayer = Array.from(
     { length: canvas.h },
     () => Array.from({ length: canvas.w }, () => char.trans)
@@ -496,6 +481,7 @@ async function duoResponsive(isFinal = true) {
     setEvent(hoverlayer, "onmouseenter", () => mouseEnter(i));
     setEvent(hoverlayer, "onmouseleave", () => mouseLeave(i));
   });
+  isFinal && (stopEvething = false);
 }
 async function drawNav(intensity = null, isFinal = true) {
   drawFewRect(window.fixedLayer, [nav]);
