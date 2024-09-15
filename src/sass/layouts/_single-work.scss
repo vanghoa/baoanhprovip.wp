@@ -1,8 +1,8 @@
 @use '../global' as *;
 
 .the-content {
-	a {
-		text-decoration: underline;
+	a::after {
+		content: ' \2197\FE0E';
 	}
 	img {
 		cursor: pointer;

@@ -89,6 +89,13 @@
 }
 
 @include respond-to(md) {
+	.homegrid {
+		li {
+			.imgwrapper {
+				height: 24rem;
+			}
+		}
+	}
 	.mobile {
 		display: none;
 	}

@@ -54,13 +54,13 @@ if (!function_exists('outputTaxonomy')) {
 		global $is_story, $term_id, $taxonomy, $taxonomy_name, $pods;
 		$tags = $pods->field($taxonomy_name);
 		if ($tags) : $length = count($tags);
-			foreach ($tags as $k => $tag) { ?><span style="overflow-wrap:anywhere;">`&nbsp;<a class="hover:underline <?php if ($tag['term_id'] == $term_id && $taxonomy == $taxonomy_name) {
-																															echo 'underline';
-																														} ?>" href="<?php
-																																	$is_story = $is_story && true;
-																																	echo get_term_link($tag['slug'], $taxonomy_name) . setStoryPerma() ?>"><?php
-																																														echo str_replace(' ', '&nbsp;', $tag['name']); ?></a>
-					<?= ($length - 1 == $k) ? ' ` ' : '' ?>
+			foreach ($tags as $k => $tag) { ?><span style="overflow-wrap:anywhere;"><a class="<?php if ($tag['term_id'] == $term_id && $taxonomy == $taxonomy_name) {
+																									echo 'text-hilight';
+																								} ?>" href="<?php
+																											$is_story = $is_story && true;
+																											echo get_term_link($tag['slug'], $taxonomy_name) . setStoryPerma() ?>"><?php
+																																													echo str_replace(' ', '&nbsp;', $tag['name']); ?></a>
+					<?= ($length - 1 > $k) ? ' - ' : '' ?>
 				</span>
 <?php }
 		endif;

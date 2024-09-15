@@ -10,7 +10,7 @@ $pods = pods('work', get_the_ID());
 		if ($tags) :
 			foreach ($tags as $k => $tag) { ?>
 				<p class="txt-layer desktop">
-					<a class="hover:underline" href="<?= get_term_link($tag['slug'], $taxonomy) . setStoryPerma() ?>"><?php echo $tag['name']; ?></a>
+					<a href="<?= get_term_link($tag['slug'], $taxonomy) . setStoryPerma() ?>"><?php echo $tag['name']; ?></a>
 				</p>
 		<?php }
 		endif;
@@ -22,9 +22,9 @@ $pods = pods('work', get_the_ID());
 			foreach ($tags as $k => $tag) { ?>
 				<?php
 				if ($k !== 0) {
-					echo " ` "; // Add a comma after each item except the last
+					echo " | "; // Add a comma after each item except the last
 				} ?>
-				<a class="hover:underline" href="<?= get_term_link($tag['slug'], $taxonomy) . setStoryPerma() ?>"><?php echo $tag['name']; ?></a>
+				<a href="<?= get_term_link($tag['slug'], $taxonomy) . setStoryPerma() ?>"><?php echo $tag['name']; ?></a>
 		<?php }
 		endif;
 		?>

@@ -15,3 +15,7 @@
 			+ 'Please make sure it is defined in `$breakpoints` map.';
 	}
 }
+
+@mixin text-hilight {
+	color: rgb(var(--color-hilight) / 1);
+}

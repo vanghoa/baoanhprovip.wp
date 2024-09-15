@@ -28,7 +28,7 @@ $pods = pods('work', $params);
 ?>
 
 <div class="max-w-md mx-auto text-center mb-8 mt-4">
-	<p class="txt-layer mb-4"><?= $is_tax ? 'these are my works in' : $hometext ?></p>
+	<h1 class="txt-layer mb-7"><?= $is_tax ? 'these are my works in' : $hometext ?></h1>
 	<?php
 	get_template_part('template-parts/layout', 'homefilter');
 	?>

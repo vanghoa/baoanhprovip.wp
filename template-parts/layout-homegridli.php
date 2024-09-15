@@ -17,7 +17,7 @@
 				<button class="px-4 lbtn basis-full shrink " aria-label="sliding left">
 					<?php pods_view('template-parts/layout-arrow.php', null, YEAR_IN_SECONDS, 'transient'); ?>
 				</button>
-				<a href="<?= $permalink ?>" class="basis-1/3 shrink-0 flex justify-center items-center group hover-layer">
+				<a href="<?= $permalink ?>" class="no-underline basis-1/3 shrink-0 flex justify-center items-center group hover-layer">
 					<div class="group-hover:opacity-100 hover-child opacity-0 h-fit w-fit <?= outline(['noBgLayer' => true]) ?> flex justify-center items-center p-3 text-center break-all">
 						see this <br> project
 					</div>
@@ -42,7 +42,7 @@
 				<p class="txt-layer"><?php outputTaxonomy() ?>
 				</p>
 			</div>
-			<a href="<?= $permalink ?>" class="block max-w-md text-center txt-layer">
+			<a href="<?= $permalink ?>" class="block max-w-md text-center txt-layer no-underline">
 				<?php if ($is_designer || $is_developer) { ?>
 					<span class="line-clamp-3"><?php echo $pods->field('short_description'); ?>…</span>
 					<?php } else {

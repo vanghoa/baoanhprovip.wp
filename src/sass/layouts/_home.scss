@@ -2,7 +2,7 @@
 
 #main .viewmode {
 	.galleryview {
-		text-decoration: underline;
+		@include text-hilight;
 	}
 }
 
@@ -49,7 +49,7 @@
 			grid-column: 1 / -1;
 		}
 		.imgwrapper {
-			height: 24rem;
+			height: 16rem;
 			max-height: 40svh;
 			display: flex;
 			transition: transform 0.5s;
@@ -98,18 +98,26 @@
 		max-width: 30%;
 		width: 25rem;
 	}
+	.divider {
+		position: relative;
+		overflow: hidden;
+		width: 1em;
+		div {
+			position: absolute;
+			word-break: break-all;
+			left: 0px;
+			top: 0px;
+		}
+	}
 }
 
 html.isList {
 	#main .viewmode {
 		.galleryview {
-			text-decoration: unset;
-		}
-		.galleryview:hover {
-			text-decoration: underline;
+			color: inherit;
 		}
 		.listview {
-			text-decoration: underline;
+			@include text-hilight;
 		}
 	}
 	.homegrid.withlist {

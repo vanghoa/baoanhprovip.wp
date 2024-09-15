@@ -64,15 +64,15 @@ if ($is_designer || ($is_work && $type == 'designer') || ($is_storyq && $taxonom
 
 	<main id="main">
 		<nav class="absolute left-0 top-0 w-full z-20 p-4 h-20 pointer-events-none">
-			<ul class="mx-auto w-full max-w-56 <?php outline() ?> p-4 flex justify-between content-center items-center h-full [&_li.active]:text-hilight pointer-events-auto">
-				<li class="<?php echo is_home() || is_page('story') ? 'active' : '' ?>">
+			<ul class="mx-auto w-full max-w-56 <?php outline() ?> p-4 flex justify-between content-center items-center h-full pointer-events-auto">
+				<li class="<?php echo is_home() || is_page('story') ? 'text-hilight' : '' ?>">
 					<a class="txt-layer" href=" <?= home_url('/' . ($is_story ? 'index.php/story' : '')); ?>">Home</a>
 				</li>
 				<li class="baoanhbui flex flex-col justify-center text-center ">
 					<div class="baoanh txt-layer">Bảo<span class="inline-block"></span> Anh</div>
 					<div class="hidden txt-layer bui">Bùi</div>
 				</li>
-				<li class="<?php echo is_page('info') ? 'active' : '' ?>">
+				<li class="<?php echo is_page('info') ? 'text-hilight' : '' ?>">
 					<a class="txt-layer" href="<?= home_url('/info' . setStoryPerma()); ?>">Info</a>
 				</li>
 			</ul>
@@ -89,12 +89,13 @@ if ($is_designer || ($is_work && $type == 'designer') || ($is_storyq && $taxonom
 			$permalink = $podsflow->display('permalink') . '?story=' . $type . '-' . ($num);
 		?>
 			<section class="storysection absolute pointer-events-none bottom-8 flex flex-row-reverse px-4">
-				<a href="<?= $permalink ?>" class="block w-full max-w-56 mx-auto pointer-events-auto <?php outline(['noBgLayer' => true, 'bgClass' => 'bg-bg3']) ?> bg-layer-fixed overflow-hidden">
+				<a href="<?= $permalink ?>" class="block w-full max-w-56 mx-auto pointer-events-auto <?php outline(['noBgLayer' => true, 'bgClass' => 'bg-bg3']) ?> bg-layer-fixed overflow-hidden no-underline">
 					<div class="imgwrapper-fixed hidden">
 						<?php echo $podsflow->field('featured_images._img')[0]; ?>
 					</div>
 					<div class="text-center m-4 flex flex-col gap-4 justify-center items-center">
-						<div class="txt-layer-fixed">Next work -> <h3><?= $podsflow->display('title') ?></h3>
+						<div class="txt-layer-fixed"> <span class="underline">Next work -></span>
+							<h3><?= $podsflow->display('title') ?></h3>
 						</div>
 					</div>
 				</a>
