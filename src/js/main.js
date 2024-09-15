@@ -357,7 +357,7 @@ if (isHome) {
       curImgHolderChild && (curchild = curImgHolderChild);
       imgHolderMain.classList[curImgHolder ? 'add' : 'remove']('open');
       curchild.style.visibility = curImgHolder ? 'visible' : 'hidden';
-      curchild.src == '' &&
+      curchild.src === location.href &&
         curImgHolder &&
         (curchild.src = getOriginSrc(curchild, 'src'));
       window.curImgHolder = curImgHolder;

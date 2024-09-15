@@ -159,6 +159,16 @@ function lazyimg($content, $isContent = true)
 		}
 		$oldsrc = $node->getAttribute('src');
 		$oldsrcset = $node->getAttribute('srcset');
+
+		// Check if the image is from Cloudinary
+		if (strpos($oldsrc, 'res.cloudinary.com') !== false) {
+			$dimensions = get_image_dimensions($oldsrc); // Fetch image dimensions
+			if ($dimensions) {
+				$node->setAttribute("width", $dimensions['width']);
+				$node->setAttribute("height", $dimensions['height']);
+			}
+		}
+
 		$node->setAttribute("data-src", $oldsrc);
 		$node->setAttribute("data-srcset", $oldsrcset);
 		$node->setAttribute("src", '');
@@ -173,6 +183,20 @@ function lazyimg($content, $isContent = true)
 
 	$newHtml = $dom->saveHTML();
 	return $newHtml;
+}
+
+function get_image_dimensions($image_url)
+{
+	// Fetch image dimensions from the image URL
+	$image_size = @getimagesize($image_url);
+
+	if ($image_size) {
+		$width = $image_size[0];
+		$height = $image_size[1];
+		return ['width' => $width, 'height' => $height];
+	}
+
+	return false; // Return false if fetching fails
 }
 
 // Apply the filter to post content and widgets
