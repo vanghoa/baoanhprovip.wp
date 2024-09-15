@@ -16,7 +16,7 @@ $pods = pods('work', get_the_ID());
 		endif;
 		?>
 	</div>
-	<div class="big-tags text-nowrap whitespace-nowrap txt-layer mobile">
+	<div class="big-tags text-center txt-layer mobile">
 		<?php
 		if ($tags) :
 			foreach ($tags as $k => $tag) { ?>
