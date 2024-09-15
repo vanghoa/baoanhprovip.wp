@@ -313,7 +313,7 @@ if (isHome) {
       curImgHolderChild && (curchild = curImgHolderChild);
       imgHolderMain.classList[curImgHolder ? "add" : "remove"]("open");
       curchild.style.visibility = curImgHolder ? "visible" : "hidden";
-      curchild.srcset == "" && curImgHolder && (curchild.srcset = getOriginSrc(curchild, "srcset"));
+      curchild.src == "" && curImgHolder && (curchild.src = getOriginSrc(curchild, "src"));
       window.curImgHolder = curImgHolder;
       if (!stopEvething) {
         await drawAbsoluteLayer(curImgHolder ? 3 : null, key);
