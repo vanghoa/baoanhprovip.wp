@@ -4,6 +4,10 @@
 	a::after {
 		content: ' \2197\FE0E';
 	}
+	img {
+		cursor: pointer;
+		object-fit: cover;
+	}
 	.wp-block-embed {
 		iframe {
 			aspect-ratio: var(--width) / var(--height);
@@ -11,8 +15,6 @@
 			height: 100%;
 		}
 		img {
-			cursor: pointer;
-			object-fit: cover;
 			position: absolute;
 			left: 0;
 			top: 0;
