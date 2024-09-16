@@ -42,12 +42,11 @@
 				<p class="txt-layer"><?php outputTaxonomy() ?>
 				</p>
 			</div>
-			<a href="<?= $permalink ?>" class="block max-w-md text-center txt-layer no-underline">
+			<a href="<?= $permalink ?>" class="block max-w-md text-center txt-layer no-underline h-full">
 				<?php if ($is_designer || $is_developer) { ?>
 					<span class="line-clamp-3"><?php echo $pods->field('short_description'); ?>…</span>
-					<?php } else {
-					echo $pods->field('short_description'); ?>…
-					<span class="underline">see more</span>
+				<?php } else {
+					echo $pods->field('short_description'); ?>
 				<?php } ?>
 			</a>
 		</div>

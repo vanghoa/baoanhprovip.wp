@@ -44,7 +44,7 @@
 	//}
 
 	li {
-		max-width: 40svh;
+		max-width: min(20rem, 40svh);
 		&:only-child {
 			grid-column: 1 / -1;
 		}
