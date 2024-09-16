@@ -116,6 +116,9 @@ html.isList {
 		.galleryview {
 			color: inherit;
 		}
+		.galleryview:hover {
+			@include text-hilight;
+		}
 		.listview {
 			@include text-hilight;
 		}

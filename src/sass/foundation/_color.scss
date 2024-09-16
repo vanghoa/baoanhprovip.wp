@@ -5,7 +5,7 @@
 	--color-bg2: #{twcolor(#e4e4e4)};
 	--color-bg3: #{twcolor(#d1e6bf)};
 	--color-text: #{twcolor(#555555)};
-	--color-hilight: #{twcolor(#0077ff)};
+	--color-hilight: #{twcolor(#5100ff)};
 }
 
 @each $name, $color in ('1': rgb(60, 255, 0), '2': rgb(23, 228, 255)) {
