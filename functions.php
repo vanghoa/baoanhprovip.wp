@@ -153,10 +153,6 @@ function lazyimg($content, $isContent = true)
 	$img_count = 0;
 	foreach ($dom->getElementsByTagName('img') as $node) {
 		$img_count++;
-		if ($isContent && $img_count <= 2) {
-			$node->setAttribute("fetchpriority", "high");
-			continue; // Skip lazy loading for the first two images
-		}
 		$oldsrc = $node->getAttribute('src');
 		$oldsrcset = $node->getAttribute('srcset');
 
@@ -176,6 +172,10 @@ function lazyimg($content, $isContent = true)
 			if ($w < $h) {
 				$parent->setAttribute("class", $parent->getAttribute("class") . " vertical");
 			}
+		}
+		if ($isContent && $img_count <= 2) {
+			$node->setAttribute("fetchpriority", "high");
+			continue; // Skip lazy loading for the first two images
 		}
 
 		$node->setAttribute("data-src", $oldsrc);
