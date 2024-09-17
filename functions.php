@@ -161,7 +161,7 @@ function lazyimg($content, $isContent = true)
 		$oldsrcset = $node->getAttribute('srcset');
 
 		$parent = $node->parentNode;
-		if ($parent->getAttribute("class") == "wp-block-image") {
+		if (strpos($parent->getAttribute("class"), "wp-block-image") !== false) {
 			$dimensions = get_image_dimensions($oldsrc); // Fetch image dimensions
 			$w = $dimensions['width'];
 			$h = $dimensions['height'];
