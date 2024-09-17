@@ -1,15 +1,23 @@
 @use '../global' as *;
 
 .the-content {
+	justify-items: center;
 	a::after {
 		content: ' \2197\FE0E';
 	}
 	img {
 		cursor: pointer;
 		object-fit: cover;
+		max-height: 80svh;
+		width: auto;
+	}
+	figure {
+		width: fit-content;
+		height: fit-content;
 	}
 	.wp-block-embed {
 		iframe {
+			max-height: 80svh;
 			aspect-ratio: var(--width) / var(--height);
 			width: 100%;
 			height: 100%;
