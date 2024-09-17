@@ -60,9 +60,13 @@
 		@apply bgstyle;
 	}
 
+	.cp-layer > *:not(figure) {
+		@apply p-4;
+	}
+
 	.cp-layer > *:not(figure),
 	.cp-layer :is(iframe, img) {
-		@apply bgstyle p-4;
+		@apply bgstyle;
 	}
 
 	main,
