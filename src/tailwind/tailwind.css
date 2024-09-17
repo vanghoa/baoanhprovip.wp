@@ -48,6 +48,19 @@
 		font-weight: 900;
 	}
 
+	.bgstyle {
+		@apply bg-bg2 rounded-lg overflow-hidden;
+	}
+
+	.odd-layer > * {
+		@apply bgstyle;
+	}
+
+	.cp-layer > *:not(figure),
+	.cp-layer :is(iframe, img) {
+		@apply bgstyle;
+	}
+
 	main,
 	#copy {
 		@apply w-screen h-svh fixed left-0 top-0 overflow-hidden;

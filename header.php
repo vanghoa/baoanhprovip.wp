@@ -89,7 +89,7 @@ if ($is_designer || ($is_work && $type == 'designer') || ($is_storyq && $taxonom
 			$permalink = $podsflow->display('permalink') . '?story=' . $type . '-' . ($num);
 		?>
 			<section class="storysection absolute pointer-events-none bottom-8 flex flex-row-reverse px-4">
-				<a href="<?= $permalink ?>" class="block w-full max-w-56 mx-auto pointer-events-auto <?php outline(['noBgLayer' => true, 'bgClass' => 'bg-bg3']) ?> bg-layer-fixed overflow-hidden no-underline">
+				<a href="<?= $permalink ?>" class="block w-full max-w-56 mx-auto pointer-events-auto <?php outline(['noBgLayer' => true]) ?> bg-layer-fixed overflow-hidden no-underline">
 					<div class="imgwrapper-fixed hidden">
 						<?php echo $podsflow->field('featured_images._img')[0]; ?>
 					</div>

@@ -19,16 +19,17 @@
 		width: auto;
 	}
 	.wp-block-embed {
-		width: fit-content;
 		height: fit-content;
 		.wp-block-embed__wrapper > div {
 			aspect-ratio: var(--width) / var(--height);
 			max-height: 80svh;
+			margin: 0 auto;
 		}
 		img {
 			position: absolute;
 			left: 0;
 			top: 0;
+			opacity: 0;
 		}
 	}
 }

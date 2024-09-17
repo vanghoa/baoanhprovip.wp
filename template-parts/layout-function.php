@@ -5,14 +5,14 @@ if (!function_exists('outline')) {
 	function outline($options = [])
 	{
 		if ($options['singleWork'] ?? false) {
-			echo "[&>*]:bg-bg2 [&>*]:rounded-lg [&>*]:overflow-hidden cp-layer";
+			echo "cp-layer";
 			return;
 		}
 		if ($options['listView'] ?? false) {
-			echo "[&>*]:bg-bg2 [&>*]:rounded-lg [&>*]:overflow-hidden odd-layer";
+			echo "odd-layer";
 			return;
 		}
-		echo "bg-bg2 rounded-lg overflow-hidden" . ($options['noBgLayer'] ?? false ? '' : ' bg-layer');
+		echo "bgstyle " . ($options['noBgLayer'] ?? false ? '' : ' bg-layer');
 		// echo "outline-[1px] outline-text outline outline-offset-[-.5px]";
 	}
 }
