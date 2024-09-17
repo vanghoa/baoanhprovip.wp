@@ -97,6 +97,10 @@
 @include respond-to(md) {
 	.single-work-body {
 		.the-content {
+			justify-items: start;
+			.wp-block-embed .wp-block-embed__wrapper > div {
+				margin: 0;
+			}
 			.span2,
 			.span3 {
 				grid-column: span 2;
