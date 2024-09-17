@@ -2,6 +2,10 @@
 
 .the-content {
 	justify-items: center;
+	.span2,
+	.span3 {
+		grid-column: span 1;
+	}
 	a::after {
 		content: ' \2197\FE0E';
 	}
