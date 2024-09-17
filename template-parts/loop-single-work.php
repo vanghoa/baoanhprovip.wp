@@ -37,7 +37,7 @@ $pods = pods('work', get_the_ID());
 	<div class="long-description h-fit w-full basis-1/5 flex flex-col gap-4 p-4 <?php outline() ?> shrink-0 txt-layer">
 		<?= $pods->field('long_description'); ?>
 	</div>
-	<div class="the-content <?php outline(['singleWork' => true]) ?> shrink grid grid-cols-1 gap-6 h-fit [&>p]:p-4 [&>*]:h-fit [&>*]:w-full txtp-layer">
+	<div class="the-content <?php outline(['singleWork' => true]) ?> shrink grid grid-cols-1 gap-6 h-fit [&>*]:h-fit [&>*]:w-full txtp-layer">
 		<?php the_content(); ?>
 	</div>
 </section>

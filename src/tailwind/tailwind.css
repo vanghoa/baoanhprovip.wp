@@ -39,6 +39,10 @@
 		@apply hover:text-text;
 	}
 
+	em {
+		@apply italic;
+	}
+
 	h1,
 	h2,
 	h3,
@@ -58,7 +62,7 @@
 
 	.cp-layer > *:not(figure),
 	.cp-layer :is(iframe, img) {
-		@apply bgstyle;
+		@apply bgstyle p-4;
 	}
 
 	main,
