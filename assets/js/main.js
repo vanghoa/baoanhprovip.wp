@@ -117,7 +117,8 @@ const nav = $("#copy nav .bg-layer");
 const navTxt = [...$$("#copy nav .txt-layer")];
 const allBg2 = [
   ...$$("#copy .mainbody .bg-layer"),
-  ...$$("#copy .mainbody .cp-layer > *"),
+  ...$$("#copy .mainbody .cp-layer > *:not(figure)"),
+  ...$$("#copy .mainbody .cp-layer img"),
   ...$$("#copy .odd-layer > :nth-child(even)")
 ];
 const imgHolder = $("#copy .imgholder");
