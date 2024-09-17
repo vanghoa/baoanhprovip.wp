@@ -160,12 +160,21 @@ function lazyimg($content, $isContent = true)
 		$oldsrc = $node->getAttribute('src');
 		$oldsrcset = $node->getAttribute('srcset');
 
-		// Check if the image is from Cloudinary
-		if (strpos($oldsrc, 'res.cloudinary.com') !== false) {
+		$parent = $node->parentNode;
+		if ($parent->getAttribute("class") == "wp-block-image") {
 			$dimensions = get_image_dimensions($oldsrc); // Fetch image dimensions
-			if ($dimensions) {
-				$node->setAttribute("width", $dimensions['width']);
-				$node->setAttribute("height", $dimensions['height']);
+			$w = $dimensions['width'];
+			$h = $dimensions['height'];
+			// Check if the image is from Cloudinary
+			if (strpos($oldsrc, 'res.cloudinary.com') !== false) {
+				if ($dimensions) {
+					$node->setAttribute("width", $w);
+					$node->setAttribute("height", $h);
+				}
+			}
+			$parent->setAttribute("style", "--width:" . $w . "; --height:" . $h . ";");
+			if ($w < $h) {
+				$parent->setAttribute("class", $parent->getAttribute("class") . " vertical");
 			}
 		}
 
