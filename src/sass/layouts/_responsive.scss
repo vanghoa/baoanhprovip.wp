@@ -94,6 +94,12 @@
 	}
 }
 
+@include respond-to-copy(md) {
+	.the-content .wp-block-image.vertical {
+		width: fit-content;
+	}
+}
+
 @include respond-to(md) {
 	.single-work-body {
 		.the-content {
