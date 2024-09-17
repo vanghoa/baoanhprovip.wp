@@ -95,6 +95,15 @@
 }
 
 @include respond-to(md) {
+	.single-work-body {
+		.the-content {
+			.span2,
+			.span3 {
+				grid-column: span 2;
+			}
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
 	.homegrid {
 		li {
 			.imgwrapper {
@@ -121,15 +130,6 @@
 }
 
 @include respond-to(lg) {
-	.single-work-body {
-		.the-content {
-			.span2,
-			.span3 {
-				grid-column: span 2;
-			}
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-		}
-	}
 	.story {
 		.storygrid {
 			column-gap: 4rem;
