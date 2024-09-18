@@ -169,7 +169,7 @@ function lazyimg($content, $isContent = true)
 				}
 			}
 			$parent->setAttribute("style", "--width:" . $w . "; --height:" . $h . ";");
-			if ($w < $h) {
+			if (($w * 1.8) < $h) {
 				$parent->setAttribute("class", $parent->getAttribute("class") . " vertical");
 			}
 		}
