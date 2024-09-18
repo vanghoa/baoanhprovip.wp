@@ -2,6 +2,9 @@
 
 .the-content {
 	justify-items: center;
+	.row2 {
+		grid-row: span 2;
+	}
 	.span2,
 	.span3 {
 		grid-column: span 1;
