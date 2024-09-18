@@ -107,6 +107,9 @@
 			.wp-block-embed .wp-block-embed__wrapper > div {
 				margin: 0;
 			}
+			.span2md {
+				grid-column: span 2;
+			}
 			.span2,
 			.span3 {
 				grid-column: span 2;
@@ -153,6 +156,9 @@
 	}
 	.single-work-body {
 		.the-content {
+			.span2md {
+				grid-column: span 1;
+			}
 			.span12 {
 				grid-column: span 2;
 			}
