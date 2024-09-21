@@ -2,7 +2,7 @@
 $imgs = lazyimg($pods->raw('content'), true, $liIndex >= 2, true);
 
 if (count($imgs) < 2) {
-	$imgs = array_merge($imgs, lazyimg($pods->display('featured_images._img'), true, true));
+	$imgs = array_merge(lazyimg($pods->display('featured_images._img'), true, true), $imgs);
 }
 ?>
 <li class="project flex items-stretch">
