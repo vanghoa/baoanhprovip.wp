@@ -1,15 +1,18 @@
 <?php global $pods, $term_id, $taxonomy, $taxonomy_name, $is_story, $key, $storymode, $is_designer, $is_developer;
+$imgs = lazyimg($pods->raw('content'), true, $liIndex >= 2);
+if (!$imgs) {
+	$imgs = lazyimg($pods->display('featured_images._img'), true, $liIndex >= 2);
+}
 ?>
 <li class="project flex items-stretch">
 	<div class="<?php outline();
 				$permalink = $pods->display('permalink') . setStoryPerma(); ?> w-full">
 		<div isfirst="true" islast="<?php
-									$imgs = $pods->field('featured_images._img');
 									echo count($imgs) == 1 ? 'true' : 'false'; ?>" class="imgsec w-full mx-auto">
 			<div class="imgwrapper">
 				<?php
 				foreach ($imgs as $k => $img) { ?>
-					<?php echo $liIndex < 2 && $k < 2 ? $img : lazyimg($img, false) ?>
+					<?php echo $img ?>
 				<?php }
 				?>
 			</div>

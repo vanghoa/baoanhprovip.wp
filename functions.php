@@ -143,7 +143,7 @@ function responsive_wrap_oembed_dataparse($html, $data)
 	// Return code
 	return '<div style="--width:' . $data->width . '; --height:' . $data->height . ';" ><img style="--twidth:' . $data->thumbnail_width . '; --theight:' . $data->thumbnail_height . ';" alt="thumbnail" src="' . $data->thumbnail_url . '"/>' . $html . '</div>';
 }
-function lazyimg($content, $isContent = true)
+function lazyimg($content, $isHome = false, $forceLazy = false)
 {
 	if (empty($content)) {
 		return $content; // Return the original content if it's empty
@@ -151,6 +151,8 @@ function lazyimg($content, $isContent = true)
 	$dom = new DOMDocument();
 	@$dom->loadHTML(mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8'));
 	$img_count = 0;
+	$img_html_array = [];
+
 	foreach ($dom->getElementsByTagName('img') as $node) {
 		$img_count++;
 		$oldsrc = $node->getAttribute('src');
@@ -173,15 +175,22 @@ function lazyimg($content, $isContent = true)
 				$parent->setAttribute("class", $parent->getAttribute("class") . " vertical");
 			}
 		}
-		if ($isContent && $img_count <= 2) {
+		if (!$forceLazy && $img_count <= 2) {
 			$node->setAttribute("fetchpriority", "high");
-			continue; // Skip lazy loading for the first two images
+		} else {
+			$node->setAttribute("data-src", $oldsrc);
+			$node->setAttribute("data-srcset", $oldsrcset);
+			$node->setAttribute("src", '');
+			$node->setAttribute("srcset", '');
 		}
+		$img_html_array[] = $dom->saveHTML($node);
+		if ($isHome && $img_count >= 3) {
+			break; // Stop the loop if the limit is reached
+		}
+	}
 
-		$node->setAttribute("data-src", $oldsrc);
-		$node->setAttribute("data-srcset", $oldsrcset);
-		$node->setAttribute("src", '');
-		$node->setAttribute("srcset", '');
+	if ($isHome) {
+		return $img_html_array;
 	}
 	// iframe
 	foreach ($dom->getElementsByTagName('iframe') as $node) {
