@@ -1,7 +1,8 @@
 <?php global $pods, $term_id, $taxonomy, $taxonomy_name, $is_story, $key, $storymode, $is_designer, $is_developer;
-$imgs = lazyimg($pods->raw('content'), true, $liIndex >= 2);
-if (!$imgs) {
-	$imgs = lazyimg($pods->display('featured_images._img'), true, $liIndex >= 2);
+$imgs = lazyimg($pods->raw('content'), true, $liIndex >= 2, true);
+
+if (count($imgs) < 2) {
+	$imgs = array_merge($imgs, lazyimg($pods->display('featured_images._img'), true, true));
 }
 ?>
 <li class="project flex items-stretch">

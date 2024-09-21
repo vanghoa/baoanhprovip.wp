@@ -143,17 +143,26 @@ function responsive_wrap_oembed_dataparse($html, $data)
 	// Return code
 	return '<div style="--width:' . $data->width . '; --height:' . $data->height . ';" ><img style="--twidth:' . $data->thumbnail_width . '; --theight:' . $data->thumbnail_height . ';" alt="thumbnail" src="' . $data->thumbnail_url . '"/>' . $html . '</div>';
 }
-function lazyimg($content, $isHome = false, $forceLazy = false)
+function lazyimg($content, $isHome = false, $forceLazy = false, $onlyThumbClass = false)
 {
 	if (empty($content)) {
-		return $content; // Return the original content if it's empty
+		return $isHome ? [] : $content; // Return the original content if it's empty
 	}
 	$dom = new DOMDocument();
 	@$dom->loadHTML(mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8'));
 	$img_count = 0;
 	$img_html_array = [];
+	$images = [];
 
-	foreach ($dom->getElementsByTagName('img') as $node) {
+	if ($onlyThumbClass) {
+		$xpath = new DOMXPath($dom);
+		$query = "//figure[contains(@class, 'thumb')]/img";
+		$images = $xpath->query($query);
+	} else {
+		$images = $dom->getElementsByTagName('img');
+	}
+
+	foreach ($images as $node) {
 		$img_count++;
 		$oldsrc = $node->getAttribute('src');
 		$oldsrcset = $node->getAttribute('srcset');
