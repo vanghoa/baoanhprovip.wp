@@ -184,7 +184,7 @@ function lazyimg($content, $isHome = false, $forceLazy = false, $onlyThumbClass 
 				$parent->setAttribute("class", $parent->getAttribute("class") . " vertical");
 			}
 		}
-		if (!$forceLazy && $img_count <= 2) {
+		if (!$forceLazy && $img_count <= ($onlyThumbClass ? 1 : 2)) {
 			$node->setAttribute("fetchpriority", "high");
 		} else {
 			$node->setAttribute("data-src", $oldsrc);

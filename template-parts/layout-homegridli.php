@@ -1,7 +1,7 @@
 <?php global $pods, $term_id, $taxonomy, $taxonomy_name, $is_story, $key, $storymode, $is_designer, $is_developer;
 
 $imgs = array_merge(
-	lazyimg($pods->display('featured_images._img'), true, true),
+	lazyimg($pods->display('featured_images._img'), true, $liIndex >= 2),
 	lazyimg($pods->raw('content'), true, $liIndex >= 2, true)
 );
 
