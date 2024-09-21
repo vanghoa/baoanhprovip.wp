@@ -617,19 +617,10 @@ async function drawImg(data, allImg2, canvas2CanvasFunc = canvas2CanvasArr, lazy
     const img = allImg2[i];
     const { leftright, topbot, left, top, width, height } = getRect(img);
     const lazyKey = `${i}${leftright + topbot + left + top}${Math.random().toString(16).slice(2)}`;
-    lazyList[lazyKey] = lazyDrawImg;
-    await lazyDrawImg();
-    async function lazyDrawImg(byPassCond = false) {
-      if (!byPassCond && isLazy(lazyLoad, top, topbot)) {
+    lazyList[lazyKey] = async (byPassCond = false) => {
+      if (LazyDrawImgOpen(byPassCond, lazyLoad, top, topbot, lazyKey)) {
         return;
       }
-      if (lazyQBlock) {
-        lazyQ.push(lazyList[lazyKey]);
-        delete lazyList[lazyKey];
-        return;
-      }
-      lazyQBlock = true;
-      delete lazyList[lazyKey];
       let objectFit, isCover, containObj, ascii;
       if (hasCache(cacheKey2)) {
         ({ objectFit, isCover, containObj, ascii } = getCache(cacheKey2));
@@ -674,11 +665,9 @@ async function drawImg(data, allImg2, canvas2CanvasFunc = canvas2CanvasArr, lazy
         maskLeft: isCover ? 0 : containObj.left
       };
       lazyLoad && console.log(`lazyload image successful`);
-      lazyQBlock = false;
-      if (lazyQ[lazyQCur + 1]) {
-        lazyQ[++lazyQCur](true);
-      }
-    }
+      LazyDrawImgClose();
+    };
+    lazyList[lazyKey]();
   }
   return returnobj;
 }
@@ -699,19 +688,10 @@ async function drawImgHome(data, allImg2) {
     imgcanvas.height = base.h;
     const { top: top2, left: left2, topbot: topbot2, leftright: leftright2, width: width2, height: height2 } = getRect(el);
     const lazyKey = `${igroup}${leftright2 + topbot2 + left2 + top2}${Math.random().toString(16).slice(2)}`;
-    lazyList[lazyKey] = lazyDrawImg;
-    await lazyDrawImg();
-    async function lazyDrawImg(byPassCond = false) {
-      if (!byPassCond && (top2 >= scrollTop + screenlength || topbot2 <= scrollTop)) {
+    lazyList[lazyKey] = async (byPassCond = false) => {
+      if (LazyDrawImgOpen(byPassCond, true, top2, topbot2, lazyKey)) {
         return;
       }
-      if (lazyQBlock) {
-        lazyQ.push(lazyList[lazyKey]);
-        delete lazyList[lazyKey];
-        return;
-      }
-      lazyQBlock = true;
-      delete lazyList[lazyKey];
       for (let iimg = 0; iimg < group.length; iimg++) {
         const img = group[iimg];
         const { objectFit } = getComputedStyle(img);
@@ -740,11 +720,9 @@ async function drawImgHome(data, allImg2) {
       );
       imgsecs[igroup].ascii.arr = ascii;
       console.log("lazyload image successful");
-      lazyQBlock = false;
-      if (lazyQ[lazyQCur + 1]) {
-        lazyQ[++lazyQCur](true);
-      }
-    }
+      LazyDrawImgClose();
+    };
+    lazyList[lazyKey]();
     drawAbs(lbtn, char.lbtn);
     drawAbs(rbtn, char.rbtn);
     drawAbs(idc, idcascii);
@@ -1015,5 +993,26 @@ function calcScrollTop() {
 }
 function isLazy(lazyLoad, top, topbot) {
   return lazyLoad && (top >= window.scrollTop + screenlength || topbot <= window.scrollTop);
+}
+function LazyDrawImgClose() {
+  lazyQBlock = false;
+  if (lazyQ[lazyQCur + 1]) {
+    lazyQ[++lazyQCur](true);
+  } else {
+    cmtRenderScreen();
+  }
+}
+function LazyDrawImgOpen(byPassCond, lazyLoad, top, topbot, lazyKey) {
+  if (!byPassCond && isLazy(lazyLoad, top, topbot)) {
+    return true;
+  }
+  if (lazyQBlock) {
+    lazyQ.push(lazyList[lazyKey]);
+    delete lazyList[lazyKey];
+    return true;
+  }
+  lazyQBlock = true;
+  delete lazyList[lazyKey];
+  return false;
 }
 //# sourceMappingURL=main.js.map
