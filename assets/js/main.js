@@ -219,7 +219,7 @@ async function scrollResponsive() {
   for (const i in lazyList) {
     await lazyList[i]();
   }
-  !lazyQBlock && cmtRenderScreen();
+  cmtRenderScreen();
 }
 function mouseEnter(i) {
   var _a;
