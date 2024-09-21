@@ -156,7 +156,7 @@ function lazyimg($content, $isHome = false, $forceLazy = false, $onlyThumbClass 
 
 	if ($onlyThumbClass) {
 		$xpath = new DOMXPath($dom);
-		$query = "//figure[contains(@class, 'thumb')]/img";
+		$query = "//figure[contains(@class, 'thumb')]//img";
 		$images = $xpath->query($query);
 	} else {
 		$images = $dom->getElementsByTagName('img');
