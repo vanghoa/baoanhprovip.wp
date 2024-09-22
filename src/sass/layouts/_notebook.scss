@@ -1,0 +1,21 @@
+form.disabled {
+	pointer-events: none;
+	* {
+		pointer-events: none;
+	}
+}
+
+.notebookholder {
+	> * {
+		--X: 0px;
+		--Y: 0px;
+		display: none;
+		position: absolute;
+		left: var(--X);
+		top: var(--Y);
+		max-width: 15%;
+	}
+	.ssm {
+		display: block;
+	}
+}

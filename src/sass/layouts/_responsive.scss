@@ -39,11 +39,11 @@
 	.storysection {
 		padding-left: 2rem /* 32px */;
 		padding-right: 2rem /* 32px */;
-		.bg-layer-fixed {
+		.bg-layer {
 			margin: unset;
 			width: 10rem;
 
-			.imgwrapper-fixed,
+			.imgwrapper,
 			h3,
 			.short_description {
 				display: block;
@@ -52,7 +52,7 @@
 				display: none;
 			}
 
-			.imgwrapper-fixed img {
+			.imgwrapper img {
 				height: 6rem;
 				object-fit: cover;
 			}
@@ -91,6 +91,14 @@
 	}
 	.desktop {
 		display: block;
+	}
+	.notebookholder {
+		.ssm {
+			display: none;
+		}
+		.sm {
+			display: block;
+		}
 	}
 }
 
@@ -140,12 +148,28 @@
 			}
 		}
 	}
+	.notebookholder {
+		.sm {
+			display: none;
+		}
+		.md {
+			display: block;
+		}
+	}
 }
 
 @include respond-to(lg) {
 	.story {
 		.storygrid {
 			column-gap: 4rem;
+		}
+	}
+	.notebookholder {
+		.md {
+			display: none;
+		}
+		.lg {
+			display: block;
 		}
 	}
 }
@@ -167,6 +191,14 @@
 				grid-column: span 3;
 			}
 			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+	}
+	.notebookholder {
+		.lg {
+			display: none;
+		}
+		.xl {
+			display: block;
 		}
 	}
 }

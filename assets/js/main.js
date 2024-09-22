@@ -39,7 +39,8 @@ const char = {
   ]),
   idc: "●",
   mouse: "█",
-  divider: "|"
+  divider: "|",
+  hL: "-"
 };
 const cacheKey = {
   imgH: { name: "imgHolder", allkeys: [] },
@@ -126,8 +127,8 @@ const allBg2 = [
 ];
 const imgHolder = $("#copy .imgholder");
 const imgHolderMain = $("#main .imgholder");
-const allImgHomeMain = $$("#main .imgwrapper");
-const allImgWrapper = [...$$("#copy .imgwrapper")];
+const allImgHomeMain = $$("#main .mainbody .imgwrapper");
+const allImgWrapper = [...$$("#copy .mainbody .imgwrapper")];
 const allImgHome = Array.from(allImgWrapper, (el, k) => {
   const idc = el.nextElementSibling.querySelector(`.indicator`);
   return {
@@ -143,20 +144,160 @@ const allImgHome = Array.from(allImgWrapper, (el, k) => {
     ]
   };
 });
-const allImg = [...$$("#copy *:not(.imgwrapper-fixed) > img")];
-const allImgMain = [...$$("#main *:not(.imgwrapper-fixed) > img")];
+const allImg = [...$$("#copy .mainbody img")];
+const allImgMain = [...$$("#main .mainbody img")];
 const allTxt = [
   ...$$("#copy .mainbody .txt-layer"),
   ...$$("#copy .mainbody .txtp-layer > *:not(figure)")
 ];
 const allDivider = [...$$("#copy .divider")];
 const storySection = {
-  img: [...$$("#copy .storysection .imgwrapper-fixed img")],
-  bg: $("#copy .storysection .bg-layer-fixed"),
-  txt: [...$$("#copy .storysection .txt-layer-fixed")]
+  img: [...$$("#copy .storysection .imgwrapper img")],
+  bg: $("#copy .storysection .bg-layer"),
+  txt: [...$$("#copy .storysection .txt-layer")]
 };
+const inputNoteMain = $("#main #input_note");
+const inputNote = $("#copy #input_note");
+const notebookHolder = $("#copy .notebookholder");
+const inputResponsive = $("#main #input_responsive");
+const allHorizontalLine = [...$$("#copy .mainbody .horizontal-line")];
+if (isHome) {
+  let slide = function(i, cur, curnow, length) {
+    if (cur.value !== curnow) {
+      imgsecs[i].setAttribute("isfirst", curnow == 1);
+      imgsecs[i].setAttribute("islast", curnow == length);
+      indicators[i][cur.value - 1].classList.add("opacity-50");
+      indicators[i][curnow - 1].classList.remove("opacity-50");
+      imgwrappers[i].style.transform = `translateX(-${(curnow - 1) * 100}%)`;
+      cur.value = curnow;
+    }
+  };
+  console.log("home page");
+  const imgwrappers = $$("main .homegrid .imgwrapper");
+  window.imgsecs = $$("main .homegrid .imgsec");
+  const projects = $$("main .homegrid .project");
+  const indicators = [];
+  window.curs = [];
+  let iscroll = 0;
+  let isPause = false;
+  imgsecs.forEach((el, i) => {
+    const imgwrapper = imgwrappers[i];
+    const length = imgwrapper.childElementCount;
+    indicators.push(imgsecs[i].querySelectorAll(".indicator li"));
+    curs.push({ value: 1 });
+    let cur = curs[i];
+    el.addEventListener("click", function({ target }) {
+      isPause = true;
+      let curnow = cur.value;
+      if (target.closest(".lbtn")) {
+        curnow = curnow <= 1 ? 1 : curnow - 1;
+      } else if (target.closest(".rbtn")) {
+        curnow = curnow >= length ? length : curnow + 1;
+      }
+      window.stopPrev = slideAscii(i, curnow - 1, cur.value - 1, 500);
+      slide(i, cur, curnow, length);
+    });
+  });
+} else if (isWork) {
+  console.log("single-work page");
+  const imgcopyarr = [];
+  {
+    const frag = $createFrag();
+    for (const img of allImg) {
+      const div = $create("div");
+      const imgcopy = img.cloneNode(true);
+      imgcopyarr.push(imgcopy);
+      div.appendChild(imgcopy);
+      frag.appendChild(div);
+    }
+    imgHolder.appendChild(frag);
+  }
+  {
+    const frag = $createFrag();
+    let curchild = null;
+    imgHolderMain.onclick = () => {
+      toggle(null, null);
+    };
+    for (const i in allImgMain) {
+      const img = allImgMain[i];
+      const div = $create("div");
+      const imgcopy = img.cloneNode(true);
+      img.copy = imgcopyarr[i];
+      const formattedKey = `${cacheKey.imgH.name}-${i}`;
+      cacheKey.imgH.allkeys.push(formattedKey);
+      img.onclick = () => {
+        toggle(img.copy, imgcopy, formattedKey);
+      };
+      div.appendChild(imgcopy);
+      frag.appendChild(div);
+    }
+    imgHolderMain.appendChild(frag);
+    async function toggle(curImgHolder, curImgHolderChild, key) {
+      curImgHolderChild && (curchild = curImgHolderChild);
+      imgHolderMain.classList[curImgHolder ? "add" : "remove"]("open");
+      curchild.style.visibility = curImgHolder ? "visible" : "hidden";
+      curchild.originsrc ?? (curImgHolder && (curchild.src = getOriginSrc(curchild, "src")));
+      window.curImgHolder = curImgHolder;
+      if (!stopEvething) {
+        await drawImgHolderFixed(curImgHolder ? 3 : null, key);
+        cmtRenderScreen();
+      }
+    }
+  }
+} else if (inputNote) {
+  if (window.history.replaceState) {
+    window.history.replaceState(null, null, window.location.href);
+  }
+  const btn = $('#main [type="submit"]');
+  const btncopy = $('#copy [type="submit"]');
+  const form = [...$$("form")];
+  if (sessionStorage.getItem("submit")) {
+    form.forEach((el) => el.classList.add("disabled"));
+    btn.disabled || (btn.value = btncopy.value = "you already sent! thanks a lot!");
+    btn.disabled = inputNoteMain.disabled = true;
+  } else {
+    inputNoteMain.parentElement.onsubmit = () => {
+      form.forEach((el) => el.classList.add("disabled"));
+      btn.value = btncopy.value = "sending...";
+      sessionStorage.setItem("submit", "true");
+      cmtRenderScreen();
+    };
+    inputNoteMain.oninput = () => {
+      inputNote.value = inputNoteMain.value;
+      if (!stopEvething) {
+        drawFewRect(
+          window.canvasData,
+          [inputNote],
+          inputNote.rectData && [inputNote.rectData],
+          void 0,
+          void 0,
+          { fxl: -1 }
+        );
+        drawTxt(window.canvasData, [inputNote], true, true);
+        cmtRenderScreen();
+      }
+    };
+  }
+}
+let allNotes = [];
 getScrollbarWidth();
-window.onload = duoResponsive;
+window.onload = async () => {
+  await duoResponsive();
+  const data = await notebookData;
+  const frag = $createFrag();
+  data && (allNotes = data.map(({ value, responsive }) => {
+    const p = $create("p");
+    p.innerHTML = value;
+    p.className = `${getNoteResponsiveClass(+responsive)}`;
+    p.style.setProperty("--X", Math.floor(Math.random() * 81) + "%");
+    p.style.setProperty("--Y", Math.floor(Math.random() * 81) + "%");
+    frag.append(p);
+    return p;
+  }));
+  notebookHolder.append(frag);
+  drawTxt(window.fixedLayer, allNotes);
+  cmtRenderScreen();
+};
 onresize = throttle_debounce(
   function(isFinal) {
     isFinal && getScrollbarWidth();
@@ -242,91 +383,7 @@ function mouseLeave(i) {
   drawFewRect(window.absoluteLayer, [hoverchild], [hoverrect], null);
   cmtRenderScreen();
 }
-if (isHome) {
-  let slide = function(i, cur, curnow, length) {
-    if (cur.value !== curnow) {
-      imgsecs[i].setAttribute("isfirst", curnow == 1);
-      imgsecs[i].setAttribute("islast", curnow == length);
-      indicators[i][cur.value - 1].classList.add("opacity-50");
-      indicators[i][curnow - 1].classList.remove("opacity-50");
-      imgwrappers[i].style.transform = `translateX(-${(curnow - 1) * 100}%)`;
-      cur.value = curnow;
-    }
-  };
-  console.log("home page");
-  const imgwrappers = $$("main .homegrid .imgwrapper");
-  window.imgsecs = $$("main .homegrid .imgsec");
-  const projects = $$("main .homegrid .project");
-  const indicators = [];
-  window.curs = [];
-  let iscroll = 0;
-  let isPause = false;
-  imgsecs.forEach((el, i) => {
-    const imgwrapper = imgwrappers[i];
-    const length = imgwrapper.childElementCount;
-    indicators.push(imgsecs[i].querySelectorAll(".indicator li"));
-    curs.push({ value: 1 });
-    let cur = curs[i];
-    el.addEventListener("click", function({ target }) {
-      isPause = true;
-      let curnow = cur.value;
-      if (target.closest(".lbtn")) {
-        curnow = curnow <= 1 ? 1 : curnow - 1;
-      } else if (target.closest(".rbtn")) {
-        curnow = curnow >= length ? length : curnow + 1;
-      }
-      window.stopPrev = slideAscii(i, curnow - 1, cur.value - 1, 500);
-      slide(i, cur, curnow, length);
-    });
-  });
-} else if (isWork) {
-  console.log("single-work page");
-  const imgcopyarr = [];
-  {
-    const frag = $createFrag();
-    for (const img of allImg) {
-      const div = $create("div");
-      const imgcopy = img.cloneNode(true);
-      imgcopyarr.push(imgcopy);
-      div.appendChild(imgcopy);
-      frag.appendChild(div);
-    }
-    imgHolder.appendChild(frag);
-  }
-  {
-    const frag = $createFrag();
-    let curchild = null;
-    imgHolderMain.onclick = () => {
-      toggle(null, null);
-    };
-    for (const i in allImgMain) {
-      const img = allImgMain[i];
-      const div = $create("div");
-      const imgcopy = img.cloneNode(true);
-      img.copy = imgcopyarr[i];
-      const formattedKey = `${cacheKey.imgH.name}-${i}`;
-      cacheKey.imgH.allkeys.push(formattedKey);
-      img.onclick = () => {
-        toggle(img.copy, imgcopy, formattedKey);
-      };
-      div.appendChild(imgcopy);
-      frag.appendChild(div);
-    }
-    imgHolderMain.appendChild(frag);
-    async function toggle(curImgHolder, curImgHolderChild, key) {
-      curImgHolderChild && (curchild = curImgHolderChild);
-      imgHolderMain.classList[curImgHolder ? "add" : "remove"]("open");
-      curchild.style.visibility = curImgHolder ? "visible" : "hidden";
-      curchild.originsrc ?? (curImgHolder && (curchild.src = getOriginSrc(curchild, "src")));
-      window.curImgHolder = curImgHolder;
-      if (!stopEvething) {
-        await drawAbsoluteLayer(curImgHolder ? 3 : null, key);
-        cmtRenderScreen();
-      }
-    }
-  }
-}
-async function drawAbsoluteLayer(intensity = 3, key, isFinal = true) {
+async function drawImgHolderFixed(intensity = 3, key, isFinal = true) {
   const vl = intensity ? {
     intensity: 3
   } : null;
@@ -395,6 +452,18 @@ function manualResponsive(el) {
   const { clientWidth: w } = el;
   el.className = `${w > 1536 ? "xxl" : ""} ${w > 1280 ? "xl" : ""} ${w > 1024 ? "lg" : ""} ${w > 768 ? "md" : ""} ${w > 640 ? "sm" : ""}`;
 }
+function getNoteResponsiveClass(w) {
+  if (w > 1280) {
+    return "xl";
+  } else if (w > 1024) {
+    return "lg";
+  } else if (w > 768) {
+    return "md";
+  } else if (w > 640) {
+    return "sm";
+  }
+  return "ssm";
+}
 async function duoResponsive(isFinal = true) {
   stopEvething = true;
   lazyList = {};
@@ -402,6 +471,7 @@ async function duoResponsive(isFinal = true) {
   lazyQCur = -1;
   lazyQBlock = false;
   stopSlideAscii();
+  inputResponsive && (inputResponsive.value = innerWidth);
   const width = Math.max(outerWidth - innerWidth - 100, 0);
   if (width < widthLimit) {
     window.canvasData = Array.from(
@@ -454,6 +524,11 @@ async function duoResponsive(isFinal = true) {
     rx_: 0,
     ry_: 0
   });
+  inputNote && drawFewRect(window.canvasData, allHorizontalLine, null, char.hL, isFinal, {
+    rx_: 0,
+    ry_: 0,
+    fy: 1
+  });
   if (isFinal) {
     if (isHome) {
       await drawImgHome(window.canvasData, allImgHome);
@@ -473,11 +548,14 @@ async function duoResponsive(isFinal = true) {
     }
   }
   drawTxt(window.canvasData, allTxt, isFinal);
+  inputNote && (inputNote.openData = void 0, inputNote.rectData = void 0);
+  inputNote && drawTxt(window.canvasData, [inputNote], true, true);
   isFinal && cacheKey.imgH.allkeys.forEach((key) => {
     deleteCache(key);
   });
   isFinal && deleteCache(cacheKey.storyS.name);
-  await (window.curImgHolder ? drawAbsoluteLayer(3, null, isFinal) : drawNav(null, isFinal));
+  await (window.curImgHolder ? drawImgHolderFixed(3, null, isFinal) : drawNav(null, isFinal));
+  drawTxt(window.fixedLayer, allNotes, isFinal);
   cmtRenderScreen();
   isFinal && setEvent(mainbody, "onscroll", scrollResponsive);
   isFinal && setEvent(document, "onmousemove", mouseMove);
@@ -578,10 +656,17 @@ function filterGrayRamp(char2, intensity) {
   let index = grayRampObj[char2] - intensity;
   return grayRamp[index] || grayRamp[0];
 }
-function drawFewRect(data, allRect, rectArr, rectchar = char.bg2, isFinal = true, { rx_, ry_ } = { rx_: rx, ry_: ry }) {
-  !rectArr && (rectArr = allRect.map((el) => getRect(el)));
+function drawFewRect(data, allRect, rectArr, rectchar = char.bg2, isFinal = true, { rx_ = rx, ry_ = ry, fy = 0, fxl = 0, fxr = 0 } = {}) {
+  rectArr || (rectArr = allRect.map((el) => {
+    el.rectData = getRect(el);
+    return el.rectData;
+  }));
   for (let i = 0; i < rectArr.length; i++) {
-    const { leftright, topbot, left, top } = rectArr[i];
+    let { leftright, topbot, left, top } = rectArr[i];
+    topbot += fy;
+    top += fy;
+    left += fxl;
+    leftright += fxr;
     if (isLazy(!isFinal, top, topbot) || top == 0 && topbot == 0) {
       continue;
     }
@@ -786,65 +871,87 @@ function drawAscii(grayScales, width) {
 function getCharacterForGrayScale(grayScale) {
   return grayRamp[Math.ceil((rampLength - 1) * grayScale / 255)];
 }
-function drawTxt(data, allTxt2, isFinal = true) {
+function drawTxtOpen(txt, isFinal, isInput) {
+  if (isInput && txt.openData) {
+    txt.openData.arrcontent = [`${txt.value}`];
+    return false;
+  }
+  let { top, left, ogwidth, topbot } = getRect(txt);
+  if (isLazy(!isFinal, top, topbot)) {
+    return true;
+  }
+  let {
+    display,
+    textAlign,
+    paddingLeft: pl,
+    paddingRight: pr,
+    paddingTop: pt,
+    paddingBottom: pb
+  } = getComputedStyle(txt);
+  const content = txt.innerText.trim() || txt.value;
+  if (display == "none" || !content) {
+    return true;
+  }
+  let arrcontent = content.split("\n");
+  pl = reMsrX(+pl.slice(0, -2));
+  pr = reMsrX(+pr.slice(0, -2));
+  pt = reMsrY(+pt.slice(0, -2));
+  pb = reMsrY(+pb.slice(0, -2));
+  top += pt + 1;
+  left += pl;
+  ogwidth -= pl + pr;
+  if (ogwidth < 1) {
+    return true;
+  }
+  txt.openData = {
+    top,
+    left,
+    ogwidth,
+    topbot,
+    arrcontent,
+    textAlign
+  };
+}
+function drawTxt(data, allTxt2, isFinal = true, isInput = false) {
   var _a;
   for (let i = 0; i < allTxt2.length; i++) {
     const txt = allTxt2[i];
-    let { top, left, ogwidth, topbot } = getRect(txt);
-    if (isLazy(!isFinal, top, topbot)) {
+    if (drawTxtOpen(txt, isFinal, isInput)) {
       continue;
     }
-    let {
-      display,
-      textAlign,
-      paddingLeft: pl,
-      paddingRight: pr,
-      paddingTop: pt,
-      paddingBottom: pb
-    } = getComputedStyle(txt);
-    const content = txt.innerText.trim();
-    if (display == "none" || content == "") {
-      continue;
-    }
-    let arrcontent = content.split("\n");
-    pl = reMsrX(+pl.slice(0, -2));
-    pr = reMsrX(+pr.slice(0, -2));
-    pt = reMsrY(+pt.slice(0, -2));
-    pb = reMsrY(+pb.slice(0, -2));
-    const output = [];
-    top += pt + 1;
-    left += pl;
-    ogwidth -= pl + pr;
-    if (ogwidth < 1) {
-      continue;
-    }
-    for (let k = 0; k < arrcontent.length; k++) {
-      let content2 = arrcontent[k];
-      while (content2.length > 0) {
-        let extracted = content2.slice(0, ogwidth);
-        content2 = content2.slice(ogwidth);
-        if (content2.length > 0 && content2[0] != ` `) {
-          for (let i2 = extracted.length - 1; i2 >= 0; i2--) {
-            if (extracted[i2] == ` `) {
-              content2 = extracted.slice(i2) + content2;
-              extracted = extracted.slice(0, i2);
-              break;
+    const { top, left, ogwidth, topbot, arrcontent, textAlign } = txt.openData;
+    let output = [];
+    if (isInput) {
+      output = [arrcontent[0].slice(-ogwidth)];
+    } else {
+      for (let k = 0; k < arrcontent.length; k++) {
+        let content = arrcontent[k];
+        while (content.length > 0) {
+          let extracted = content.slice(0, ogwidth);
+          content = content.slice(ogwidth);
+          if (content.length > 0 && content[0] != ` `) {
+            for (let i2 = extracted.length - 1; i2 >= 0; i2--) {
+              if (extracted[i2] == ` `) {
+                content = extracted.slice(i2) + content;
+                extracted = extracted.slice(0, i2);
+                break;
+              }
             }
           }
-        }
-        extracted = extracted.trim();
-        content2 = content2.trim();
-        if (textAlign == "center") {
-          extracted = `${extracted}${output.length == topbot - top && content2.length > 0 ? "…" : ""}`;
-          let rest = (ogwidth - extracted.length) / 2;
-          rest = rest > 0 ? rest : 0;
-          extracted = `${` `.repeat(Math.ceil(rest))}${extracted}${` `.repeat(
-            Math.floor(rest)
-          )}`;
-        }
-        output.push(extracted);
-        if (output.length > topbot - top) {
-          break;
+          extracted = extracted.trim();
+          content = content.trim();
+          if (textAlign == "center") {
+            extracted = `${extracted}${output.length == topbot - top && content.length > 0 ? "…" : ""}`;
+            let rest = (ogwidth - extracted.length) / 2;
+            rest = rest > 0 ? rest : 0;
+            extracted = `${` `.repeat(Math.ceil(rest))}${extracted}${` `.repeat(
+              Math.floor(rest)
+            )}`;
+          }
+          output.push(extracted);
+          if (output.length > topbot - top) {
+            break;
+          }
         }
       }
     }

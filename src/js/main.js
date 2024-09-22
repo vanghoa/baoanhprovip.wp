@@ -45,6 +45,7 @@ const char = {
   idc: '●',
   mouse: '█',
   divider: '|',
+  hL: '-',
 };
 const cacheKey = {
   imgH: { name: 'imgHolder', allkeys: [] },
@@ -138,8 +139,8 @@ const allBg2 = [
 ];
 const imgHolder = $('#copy .imgholder');
 const imgHolderMain = $('#main .imgholder');
-const allImgHomeMain = $$('#main .imgwrapper');
-const allImgWrapper = [...$$('#copy .imgwrapper')];
+const allImgHomeMain = $$('#main .mainbody .imgwrapper');
+const allImgWrapper = [...$$('#copy .mainbody .imgwrapper')];
 const allImgHome = Array.from(allImgWrapper, (el, k) => {
   const idc = el.nextElementSibling.querySelector(`.indicator`);
   return {
@@ -156,112 +157,23 @@ const allImgHome = Array.from(allImgWrapper, (el, k) => {
     ],
   };
 });
-const allImg = [...$$('#copy *:not(.imgwrapper-fixed) > img')];
-const allImgMain = [...$$('#main *:not(.imgwrapper-fixed) > img')];
+const allImg = [...$$('#copy .mainbody img')];
+const allImgMain = [...$$('#main .mainbody img')];
 const allTxt = [
   ...$$('#copy .mainbody .txt-layer'),
   ...$$('#copy .mainbody .txtp-layer > *:not(figure)'),
 ];
 const allDivider = [...$$('#copy .divider')];
 const storySection = {
-  img: [...$$('#copy .storysection .imgwrapper-fixed img')],
-  bg: $('#copy .storysection .bg-layer-fixed'),
-  txt: [...$$('#copy .storysection .txt-layer-fixed')],
+  img: [...$$('#copy .storysection .imgwrapper img')],
+  bg: $('#copy .storysection .bg-layer'),
+  txt: [...$$('#copy .storysection .txt-layer')],
 };
-
-getScrollbarWidth();
-window.onload = duoResponsive;
-onresize = throttle_debounce(
-  function (isFinal) {
-    isFinal && getScrollbarWidth();
-    duoResponsive(isFinal);
-  },
-  100,
-  400
-);
-
-function setEvent(el, on, fn) {
-  if (fn) {
-    !el[on] && (el[on] = fn);
-  } else {
-    el[on] && (el[on] = null);
-  }
-}
-
-function mouseMove(e) {
-  if (stopEvething) {
-    return;
-  }
-  const mouseChange = calcMousePos(e);
-  if (!mouseChange || window.scrollTop == undefined) {
-    return;
-  }
-  const { mouseY: ogY, mouseX: ogX } = mouseChange;
-  if (ogY != undefined) {
-    const char = (() => {
-      let intensity = 0;
-      const fixedArr = window.fixedLayer?.[ogY];
-      if (fixedArr?.[ogX]) {
-        if (fixedArr[ogX].intensity) {
-          intensity = fixedArr[ogX].intensity;
-        } else {
-          return fixedArr?.[ogX];
-        }
-      }
-      const absArr = window.absoluteLayer?.[ogY + scrollTop];
-      if (absArr?.[ogX]) {
-        return filterGrayRamp(absArr[ogX], intensity);
-      }
-      const staticArr = canvasData[ogY + scrollTop]?.[ogX];
-      return staticArr ? filterGrayRamp(staticArr, intensity) : '';
-    })();
-
-    replaceChar(char, ogX, ogY);
-  }
-  //
-  replaceChar(char.mouse, window.mouseX, window.mouseY);
-
-  function replaceChar(char, x, y) {
-    const content = cmts[y]?.nodeValue;
-    content &&
-      x < content.length &&
-      (cmts[y].nodeValue = `${content.slice(0, x)}${char}${content.slice(
-        x + 1
-      )}`);
-  }
-}
-
-async function scrollResponsive() {
-  if (stopEvething) {
-    return;
-  }
-  calcScrollTop();
-  for (const i in lazyList) {
-    await lazyList[i]();
-  }
-  cmtRenderScreen();
-}
-
-function mouseEnter(i) {
-  if (!window.imgsecs?.[i] || stopEvething) {
-    return;
-  }
-  const { hoverchild, hoverrect } = window.imgsecs[i];
-  window.imgsecs[i].isHover = true;
-  drawFewRect(window.absoluteLayer, [hoverchild], [hoverrect]);
-  drawTxt(window.absoluteLayer, [hoverchild]);
-  cmtRenderScreen();
-}
-
-function mouseLeave(i) {
-  if (!window.imgsecs?.[i]) {
-    return;
-  }
-  const { hoverchild, hoverrect } = window.imgsecs[i];
-  window.imgsecs[i].isHover = false;
-  drawFewRect(window.absoluteLayer, [hoverchild], [hoverrect], null);
-  cmtRenderScreen();
-}
+const inputNoteMain = $('#main #input_note');
+const inputNote = $('#copy #input_note');
+const notebookHolder = $('#copy .notebookholder');
+const inputResponsive = $('#main #input_responsive');
+const allHorizontalLine = [...$$('#copy .mainbody .horizontal-line')];
 
 if (isHome) {
   console.log('home page');
@@ -365,14 +277,162 @@ if (isHome) {
         (curImgHolder && (curchild.src = getOriginSrc(curchild, 'src')));
       window.curImgHolder = curImgHolder;
       if (!stopEvething) {
-        await drawAbsoluteLayer(curImgHolder ? 3 : null, key);
+        await drawImgHolderFixed(curImgHolder ? 3 : null, key);
         cmtRenderScreen();
       }
     }
   }
+} else if (inputNote) {
+  if (window.history.replaceState) {
+    window.history.replaceState(null, null, window.location.href);
+  }
+  const btn = $('#main [type="submit"]');
+  const btncopy = $('#copy [type="submit"]');
+  const form = [...$$('form')];
+  if (sessionStorage.getItem('submit')) {
+    form.forEach((el) => el.classList.add('disabled'));
+    btn.disabled ||
+      (btn.value = btncopy.value = 'you already sent! thanks a lot!');
+    btn.disabled = inputNoteMain.disabled = true;
+  } else {
+    inputNoteMain.parentElement.onsubmit = () => {
+      form.forEach((el) => el.classList.add('disabled'));
+      btn.value = btncopy.value = 'sending...';
+      sessionStorage.setItem('submit', 'true');
+      cmtRenderScreen();
+    };
+    inputNoteMain.oninput = () => {
+      inputNote.value = inputNoteMain.value;
+      if (!stopEvething) {
+        drawFewRect(
+          window.canvasData,
+          [inputNote],
+          inputNote.rectData && [inputNote.rectData],
+          undefined,
+          undefined,
+          { fxl: -1 }
+        );
+        drawTxt(window.canvasData, [inputNote], true, true);
+        cmtRenderScreen();
+      }
+    };
+  }
 }
 
-async function drawAbsoluteLayer(intensity = 3, key, isFinal = true) {
+let allNotes = [];
+
+getScrollbarWidth();
+window.onload = async () => {
+  await duoResponsive();
+  const data = await notebookData;
+  const frag = $createFrag();
+  data &&
+    (allNotes = data.map(({ value, responsive }) => {
+      const p = $create('p');
+      p.innerHTML = value;
+      p.className = `${getNoteResponsiveClass(+responsive)}`;
+      p.style.setProperty('--X', Math.floor(Math.random() * 81) + '%');
+      p.style.setProperty('--Y', Math.floor(Math.random() * 81) + '%');
+      frag.append(p);
+      return p;
+    }));
+  notebookHolder.append(frag);
+  drawTxt(window.fixedLayer, allNotes);
+  cmtRenderScreen();
+};
+onresize = throttle_debounce(
+  function (isFinal) {
+    isFinal && getScrollbarWidth();
+    duoResponsive(isFinal);
+  },
+  100,
+  400
+);
+
+function setEvent(el, on, fn) {
+  if (fn) {
+    !el[on] && (el[on] = fn);
+  } else {
+    el[on] && (el[on] = null);
+  }
+}
+
+function mouseMove(e) {
+  if (stopEvething) {
+    return;
+  }
+  const mouseChange = calcMousePos(e);
+  if (!mouseChange || window.scrollTop == undefined) {
+    return;
+  }
+  const { mouseY: ogY, mouseX: ogX } = mouseChange;
+  if (ogY != undefined) {
+    const char = (() => {
+      let intensity = 0;
+      const fixedArr = window.fixedLayer?.[ogY];
+      if (fixedArr?.[ogX]) {
+        if (fixedArr[ogX].intensity) {
+          intensity = fixedArr[ogX].intensity;
+        } else {
+          return fixedArr?.[ogX];
+        }
+      }
+      const absArr = window.absoluteLayer?.[ogY + scrollTop];
+      if (absArr?.[ogX]) {
+        return filterGrayRamp(absArr[ogX], intensity);
+      }
+      const staticArr = canvasData[ogY + scrollTop]?.[ogX];
+      return staticArr ? filterGrayRamp(staticArr, intensity) : '';
+    })();
+
+    replaceChar(char, ogX, ogY);
+  }
+  //
+  replaceChar(char.mouse, window.mouseX, window.mouseY);
+
+  function replaceChar(char, x, y) {
+    const content = cmts[y]?.nodeValue;
+    content &&
+      x < content.length &&
+      (cmts[y].nodeValue = `${content.slice(0, x)}${char}${content.slice(
+        x + 1
+      )}`);
+  }
+}
+
+async function scrollResponsive() {
+  if (stopEvething) {
+    return;
+  }
+  calcScrollTop();
+  for (const i in lazyList) {
+    await lazyList[i]();
+  }
+  cmtRenderScreen();
+}
+
+function mouseEnter(i) {
+  if (!window.imgsecs?.[i] || stopEvething) {
+    return;
+  }
+  const { hoverchild, hoverrect } = window.imgsecs[i];
+  window.imgsecs[i].isHover = true;
+  drawFewRect(window.absoluteLayer, [hoverchild], [hoverrect]);
+  drawTxt(window.absoluteLayer, [hoverchild]);
+  cmtRenderScreen();
+}
+
+function mouseLeave(i) {
+  if (!window.imgsecs?.[i]) {
+    return;
+  }
+  const { hoverchild, hoverrect } = window.imgsecs[i];
+  window.imgsecs[i].isHover = false;
+  drawFewRect(window.absoluteLayer, [hoverchild], [hoverrect], null);
+  cmtRenderScreen();
+}
+
+async function drawImgHolderFixed(intensity = 3, key, isFinal = true) {
   const vl = intensity
     ? {
         intensity: 3,
@@ -460,6 +520,19 @@ function manualResponsive(el) {
   } ${w > 768 ? 'md' : ''} ${w > 640 ? 'sm' : ''}`;
 }
 
+function getNoteResponsiveClass(w) {
+  if (w > 1280) {
+    return 'xl';
+  } else if (w > 1024) {
+    return 'lg';
+  } else if (w > 768) {
+    return 'md';
+  } else if (w > 640) {
+    return 'sm';
+  }
+  return 'ssm';
+}
+
 async function duoResponsive(isFinal = true) {
   stopEvething = true;
   lazyList = {};
@@ -467,6 +540,7 @@ async function duoResponsive(isFinal = true) {
   lazyQCur = -1;
   lazyQBlock = false;
   stopSlideAscii();
+  inputResponsive && (inputResponsive.value = innerWidth);
   const width = Math.max(outerWidth - innerWidth - 100, 0);
 
   if (width < widthLimit) {
@@ -518,6 +592,13 @@ async function duoResponsive(isFinal = true) {
     rx_: 0,
     ry_: 0,
   });
+  // draw horizontal line
+  inputNote &&
+    drawFewRect(window.canvasData, allHorizontalLine, null, char.hL, isFinal, {
+      rx_: 0,
+      ry_: 0,
+      fy: 1,
+    });
   // draw images
   if (isFinal) {
     if (isHome) {
@@ -539,6 +620,10 @@ async function duoResponsive(isFinal = true) {
   }
   // draw text
   drawTxt(window.canvasData, allTxt, isFinal);
+  // draw input text
+  inputNote &&
+    ((inputNote.openData = undefined), (inputNote.rectData = undefined));
+  inputNote && drawTxt(window.canvasData, [inputNote], true, true);
   // draw nav
   isFinal &&
     cacheKey.imgH.allkeys.forEach((key) => {
@@ -546,9 +631,10 @@ async function duoResponsive(isFinal = true) {
     });
   isFinal && deleteCache(cacheKey.storyS.name);
   await (window.curImgHolder
-    ? drawAbsoluteLayer(3, null, isFinal)
+    ? drawImgHolderFixed(3, null, isFinal)
     : drawNav(null, isFinal));
   // final render
+  drawTxt(window.fixedLayer, allNotes, isFinal);
   cmtRenderScreen();
   // set event
   isFinal && setEvent(mainbody, 'onscroll', scrollResponsive);
@@ -666,11 +752,19 @@ function drawFewRect(
   rectArr,
   rectchar = char.bg2,
   isFinal = true,
-  { rx_, ry_ } = { rx_: rx, ry_: ry }
+  { rx_ = rx, ry_ = ry, fy = 0, fxl = 0, fxr = 0 } = {}
 ) {
-  !rectArr && (rectArr = allRect.map((el) => getRect(el)));
+  rectArr ||
+    (rectArr = allRect.map((el) => {
+      el.rectData = getRect(el);
+      return el.rectData;
+    }));
   for (let i = 0; i < rectArr.length; i++) {
-    const { leftright, topbot, left, top } = rectArr[i];
+    let { leftright, topbot, left, top } = rectArr[i];
+    topbot += fy;
+    top += fy;
+    left += fxl;
+    leftright += fxr;
     if (isLazy(!isFinal, top, topbot) || (top == 0 && topbot == 0)) {
       continue;
     }
@@ -942,69 +1036,93 @@ function getCharacterForGrayScale(grayScale) {
   return grayRamp[Math.ceil(((rampLength - 1) * grayScale) / 255)];
 }
 
-function drawTxt(data, allTxt, isFinal = true) {
+function drawTxtOpen(txt, isFinal, isInput) {
+  if (isInput && txt.openData) {
+    txt.openData.arrcontent = [`${txt.value}`];
+    return false;
+  }
+  let { top, left, ogwidth, topbot } = getRect(txt);
+  if (isLazy(!isFinal, top, topbot)) {
+    return true;
+  }
+  let {
+    display,
+    textAlign,
+    paddingLeft: pl,
+    paddingRight: pr,
+    paddingTop: pt,
+    paddingBottom: pb,
+  } = getComputedStyle(txt);
+  const content = txt.innerText.trim() || txt.value;
+  if (display == 'none' || !content) {
+    return true;
+  }
+  let arrcontent = content.split('\n');
+  pl = reMsrX(+pl.slice(0, -2));
+  pr = reMsrX(+pr.slice(0, -2));
+  pt = reMsrY(+pt.slice(0, -2));
+  pb = reMsrY(+pb.slice(0, -2));
+  top += pt + 1;
+  left += pl;
+  ogwidth -= pl + pr;
+  if (ogwidth < 1) {
+    return true;
+  }
+  txt.openData = {
+    top,
+    left,
+    ogwidth,
+    topbot,
+    arrcontent,
+    textAlign,
+  };
+}
+
+function drawTxt(data, allTxt, isFinal = true, isInput = false) {
   for (let i = 0; i < allTxt.length; i++) {
     const txt = allTxt[i];
-    let { top, left, ogwidth, topbot } = getRect(txt);
-    if (isLazy(!isFinal, top, topbot)) {
+    if (drawTxtOpen(txt, isFinal, isInput)) {
       continue;
     }
-    let {
-      display,
-      textAlign,
-      paddingLeft: pl,
-      paddingRight: pr,
-      paddingTop: pt,
-      paddingBottom: pb,
-    } = getComputedStyle(txt);
-    const content = txt.innerText.trim();
-    if (display == 'none' || content == '') {
-      continue;
-    }
-    let arrcontent = content.split('\n');
-    pl = reMsrX(+pl.slice(0, -2));
-    pr = reMsrX(+pr.slice(0, -2));
-    pt = reMsrY(+pt.slice(0, -2));
-    pb = reMsrY(+pb.slice(0, -2));
-    const output = [];
-    top += pt + 1;
-    left += pl;
-    ogwidth -= pl + pr;
-    if (ogwidth < 1) {
-      continue;
-    }
-    for (let k = 0; k < arrcontent.length; k++) {
-      let content = arrcontent[k];
-      while (content.length > 0) {
-        let extracted = content.slice(0, ogwidth);
-        content = content.slice(ogwidth);
-        if (content.length > 0 && content[0] != ` `) {
-          for (let i = extracted.length - 1; i >= 0; i--) {
-            if (extracted[i] == ` `) {
-              content = extracted.slice(i) + content;
-              extracted = extracted.slice(0, i);
-              break;
+    const { top, left, ogwidth, topbot, arrcontent, textAlign } = txt.openData;
+    let output = [];
+    if (isInput) {
+      output = [arrcontent[0].slice(-ogwidth)];
+    } else {
+      for (let k = 0; k < arrcontent.length; k++) {
+        let content = arrcontent[k];
+        while (content.length > 0) {
+          let extracted = content.slice(0, ogwidth);
+          content = content.slice(ogwidth);
+          if (content.length > 0 && content[0] != ` `) {
+            for (let i = extracted.length - 1; i >= 0; i--) {
+              if (extracted[i] == ` `) {
+                content = extracted.slice(i) + content;
+                extracted = extracted.slice(0, i);
+                break;
+              }
             }
           }
-        }
-        extracted = extracted.trim();
-        content = content.trim();
-        if (textAlign == 'center') {
-          extracted = `${extracted}${
-            output.length == topbot - top && content.length > 0 ? '…' : ''
-          }`;
-          let rest = (ogwidth - extracted.length) / 2;
-          rest = rest > 0 ? rest : 0;
-          extracted = `${` `.repeat(Math.ceil(rest))}${extracted}${` `.repeat(
-            Math.floor(rest)
-          )}`;
-        }
-        output.push(extracted);
-        if (output.length > topbot - top) {
-          break;
+          extracted = extracted.trim();
+          content = content.trim();
+          if (textAlign == 'center') {
+            extracted = `${extracted}${
+              output.length == topbot - top && content.length > 0 ? '…' : ''
+            }`;
+            let rest = (ogwidth - extracted.length) / 2;
+            rest = rest > 0 ? rest : 0;
+            extracted = `${` `.repeat(Math.ceil(rest))}${extracted}${` `.repeat(
+              Math.floor(rest)
+            )}`;
+          }
+          output.push(extracted);
+          if (output.length > topbot - top) {
+            break;
+          }
         }
       }
     }
+
     for (let y = top; y < top + output.length; y++) {
       const yo = y - top;
       const line = output[yo];
