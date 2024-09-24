@@ -22,6 +22,7 @@ let lazyQ = [];
 let lazyQCur = -1;
 let lazyQBlock = false;
 const char = {
+  note: '"',
   bg: "`",
   bg2: "_",
   trans: null,
@@ -161,6 +162,7 @@ const inputNote = $("#copy #input_note");
 const notebookHolder = $("#copy .notebookholder");
 const inputResponsive = $("#main #input_responsive");
 const allHorizontalLine = [...$$("#copy .mainbody .horizontal-line")];
+let notebookData = null;
 if (isHome) {
   let slide = function(i, cur, curnow, length) {
     if (cur.value !== curnow) {
@@ -245,6 +247,7 @@ if (isHome) {
     }
   }
 } else if (inputNote) {
+  notebookData = fetchNoteBook();
   if (window.history.replaceState) {
     window.history.replaceState(null, null, window.location.href);
   }
@@ -253,13 +256,14 @@ if (isHome) {
   const form = [...$$("form")];
   if (sessionStorage.getItem("submit")) {
     form.forEach((el) => el.classList.add("disabled"));
-    btn.disabled || (btn.value = btncopy.value = "you already sent! thanks a lot!");
+    btn.disabled || (btn.value = btncopy.value = "you already sent!\nthanks a lot!\n\n(you can find the message inside devtool with the respective screensize at the time it is sent!)");
     btn.disabled = inputNoteMain.disabled = true;
   } else {
     inputNoteMain.parentElement.onsubmit = () => {
       form.forEach((el) => el.classList.add("disabled"));
       btn.value = btncopy.value = "sending...";
       sessionStorage.setItem("submit", "true");
+      sessionStorage.removeItem("jsonData");
       cmtRenderScreen();
     };
     inputNoteMain.oninput = () => {
@@ -283,19 +287,22 @@ let allNotes = [];
 getScrollbarWidth();
 window.onload = async () => {
   await duoResponsive();
+  if (!inputNote) {
+    return;
+  }
   const data = await notebookData;
   const frag = $createFrag();
   data && (allNotes = data.map(({ value, responsive }) => {
     const p = $create("p");
     p.innerHTML = value;
-    p.className = `${getNoteResponsiveClass(+responsive)}`;
+    p.className = `${getNoteResponsiveClass(+responsive)} p-3 text-center`;
     p.style.setProperty("--X", Math.floor(Math.random() * 81) + "%");
     p.style.setProperty("--Y", Math.floor(Math.random() * 81) + "%");
     frag.append(p);
     return p;
   }));
   notebookHolder.append(frag);
-  drawTxt(window.fixedLayer, allNotes);
+  drawNotes();
   cmtRenderScreen();
 };
 onresize = throttle_debounce(
@@ -306,6 +313,12 @@ onresize = throttle_debounce(
   100,
   400
 );
+function drawNotes() {
+  drawFewRect(window.fixedLayer, allNotes, void 0, char.note, void 0, {
+    rx_: 1
+  });
+  drawTxt(window.fixedLayer, allNotes);
+}
 function setEvent(el, on, fn) {
   if (fn) {
     !el[on] && (el[on] = fn);
@@ -555,7 +568,7 @@ async function duoResponsive(isFinal = true) {
   });
   isFinal && deleteCache(cacheKey.storyS.name);
   await (window.curImgHolder ? drawImgHolderFixed(3, null, isFinal) : drawNav(null, isFinal));
-  drawTxt(window.fixedLayer, allNotes, isFinal);
+  inputNote && drawNotes();
   cmtRenderScreen();
   isFinal && setEvent(mainbody, "onscroll", scrollResponsive);
   isFinal && setEvent(document, "onmousemove", mouseMove);
@@ -926,6 +939,9 @@ function drawTxt(data, allTxt2, isFinal = true, isInput = false) {
     } else {
       for (let k = 0; k < arrcontent.length; k++) {
         let content = arrcontent[k];
+        if (content.length == 0) {
+          output.push("");
+        }
         while (content.length > 0) {
           let extracted = content.slice(0, ogwidth);
           content = content.slice(ogwidth);
@@ -963,8 +979,6 @@ function drawTxt(data, allTxt2, isFinal = true, isInput = false) {
           let char2 = ((_a = output[yo]) == null ? void 0 : _a[x - left]) || data[y][x];
           char2 = char2 == ` ` ? data[y][x] : char2;
           data[y][x] = char2;
-        } else {
-          console.log(y, x);
         }
       }
     }

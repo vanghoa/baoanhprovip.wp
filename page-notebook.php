@@ -45,14 +45,16 @@ if (isset($_SESSION['submitted'])) {
 
 <?php get_header(); ?>
 
-<form class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col text-center items-center p-4 pb-0 max-w-full <?php outline() ?>" <?= $submitted ? '' : 'method="post"' ?> action="">
-	<label class="txt-layer w-fit mb-2" for="input_note">leave me a note</label>
+<form class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col text-center items-center p-4 pb-0 max-w-56 <?php outline() ?>" <?= $submitted ? '' : 'method="post"' ?> action="">
+	<label class="txt-layer w-fit mb-2" for="input_note">1. open devtool<br>2. leave me a note</label>
 	<?php ?>
 	<input class="px-2 mb-2 bg-transparent focus:outline-none max-w-full" type="text" id="input_note" name="input_note" required <?php echo $submitted ? 'disabled' : ''; ?>>
 	<?php ?>
 	<input type="hidden" id="input_responsive" name="input_responsive" value="0">
 	<div style="height: 1px;" class="horizontal-line w-full bg-text"></div>
-	<input class="cursor-pointer txt-layer w-full py-4" type="submit" name="submit_form" value="<?php echo $submitted ? ($error ? 'something is wrong :( please try again later' : 'successful! thank you!') : 'send'; ?>" <?php echo $submitted ? 'disabled' : ''; ?>>
+	<input class="cursor-pointer txt-layer w-full py-4 whitespace-pre-wrap" type="submit" name="submit_form" value="<?php echo $submitted ? ($error ? 'something is wrong :( please try again later' : 'thank you!
+
+(you can find the message inside devtool with the respective screensize at the time it is sent!)') : 'send'; ?>" <?php echo $submitted ? 'disabled' : ''; ?>>
 </form>
 
 <?php if ($error) { ?>

@@ -3,7 +3,6 @@ async function fetchNoteBook() {
   const cachedData = sessionStorage.getItem('jsonData');
 
   if (cachedData) {
-    console.log('Using cached data:', JSON.parse(cachedData));
     return JSON.parse(cachedData);
   }
 
@@ -16,15 +15,11 @@ async function fetchNoteBook() {
 
     // Save the data in sessionStorage
     sessionStorage.setItem('jsonData', JSON.stringify(data));
-
-    console.log(data);
     return data;
   } catch (error) {
     console.error('Error fetching JSON:', error);
   }
 }
-
-const notebookData = fetchNoteBook();
 
 const root = document.querySelector(':root');
 const rootstyle = root.style;
