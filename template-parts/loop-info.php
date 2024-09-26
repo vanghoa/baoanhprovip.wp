@@ -1,3 +1,3 @@
-<div class="[&>*]:mt-4 [&>*]:h-fit [&>*]:w-full txtp-layer max-w-96">
+<div class="[&>*]:h-fit [&>*]:w-full txtp-layer the-content-info">
 	<?php the_content(); ?>
 </div>
