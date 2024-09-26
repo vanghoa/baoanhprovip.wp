@@ -6,7 +6,13 @@ const html = document.documentElement;
 const main = $('main');
 const mainbody = $('.mainbody');
 const copy = $('#copy');
-const imgcanvas = $('#preview');
+const imgcanvas =
+  'OffscreenCanvas' in window
+    ? (() => {
+        $('#preview').remove();
+        return new OffscreenCanvas(100, 100);
+      })()
+    : $('#preview');
 
 //
 const rx = 2;
@@ -292,7 +298,9 @@ if (isHome) {
       imgHolderMain.classList[curImgHolder ? 'add' : 'remove']('open');
       curchild.style.visibility = curImgHolder ? 'visible' : 'hidden';
       curchild.originsrc ??
-        (curImgHolder && (curchild.src = getOriginSrc(curchild, 'src')));
+        (curImgHolder &&
+          (curchild.originsrc = curchild.src =
+            curchild.getAttribute(`data-src`) || curchild.src));
       window.curImgHolder = curImgHolder;
       if (!stopEvething) {
         await drawImgHolderFixed(curImgHolder ? 3 : null, key);
@@ -1183,53 +1191,56 @@ function drawTxt(data, allTxt, isFinal = true, isInput = false) {
 
 function image2Canvas(img, cW, cH, posX = 0, isCover = true) {
   return new Promise((resolve) => {
-    const image = new Image();
-    image.onload = () => {
-      const scaleFactor = Math[isCover ? 'max' : 'min'](
-        cW / image.width,
-        cH / (image.height / hratio)
-      );
-      const dWidth = image.width * scaleFactor;
-      const dHeight = (image.height / hratio) * scaleFactor;
-      const x = cW / 2 - dWidth / 2;
-      const y = cH / 2 - dHeight / 2;
-
-      const sx = Math.abs(x / scaleFactor);
-      const sy = Math.abs(y / scaleFactor) * hratio;
-      const sWidth = image.width;
-      const sHeight = image.height;
-
-      ctx.fillStyle = '#e3e3ca';
-      ctx.fillRect(posX + 0, 0, cW, cH);
-
-      isCover
-        ? ctx.drawImage(
-            image,
-            sx,
-            sy,
-            sWidth,
-            sHeight,
-            posX + 0,
-            0,
-            dWidth,
-            dHeight
-          )
-        : ctx.drawImage(image, posX + x, y, dWidth, dHeight);
-      resolve({
-        top: Math.round(y),
-        left: Math.round(posX + x),
-      });
-    };
-    image.crossOrigin = '';
-    image.src = getOriginSrc(img);
+    if (img.i2C) {
+      resolve(i2Conload(img.i2C, cW, cH, posX, isCover));
+      return;
+    } else {
+      const image = (img.i2C = new Image());
+      image.onload = () => {
+        image.onload = null;
+        resolve(i2Conload(image, cW, cH, posX, isCover));
+      };
+      image.crossOrigin = '';
+      image.src = img.getAttribute(`data-src`) || img.src;
+    }
   });
 }
 
-function getOriginSrc(img, key = 'src') {
-  return (
-    img[`origin${key}`] ??
-    (img[`origin${key}`] = img.getAttribute(`data-${key}`) || img[key])
+function i2Conload(image, cW, cH, posX, isCover) {
+  const scaleFactor = Math[isCover ? 'max' : 'min'](
+    cW / image.width,
+    cH / (image.height / hratio)
   );
+  const dWidth = image.width * scaleFactor;
+  const dHeight = (image.height / hratio) * scaleFactor;
+  const x = cW / 2 - dWidth / 2;
+  const y = cH / 2 - dHeight / 2;
+
+  const sx = Math.abs(x / scaleFactor);
+  const sy = Math.abs(y / scaleFactor) * hratio;
+  const sWidth = image.width;
+  const sHeight = image.height;
+
+  ctx.fillStyle = '#e3e3ca';
+  ctx.fillRect(posX + 0, 0, cW, cH);
+
+  isCover
+    ? ctx.drawImage(
+        image,
+        sx,
+        sy,
+        sWidth,
+        sHeight,
+        posX + 0,
+        0,
+        dWidth,
+        dHeight
+      )
+    : ctx.drawImage(image, posX + x, y, dWidth, dHeight);
+  return {
+    top: Math.round(y),
+    left: Math.round(posX + x),
+  };
 }
 
 function canvas2CanvasArr(
