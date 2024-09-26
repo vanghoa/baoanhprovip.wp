@@ -206,7 +206,7 @@ if (isHome) {
     }
   );
 
-  const intervalId = setInterval(() => {
+  /*const intervalId = setInterval(() => {
     if (currentSlideEls.length == 0) {
       return;
     }
@@ -217,7 +217,7 @@ if (isHome) {
     curnow = curnow >= length ? 1 : curnow + 1;
     window.stopPrev = slideAscii(el.i, curnow - 1, cur.value - 1, 500);
     slide(el.i, cur, curnow, length);
-  }, 3000);
+  }, 3000);*/
 
   imgsecs.forEach((el, i) => {
     const imgwrapper = imgwrappers[i];
@@ -226,7 +226,7 @@ if (isHome) {
     curs.push({ value: 1 });
     let cur = curs[i];
     el.i = i;
-    length > 1 && slideObserver.observe(imgsecs[i]);
+    // length > 1 && slideObserver.observe(imgsecs[i]);
     el.addEventListener('click', function ({ target }) {
       let curnow = cur.value;
       if (target.closest('.lbtn')) {
