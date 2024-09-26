@@ -249,6 +249,17 @@ if (isHome) {
     imgHolder.appendChild(frag);
   }
   {
+    let toggle = function(curImgHolder, curImgHolderChild, key) {
+      curImgHolderChild && (curchild = curImgHolderChild);
+      imgHolderMain.classList[curImgHolder ? "add" : "remove"]("open");
+      curchild.style.visibility = curImgHolder ? "visible" : "hidden";
+      curchild.originsrc ?? (curImgHolder && (curchild.originsrc = curchild.src = curchild.getAttribute(`data-src`) || curchild.src));
+      window.curImgHolder = curImgHolder;
+      if (!stopEvething) {
+        drawImgHolderFixed(curImgHolder ? 3 : null, key);
+        cmtRenderScreen();
+      }
+    };
     const frag = $createFrag();
     let curchild = null;
     imgHolderMain.onclick = () => {
@@ -268,17 +279,6 @@ if (isHome) {
       frag.appendChild(div);
     }
     imgHolderMain.appendChild(frag);
-    async function toggle(curImgHolder, curImgHolderChild, key) {
-      curImgHolderChild && (curchild = curImgHolderChild);
-      imgHolderMain.classList[curImgHolder ? "add" : "remove"]("open");
-      curchild.style.visibility = curImgHolder ? "visible" : "hidden";
-      curchild.originsrc ?? (curImgHolder && (curchild.originsrc = curchild.src = curchild.getAttribute(`data-src`) || curchild.src));
-      window.curImgHolder = curImgHolder;
-      if (!stopEvething) {
-        await drawImgHolderFixed(curImgHolder ? 3 : null, key);
-        cmtRenderScreen();
-      }
-    }
   }
 } else if (inputNote) {
   notebookData = fetchNoteBook();
@@ -320,7 +320,7 @@ if (isHome) {
 let allNotes = [];
 getScrollbarWidth();
 window.onload = async () => {
-  await duoResponsive();
+  duoResponsive();
   if (!inputNote) {
     return;
   }
@@ -399,13 +399,13 @@ function mouseMove(e) {
     )}`);
   }
 }
-async function scrollResponsive() {
+function scrollResponsive() {
   if (stopEvething) {
     return;
   }
   calcScrollTop();
   for (const i in lazyList) {
-    await lazyList[i]();
+    lazyList[i]();
   }
   cmtRenderScreen();
 }
@@ -430,7 +430,7 @@ function mouseLeave(i) {
   drawFewRect(window.absoluteLayer, [hoverchild], [hoverrect], null);
   cmtRenderScreen();
 }
-async function drawImgHolderFixed(intensity = 3, key, isFinal = true) {
+function drawImgHolderFixed(intensity = 3, key, isFinal = true) {
   const vl = intensity ? {
     intensity: 3
   } : null;
@@ -438,8 +438,8 @@ async function drawImgHolderFixed(intensity = 3, key, isFinal = true) {
     { length: screenlength },
     () => Array.from({ length: window.fixedLayer[0].length }, () => vl)
   );
-  await drawNav(intensity, isFinal);
-  intensity && (window.imgHolder = await drawImg(
+  drawNav(intensity, isFinal);
+  intensity && (window.imgHolder = drawImg(
     window.fixedLayer,
     [window.curImgHolder],
     canvas2CanvasArrNoMask.bind({ isOL: true }),
@@ -511,7 +511,7 @@ function getNoteResponsiveClass(w) {
   }
   return "ssm";
 }
-async function duoResponsive(isFinal = true) {
+function duoResponsive(isFinal = true) {
   stopEvething = true;
   lazyList = {};
   lazyQ = [];
@@ -578,9 +578,9 @@ async function duoResponsive(isFinal = true) {
   });
   if (isFinal) {
     if (isHome) {
-      await drawImgHome(window.canvasData, allImgHome);
+      drawImgHome(window.canvasData, allImgHome);
     } else {
-      await drawImg(
+      drawImg(
         window.canvasData,
         allImg,
         canvas2CanvasArr.bind({ isOL: true }),
@@ -601,7 +601,7 @@ async function duoResponsive(isFinal = true) {
     deleteCache(key);
   });
   isFinal && deleteCache(cacheKey.storyS.name);
-  await (window.curImgHolder ? drawImgHolderFixed(3, null, isFinal) : drawNav(null, isFinal));
+  window.curImgHolder ? drawImgHolderFixed(3, null, isFinal) : drawNav(null, isFinal);
   inputNote && drawNotes();
   cmtRenderScreen();
   isFinal && setEvent(mainbody, "onscroll", scrollResponsive);
@@ -615,7 +615,7 @@ async function duoResponsive(isFinal = true) {
   });
   isFinal && (stopEvething = false);
 }
-async function drawNav(intensity = null, isFinal = true) {
+function drawNav(intensity = null, isFinal = true) {
   drawFewRect(window.fixedLayer, [nav]);
   drawTxt(window.fixedLayer, navTxt);
   if (storySection.bg) {
@@ -624,7 +624,7 @@ async function drawNav(intensity = null, isFinal = true) {
     drawTxt(window.fixedLayer, storySection.txt);
     const { display } = getComputedStyle(storySection.img[0].parentElement);
     if (display != "none") {
-      await drawImg(
+      drawImg(
         window.fixedLayer,
         storySection.img,
         canvas2CanvasArr.bind({ isOL: false, intensityF: intensity, charbg }),
@@ -739,7 +739,7 @@ function reMsrX(num) {
 function reMsrY(num) {
   return Math.floor(num / scaleY);
 }
-async function drawImg(data, allImg2, canvas2CanvasFunc = canvas2CanvasArr, lazyLoad = false, cacheKey2 = null, isFinal = true) {
+function drawImg(data, allImg2, canvas2CanvasFunc = canvas2CanvasArr, lazyLoad = false, cacheKey2 = null, isFinal = true) {
   let returnobj;
   if (!isFinal) {
     drawFewRect(data, allImg2, null, char.mouse);
@@ -803,7 +803,7 @@ async function drawImg(data, allImg2, canvas2CanvasFunc = canvas2CanvasArr, lazy
   }
   return returnobj;
 }
-async function drawImgHome(data, allImg2) {
+function drawImgHome(data, allImg2) {
   const { top, left, topbot, leftright, width, height } = getRect(allImg2[0].el);
   if (width < 4 || height < 4) {
     return;

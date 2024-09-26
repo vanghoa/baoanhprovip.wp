@@ -293,7 +293,7 @@ if (isHome) {
     }
     imgHolderMain.appendChild(frag);
     // eslint-disable-next-line no-inner-declarations
-    async function toggle(curImgHolder, curImgHolderChild, key) {
+    function toggle(curImgHolder, curImgHolderChild, key) {
       curImgHolderChild && (curchild = curImgHolderChild);
       imgHolderMain.classList[curImgHolder ? 'add' : 'remove']('open');
       curchild.style.visibility = curImgHolder ? 'visible' : 'hidden';
@@ -303,7 +303,7 @@ if (isHome) {
             curchild.getAttribute(`data-src`) || curchild.src));
       window.curImgHolder = curImgHolder;
       if (!stopEvething) {
-        await drawImgHolderFixed(curImgHolder ? 3 : null, key);
+        drawImgHolderFixed(curImgHolder ? 3 : null, key);
         cmtRenderScreen();
       }
     }
@@ -352,7 +352,7 @@ let allNotes = [];
 
 getScrollbarWidth();
 window.onload = async () => {
-  await duoResponsive();
+  duoResponsive();
   if (!inputNote) {
     return;
   }
@@ -439,13 +439,13 @@ function mouseMove(e) {
   }
 }
 
-async function scrollResponsive() {
+function scrollResponsive() {
   if (stopEvething) {
     return;
   }
   calcScrollTop();
   for (const i in lazyList) {
-    await lazyList[i]();
+    lazyList[i]();
   }
   cmtRenderScreen();
 }
@@ -471,7 +471,7 @@ function mouseLeave(i) {
   cmtRenderScreen();
 }
 
-async function drawImgHolderFixed(intensity = 3, key, isFinal = true) {
+function drawImgHolderFixed(intensity = 3, key, isFinal = true) {
   const vl = intensity
     ? {
         intensity: 3,
@@ -480,9 +480,9 @@ async function drawImgHolderFixed(intensity = 3, key, isFinal = true) {
   window.fixedLayer = Array.from({ length: screenlength }, () =>
     Array.from({ length: window.fixedLayer[0].length }, () => vl)
   );
-  await drawNav(intensity, isFinal);
+  drawNav(intensity, isFinal);
   intensity &&
-    (window.imgHolder = await drawImg(
+    (window.imgHolder = drawImg(
       window.fixedLayer,
       [window.curImgHolder],
       canvas2CanvasArrNoMask.bind({ isOL: true }),
@@ -578,7 +578,7 @@ function getNoteResponsiveClass(w) {
   return 'ssm';
 }
 
-async function duoResponsive(isFinal = true) {
+function duoResponsive(isFinal = true) {
   stopEvething = true;
   lazyList = {};
   lazyQ = [];
@@ -647,9 +647,9 @@ async function duoResponsive(isFinal = true) {
   // draw images
   if (isFinal) {
     if (isHome) {
-      await drawImgHome(window.canvasData, allImgHome);
+      drawImgHome(window.canvasData, allImgHome);
     } else {
-      await drawImg(
+      drawImg(
         window.canvasData,
         allImg,
         canvas2CanvasArr.bind({ isOL: true }),
@@ -675,9 +675,9 @@ async function duoResponsive(isFinal = true) {
       deleteCache(key);
     });
   isFinal && deleteCache(cacheKey.storyS.name);
-  await (window.curImgHolder
+  window.curImgHolder
     ? drawImgHolderFixed(3, null, isFinal)
-    : drawNav(null, isFinal));
+    : drawNav(null, isFinal);
   // final render
   inputNote && drawNotes();
   cmtRenderScreen();
@@ -695,7 +695,7 @@ async function duoResponsive(isFinal = true) {
   isFinal && (stopEvething = false);
 }
 
-async function drawNav(intensity = null, isFinal = true) {
+function drawNav(intensity = null, isFinal = true) {
   drawFewRect(window.fixedLayer, [nav]);
   drawTxt(window.fixedLayer, navTxt);
   if (storySection.bg) {
@@ -704,7 +704,7 @@ async function drawNav(intensity = null, isFinal = true) {
     drawTxt(window.fixedLayer, storySection.txt);
     const { display } = getComputedStyle(storySection.img[0].parentElement);
     if (display != 'none') {
-      await drawImg(
+      drawImg(
         window.fixedLayer,
         storySection.img,
         canvas2CanvasArr.bind({ isOL: false, intensityF: intensity, charbg }),
@@ -860,7 +860,7 @@ function reMsrY(num) {
   return Math.floor(num / scaleY);
 }
 
-async function drawImg(
+function drawImg(
   data,
   allImg,
   canvas2CanvasFunc = canvas2CanvasArr,
@@ -938,7 +938,7 @@ async function drawImg(
   return returnobj;
 }
 
-async function drawImgHome(data, allImg) {
+function drawImgHome(data, allImg) {
   const { top, left, topbot, leftright, width, height } = getRect(allImg[0].el);
   if (width < 4 || height < 4) {
     return;
