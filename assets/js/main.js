@@ -811,16 +811,16 @@ async function drawImgHome(data, allImg2) {
   };
   for (let igroup = 0; igroup < allImg2.length; igroup++) {
     imgsecs[igroup].ascii = {};
-    ctx.clearRect(0, 0, imgcanvas.width, imgcanvas.height);
     const { group, el, lbtn, rbtn, idcascii, idc, hoverlayer, hoverchild } = allImg2[igroup];
-    imgcanvas.width = base.w * group.length;
-    imgcanvas.height = base.h;
     const { top: top2, left: left2, topbot: topbot2, leftright: leftright2, width: width2, height: height2 } = getRect(el);
     const lazyKey = `${igroup}${leftright2 + topbot2 + left2 + top2}${Math.random().toString(16).slice(2)}`;
     lazyList[lazyKey] = async (byPassCond = false) => {
       if (LazyDrawImgOpen(byPassCond, true, top2, topbot2, lazyKey)) {
         return;
       }
+      ctx.clearRect(0, 0, imgcanvas.width, imgcanvas.height);
+      imgcanvas.width = base.w * group.length;
+      imgcanvas.height = base.h;
       for (let iimg = 0; iimg < group.length; iimg++) {
         const img = group[iimg];
         const { objectFit } = getComputedStyle(img);
@@ -831,7 +831,6 @@ async function drawImgHome(data, allImg2) {
           base.w * iimg,
           objectFit == "cover"
         );
-        console.log(img, iimg);
       }
       const grayScales = convertToGrayScales(
         ctx,
@@ -1045,7 +1044,6 @@ function image2Canvas(img, cW, cH, posX = 0, isCover = true) {
         dWidth,
         dHeight
       ) : ctx.drawImage(image, posX + x, y, dWidth, dHeight);
-      console.log("img2canvas posX: ", posX);
       resolve({
         top: Math.round(y),
         left: Math.round(posX + x)
