@@ -182,37 +182,52 @@ if (isHome) {
 
   const imgwrappers = $$('main .homegrid .imgwrapper');
   window.imgsecs = $$('main .homegrid .imgsec');
-  const projects = $$('main .homegrid .project');
   const indicators = [];
   window.curs = [];
+  let currentSlideEls = [];
 
-  let iscroll = 0;
-  let isPause = false;
-  /*
-  setInterval(() => {
-    if (isPause) {
+  const slideObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        const el = entry.target;
+        if (entry.isIntersecting) {
+          if (!currentSlideEls.includes(el)) {
+            currentSlideEls.push(el);
+            el.isObserved = true;
+          }
+        } else if (el.isObserved) {
+          currentSlideEls = currentSlideEls.filter((slide) => slide !== el);
+          observer.unobserve(el);
+        }
+      });
+    },
+    {
+      threshold: 0.3,
+    }
+  );
+
+  const intervalId = setInterval(() => {
+    if (currentSlideEls.length == 0) {
       return;
     }
-    const length = imgwrappers[iscroll].childElementCount;
-    let cur = curs[iscroll];
+    const el = getRandItem(currentSlideEls);
+    const length = imgwrappers[el.i].childElementCount;
+    let cur = window.curs[el.i];
     let curnow = cur.value;
     curnow = curnow >= length ? 1 : curnow + 1;
-    slide(iscroll, cur, curnow, length);
+    window.stopPrev = slideAscii(el.i, curnow - 1, cur.value - 1, 500);
+    slide(el.i, cur, curnow, length);
   }, 3000);
-*/
+
   imgsecs.forEach((el, i) => {
     const imgwrapper = imgwrappers[i];
     const length = imgwrapper.childElementCount;
     indicators.push(imgsecs[i].querySelectorAll('.indicator li'));
     curs.push({ value: 1 });
     let cur = curs[i];
-    /*
-    projects[i].addEventListener('mouseenter', () => {
-      isPause = false;
-      iscroll = i;
-    });*/
+    el.i = i;
+    length > 1 && slideObserver.observe(imgsecs[i]);
     el.addEventListener('click', function ({ target }) {
-      isPause = true;
       let curnow = cur.value;
       if (target.closest('.lbtn')) {
         curnow = curnow <= 1 ? 1 : curnow - 1;
@@ -221,6 +236,7 @@ if (isHome) {
       }
       window.stopPrev = slideAscii(i, curnow - 1, cur.value - 1, 500);
       slide(i, cur, curnow, length);
+      currentSlideEls = currentSlideEls.filter((slide) => slide !== el);
     });
   });
   // eslint-disable-next-line no-inner-declarations
@@ -477,7 +493,13 @@ function stopSlideAscii() {
 function slideAscii(i, curnow, curprev, time) {
   stopSlideAscii();
   let stop = false;
-  if (!imgsecs[i].ascii || stop || curnow == curprev || !imgsecs[i].ascii.arr) {
+  if (
+    !imgsecs[i].ascii ||
+    stop ||
+    curnow == curprev ||
+    !imgsecs[i].ascii.arr ||
+    stopEvething
+  ) {
     return;
   }
   const delay_ = 100;
