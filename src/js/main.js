@@ -206,7 +206,7 @@ if (isHome) {
     }
   );
 
-  /*const intervalId = setInterval(() => {
+  const intervalId = setInterval(() => {
     if (currentSlideEls.length == 0) {
       return;
     }
@@ -217,7 +217,7 @@ if (isHome) {
     curnow = curnow >= length ? 1 : curnow + 1;
     window.stopPrev = slideAscii(el.i, curnow - 1, cur.value - 1, 500);
     slide(el.i, cur, curnow, length);
-  }, 3000);*/
+  }, 3000);
 
   imgsecs.forEach((el, i) => {
     const imgwrapper = imgwrappers[i];
@@ -226,7 +226,7 @@ if (isHome) {
     curs.push({ value: 1 });
     let cur = curs[i];
     el.i = i;
-    // length > 1 && slideObserver.observe(imgsecs[i]);
+    length > 1 && slideObserver.observe(imgsecs[i]);
     el.addEventListener('click', function ({ target }) {
       let curnow = cur.value;
       if (target.closest('.lbtn')) {
@@ -967,6 +967,7 @@ async function drawImgHome(data, allImg) {
           base.w * iimg,
           objectFit == 'cover'
         );
+        console.log(img, iimg);
       }
       const grayScales = convertToGrayScales(
         ctx,
@@ -1215,6 +1216,7 @@ function image2Canvas(img, cW, cH, posX = 0, isCover = true) {
             dHeight
           )
         : ctx.drawImage(image, posX + x, y, dWidth, dHeight);
+      console.log('img2canvas posX: ', posX);
       resolve({
         top: Math.round(y),
         left: Math.round(posX + x),
