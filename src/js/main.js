@@ -206,18 +206,22 @@ if (isHome) {
     }
   );
 
-  const intervalId = setInterval(() => {
-    if (currentSlideEls.length == 0) {
-      return;
-    }
-    const el = getRandItem(currentSlideEls);
-    const length = imgwrappers[el.i].childElementCount;
-    let cur = window.curs[el.i];
-    let curnow = cur.value;
-    curnow = curnow >= length ? 1 : curnow + 1;
-    window.stopPrev = slideAscii(el.i, curnow - 1, cur.value - 1, 500);
-    slide(el.i, cur, curnow, length);
-  }, 3000);
+  const intervalId =
+    !window.matchMedia(
+      'only screen and (max-width: 768px) and (pointer: coarse)'
+    ).matches &&
+    setInterval(() => {
+      if (currentSlideEls.length == 0) {
+        return;
+      }
+      const el = getRandItem(currentSlideEls);
+      const length = imgwrappers[el.i].childElementCount;
+      let cur = window.curs[el.i];
+      let curnow = cur.value;
+      curnow = curnow >= length ? 1 : curnow + 1;
+      window.stopPrev = slideAscii(el.i, curnow - 1, cur.value - 1, 500);
+      slide(el.i, cur, curnow, length);
+    }, 3000);
 
   imgsecs.forEach((el, i) => {
     const imgwrapper = imgwrappers[i];

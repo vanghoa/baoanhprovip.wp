@@ -6,11 +6,11 @@ $permalink = $pods->display('permalink') . setStoryPerma(); ?>
 		<div class="shrink txt-layer whitespace-nowrap">-></div>
 	</div>
 	<div class="mx-3 divider">
-		<div>||||||</div>
+		<div>||||||||||||</div>
 	</div>
 	<div class="shrink-0 timeframe"><?php formatTimeframe(true) ?></div>
 	<div class="mx-3 divider">
-		<div>||||||</div>
+		<div>||||||||||||</div>
 	</div>
 	<div class="w-full shrink txt-layer"><?php outputTaxonomy() ?></div>
 </li>

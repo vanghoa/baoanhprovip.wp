@@ -187,6 +187,9 @@
 }
 
 @include respond-to(lg) {
+	.homegrid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
 	.story {
 		.storygrid {
 			column-gap: 4rem;
@@ -195,9 +198,6 @@
 }
 
 @include respond-to(xl) {
-	.homegrid {
-		grid-template-columns: repeat(3, minmax(0, 1fr));
-	}
 	.single-work-body {
 		.the-content {
 			.span2md {

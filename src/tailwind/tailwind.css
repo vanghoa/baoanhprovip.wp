@@ -7,17 +7,6 @@
 		font-size: 17px;
 		--scrlbrwd: 0px;
 	}
-	@media only screen and (max-width: 768px) and (pointer: coarse) {
-		:root {
-			font-size: 16px;
-		}
-	}
-
-	@media screen and (max-width: 600px) {
-		#wpadminbar {
-			position: fixed;
-		}
-	}
 
 	* {
 		@apply text-xs;
@@ -93,5 +82,26 @@
 
 	canvas#preview {
 		@apply hidden;
+	}
+}
+
+@layer utilities {
+	@media only screen and (max-width: 768px) and (pointer: coarse) {
+		:root {
+			font-size: 13px;
+		}
+		.homegrid {
+			@apply grid-cols-2 gap-4;
+		}
+		.single-work-body,
+		.single-work-head {
+			@apply max-w-96 mx-auto;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		#wpadminbar {
+			position: fixed;
+		}
 	}
 }

@@ -195,7 +195,9 @@ if (isHome) {
       threshold: 0.3
     }
   );
-  const intervalId = setInterval(() => {
+  const intervalId = !window.matchMedia(
+    "only screen and (max-width: 768px) and (pointer: coarse)"
+  ).matches && setInterval(() => {
     if (currentSlideEls.length == 0) {
       return;
     }
