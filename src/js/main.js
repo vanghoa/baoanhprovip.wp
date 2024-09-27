@@ -38,13 +38,13 @@ const char = {
   bg2: '_',
   trans: null,
   // prettier-ignore
-  lbtn: nullifySpace([
+  lbtn: stringifyASCII([
     ` █ `,
     `█◄█`,
     ` █ `,
   ]),
   // prettier-ignore
-  rbtn: nullifySpace([
+  rbtn: stringifyASCII([
     ` █ `,
     `█►█`,
     ` █ `
@@ -71,14 +71,9 @@ const grayRampObj = {
 };
 const rampLength = grayRamp.length;
 
-function nullifySpace(arr) {
-  for (const i in arr) {
-    arr[i] = arr[i].split('');
-    for (const k in arr[i]) {
-      arr[i][k] == ` ` && (arr[i][k] = null);
-    }
-  }
-  return arr;
+function stringifyASCII(arr) {
+  const str = arr.join('');
+  return { w: arr[0].length, h: arr.length, str };
 }
 
 let screenlength = 0;
@@ -159,9 +154,8 @@ const allImgHome = Array.from(allImgWrapper, (el, k) => {
     hoverlayer:
       allImgHomeMain[k].nextElementSibling.querySelector('.hover-layer'),
     hoverchild: el.nextElementSibling.querySelector('.hover-child'),
-    idcascii: idc && [
-      Array(idc.childElementCount).fill([char.idc, char.trans]).flat(),
-    ],
+    idcascii:
+      idc && Array(idc.childElementCount).fill([char.idc, ` `]).flat().join(''),
   };
 });
 const allImg = [...$$('#copy .mainbody img')];
@@ -485,7 +479,7 @@ function drawImgHolderFixed(intensity = 3, key, isFinal = true) {
     (window.imgHolder = drawImg(
       window.fixedLayer,
       [window.curImgHolder],
-      canvas2CanvasArrNoMask.bind({ isOL: true }),
+      str2CanvasArrNoMask.bind({ isOL: true }),
       false,
       key,
       isFinal
@@ -511,7 +505,7 @@ function slideAscii(i, curnow, curprev, time) {
     return;
   }
   const delay_ = 100;
-  let { top, topbot, left, leftright, arr: ascii, baseW } = imgsecs[i].ascii;
+  let { top, topbot, left, leftright, arr, baseW } = imgsecs[i].ascii;
   // top += 1;
   const lim = time / delay_;
   let count = 1;
@@ -523,9 +517,8 @@ function slideAscii(i, curnow, curprev, time) {
     for (let y = top; y <= topbot; y++) {
       for (let x = left; x <= leftright; x++) {
         let newchar = canvasData[y]?.[x];
-        newchar !== char.bg &&
-          newchar &&
-          (newchar = ascii[y - top]?.[x - left + percentage] || newchar);
+        const str = arr.ascii[x - left + percentage + (y - top) * arr.w];
+        newchar !== char.bg && newchar && str !== ` ` && (newchar = str);
         canvasData[y][x] = newchar;
       }
     }
@@ -652,7 +645,7 @@ function duoResponsive(isFinal = true) {
       drawImg(
         window.canvasData,
         allImg,
-        canvas2CanvasArr.bind({ isOL: true }),
+        str2CanvasArr.bind({ isOL: true }),
         true
       );
     }
@@ -699,7 +692,7 @@ function drawNav(intensity = null, isFinal = true) {
   drawFewRect(window.fixedLayer, [nav]);
   drawTxt(window.fixedLayer, navTxt);
   if (storySection.bg) {
-    const charbg = filterGrayRamp(char.bg2, intensity);
+    const charbg = filterGrayRamp(char.bg2, intensity); //
     drawFewRect(window.fixedLayer, [storySection.bg], null, charbg, isFinal);
     drawTxt(window.fixedLayer, storySection.txt);
     const { display } = getComputedStyle(storySection.img[0].parentElement);
@@ -707,7 +700,7 @@ function drawNav(intensity = null, isFinal = true) {
       drawImg(
         window.fixedLayer,
         storySection.img,
-        canvas2CanvasArr.bind({ isOL: false, intensityF: intensity, charbg }),
+        str2CanvasArr.bind({ isOL: false, intensityF: intensity, charbg }),
         false,
         cacheKey.storyS.name,
         isFinal
@@ -863,7 +856,7 @@ function reMsrY(num) {
 function drawImg(
   data,
   allImg,
-  canvas2CanvasFunc = canvas2CanvasArr,
+  canvas2CanvasFunc = str2CanvasArr,
   lazyLoad = false,
   cacheKey = null,
   isFinal = true
@@ -886,14 +879,15 @@ function drawImg(
         return;
       }
       //
-      let objectFit, isCover, containObj, ascii;
+      let objectFit, isCover, containObj, ascii, cwidth;
       if (hasCache(cacheKey)) {
-        ({ objectFit, isCover, containObj, ascii } = getCache(cacheKey));
+        ({ objectFit, isCover, containObj, ascii, cwidth } =
+          getCache(cacheKey));
       } else {
         ({ objectFit } = getComputedStyle(img));
         isCover = objectFit == 'cover';
         ctx.clearRect(0, 0, imgcanvas.width, imgcanvas.height);
-        imgcanvas.width = width;
+        imgcanvas.width = cwidth = width;
         imgcanvas.height = height;
         containObj = await image2Canvas(img, width, height, 0, isCover);
         const grayScales = convertToGrayScales(
@@ -907,10 +901,12 @@ function drawImg(
           isCover,
           containObj,
           ascii,
+          cwidth,
         });
       }
       //
       canvas2CanvasFunc(
+        cwidth,
         top,
         topbot,
         left,
@@ -982,7 +978,8 @@ function drawImgHome(data, allImg) {
         imgcanvas.height
       );
       const ascii = drawAscii(grayScales, imgcanvas.width);
-      canvas2CanvasArr(
+      str2CanvasArr(
+        imgcanvas.width,
         top,
         topbot,
         left,
@@ -991,17 +988,17 @@ function drawImgHome(data, allImg) {
         ascii,
         (curs[igroup].value - 1) * base.w
       );
-      imgsecs[igroup].ascii.arr = ascii;
+      imgsecs[igroup].ascii.arr = { ascii, w: imgcanvas.width };
       console.log('lazyload image successful');
       LazyDrawImgClose();
     };
     lazyList[lazyKey]();
     // lbtn
-    drawAbs(lbtn, char.lbtn);
+    drawAbs(lbtn, char.lbtn.str, char.lbtn.w, char.lbtn.h);
     // rbtn
-    drawAbs(rbtn, char.rbtn);
+    drawAbs(rbtn, char.rbtn.str, char.rbtn.w, char.rbtn.h);
     // idc
-    drawAbs(idc, idcascii);
+    drawAbs(idc, idcascii, idcascii.length, 1);
     // hover
     const hoverrect = getRect(hoverchild);
     imgsecs[igroup].isHover &&
@@ -1022,13 +1019,14 @@ function drawImgHome(data, allImg) {
   //
 }
 
-function drawAbs(btn, ascii) {
+function drawAbs(btn, ascii, w, h) {
   const { top, left } = getRect(btn);
-  canvas2CanvasArrNoMask(
+  str2CanvasArrNoMask(
+    w,
     top,
-    top + ascii.length - 1,
+    top + h - 1,
     left,
-    left + ascii[0].length - 1,
+    left + w - 1,
     window.absoluteLayer,
     ascii
   );
@@ -1065,6 +1063,12 @@ function toGrayScale(r, g, b) {
 }
 
 function drawAscii(grayScales, width) {
+  let str = '';
+  for (let i = 0; i < grayScales.length; i++) {
+    str += getCharacterForGrayScale(grayScales[i]);
+  }
+  return str;
+  //
   const ascii = [[]];
   for (let i = 0; i < grayScales.length; i++) {
     const grayScale = grayScales[i];
@@ -1241,6 +1245,62 @@ function i2Conload(image, cW, cH, posX, isCover) {
     top: Math.round(y),
     left: Math.round(posX + x),
   };
+}
+
+function str2CanvasArr(
+  width,
+  top,
+  topbot,
+  left,
+  leftright,
+  data,
+  str,
+  offsetX = 0,
+  offsetY = 0
+) {
+  const intensityF = this.intensityF;
+  const charbg = this.charbg ?? char.bg2;
+  for (let y = top; y <= topbot; y++) {
+    for (let x = left; x <= leftright; x++) {
+      const newchar = str[x - left + offsetX + (y - top + offsetY) * width];
+      if (data[y]?.[x] && data[y][x] == charbg && newchar !== ` `) {
+        data[y][x] = intensityF ? filterGrayRamp(newchar, intensityF) : newchar;
+      } else {
+        // console.log(y, x, newchar, data[y][x]);
+      }
+    }
+  }
+  addOL(this.isOL, data, top, left, topbot, leftright);
+}
+
+function str2CanvasArrNoMask(
+  width,
+  top,
+  topbot,
+  left,
+  leftright,
+  data,
+  str,
+  offsetX = 0,
+  offsetY = 0,
+  maskTop = 0,
+  maskLeft = 0
+) {
+  topbot -= maskTop;
+  leftright -= maskLeft;
+  const compTop = top + maskTop;
+  const compLeft = left + maskLeft;
+  for (let y = compTop; y <= topbot; y++) {
+    for (let x = compLeft; x <= leftright; x++) {
+      const newchar = str[x - left + (y - top) * width];
+      if (data[y]?.[x] !== undefined && newchar !== ` `) {
+        data[y][x] = newchar;
+      } else {
+        // console.log(y, x, newchar, data[y][x]);
+      }
+    }
+  }
+  addOL(this.isOL, data, compTop, compLeft, topbot, leftright);
 }
 
 function canvas2CanvasArr(
