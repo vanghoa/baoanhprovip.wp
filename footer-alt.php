@@ -12,7 +12,6 @@ defined('ABSPATH') || exit;
 </div>
 
 </main>
-<canvas id="preview"></canvas>
 
 <?php wp_footer(); ?>
 </body>

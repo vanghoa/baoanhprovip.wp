@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import packageJson from './package.json';
+import { terser } from 'rollup-plugin-terser';
 
 const { entry, output } = packageJson.config.js;
 
@@ -15,10 +16,18 @@ export default defineConfig(({ mode }) => {
         treeshake: false,
       },
       sourcemap: mode === 'development',
-      minify: mode === 'production',
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: false,
+          drop_debugger: true,
+          unused: false,
+        },
+        mangle: false,
+      },
       esbuild: {
-        minifySyntax: true, // Enables syntax minification
-        treeShaking: false, // Disables tree shaking (unused code removal)
+        minifySyntax: true,
+        treeShaking: false,
       },
     },
   };

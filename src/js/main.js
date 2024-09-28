@@ -9,15 +9,15 @@ const copy = $('#copy');
 const imgcanvas =
   'OffscreenCanvas' in window
     ? (() => {
-        $('#preview').remove();
         return new OffscreenCanvas(100, 100);
       })()
-    : $('#preview');
+    : $create('canvas');
 
 //
 const rx = 2;
 const ry = 1;
 const ctx = imgcanvas.getContext('2d', { willReadFrequently: true });
+ctx.imageSmoothingEnabled = false;
 ctx.fillStyle = '#e3e3ca';
 const isDeveloper = isPage('page-developer');
 const isDesigner = isPage('page-designer');
@@ -893,6 +893,7 @@ function drawImg(
         ctx.clearRect(0, 0, imgcanvas.width, imgcanvas.height);
         imgcanvas.width = cwidth = width;
         imgcanvas.height = height;
+        ctx.imageSmoothingEnabled = false;
         containObj = await image2Canvas(img, width, height, 0, isCover);
         const grayScales = convertToGrayScales(
           ctx,
@@ -964,6 +965,7 @@ function drawImgHome(data, allImg) {
       ctx.clearRect(0, 0, imgcanvas.width, imgcanvas.height);
       imgcanvas.width = base.w * group.length;
       imgcanvas.height = base.h;
+      ctx.imageSmoothingEnabled = false;
       //
       for (let iimg = 0; iimg < group.length; iimg++) {
         const img = group[iimg];
@@ -1231,7 +1233,6 @@ function i2Conload(image, cW, cH, posX, isCover) {
 
   ctx.fillStyle = '#e3e3ca';
   ctx.fillRect(posX + 0, 0, cW, cH);
-
   isCover
     ? ctx.drawImage(
         image,
