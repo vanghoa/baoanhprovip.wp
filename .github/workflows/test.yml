@@ -3,7 +3,7 @@ name: Deploy WordPress Theme to InfinityFree
 on:
   push:
     branches:
-      - main # You can change this to any branch you prefer
+      - byemain # You can change this to any branch you prefer
 
 jobs:
   deploy:
