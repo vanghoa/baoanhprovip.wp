@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		font-size: 17px;
+		--scrlbrwd: 0px;
+	}
+
+	* {
+		@apply text-xs;
+		color: inherit;
+		font-family: inherit;
+		font-optical-sizing: inherit;
+		font-style: inherit;
+		position: relative;
+	}
+
+	button,
+	a,
+	.underline {
+		text-decoration: underline;
+		@apply hover:text-hilight;
+	}
+
+	.no-underline {
+		@apply hover:text-text;
+	}
+
+	em {
+		@apply italic;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: 900;
+	}
+
+	.bgstyle {
+		@apply bg-bg2 rounded-lg overflow-hidden;
+	}
+
+	.odd-layer > * {
+		@apply bgstyle;
+	}
+
+	.cp-layer > *:not(figure) {
+		@apply p-4;
+	}
+
+	.cp-layer > *:not(figure),
+	.cp-layer :is(iframe, img) {
+		@apply bgstyle;
+	}
+
+	main,
+	#copy {
+		@apply w-screen h-svh fixed left-0 top-0 overflow-hidden;
+	}
+
+	main {
+		/* @apply pointer-events-none invisible; */
+	}
+
+	#copy {
+		/* @apply [&_*]:!text-transparent; */
+		@apply opacity-0;
+	}
+
+	#copy .realheight {
+		@apply pb-16;
+	}
+
+	#copy .text-2xl {
+		@apply !text-base;
+	}
+
+	canvas#preview {
+		@apply hidden;
+	}
+}
+
+@layer utilities {
+	@media only screen and (max-width: 768px) and (pointer: coarse) {
+		:root {
+			font-size: 13px;
+		}
+		.homegrid {
+			@apply grid-cols-2 gap-4;
+		}
+		.single-work-body,
+		.single-work-head {
+			@apply max-w-96 mx-auto;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		#wpadminbar {
+			position: fixed;
+		}
+	}
+}

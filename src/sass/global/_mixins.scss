@@ -1,0 +1,44 @@
+@use 'variables' as *;
+
+@mixin respond-to-copy($breakpoint) {
+	#copy.#{$breakpoint} {
+		@content;
+	}
+}
+
+@mixin respond-to-main($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+			#main {
+				@content;
+			}
+		}
+	} @else {
+		@warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. '
+			+ 'Please make sure it is defined in `$breakpoints` map.';
+	}
+}
+
+@mixin respond-to-general($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+			@content;
+		}
+	} @else {
+		@warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. '
+			+ 'Please make sure it is defined in `$breakpoints` map.';
+	}
+}
+
+@mixin respond-to($breakpoint) {
+	@include respond-to-copy($breakpoint) {
+		@content;
+	}
+	@include respond-to-main($breakpoint) {
+		@content;
+	}
+}
+
+@mixin text-hilight {
+	color: rgb(var(--color-hilight) / 1);
+}

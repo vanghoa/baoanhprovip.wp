@@ -1,0 +1,132 @@
+@use '../global' as *;
+
+#main .viewmode {
+	.galleryview {
+		@include text-hilight;
+	}
+}
+
+.homegrid {
+	//ul {
+	//	li:first-child {
+	//		border-top-left-radius: $rounded;
+	//		border-top-right-radius: $rounded;
+	//	}
+	//
+	//	li:last-child {
+	//		border-bottom-left-radius: $rounded;
+	//		border-bottom-right-radius: $rounded;
+	//	}
+	//
+	//	@include respond-to(sm) {
+	//li:first-child {
+	//	border-top-left-radius: $rounded;
+	//	border-top-right-radius: 0;
+	//}
+	//
+	//li:nth-child(2) {
+	//	border-top-right-radius: $rounded;
+	//}
+	//
+	//li:nth-last-child(2) {
+	//	border-bottom-right-radius: $rounded;
+	//	&:nth-child(odd) {
+	//		border-bottom-left-radius: $rounded;
+	//		border-bottom-right-radius: 0;
+	//	}
+	//}
+	//
+	//li:last-child:nth-child(even) {
+	//	border-bottom-left-radius: 0;
+	//	border-bottom-right-radius: $rounded;
+	//}
+	//	}
+	//}
+
+	li {
+		max-width: min(20rem, 40svh);
+		&:only-child {
+			grid-column: 1 / -1;
+		}
+		.imgwrapper {
+			height: 16rem;
+			max-height: 40svh;
+			display: flex;
+			transition: transform 0.5s;
+			img {
+				object-fit: cover;
+				height: 100%;
+				width: 100%;
+				flex-shrink: 0;
+			}
+		}
+		button {
+			display: flex;
+			align-items: center;
+			justify-content: end;
+			&.lbtn {
+				transform: scaleX(-1);
+			}
+			svg {
+				height: 1.2rem;
+				fill: rgb(var(--color-bg));
+			}
+		}
+		[isfirst='true'] .lbtn,
+		[islast='true'] .rbtn {
+			opacity: 0.5;
+		}
+	}
+}
+
+.homelist {
+	display: none;
+	:nth-child(odd) {
+		background-color: transparent;
+	}
+	.timeframe {
+		width: fit-content;
+		max-width: 25%;
+		* {
+			display: none;
+		}
+		.responsive {
+			display: inline;
+		}
+	}
+	.title {
+		max-width: 30%;
+		width: 25rem;
+	}
+	.divider {
+		position: relative;
+		overflow: hidden;
+		width: 1em;
+		div {
+			position: absolute;
+			word-break: break-all;
+			left: 0px;
+			top: 0px;
+		}
+	}
+}
+
+html.isList {
+	#main .viewmode {
+		.galleryview {
+			color: inherit;
+		}
+		.galleryview:hover {
+			@include text-hilight;
+		}
+		.listview {
+			@include text-hilight;
+		}
+	}
+	.homegrid.withlist {
+		display: none;
+	}
+	.homegrid + .homelist {
+		display: block;
+	}
+}

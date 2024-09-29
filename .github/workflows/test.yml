@@ -1,0 +1,33 @@
+name: Deploy WordPress Theme to InfinityFree
+
+on:
+  push:
+    branches:
+      - main # You can change this to any branch you prefer
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code from your repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Install FTP client (lftp)
+      - name: Install lftp
+        run: sudo apt-get install lftp
+
+      # Deploy theme via FTP
+      - name: FTP Deploy WordPress Theme
+        env:
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_PORT: ${{ secrets.FTP_PORT }} # Add FTP port as a secret if necessary
+        run: |
+          lftp -e "
+            open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST -p $FTP_PORT;
+            mirror -R --delete ./ /bui.baoanhpro.vip/htdocs/wp-content/themes/baoanhprovip.wp-main;
+            bye
+          "
