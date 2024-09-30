@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>research &#8211; Bảo Anh Bùi</title>
+	<atom:link href="/designertag/research/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 30 Sep 2024 10:54:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2024/09/cropped-Asset-2njkiys-32x32.png</url>
+	<title>research &#8211; Bảo Anh Bùi</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>LED text under Singapore MRT</title>
+		<link>/work/text-display-technology-on-led-screen-in-singapore-mrt/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Tue, 17 Sep 2024 11:25:27 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=113</guid>
+
+					<description><![CDATA[A school study of localized text display technology on LED screen as well as the font rasterization method developed throughout the history of SMRT trains in SG. Various intriguing letterforms and typeface categories/treatments are documented.]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>A school study of localized text display technology on LED screen as well as the font rasterization method developed throughout the history of SMRT trains in SG.</p>
+
+
+
+<p>Various intriguing letterforms and typeface categories/treatments are documented.</p>
+
+
+
+<figure class="wp-block-image thumb" style="--width:1700; --height:1700;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825568/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/wev6xrlimz6fsfypp04f.jpg" alt="image (0).jpg" width="1700" height="1700" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image thumb" style="--width:1700; --height:1700;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825581/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/gxbjh6jyhwxbplelex9m.jpg" alt="image (1).jpg" width="1700" height="1700" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image thumb" style="--width:1700; --height:1699;"><img decoding="async" src="" alt="image (2).jpg" width="1700" height="1699" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825588/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/eoqdj56ei2f5kvorxzpg.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1701;"><img decoding="async" src="" alt="image (3).jpg" width="1700" height="1701" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825593/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/ro05t4eyferqhb4inx8e.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1700;"><img decoding="async" src="" alt="image (4).jpg" width="1700" height="1700" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825598/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/pyuceh3ljg4a2tpumpzg.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1700;"><img decoding="async" src="" alt="image (5).jpg" width="1700" height="1700" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825605/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/ic09knneqgjmsn9e99u1.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1699;"><img decoding="async" src="" alt="image (6).jpg" width="1700" height="1699" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825614/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/kvkkpeglttrkeqdtiohv.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1701;"><img decoding="async" src="" alt="image (7).jpg" width="1700" height="1701" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825619/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/phphplro03xhgmru7n6o.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1700;"><img decoding="async" src="" alt="image (8).jpg" width="1700" height="1700" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825625/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/q8xlebo4tq03slfen1wh.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1699;"><img decoding="async" src="" alt="image (9).jpg" width="1700" height="1699" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825633/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/kqtcv9gihdgdutzjcbh5.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<ul class="wp-block-list">
+<li>B&#7843;o Anh as <em>photographer and graphic designer</em></li>
+
+
+
+<li>Timothy Wee as <em>instructor</em></li>
+
+
+
+<li>Work done at LASALLE College of the Arts</li>
+</ul>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

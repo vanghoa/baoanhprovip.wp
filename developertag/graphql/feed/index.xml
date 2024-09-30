@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>GraphQL &#8211; Bảo Anh Bùi</title>
+	<atom:link href="/developertag/graphql/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 30 Sep 2024 11:32:13 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2024/09/cropped-Asset-2njkiys-32x32.png</url>
+	<title>GraphQL &#8211; Bảo Anh Bùi</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Open Systems website</title>
+		<link>/work/open-systems-website/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Sun, 15 Sep 2024 10:24:12 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=68</guid>
+
+					<description><![CDATA[Visit https://opensystems.sg/ to see website. My role involves continuing development from the previous developer (Syahrul), including integrating DatoCMS. This allows SAM staff to structure pages, and folders, and manage content independently without needing a developer. I also had to figure out the CI/CD pipeline to trigger build from DatoCMS to the website hosted on Microsoft [&#8230;]]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Visit <a href="https://opensystems.sg/" target="_blank" rel="noreferrer noopener">https://opensystems.sg/</a> to see website.</p>
+
+
+
+<p>My role involves continuing development from the previous developer (Syahrul), including integrating DatoCMS. This allows SAM staff to structure pages, and folders, and manage content independently without needing a developer. I also had to figure out the CI/CD pipeline to trigger build from DatoCMS to the website hosted on Microsoft Azure Static Web App</p>
+
+
+
+<p>The DatoCMS integration involved designing the CMS schema, types, fields, and pages on DatoCMS platform, and mapping the data structure to the actual website on the backend side. I chose static generation for optimal site performance, as the site functions more like a blog without real-time data transfer. Hence, the data will be fetched at the start of each build into individual .JSON files, and then passed into the build. The tech stack primarily includes Node.js, Next.js, and GraphQL.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span3"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:519;"><img decoding="async" style="--twidth:960; --theight:519;" alt="thumbnail" src="https://i.vimeocdn.com/video/1871808689-7cc6f9546dabe348ccc9231c3d3bf47a10fa28b7aa3a02ef1e03f8ca55a32232-d_960" fetchpriority="high"><iframe title="Open Systems website" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/946442874?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p>I wrote a script in Node.js to handle the data fetching, manipulate the data (like slugify), and write them into multiple .JSON files. Why don&rsquo;t I use Next.js? Because the previous developer used page router for Next.js and I didn&rsquo;t really know if my app router knowledge could be applied to this. That&rsquo;s why I wrote the script independently to the Next.js structure.</p>
+
+
+
+<figure class="wp-block-image span2" style="--width:2520; --height:1946;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1715835025/personalwebsite/image/deb34e24-ded8-49c8-8f4d-b116d72d1885/the_script_in_to_handle_the_data_fetching_.png" alt="The script in to handle the data fetching." width="2520" height="1946" fetchpriority="high"></figure>
+
+
+
+<p>The CI/CD pipeline is customized for staging and production site, with caching for dependencies package to save time on the build time, and handling of concurrent builds. For the trigger request, I used webhook to link the CMS to the hosted server via github actions.</p>
+
+
+
+<figure class="wp-block-image span2" style="--width:1780; --height:1880;"><img decoding="async" src="" alt="YAML file to declare the ruleset of the CI/CD pipeline" width="1780" height="1880" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1715835027/personalwebsite/image/deb34e24-ded8-49c8-8f4d-b116d72d1885/yaml_file_to_declare_the_ruleset_of_the_ci_cd_pipeline.png" data-srcset="" srcset=""></figure>
+
+
+
+<p>Besides backend, I also had to restructure and refactor the front-end so that the data can be populated properly with correct types. Since the previous front-end developer didn&rsquo;t optimize the code in a way that data can be spread out, it was quite a tiring time for me to do this process.</p>
+
+
+
+<figure class="wp-block-image span2" style="--width:2370; --height:1968;"><img decoding="async" src="" alt="Screenshot 2024-05-15 at 1.48.14 PM.png" width="2370" height="1968" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1715835029/personalwebsite/image/deb34e24-ded8-49c8-8f4d-b116d72d1885/bw1aevxdhkzvjizb4fgh.png" data-srcset="" srcset=""></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Currency Design <em>for creative direction and graphic design</em></li>
+
+
+
+<li>Syahrul Anuar (SERIAL CO_) <em>as front-end developer</em></li>
+
+
+
+<li>Bao Anh <em>as back-end developer and front-end maintainer</em></li>
+
+
+
+<li>Ernest Wu (SERIAL CO_) <em>as project manager</em></li>
+
+
+
+<li>This work is done for Singapore Art Museum</li>
+</ul>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>on how a site grows</title>
+		<link>/work/victoria-hertel-velasco-website/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Mon, 09 Sep 2024 16:50:44 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=37</guid>
+
+					<description><![CDATA[This site packs a lot of my thoughts on how a website and its iterations through time can be tracked and viewed, much like the act of capturing and storing physical images.]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><ul class="wp-block-list">
+<li>Visit the site here <a href="https://victoria-hertel-site.vercel.app/" target="_blank" rel="noreferrer noopener">victoria-hertel-site.vercel.app</a></li>
+
+
+
+<li>Take a look at the <a href="https://github.com/vanghoa/victoria-hertel-site" target="_blank" rel="noreferrer noopener">github repository</a>.</li>
+</ul>
+
+
+
+<p>This site packs a lot of my thoughts on how a website and its iterations through time can be tracked and viewed, much like the act of capturing and storing physical images.</p>
+
+
+
+<figure class="wp-block-image" style="--width:3062; --height:1968;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1718553577/personalwebsite/image/117bb7d1-db21-48f2-968c-4023f9dc2ae5/ja2a1xinule7cjdbgp6g.png" alt="Untitled" width="3062" height="1968" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image" style="--width:3296; --height:1662;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1718553585/personalwebsite/image/117bb7d1-db21-48f2-968c-4023f9dc2ae5/nk7gtrei25cecjltcpyz.png" alt="Untitled" width="3296" height="1662" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image span2" style="--width:2000; --height:1200;"><img decoding="async" src="" alt="Untitled-1.png" width="2000" height="1200" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1718850654/personalwebsite/image/117bb7d1-db21-48f2-968c-4023f9dc2ae5/syj2bjfqqyxfa2tftsyz.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2 row2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:760;"><img decoding="async" style="--twidth:960; --theight:760;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1903931292-2896254d63b5408f2529bfba4ab787334f39d15e014e5d3511629098b788f8cd-d_960" data-srcset="" srcset=""><iframe title="Victoria Hertel site - JPEG Progressive Polaroid" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/988297118?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image" style="--width:797; --height:441;"><img decoding="async" src="" alt="Untitled" width="797" height="441" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1718553591/personalwebsite/image/117bb7d1-db21-48f2-968c-4023f9dc2ae5/fyac2ylfuxhymxpbcbvv.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:600; --height:339;"><img decoding="async" src="" alt="Untitled" width="600" height="339" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1718553601/personalwebsite/image/117bb7d1-db21-48f2-968c-4023f9dc2ae5/mk9zlgpitoaan629sh9m.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2 row2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:760;"><img decoding="async" style="--twidth:960; --theight:760;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1903929650-89f99383d8bc0a0511e54b6d5da0256ed2883c275deb2af36940c10d0b42b3c1-d_960" data-srcset="" srcset=""><iframe title="Victoria Hertel site - History Timeline View" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/988297150?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image thumb" style="--width:3578; --height:1928;"><img decoding="async" src="" alt="Untitled" width="3578" height="1928" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1718553609/personalwebsite/image/117bb7d1-db21-48f2-968c-4023f9dc2ae5/hygkx3vwvv1xm9pq4ynz.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image thumb" style="--width:3578; --height:1928;"><img decoding="async" src="" alt="Screenshot 2024-06-16 at 10.53.56 PM.png" width="3578" height="1928" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1718553628/personalwebsite/image/117bb7d1-db21-48f2-968c-4023f9dc2ae5/bsceuhm8mokbizp397ds.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:3578; --height:1928;"><img decoding="async" src="" alt="" width="3578" height="1928" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1718553656/personalwebsite/image/117bb7d1-db21-48f2-968c-4023f9dc2ae5/norkqpzdd7fk8acgwxfj.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image span2" style="--width:3578; --height:1928;"><img decoding="async" src="" alt="" width="3578" height="1928" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1718553675/personalwebsite/image/117bb7d1-db21-48f2-968c-4023f9dc2ae5/rnt4lpf0kfqoivasz1ca.png" data-srcset="" srcset=""></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Tech Stack: Next.js web framework, curtainsjs + <a href="https://gist.github.com/martinlaxenaire/549b3b01ff4bd9d29ce957edd8b56f16" target="_blank" rel="noreferrer noopener">TextTexture.js</a> for shader effects, Github REST/GraphQL API for fetching the way-back-machine thing, Vercel for server.</li>
+
+
+
+<li>Bao Anh <em>as designer &amp; developer</em></li>
+
+
+
+<li>This work is done for Victoria Hertel Velasco</li>
+</ul>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

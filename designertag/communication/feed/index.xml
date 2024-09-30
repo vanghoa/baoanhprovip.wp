@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>communication &#8211; Bảo Anh Bùi</title>
+	<atom:link href="/designertag/communication/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 30 Sep 2024 11:31:31 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2024/09/cropped-Asset-2njkiys-32x32.png</url>
+	<title>communication &#8211; Bảo Anh Bùi</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>LED text under Singapore MRT</title>
+		<link>/work/text-display-technology-on-led-screen-in-singapore-mrt/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Tue, 17 Sep 2024 11:25:27 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=113</guid>
+
+					<description><![CDATA[A school study of localized text display technology on LED screen as well as the font rasterization method developed throughout the history of SMRT trains in SG. Various intriguing letterforms and typeface categories/treatments are documented.]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>A school study of localized text display technology on LED screen as well as the font rasterization method developed throughout the history of SMRT trains in SG.</p>
+
+
+
+<p>Various intriguing letterforms and typeface categories/treatments are documented.</p>
+
+
+
+<figure class="wp-block-image thumb" style="--width:1700; --height:1700;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825568/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/wev6xrlimz6fsfypp04f.jpg" alt="image (0).jpg" width="1700" height="1700" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image thumb" style="--width:1700; --height:1700;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825581/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/gxbjh6jyhwxbplelex9m.jpg" alt="image (1).jpg" width="1700" height="1700" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image thumb" style="--width:1700; --height:1699;"><img decoding="async" src="" alt="image (2).jpg" width="1700" height="1699" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825588/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/eoqdj56ei2f5kvorxzpg.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1701;"><img decoding="async" src="" alt="image (3).jpg" width="1700" height="1701" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825593/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/ro05t4eyferqhb4inx8e.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1700;"><img decoding="async" src="" alt="image (4).jpg" width="1700" height="1700" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825598/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/pyuceh3ljg4a2tpumpzg.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1700;"><img decoding="async" src="" alt="image (5).jpg" width="1700" height="1700" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825605/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/ic09knneqgjmsn9e99u1.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1699;"><img decoding="async" src="" alt="image (6).jpg" width="1700" height="1699" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825614/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/kvkkpeglttrkeqdtiohv.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1701;"><img decoding="async" src="" alt="image (7).jpg" width="1700" height="1701" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825619/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/phphplro03xhgmru7n6o.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1700;"><img decoding="async" src="" alt="image (8).jpg" width="1700" height="1700" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825625/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/q8xlebo4tq03slfen1wh.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1699;"><img decoding="async" src="" alt="image (9).jpg" width="1700" height="1699" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825633/personalwebsite/image/fd478776-e4e6-4908-9a61-17a1d90fdf6e/kqtcv9gihdgdutzjcbh5.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<ul class="wp-block-list">
+<li>B&#7843;o Anh as <em>photographer and graphic designer</em></li>
+
+
+
+<li>Timothy Wee as <em>instructor</em></li>
+
+
+
+<li>Work done at LASALLE College of the Arts</li>
+</ul>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Love is Hard, HIV Prevention is Easy website</title>
+		<link>/work/love-is-hard-hiv-prevention-is-easy-website/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Tue, 17 Sep 2024 11:19:56 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=111</guid>
+
+					<description><![CDATA[UI/UX design for a public health campaign website to raise awareness about HIV prevention, reduce new HIV infections, and eliminate HIV stigma in Vietnam&#8211;Love is Hard, HIV Prevention is Easy. The website acts as an online repository for the public audience to learn about the issues and the campaign itself. Visit&#160;yeumoikho.com&#160;to see website.]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>UI/UX design for a public health campaign website to raise awareness about HIV prevention, reduce new HIV infections, and eliminate HIV stigma in Vietnam&ndash;Love is Hard, HIV Prevention is Easy. The website acts as an online repository for the public audience to learn about the issues and the campaign itself.</p>
+
+
+
+<figure class="wp-block-image" style="--width:2062; --height:522;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1697466889/personalwebsite/image/b72e9c26-bd16-47ea-826e-7e288bd4194e/oijqhdnsjszrrobb4tlh.gif" alt="Screenshot-2021-08-16-at-4.58.41-PM.gif" width="2062" height="522" fetchpriority="high"></figure>
+
+
+
+<p>Visit&nbsp;<a href="https://yeumoikho.com/" target="_blank" rel="noreferrer noopener">yeumoikho.com</a>&nbsp;to see website.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2 row2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:510;"><img decoding="async" style="--twidth:960; --theight:510;" alt="thumbnail" src="https://i.vimeocdn.com/video/1453734021-7c5cc4aca056fcceff70850548a8631c95a954b59a362f949c0c2b7abb10fa9c-d_960" fetchpriority="high"><iframe title="Love is hard website" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/721837031?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1448; --height:780;"><img decoding="async" src="" alt="image (1).jpg" width="1448" height="780" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825365/personalwebsite/image/b72e9c26-bd16-47ea-826e-7e288bd4194e/wrewtynnfixhjhis6zzg.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image thumb" style="--width:1450; --height:780;"><img decoding="async" src="" alt="image (5).jpg" width="1450" height="780" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825371/personalwebsite/image/b72e9c26-bd16-47ea-826e-7e288bd4194e/bgtjf9wfcbm61pqxnhju.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image span12 thumb" style="--width:1448; --height:780;"><img decoding="async" src="" alt="image (14).jpg" width="1448" height="780" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825376/personalwebsite/image/b72e9c26-bd16-47ea-826e-7e288bd4194e/ejfmozeauapwfdvfidui.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1448; --height:780;"><img decoding="async" src="" alt="image (16).jpg" width="1448" height="780" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825381/personalwebsite/image/b72e9c26-bd16-47ea-826e-7e288bd4194e/u4bnegd1g1twhftoqkmr.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image span2 thumb" style="--width:1459; --height:772;"><img decoding="async" src="" alt="image (18).jpg" width="1459" height="772" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825387/personalwebsite/image/b72e9c26-bd16-47ea-826e-7e288bd4194e/d81hm8ye0gl8cifvsvzp.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1454; --height:780;"><img decoding="async" src="" alt="image (19).jpg" width="1454" height="780" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825391/personalwebsite/image/b72e9c26-bd16-47ea-826e-7e288bd4194e/utvbd9zomkdyez4alg53.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1448; --height:780;"><img decoding="async" src="" alt="image (30).jpg" width="1448" height="780" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825401/personalwebsite/image/b72e9c26-bd16-47ea-826e-7e288bd4194e/ndda19ualiac7vpgcgpy.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image span2" style="--width:1448; --height:780;"><img decoding="async" src="" alt="image (22).jpg" width="1448" height="780" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825396/personalwebsite/image/b72e9c26-bd16-47ea-826e-7e288bd4194e/daxbozm1rm9yh5yngxp8.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1448; --height:780;"><img decoding="async" src="" alt="image (31).jpg" width="1448" height="780" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825406/personalwebsite/image/b72e9c26-bd16-47ea-826e-7e288bd4194e/habhtgpein9kozf16gze.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<ul class="wp-block-list">
+<li>B&#7843;o Anh as <em>UI/UX designer</em></li>
+
+
+
+<li>Kh&ecirc; Nguy&#7877;n as <em>UI/UX designer</em></li>
+
+
+
+<li>Trang &#272;inh as <em>UI/UX designer</em></li>
+
+
+
+<li>Tu&acirc;n L&ecirc; as <em>Creative director</em></li>
+
+
+
+<li>Digitop for <em>web development</em></li>
+
+
+
+<li>Work done as part of <a href="https://www.behance.net/gallery/139885003/LOVE-IS-HARD-HIV-PREVENTION-IS-EASY">&lsquo;LOVE IS HARD. HIV PREVENTION IS EASY.&rsquo;</a> communication campagin by The Lab Saigon</li>
+</ul>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Vietnamme Magazine</title>
+		<link>/work/vietnamme-magazine/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Tue, 17 Sep 2024 10:36:07 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=109</guid>
+
+					<description><![CDATA[Vietnamme, an art organization in Vietnam, had been proposing the idea of a web magazine platform dedicated to exploring how the youth redefine and push the boundaries of art, irrespective of its form. I&#8217;m initially tasked with producing digital illustrations for two articles within the magazine.]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Vietnamme, an art organization in Vietnam, had been proposing the idea of a web magazine platform dedicated to exploring how the youth redefine and push the boundaries of art, irrespective of its form. I&rsquo;m initially tasked with producing digital illustrations for two articles within the magazine.</p>
+
+
+
+<figure class="wp-block-image span2 thumb" style="--width:1700; --height:1063;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696568898/personalwebsite/image/165e161d-ae48-47d4-873d-8a16e5b3f79c/pigejy4ugct5sq3gm3at.jpg" alt="image (2).jpg" width="1700" height="1063" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image thumb" style="--width:1700; --height:1063;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696568910/personalwebsite/image/165e161d-ae48-47d4-873d-8a16e5b3f79c/nqx87kltgutkzv6adfxx.jpg" alt="image (3).jpg" width="1700" height="1063" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1063;"><img decoding="async" src="" alt="image (4).jpg" width="1700" height="1063" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696568918/personalwebsite/image/165e161d-ae48-47d4-873d-8a16e5b3f79c/rzkf9ll0vtrswm0psljg.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1063;"><img decoding="async" src="" alt="image (5).jpg" width="1700" height="1063" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696568932/personalwebsite/image/165e161d-ae48-47d4-873d-8a16e5b3f79c/brj5ak7hxexz9xjxpawg.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span3"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:540;"><img decoding="async" style="--twidth:960; --theight:540;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1452284119-9f738375b16c77a5a5fb03a785ee30762048d02ea174e3dfd899b4f4752c6272-d_960" data-srcset="" srcset=""><iframe title="Vietnamme magazine website" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/721083427?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1063;"><img decoding="async" src="" alt="image (6).jpg" width="1700" height="1063" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696568943/personalwebsite/image/165e161d-ae48-47d4-873d-8a16e5b3f79c/l7kpdanvnaibqsom4xsu.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:510;"><img decoding="async" style="--twidth:960; --theight:510;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1452286782-b81afd90dcaab087c2942db5928e000814db73bbd9bd85188bf6082e7a9db74b-d_960" data-srcset="" srcset=""><iframe title="&#258;ng -ten _ Th&#432; &#272;&#7847;u Th&aacute;ng - Vietnamme Magazine and 5 more pages - Personal - Microsoft&#8203; Edge 2022-06-16 21-05-20" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/721084570?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image thumb" style="--width:1700; --height:1063;"><img decoding="async" src="" alt="image (7).jpg" width="1700" height="1063" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696568954/personalwebsite/image/165e161d-ae48-47d4-873d-8a16e5b3f79c/iw2pgdy5v9suyuvhyk1l.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:510;"><img decoding="async" style="--twidth:960; --theight:510;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1452286906-9a1df2c6df26b8e3f75628d2809bf550bd327b1a83f7ef16d07ea21904703fe6-d_960" data-srcset="" srcset=""><iframe title="Ra-&#273;i-&ocirc; 2 _ G&oacute;c nh&igrave;n th&#7845;u c&#7843;m c&#7911;a ngh&#7879; thu&#7853;t - Vietnamme Magazine and 6 more pages - Personal - Microsoft&#8203; Edge" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/721084620?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<ul class="wp-block-list">
+<li>B&#7843;o Anh as <em>website co-developer, website designer and illustrator</em></li>
+
+
+
+<li>Di&#7879;u Ly as <em>website co-developer and graphic designer</em></li>
+
+
+
+<li>Minh Anh, and My H&agrave; as <em>graphic designer</em></li>
+
+
+
+<li>Minh Ph&#432;&#417;ng, Anh Huy, and Chi Doan as <em>illustrator</em></li>
+
+
+
+<li>Vietnamme Magazine team for <em>other content, and copy</em></li>
+</ul>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>on Swiss Design</title>
+		<link>/work/kasper-florio-atypical-swiss-visual-analysis/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Tue, 17 Sep 2024 10:28:52 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=107</guid>
+
+					<description><![CDATA[Swiss Grid has long been a solemn pillar within the graphic design discipline. However, compared to itself half a century ago, the Grid system in the 21st century has evolved into, more or less flexible and dynamic. Today I look into the contemporary application of the Grid by researching both visually and textually on a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Swiss Grid has long been a solemn pillar within the graphic design discipline. However, compared to itself half a century ago, the Grid system in the 21st century has evolved into, more or less flexible and dynamic. Today I look into the contemporary application of the Grid by researching both visually and textually on a Swiss graphic designer duo, Kasper Florio for a better insight into how that tool is intensively practiced based on a variety of typographic standards in the industry.</p>
+
+
+
+<figure class="wp-block-image span12" style="--width:1192; --height:843;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825735/personalwebsite/image/2cc54916-51df-4331-aefd-2f776bf42cc5/slanted_pages__one_of_the_flashy_details_i_wanted_to_add_in.png" alt="Slanted pages, one of the flashy details I wanted to add in" width="1192" height="843" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1700; --height:1134;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696825717/personalwebsite/image/2cc54916-51df-4331-aefd-2f776bf42cc5/xyxaumtegbvvaan89oin.jpg" alt="image (1).jpg" width="1700" height="1134" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:954;"><img decoding="async" style="--twidth:960; --theight:954;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1735250769-6e25d28b4d98027f824f2bc3f69edff3208fdec0032065773609f1c8e6eaee09-d_960" data-srcset="" srcset=""><iframe title="Book preview" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/872290337?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:540;"><img decoding="async" style="--twidth:960; --theight:540;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1735241454-788afdabb076eb187a799cbdc96971208f8e5618edf1f0c31e3ebd1167a1fed9-d_960" data-srcset="" srcset=""><iframe title="First version of Kasper Florio - Atypical Swiss | Visual Analysis" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/872284717?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image span2 row2 thumb" style="--width:1700; --height:1134;"><img decoding="async" src="" alt="Cover and the content page" width="1700" height="1134" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696568972/personalwebsite/image/2cc54916-51df-4331-aefd-2f776bf42cc5/cover_and_the_content_page.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image thumb" style="--width:1700; --height:1134;"><img decoding="async" src="" alt="image (4).jpg" width="1700" height="1134" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696568980/personalwebsite/image/2cc54916-51df-4331-aefd-2f776bf42cc5/sq9s42oqvjfclqtaq1jz.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image thumb" style="--width:1700; --height:1134;"><img decoding="async" src="" alt="image (5).jpg" width="1700" height="1134" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696568987/personalwebsite/image/2cc54916-51df-4331-aefd-2f776bf42cc5/ohqvptr3oazj7j3khgnn.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image span2md" style="--width:1700; --height:1134;"><img decoding="async" src="" alt="image (9).jpg" width="1700" height="1134" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696568994/personalwebsite/image/2cc54916-51df-4331-aefd-2f776bf42cc5/bjhmlksnxhpjkjqtqmgu.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image span2 row2" style="--width:1700; --height:1134;"><img decoding="async" src="" alt="image (8).jpg" width="1700" height="1134" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696569008/personalwebsite/image/2cc54916-51df-4331-aefd-2f776bf42cc5/cpp7g0bntlwtpnywuxfj.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image span2md" style="--width:1700; --height:1134;"><img decoding="async" src="" alt="image (6).jpg" width="1700" height="1134" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696569000/personalwebsite/image/2cc54916-51df-4331-aefd-2f776bf42cc5/u7bubozkcoxjfupee2uz.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image span2" style="--width:1700; --height:808;"><img decoding="async" src="" alt="image (10).jpg" width="1700" height="808" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696569012/personalwebsite/image/2cc54916-51df-4331-aefd-2f776bf42cc5/iq2j2t6hbjlfsjvejov3.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<p>I&rsquo;m so happy that it received the TDC and the Red Dot in 2021!</p>
+
+
+
+<figure class="wp-block-image" style="--width:301; --height:301;"><img decoding="async" src="" alt="TDC AWARD BADGE 1.5-01.png" width="301" height="301" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696826128/personalwebsite/image/2cc54916-51df-4331-aefd-2f776bf42cc5/p2dsfkw9kqx7gfs8mb3f.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:338; --height:198;"><img decoding="async" src="" alt="red-dot-design-award-logo-0C4054D110-seeklogo.com.png" width="338" height="198" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1696826132/personalwebsite/image/2cc54916-51df-4331-aefd-2f776bf42cc5/sqyezef5v0tuvmhjdaon.png" data-srcset="" srcset=""></figure>
+
+
+
+<ul class="wp-block-list">
+<li>B&#7843;o Anh as <em>visual designer and copywriter</em> Chen Michael as <em>instructor</em></li>
+
+
+
+<li>Yellow Type Foundry for <em>Xanh Mono</em> &amp; <em>Darker Grotesque</em> typefaces</li>
+
+
+
+<li>Design Boom for <em>interviewing content</em></li>
+
+
+
+<li>AIGAEyeonDesign for <em>interviewing content</em></li>
+
+
+
+<li>Ligature for <em>interviewing content</em></li>
+
+
+
+<li>Work done at LASALLE College of the Arts</li>
+
+
+
+<li>Printing done at Pixel Tech Pte Ltd</li>
+</ul>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Google Translate: Uncut</title>
+		<link>/work/google-translate-uncut/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Mon, 16 Sep 2024 04:00:20 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=104</guid>
+
+					<description><![CDATA[This is an entry for the D&#38;AD New Blood competition in 2023, under the Google Fonts &#38; HMCT brief. The brief was about creating a typographically-led campaign that is a call to action or raises awareness of a selected social issue.]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>This is an entry for the D&amp;AD New Blood competition in 2023, under the Google Fonts &amp; HMCT brief. The brief was about creating a typographically-led campaign that is a call to action or raises awareness of a selected social issue.</p>
+
+
+
+<figure class="wp-block-image span2 thumb" style="--width:2800; --height:1575;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1697466332/personalwebsite/image/dc445cb5-2d92-4670-9c4d-d19153c62135/icxdtubc7q9k5bqnllwc.png" alt="b918c5170805541.6464514fa092a.png" width="2800" height="1575" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image span2" style="--width:1920; --height:1080;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1697466341/personalwebsite/image/dc445cb5-2d92-4670-9c4d-d19153c62135/ezvfbsobjic4m38gx4bl.png" alt="61b2f9170805541.64644efc9ffcd.png" width="1920" height="1080" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image span2 thumb" style="--width:1920; --height:1080;"><img decoding="async" src="" alt="872b12170805541.64644efc9ea9c.png" width="1920" height="1080" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1697466348/personalwebsite/image/dc445cb5-2d92-4670-9c4d-d19153c62135/m1pndg3mpwok5dlqmsx2.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1920; --height:1080;"><img decoding="async" src="" alt="931836170805541.64644efc9d65f.png" width="1920" height="1080" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1697466355/personalwebsite/image/dc445cb5-2d92-4670-9c4d-d19153c62135/uxyergda6t6gzzuzu6cv.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image thumb" style="--width:2000; --height:1125;"><img decoding="async" src="" alt="26610c170805541.64644efc9ca3a.png" width="2000" height="1125" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1697466364/personalwebsite/image/dc445cb5-2d92-4670-9c4d-d19153c62135/vm4uprcqnbzwkc0g4fkx.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:540;"><img decoding="async" style="--twidth:960; --theight:540;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736698700-684c2590601e7d7e1e4863b620bbbb5e6144cd8270d9ce14f7cc24b9d2245bf5-d_960" data-srcset="" srcset=""><iframe title="Google Translate: Uncut" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873268395?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<ul class="wp-block-list">
+<li>B&#7843;o Anh as <em>motion/animation designer and graphic designer</em></li>
+
+
+
+<li>Pauline Theodora Tandiah as <em>graphic designer and voice actor</em></li>
+
+
+
+<li>Tiara Rivera as <em>graphic designer</em></li>
+
+
+
+<li>Felix Sng, David Lee, and Jaygo Bloom for <em>consultation</em></li>
+
+
+
+<li>This project was done as part of a course module at LASALLE College of the Arts</li>
+</ul>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>at Tusitala</title>
+		<link>/work/works-at-tusitala/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Mon, 16 Sep 2024 03:54:26 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=102</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><figure class="wp-block-image" style="--width:1324; --height:934;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1715834022/personalwebsite/image/308ad517-d629-4150-a27c-58c15f31ba47/ggda0cdq6h64uzffwanh.png" alt="Screenshot 2024-05-15 at 10.19.33 PM.png" width="1324" height="934" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image" style="--width:2560; --height:1920;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721792384/personalwebsite/image/308ad517-d629-4150-a27c-58c15f31ba47/vvao6pw5pzupiqp2rwy5.jpg" alt="PXL_20240720_092931258.jpg" width="2560" height="1920" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:563; --height:1000;"><img decoding="async" style="--twidth:295; --theight:524;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1905001133-ceb265ede9fa67c1468b24ad132bce965c51f7ee9da2fcd3a347ab5d029ed569-d_295x166" data-srcset="" srcset=""><iframe title="Karaoke Poetry Testing" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/989303238?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span3"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:514;"><img decoding="async" style="--twidth:960; --theight:514;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1852657564-9b5f767d034fbd7404813557052c17b66ff4cb3a4948d06cfa8d07c8c9541ea5-d_960" data-srcset="" srcset=""><iframe title="Karaoke Poetry" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/946527158?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo thumb"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:797;"><img decoding="async" style="--twidth:960; --theight:797;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1852801680-68feb4effb5f51220a95eb39380cfa041afbfebee3dd28984214ef2773fdc8f9-d_960" data-srcset="" srcset=""><iframe title="Karaoke Poetry Background Black" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/946627862?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:797;"><img decoding="async" style="--twidth:960; --theight:797;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1852801877-e40a76ee1491ab62566a74f12799734bc616f29cc3d481487fcd11ee35edd7ac-d_960" data-srcset="" srcset=""><iframe title="Karaoke Poetry Background Gray" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/946627926?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:797;"><img decoding="async" style="--twidth:960; --theight:797;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1852801969-7335ebe4c18464e65cd7f1edc271c3e455e8c4c5db039f0e9fcb7271dfd7e5d4-d_960" data-srcset="" srcset=""><iframe title="Karaoke Poetry Background White" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/946628022?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:556;"><img decoding="async" style="--twidth:960; --theight:556;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1852900545-369e11cf2f9ccb138a915e8c80a147a53edbb2e2e4b7121acb9ba6baece7f228-d_960" data-srcset="" srcset=""><iframe title="Karaoke Poetry Web Socket" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/946697218?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image vertical" style="--width:846; --height:1678;"><img decoding="async" src="" alt="Screenshot 2024-05-16 at 10.45.36 AM.png" width="846" height="1678" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1715834045/personalwebsite/image/308ad517-d629-4150-a27c-58c15f31ba47/u5e1ropcpcpgmjcrzhsa.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image vertical" style="--width:846; --height:1678;"><img decoding="async" src="" alt="Screenshot 2024-05-16 at 10.44.51 AM.png" width="846" height="1678" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1715834047/personalwebsite/image/308ad517-d629-4150-a27c-58c15f31ba47/hqvmjgpqrqycb4dcjq1t.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image vertical" style="--width:846; --height:1678;"><img decoding="async" src="" alt="Screenshot 2024-05-16 at 10.44.33 AM.png" width="846" height="1678" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1715834049/personalwebsite/image/308ad517-d629-4150-a27c-58c15f31ba47/jkejojugcv5vabmpvech.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:465; --height:1000;"><img decoding="async" style="--twidth:295; --theight:634;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1853120283-e6d602e385c0a303f51a8e1abc0d3b001862a51d0c3756320fe9b50df0865655-d_295x166" data-srcset="" srcset=""><iframe title="Souvenirs Raindrop" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/946838269?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:465; --height:1000;"><img decoding="async" style="--twidth:295; --theight:634;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1853134440-c6649488a0c89f250abc53d6f88c4c25bbc294dd44aaea3d0e4abf392bbdc141-d_295x166" data-srcset="" srcset=""><iframe title="Souvenirs Timber-obsta Scene" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/946846962?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image thumb" style="--width:1500; --height:2000;"><img decoding="async" src="" alt="working-onsite2.jpg" width="1500" height="2000" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1715834050/personalwebsite/image/308ad517-d629-4150-a27c-58c15f31ba47/f6dqga9nskzdzvwtz3a7.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1500; --height:2000;"><img decoding="async" src="" alt="working-onsite1.jpg" width="1500" height="2000" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1715834215/personalwebsite/image/308ad517-d629-4150-a27c-58c15f31ba47/wvl1r6prvpidmsj5wsai.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<ul class="wp-block-list">
+<li>B&#7843;o Anh as <em>intern developer</em></li>
+
+
+
+<li>Vaibhav Sidapara as <em>lead developer</em></li>
+
+
+
+<li>Foler as <em>UI/UX designer</em></li>
+
+
+
+<li>Christine as <em>director + publisher</em></li>
+
+
+
+<li>Michelle Lee as <em>project manager</em></li>
+
+
+
+<li>Works are done for Tusitala</li>
+</ul>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>at Vinamilk</title>
+		<link>/work/vinamilk-freelancing-gigs/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Mon, 16 Sep 2024 03:49:46 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=100</guid>
+
+					<description><![CDATA[Work is still in progress and they made me cannot speak about anything &#129296;]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Work is still in progress and they made me cannot speak about anything &#129296;</p>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>trămđốt</title>
+		<link>/work/tramdot-platform/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Mon, 16 Sep 2024 03:47:34 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=98</guid>
+
+					<description><![CDATA[After the closure of &#431;&#417;m, a renowned hangout in Saigon&#8217;s creative scene, its founder, ltlt.company, has transitioned its legacy into the digital world with their latest cultural platform, tr&#259;m&#273;&#7889;t. tr&#259;m&#273;&#7889;t design tries capture the nostalgic aesthetics of massively multiplayer online games (MMOs) from the 2010s. These games, including titles like Club Penguin or the Vietnamese [&#8230;]]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>After the closure of <a href="https://www.instagram.com/uom.arthub/?hl=en" target="_blank" rel="noreferrer noopener">&#431;&#417;m</a>, a renowned hangout in Saigon&rsquo;s creative scene, its founder, ltlt.company, has transitioned its legacy into the digital world with their latest cultural platform, tr&#259;m&#273;&#7889;t.</p>
+
+
+
+<p>tr&#259;m&#273;&#7889;t design tries capture the nostalgic aesthetics of massively multiplayer online games (MMOs) from the 2010s. These games, including titles like <em>Club Penguin</em> or the Vietnamese equivalents like <em>Online Gunny</em> and <em>Bang Bang</em>, were immensely popular among our generation.</p>
+
+
+
+<figure class="wp-block-image span2 row2" style="--width:2072; --height:1576;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992084/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/mlabxpu9hc7y28jjvg0z.png" alt="type=type3.png" width="2072" height="1576" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image thumb" style="--width:2072; --height:1576;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992089/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/cxyywn1226cjlzuvna31.png" alt="type=type4.png" width="2072" height="1576" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image" style="--width:2072; --height:1576;"><img decoding="async" src="" alt="type=type2.png" width="2072" height="1576" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992094/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/ngso7jmmdbmt8q5if5p6.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image span2" style="--width:2072; --height:1424;"><img decoding="async" src="" alt="crowdfundzone overlay.png" width="2072" height="1424" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992155/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/qgqpt9ytm61fkxyidast.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:2072; --height:1424;"><img decoding="async" src="" alt="crowdfundzone overlay_.png" width="2072" height="1424" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992159/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/aljjoh2ifsfmkhwbuwk1.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image vertical" style="--width:1160; --height:2148;"><img decoding="async" src="" alt="main-3-screen-mobile-3.png" width="1160" height="2148" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992165/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/muadn8yftxuts6f4qvd3.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image vertical" style="--width:1160; --height:2148;"><img decoding="async" src="" alt="main-3-screen-mobile-2.png" width="1160" height="2148" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992167/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/wembaphsgvz9tpxcxsfg.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image vertical" style="--width:1160; --height:2148;"><img decoding="async" src="" alt="main-3-screen-mobile-1.png" width="1160" height="2148" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992172/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/t9n9b5h3yktjd5o5l8tq.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image span2 row2" style="--width:2072; --height:1487;"><img decoding="async" src="" alt="type=Default.png" width="2072" height="1487" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992100/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/nychmcip0obcyhhnmgqg.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:2072; --height:1487;"><img decoding="async" src="" alt="type=Default2.png" width="2072" height="1487" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992104/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/lga7xi8djcsgi8sxirhe.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:2072; --height:1487;"><img decoding="async" src="" alt="type=artist-1.png" width="2072" height="1487" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992175/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/ulx9kb9c3otu3pcfbsmw.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:2072; --height:1489;"><img decoding="async" src="" alt="type=artist-2.png" width="2072" height="1489" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992178/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/wtge39au1xqgxvmap18w.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image span2" style="--width:2072; --height:1424;"><img decoding="async" src="" alt="shop individual.png" width="2072" height="1424" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992110/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/zwmkwgigd4r4g17bdzrt.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image vertical" style="--width:1160; --height:2234;"><img decoding="async" src="" alt="shop-mobile-nav.png" width="1160" height="2234" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992181/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/yf75fk1rfmtlsgan1uxt.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image vertical" style="--width:1160; --height:2234;"><img decoding="async" src="" alt="shop-mobile.png" width="1160" height="2234" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992185/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/pkw6esm5cin3ca5cbsyo.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image span2" style="--width:1564; --height:1300;"><img decoding="async" src="" alt="Frame 87.png" width="1564" height="1300" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1722010059/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/hskw48deciueabxa0xfn.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image thumb" style="--width:1564; --height:1300;"><img decoding="async" src="" alt="Frame 88.png" width="1564" height="1300" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1722010062/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/k8rsm29qorwbufusbtvt.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:2832; --height:1880;"><img decoding="async" src="" alt="Screenshot-2024-07-26-at-5.46.45-PM.png" width="2832" height="1880" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992117/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/gdzuzwzhfmeduigc9yqq.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:2550; --height:1620;"><img decoding="async" src="" alt="Screenshot 2024-07-26 at 1.27.01 AM.png" width="2550" height="1620" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992120/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/gwcubmnnsiqayypt6rff.png" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:2904; --height:2420;"><img decoding="async" src="" alt="Frame 86.png" width="2904" height="2420" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992123/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/kuxhcex1wftwmqatu97q.png" data-srcset="" srcset=""></figure>
+
+
+
+<p>For social media, I created this fun create-your-own-ASCII web for the audience to have their personalized ASCII person, using our idiosyncratic font. You can try here <a href="https://nguoi.tramdot.app/">https://nguoi.tramdot.app/</a></p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:466; --height:1000;"><img decoding="async" style="--twidth:295; --theight:633;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1906312746-c4d3254ceb78b07b9b6dc059c23d9238b81ad876c797d712f90cbb03373641e6-d_295x166" data-srcset="" srcset=""><iframe title="tramdot-people" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/990524684?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p>It&rsquo;s nice that it created a lot of attention. Thanks to all the friends to try on our small little fun mascot.</p>
+
+
+
+<figure class="wp-block-image span2" style="--width:1200; --height:1423;"><img decoding="async" src="" alt="Frame-89.png" width="1200" height="1423" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1721992126/personalwebsite/image/a6564898-8c7f-40fb-baa9-1d79d43c9a2a/wdsqb7w2amcc0cs5nb9r.png" data-srcset="" srcset=""></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Bao Anh <em>as graphic designer</em></li>
+
+
+
+<li>H&#7843;i Phan &amp; T&ugrave;ng S&#417;n L&ecirc; <em>as web developers</em></li>
+
+
+
+<li>Duy Anh &amp; L&ecirc; Minh <em>as project director</em></li>
+
+
+
+<li>ch&#7883; Thy <em>as project manager</em></li>
+
+
+
+<li>This work is done for ltlt.company/tr&#259;m&#273;&#7889;t</li>
+</ul>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Vietnamme Creative Campagin &#124; MẮC GÌ?</title>
+		<link>/work/vietnamme-creative-campagin-mac-gi/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Mon, 16 Sep 2024 03:21:21 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=88</guid>
+
+					<description><![CDATA[This communication campaign focused on the problem of Heteronormativity in Vietnam. I and Ly had the chance to take on the art direction for the campaign. Following on the topic of Heteronormativity, we actually found out about this Heteronormative Design Discourse on Design Observer, which was kinda relevant and inspired us to dig further into [&#8230;]]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>This communication campaign focused on the problem of Heteronormativity in Vietnam. I and Ly had the chance to take on the art direction for the campaign. Following on the topic of Heteronormativity, we actually found out about this <a href="https://designobserver.com/feature/heteronormative-design-discourse/37940" target="_blank" rel="noreferrer noopener">Heteronormative Design Discourse</a> on Design Observer, which was kinda relevant and inspired us to dig further into the discussion.</p>
+
+
+
+<p>It addresses the often-overlooked matter of sexual identity within the design world and emphasizes the enduring prevalence of heteronormative assumptions in both design practice and discourse. The infrequent use of the term &ldquo;heteronormative&rdquo; in design discussions perpetuates a cultural norm that prioritizes heteronormative values and perspectives.</p>
+
+
+
+<p>What we focused on were: unorthodox, marginalized, overlooked, underrepresented, non-canon, and radical.</p>
+
+
+
+<figure class="wp-block-image" style="--width:960; --height:712;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1697466986/personalwebsite/image/4a68d0c9-3c75-423e-b7db-7a6db94f36fa/cygu91lea92ihcahivo2.jpg" alt="hnh_01.jpg" width="960" height="712" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image" style="--width:2000; --height:1455;"><img decoding="async" src="https://res.cloudinary.com/djtuan5jn/image/upload/v1697466993/personalwebsite/image/4a68d0c9-3c75-423e-b7db-7a6db94f36fa/sjqh2fzejkun909kagme.jpg" alt="hnh_03.jpg" width="2000" height="1455" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image" style="--width:2000; --height:1388;"><img decoding="async" src="" alt="hnh_06.jpg" width="2000" height="1388" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1697467003/personalwebsite/image/4a68d0c9-3c75-423e-b7db-7a6db94f36fa/la5wuhg7skuhhf6maryx.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:2000; --height:2000;"><img decoding="async" src="" alt="Copy_of_engage01_-_paper_plane_Song_Lang.jpg" width="2000" height="2000" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1697467010/personalwebsite/image/4a68d0c9-3c75-423e-b7db-7a6db94f36fa/vy66za5upj2l1fpvxrrc.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:2000; --height:2000;"><img decoding="async" src="" alt="vn_mimnh3.jpg" width="2000" height="2000" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1697467017/personalwebsite/image/4a68d0c9-3c75-423e-b7db-7a6db94f36fa/mkhz6y4eopz2ufs6s62b.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image" style="--width:2000; --height:2000;"><img decoding="async" src="" alt="Copy_of_engage01_-_paper_plane_CMBYN.jpg" width="2000" height="2000" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1697467023/personalwebsite/image/4a68d0c9-3c75-423e-b7db-7a6db94f36fa/ctdgefgfxhdxzsjklnmd.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<p>Here are my motion graphic designs for the campaign. The typography revolved around the shapes and silhouettes of everyday objects in Vietnam, such as plastic stools or household stand fans.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2 thumb"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:960;"><img decoding="async" style="--twidth:960; --theight:960;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1452348193-d2877b69f05c7507ac138add7be1f93e04e6d894ffe3ae264d97294a08891284-d_960" data-srcset="" srcset=""><iframe title="Vietnamme Creative Campagin M&#7854;C G&Igrave; 1" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/721124375?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo thumb"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:960;"><img decoding="async" style="--twidth:960; --theight:960;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1452348254-1dfbb925579fd70446b6b8f9acb80521ca0a23a3fac934406334d0950fbb9582-d_960" data-srcset="" srcset=""><iframe title="Vietnamme Creative Campagin M&#7854;C G&Igrave; 2" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/721124447?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:960;"><img decoding="async" style="--twidth:960; --theight:960;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1452348539-507e3b7bda24e5a9f787c8fabe53d8382437b09268712f3adaa11e55d6600eaf-d_960" data-srcset="" srcset=""><iframe title="Vietnamme Creative Campagin M&#7854;C G&Igrave; 3" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/721124521?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<ul class="wp-block-list">
+<li>B&#7843;o Anh as <em>co-art director, motion/graphic designer</em></li>
+
+
+
+<li>Di&#7879;u Ly as <em>co-art director and graphic designer</em></li>
+
+
+
+<li>Ch&uacute; An, Nguyen Nguyen, Tram Nguyen and T&uacute; B&ocirc;ng for <em>graphic design and illustration</em></li>
+
+
+
+<li>Ch&#7883; B&#7849;u, Nguyen Le Thuy Linh, and Phuong Luong for <em>content copy and campaign planning</em></li>
+
+
+
+<li>This work is under Vietnamme organization</li>
+</ul>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Design Futures Symposium 2022</title>
+		<link>/work/design-futures-symposium-2022/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Mon, 16 Sep 2024 03:09:29 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=84</guid>
+
+					<description><![CDATA[Singapore Design Week 2023 featured a symposium curated by renowned curator Paola Antonelli. The event delved into the future of design and &#8216;design of the future,&#8217; gathering influential minds from Singapore and around the world. The core theme, &#8216;Design as an enzyme for progress,&#8217; envisioned the future of design as if viewed through a microscope, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Singapore Design Week 2023 featured a symposium curated by renowned curator Paola Antonelli. The event delved into the future of design and &lsquo;design of the future,&rsquo; gathering influential minds from Singapore and around the world. </p>
+
+
+
+<p>The core theme, &lsquo;Design as an enzyme for progress,&rsquo; envisioned the future of design as if viewed through a microscope, drawing parallels with the processes of fermentation, synthesis, and mutation.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo thumb"><div class="wp-block-embed__wrapper">
+<div style="--width:798; --height:724;"><img decoding="async" style="--twidth:640; --theight:581;" alt="thumbnail" src="https://i.vimeocdn.com/video/1737431909-91706fd848aa222d3b67ed8d8a54bb21111c6c40d49e560bc2d571a674d725ec-d_640" fetchpriority="high"><iframe title="Design Futures Symposium &ndash; draft" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873777229?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p>The identity design embraced the metaphorical microscope, revealing a captivating cellular motif. My role was to create motion graphics that complemented this identity.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:960;"><img decoding="async" style="--twidth:960; --theight:960;" alt="thumbnail" src="https://i.vimeocdn.com/video/1736800888-471c896f88a3d34b08e5578587dc6da9ea19fe0a8aab208b8ffb57aecbb544a6-d_960" fetchpriority="high"><iframe title="Design Futures Symposium &ndash; IGP ANIMATED" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873339108?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:300; --height:250;"><img decoding="async" style="--twidth:295; --theight:246;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736788917-ecff5654846ac89a639b672ab0f7d8c083ee6b8a057e8a976ca19a327833fcd5-d_295x166" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; ONLINE AD BANNER MEDIUM" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873330491?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo row2"><div class="wp-block-embed__wrapper">
+<div style="--width:300; --height:600;"><img decoding="async" style="--twidth:295; --theight:590;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736792719-defc4c2074bc62470b97fb8b4d5be3b8655aefe3e174ebcb9ae3dd60d7d3620c-d_295x166" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; ONLINE AD BANNER HALFPAGE" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873333261?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:320; --height:100;"><img decoding="async" style="--twidth:295; --theight:92;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736793816-133ba9358bf27841ca758cf5ae9e0f0acfe9ccd834e9c85c2a86e624dd833678-d_295x166" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; ONLINE AD BANNER BILLBOARD" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873334056?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:728; --height:90;"><img decoding="async" style="--twidth:640; --theight:79;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736795402-c82119a06f046d69cdf6b4c4f926dcedb1f56a32735edd8d50de5c90d3c5f7ee-d_640" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; ONLINE AD-BANNER LEADERBOARD V1" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873335252?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:728; --height:90;"><img decoding="async" style="--twidth:640; --theight:79;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736797520-901a5daf60575364d677b3506273714cd4a896cceebbeac333a6800cc81c3e83-d_640" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; ONLINE AD BANNER LEADERBOARD V2" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873336083?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:563; --height:1000;"><img decoding="async" style="--twidth:295; --theight:524;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736800839-a69a24a7199f8d16797341c52af4b838fb98cc053ecd03f2a8e0cae3a2e44e8e-d_295x166" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; IGS ANIMATED" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873339172?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:540;"><img decoding="async" style="--twidth:960; --theight:540;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736801119-7532b7bcc46a21558c031dd88fc9b739c110bfb0430d9ee62a8f76a0a3400a2c-d_960" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; COVER SLIDE ANIMATED" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873339217?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:282;"><img decoding="async" style="--twidth:960; --theight:282;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736802053-06e51e1a9dbfb98454beb7608f10f03fc63ea7e3da0560d24374c2da0cfb350c-d_960" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; WEBSITE EVENT BANNER" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873339260?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:540;"><img decoding="async" style="--twidth:960; --theight:540;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736809431-dd73f83b7a4eebfd35226607d37ea150c53af66108998d1708357173c2cc2521-d_960" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; Opener/Closer" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873345203?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p>On top of crafting static animated clips, I also had to design some customizable After Effects templates for title screen and lowerthirds. These templates allowed others to easily edit the text and modify the layout according to their needs.</p>
+
+
+
+<figure class="wp-block-image span2" style="--width:1830; --height:935;"><img decoding="async" src="" alt="Screenshot 2023-10-13 134646.jpg" width="1830" height="935" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1697466046/personalwebsite/image/7dc92b80-3c71-4a99-b83b-b7815995f3e9/uftznrpeeccyfj26au2n.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2 row2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:540;"><img decoding="async" style="--twidth:960; --theight:540;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736811417-f30efb01f1c938598665f035191290bbfa1481d16273b0b036986eaf04198928-d_960" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash;  LowerThirds Reference" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873346447?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image" style="--width:1830; --height:935;"><img decoding="async" src="" alt="Screenshot 2023-10-13 1346436.jpg" width="1830" height="935" data-src="https://res.cloudinary.com/djtuan5jn/image/upload/v1697466052/personalwebsite/image/7dc92b80-3c71-4a99-b83b-b7815995f3e9/lmrtkbhd034azfbcswqk.jpg" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:540;"><img decoding="async" style="--twidth:960; --theight:540;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736812690-b5e54c056f6dc13ebeb39eb4e821969ece59148a07b1b762cddffad3c694d767-d_960" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; Title Reference" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873347268?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<ul class="wp-block-list">
+<li>B&#7843;o Anh as <em>motion graphic designer</em></li>
+
+
+
+<li>Fabio Maragno as <em>graphic designer</em></li>
+
+
+
+<li>Randy Yeo as <em>design director</em></li>
+
+
+
+<li>Joey Lim as <em>project manager</em></li>
+
+
+
+<li>Works are done at studio Practice Theory</li>
+</ul>
+
+
+
+<p></p>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
