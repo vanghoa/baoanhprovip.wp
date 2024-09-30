@@ -8,7 +8,7 @@ $imgs = array_merge(
 ?>
 <li class="project flex items-stretch">
 	<div class="<?php outline();
-				$permalink = $pods->display('permalink') . setStoryPerma(); ?> w-full">
+				$permalink = $pods->display('permalink') ?> w-full">
 		<div isfirst="true" islast="<?php
 									echo count($imgs) == 1 ? 'true' : 'false'; ?>" class="imgsec w-full mx-auto">
 			<div class="imgwrapper">

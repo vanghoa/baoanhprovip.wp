@@ -17,14 +17,6 @@ if (!function_exists('outline')) {
 	}
 }
 
-if (!function_exists('setStoryPerma')) {
-	function setStoryPerma()
-	{
-		global $is_story;
-		return ($is_story ? '?story=' . $is_story : '');
-	}
-}
-
 if (!function_exists('formatTimeframe')) {
 	function formatTimeframe($responsive = false)
 	{
@@ -58,8 +50,8 @@ if (!function_exists('outputTaxonomy')) {
 																									echo 'text-hilight';
 																								} ?>" href="<?php
 																											$is_story = $is_story && true;
-																											echo get_term_link($tag['slug'], $taxonomy_name) . setStoryPerma() ?>"><?php
-																																													echo str_replace(' ', '&nbsp;', $tag['name']); ?></a>
+																											echo get_term_link($tag['slug'], $taxonomy_name) ?>"><?php
+																																									echo str_replace(' ', '&nbsp;', $tag['name']); ?></a>
 					<?= ($length - 1 > $k) ? ' - ' : '' ?>
 				</span>
 <?php }

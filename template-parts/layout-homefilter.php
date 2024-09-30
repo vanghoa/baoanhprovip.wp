@@ -1,9 +1,7 @@
 <?php global $pods, $term_id, $taxonomy, $taxonomy_name, $is_story, $flowtype, $storymode, $is_designer, $is_developer, $is_storyq;
 
-$storymode2 = ($is_storyq && ($is_designer || $is_developer));
-
 ?>
-<p class="txt-layer mb-1"><a href="<?= $storymode || $storymode2 ? home_url('/' . $flowtype . setStoryPerma()) . '#everything' : get_home_url() ?>" class="<?= is_home() || ($is_designer || $is_developer) ? 'text-hilight' : '' ?>">all</a>
+<p class="txt-layer mb-1"><a href="<?= $flowtype ? home_url('/' . $flowtype) . '#everything' : get_home_url() ?>" class="<?= is_home() || ($is_designer || $is_developer) ? 'text-hilight' : '' ?>">all</a>
 	<?php $tags = pods($taxonomy_name)->find();
 	$length = $tags->total_found();
 	$cur = 0;
@@ -13,7 +11,7 @@ $storymode2 = ($is_storyq && ($is_designer || $is_developer));
 		<?php if ($cur <= $length) {
 			echo ' | ';
 		} ?>
-		<a href="<?= get_term_link($bt_term_id, $taxonomy_name) . setStoryPerma() ?>"
+		<a href="<?= get_term_link($bt_term_id, $taxonomy_name) ?>"
 			class="<?php if ($bt_term_id == $term_id && $taxonomy == $taxonomy_name) {
 						echo 'text-hilight';
 					} ?>">
