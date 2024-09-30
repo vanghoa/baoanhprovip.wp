@@ -1,22 +1,27 @@
 <?php
-global $taxonomy, $pods;
+global $pods;
 $pods = pods('work', get_the_ID());
-?>
+$txnms = get_object_taxonomies('work', 'names');
 
-<section class="single-work-head mt-12 mb-12 flex flex-col justify-between items-center gap-4">
-	<h1 class="text-2xl text-center mono-600 txt-layer"><?php echo get_the_title(); ?></h1>
-	<div class="big-tags text-nowrap whitespace-nowrap desktop">
-		<?php $tags = $pods->field($taxonomy);
-		if ($tags) :
+function renderBigTags($txnm)
+{
+	global $pods;
+	$tags = $pods->field($txnm);
+	if (empty($tags)) {
+		return;
+	}
+?>
+	<div class="big-tags text-nowrap whitespace-nowrap desktop <?= $txnm ?>">
+		<?php if ($tags) :
 			foreach ($tags as $k => $tag) { ?>
 				<p class="txt-layer desktop">
-					<a href="<?= get_term_link($tag['slug'], $taxonomy) . setStoryPerma() ?>"><?php echo $tag['name']; ?></a>
+					<a href="<?= get_term_link($tag['slug'], $txnm) ?>"><?php echo $tag['name']; ?></a>
 				</p>
 		<?php }
 		endif;
 		?>
 	</div>
-	<div class="big-tags text-center txt-layer mobile">
+	<div class="big-tags text-center txt-layer mobile <?= $txnm ?>">
 		<?php
 		if ($tags) :
 			foreach ($tags as $k => $tag) { ?>
@@ -24,11 +29,21 @@ $pods = pods('work', get_the_ID());
 				if ($k !== 0) {
 					echo " | "; // Add a comma after each item except the last
 				} ?>
-				<a href="<?= get_term_link($tag['slug'], $taxonomy) . setStoryPerma() ?>"><?php echo $tag['name']; ?></a>
+				<a href="<?= get_term_link($tag['slug'], $txnm) ?>"><?php echo $tag['name']; ?></a>
 		<?php }
 		endif;
 		?>
 	</div>
+<?php }
+?>
+
+<section class="single-work-head mt-12 mb-12 flex flex-col justify-between items-center gap-4">
+	<h1 class="text-2xl text-center mono-600 txt-layer"><?php echo get_the_title(); ?></h1>
+	<?php
+	foreach ($txnms as $txnm) {
+		renderBigTags($txnm);
+	}
+	?>
 	<p class="timeframe text-center">
 		<?php formatTimeframe() ?>
 	</p>

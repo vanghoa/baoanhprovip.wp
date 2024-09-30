@@ -28,6 +28,8 @@ const $$ = document.querySelectorAll.bind(document);
 const $create = document.createElement.bind(document);
 const $createcomment = document.createComment.bind(document);
 const setprop = rootstyle.setProperty.bind(rootstyle);
+const isDevQ = isQueryParamPart('developer');
+const isDesQ = isQueryParamPart('designer');
 
 root.classList.add(
   getRandItem(Array.from({ length: 2 }, (v, i) => `color_${i + 1}`))
@@ -119,7 +121,6 @@ document.addEventListener('DOMContentLoaded', function () {
       if (entry.isIntersecting) {
         const img = entry.target;
         img.src = img.getAttribute('data-src'); // Load the actual image
-        img.srcset = img.getAttribute('data-srcset'); // Load the srcset if available
         observer.unobserve(img);
       }
     });
@@ -137,4 +138,20 @@ function toggleViewmode(isList, init = false) {
   document.documentElement.classList.toggle('isList', isList);
   sessionStorage.setItem('view', isList ? 'l' : 'g');
   init || duoResponsive();
+}
+
+function isQueryParamPart(Q) {
+  const urlParams = new URLSearchParams(window.location.search);
+  const value = urlParams.get('story');
+  if (value) {
+    return value.split('-')[0] == Q;
+  }
+}
+
+function getQueryParamPart() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const value = urlParams.get('story');
+  if (value) {
+    return value.split('-')[0];
+  }
 }

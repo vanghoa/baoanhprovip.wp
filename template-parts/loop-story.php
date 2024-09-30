@@ -41,7 +41,7 @@ if (!empty($desflow) && !empty($devflow)) {
 								<?= $settings->field($flow . '_img._img'); ?>
 							</div>
 							<div class="text-center m-4 flex flex-col gap-4 justify-center items-center">
-								<p class="short_description line-clamp-4 max-w-md text-center txt-layer">
+								<p class="short_description line-clamp-6 max-w-md text-center txt-layer">
 									<?= $settings->field($flow . '_text'); ?>
 								</p>
 							</div>

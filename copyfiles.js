@@ -67,6 +67,10 @@ function copyFilesRecursive(
     const destPath = path.join(dest, item);
     const stat = fs.statSync(srcPath);
 
+    if (item === '.git') {
+      return;
+    }
+
     // Skip excluded folders
     if (excludeDirs.includes(item)) {
       return;

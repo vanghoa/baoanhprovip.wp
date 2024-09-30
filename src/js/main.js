@@ -1,5 +1,29 @@
 'use strict';
 
+const isWork = isPage('single-work');
+const isStory = isPage('page-story') || isQueryParamPart('true');
+{
+  let tagname = 'bigtag';
+  let flowname = 'bigtag_flow';
+  if (isDesQ) {
+    tagname = 'designertag';
+    flowname = 'designer_flow';
+  } else if (isDevQ) {
+    tagname = 'developertag';
+    flowname = 'developer_flow';
+  }
+  isWork &&
+    $$('.big-tags').forEach((el) => {
+      el.classList.contains(tagname) || el.remove();
+    });
+  isWork &&
+    (isDesQ || isDevQ) &&
+    $$('.storysection').forEach((el) => {
+      el.classList.contains(flowname) || el.remove();
+    });
+  isWork && $$('.storysection').length > 1 && $$('.storysection')[0].remove();
+}
+
 // binding method
 const body = document.body;
 const html = document.documentElement;
@@ -19,7 +43,7 @@ const ry = 1;
 const ctx = imgcanvas.getContext('2d', { willReadFrequently: true });
 ctx.imageSmoothingEnabled = false;
 ctx.fillStyle = '#e3e3ca';
-const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
+const rem = parseFloat(getComputedStyle(html).fontSize);
 const hratio = 2.1;
 const scaleX = 7.4;
 const scaleY = scaleX * hratio;
@@ -176,8 +200,46 @@ const isDesigner = isPage('page-designer');
 const isHome =
   !inputNote &&
   (isPage('home') || isPage('archive') || isDeveloper || isDesigner);
-const isWork = isPage('single-work');
 let notebookData = null;
+
+if (isDesQ || isDevQ || isDeveloper || isDesigner || isStory) {
+  $$('#main a.homelink').forEach((el) => {
+    el.href = el.href + 'story';
+  });
+  $$('#main a').forEach((el) => {
+    const url = new URL(el.href);
+    if (!url.searchParams.has('story')) {
+      if (isDesigner) {
+        url.searchParams.append('story', 'designer');
+      } else if (isDeveloper) {
+        url.searchParams.append('story', 'developer');
+      } else if (isDesQ) {
+        url.searchParams.append('story', 'designer');
+      } else if (isDevQ) {
+        url.searchParams.append('story', 'developer');
+      } else if (isStory) {
+        url.searchParams.append('story', 'true');
+      }
+      el.href = url.toString();
+    }
+  });
+  isPage('page-story') ||
+    isPage('page-info') ||
+    html.classList.add(
+      (() => {
+        if (isDesigner) {
+          return 'color1';
+        } else if (isDeveloper) {
+          return 'color2';
+        } else if (isDesQ) {
+          return 'color1';
+        } else if (isDevQ) {
+          return 'color2';
+        }
+        return '';
+      })()
+    );
+}
 
 if (isHome) {
   console.log('home page');
@@ -877,6 +939,9 @@ function drawImg(
   for (let i = 0; i < allImg.length; i++) {
     const img = allImg[i];
     const { leftright, topbot, left, top, width, height } = getRect(img);
+    if (width < 4 || height < 4) {
+      continue;
+    }
     const lazyKey = `${i}${leftright + topbot + left + top}${Math.random()
       .toString(16)
       .slice(2)}`;
@@ -942,21 +1007,15 @@ function drawImg(
 }
 
 function drawImgHome(data, allImg) {
-  const { top, left, topbot, leftright, width, height } = getRect(allImg[0].el);
-  if (width < 4 || height < 4) {
-    return;
-  }
-  const base = {
-    h: height,
-    w: width,
-  };
-
   for (let igroup = 0; igroup < allImg.length; igroup++) {
     imgsecs[igroup].ascii = {};
     const { group, el, lbtn, rbtn, idcascii, idc, hoverlayer, hoverchild } =
       allImg[igroup];
     // draw image
     const { top, left, topbot, leftright, width, height } = getRect(el);
+    if (width < 4 || height < 4) {
+      continue;
+    }
     const lazyKey = `${igroup}${leftright + topbot + left + top}${Math.random()
       .toString(16)
       .slice(2)}`;
@@ -965,8 +1024,8 @@ function drawImgHome(data, allImg) {
         return;
       }
       ctx.clearRect(0, 0, imgcanvas.width, imgcanvas.height);
-      imgcanvas.width = base.w * group.length;
-      imgcanvas.height = base.h;
+      imgcanvas.width = width * group.length;
+      imgcanvas.height = height;
       ctx.imageSmoothingEnabled = false;
       //
       for (let iimg = 0; iimg < group.length; iimg++) {
@@ -974,9 +1033,9 @@ function drawImgHome(data, allImg) {
         const { objectFit } = getComputedStyle(img);
         await image2Canvas(
           img,
-          base.w,
-          base.h,
-          base.w * iimg,
+          width,
+          height,
+          width * iimg,
           objectFit == 'cover'
         );
       }
@@ -994,7 +1053,7 @@ function drawImgHome(data, allImg) {
         leftright,
         data,
         ascii,
-        (curs[igroup].value - 1) * base.w
+        (curs[igroup].value - 1) * width
       );
       imgsecs[igroup].ascii.arr = { ascii, w: imgcanvas.width };
       console.log('lazyload image successful');
@@ -1020,7 +1079,7 @@ function drawImgHome(data, allImg) {
       topbot,
       left,
       leftright,
-      baseW: base.w,
+      baseW: width,
       ...imgsecs[igroup].ascii,
     };
   }
