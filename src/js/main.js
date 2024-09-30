@@ -225,6 +225,7 @@ if (isDesQ || isDevQ || isDeveloper || isDesigner || isStory) {
   });
   isPage('page-story') ||
     isPage('page-info') ||
+    inputNote ||
     html.classList.add(
       (() => {
         if (isDesigner) {
