@@ -72,10 +72,6 @@
 		@apply opacity-0;
 	}
 
-	#copy .realheight {
-		@apply pb-16;
-	}
-
 	#copy .text-2xl {
 		@apply !text-base;
 	}
