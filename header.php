@@ -150,6 +150,7 @@ if ($is_designer || ($is_work && $type == 'designer') || ($is_storyq && $taxonom
 		?>
 		<div class="absolute left-0 top-0 bottom-0 right-0 bg-black bg-opacity-70 z-10 imgholder"></div>
 		<div class="absolute left-0 top-0 bottom-0 right-0 pointer-events-none z-10 notebookholder"></div>
+		<div class="absolute z-20 videolayer pointer-events-none"></div>
 		<div class="mainbody absolute left-0 top-0 w-full h-full overflow-x-hidden overflow-y-auto <?= $is_work ? 'isWork' : '' ?>">
 			<div class="realheight min-h-full px-4 flex flex-col">
 				<div class="grow">

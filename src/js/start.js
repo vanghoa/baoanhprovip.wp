@@ -1,25 +1,4 @@
 'use strict';
-async function fetchNoteBook() {
-  const cachedData = sessionStorage.getItem('jsonData');
-
-  if (cachedData) {
-    return JSON.parse(cachedData);
-  }
-
-  try {
-    const response = await fetch('/wp-content/uploads/notebookdata.json');
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    const data = await response.json();
-
-    // Save the data in sessionStorage
-    sessionStorage.setItem('jsonData', JSON.stringify(data));
-    return data;
-  } catch (error) {
-    console.error('Error fetching JSON:', error);
-  }
-}
 
 const root = document.querySelector(':root');
 const rootstyle = root.style;
@@ -153,5 +132,57 @@ function getQueryParamPart() {
   const value = urlParams.get('story');
   if (value) {
     return value.split('-')[0];
+  }
+}
+
+async function fetchAndUnzipJson(url, storageKey) {
+  const storedData = sessionStorage.getItem(storageKey);
+  if (storedData) {
+    return JSON.parse(storedData);
+  }
+  const response = await fetch(url);
+  const arrayBuffer = await response.arrayBuffer();
+  const uint8Array = new Uint8Array(arrayBuffer);
+  const decompressed = pako.inflate(uint8Array, { to: 'string' });
+  const jsonData = JSON.parse(decompressed);
+  sessionStorage.setItem(storageKey, JSON.stringify(jsonData));
+  return jsonData;
+}
+
+async function fetchNoteBook() {
+  const cachedData = sessionStorage.getItem('jsonData');
+
+  if (cachedData) {
+    return JSON.parse(cachedData);
+  }
+
+  try {
+    const response = await fetch('/wp-content/uploads/notebookdata.json');
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const data = await response.json();
+
+    // Save the data in sessionStorage
+    sessionStorage.setItem('jsonData', JSON.stringify(data));
+    return data;
+  } catch (error) {
+    console.error('Error fetching JSON:', error);
+  }
+}
+
+function inactivityTime(fnout, fnin) {
+  let time;
+  resetTimer();
+  document.body.onmousemove = resetTimer;
+
+  function logout() {
+    fnout();
+  }
+
+  function resetTimer() {
+    fnin();
+    clearTimeout(time);
+    time = setTimeout(logout, 20000);
   }
 }

@@ -97,6 +97,7 @@ function stringifyASCII(arr) {
 }
 
 let screenlength = 0;
+let screenwidth = 0;
 let cmts = [];
 const cmtsScreen = [];
 let stopEvething = true;
@@ -121,6 +122,100 @@ const mainnav = $('#main nav');
       });
     }
   }
+}
+
+//video layer
+const videolayerMain = $('#main .videolayer');
+const videolayerCopy = $('#copy .videolayer');
+const iavideo = $create('video');
+const iasource = $create('source');
+iavideo.pause();
+iavideo.loop = true;
+iavideo.muted = true;
+iavideo.style.visibility = 'hidden';
+iasource.type = 'video/webm';
+iavideo.append(iasource);
+videolayerMain.append(iavideo);
+const scalemspF = 4;
+
+function drawVideoLayer(name) {
+  let stop = true;
+  const { c, h, mspF, str, w } = vid[name];
+  let cur = 0;
+  iasource.src = `/wp-content/themes/baoanhprovip.wp/assets/images/${name}.webm`;
+  iavideo.load();
+  //requestAnimationFrame(animation);
+  async function animation(now) {
+    if (!stopEvething || stopEvething == 'rsps') {
+      const { leftright, topbot, left, top, ogwidth, ogheight } =
+        getRect(videolayerCopy);
+      const rx = w / ogwidth;
+      const ystart = top < 0 ? 0 : top;
+      const xstart = left < 0 ? 0 : left;
+      for (
+        let y = ystart;
+        y <= (topbot > screenlength ? screenlength : topbot);
+        y++
+      ) {
+        if (window.IAVideoLayer?.[y]) {
+          for (
+            let x = xstart;
+            x <= (leftright > screenwidth ? screenwidth : leftright);
+            x++
+          ) {
+            if (window.IAVideoLayer[y]?.[x] !== undefined) {
+              const newstr =
+                str[
+                  cur * h * w +
+                    Math.round((y - ystart) * rx) * w +
+                    Math.round((x - xstart) * rx)
+                ];
+              newstr && (window.IAVideoLayer[y][x] = newstr);
+            }
+          }
+        }
+      }
+      cmtRenderScreen(
+        ystart,
+        clamp(topbot + 1, 0, screenlength),
+        xstart,
+        clamp(leftright + 1, 0, screenwidth)
+      );
+    }
+    await wait(mspF * scalemspF);
+    cur += scalemspF;
+    if (cur >= c) {
+      cur = 0;
+    }
+    if (stop) {
+      cmtRenderScreen();
+      return;
+    }
+    requestAnimationFrame(animation);
+  }
+  return {
+    stop: () => {
+      window.IAVideoLayer = null;
+      stop = true;
+      iavideo.pause();
+      iavideo.style.visibility = 'hidden';
+      isHome && window.startHomeIntervalSlide();
+    },
+    start: () => {
+      isHome && clearInterval(window.homeIntID);
+      window.IAVideoLayer = Array.from({ length: screenlength }, () =>
+        Array.from({ length: screenwidth }, () => char.trans)
+      );
+      stop = false;
+      iavideo.style.visibility = 'visible';
+      iavideo.play();
+      requestAnimationFrame(animation);
+    },
+  };
+}
+
+function clamp(value, min, max) {
+  return Math.min(Math.max(value, min), max);
 }
 
 function reSetup() {
@@ -197,6 +292,7 @@ const inputResponsive = $('#main #input_responsive');
 const allHorizontalLine = [...$$('#copy .mainbody .horizontal-line')];
 const isDeveloper = isPage('page-developer');
 const isDesigner = isPage('page-designer');
+const isInfo = isPage('page-info');
 const isHome =
   !inputNote &&
   (isPage('home') || isPage('archive') || isDeveloper || isDesigner);
@@ -224,7 +320,7 @@ if (isDesQ || isDevQ || isDeveloper || isDesigner || isStory) {
     }
   });
   isPage('page-story') ||
-    isPage('page-info') ||
+    isInfo ||
     inputNote ||
     html.classList.add(
       (() => {
@@ -241,6 +337,10 @@ if (isDesQ || isDevQ || isDeveloper || isDesigner || isStory) {
       })()
     );
 }
+
+let vid = fetchAndUnzipJson(
+  '/wp-content/themes/baoanhprovip.wp/assets/unprocessedjs/asciiVideos.json.gz'
+).catch((e) => null);
 
 if (isHome) {
   console.log('home page');
@@ -271,22 +371,27 @@ if (isHome) {
     }
   );
 
-  const intervalId =
-    !window.matchMedia(
-      'only screen and (max-width: 768px) and (pointer: coarse)'
-    ).matches &&
-    setInterval(() => {
-      if (currentSlideEls.length == 0) {
-        return;
-      }
-      const el = getRandItem(currentSlideEls);
-      const length = imgwrappers[el.i].childElementCount;
-      let cur = window.curs[el.i];
-      let curnow = cur.value;
-      curnow = curnow >= length ? 1 : curnow + 1;
-      window.stopPrev = slideAscii(el.i, curnow - 1, cur.value - 1, 500);
-      slide(el.i, cur, curnow, length);
-    }, 3000);
+  window.startHomeIntervalSlide = () => {
+    clearInterval(window.homeIntID);
+    window.homeIntID =
+      !window.matchMedia(
+        'only screen and (max-width: 768px) and (pointer: coarse)'
+      ).matches &&
+      setInterval(() => {
+        if (currentSlideEls.length == 0) {
+          return;
+        }
+        const el = getRandItem(currentSlideEls);
+        const length = imgwrappers[el.i].childElementCount;
+        let cur = window.curs[el.i];
+        let curnow = cur.value;
+        curnow = curnow >= length ? 1 : curnow + 1;
+        window.stopPrev = slideAscii(el.i, curnow - 1, cur.value - 1, 500);
+        slide(el.i, cur, curnow, length);
+      }, 3000);
+  };
+
+  window.startHomeIntervalSlide();
 
   imgsecs.forEach((el, i) => {
     const imgwrapper = imgwrappers[i];
@@ -416,6 +521,20 @@ let allNotes = [];
 getScrollbarWidth();
 window.onload = async () => {
   duoResponsive();
+  vid = await vid;
+  if (
+    vid &&
+    !window.matchMedia(
+      'only screen and (max-width: 768px) and (pointer: coarse)'
+    ).matches
+  ) {
+    const vidList = Object.keys(vid);
+    setprop('--vidw', vid[vidList[0]].w);
+    setprop('--vidh', vid[vidList[0]].h * hratio);
+    const videoFn = drawVideoLayer(vidList[0]);
+    inactivityTime(videoFn.start, videoFn.stop);
+  }
+
   if (!inputNote) {
     return;
   }
@@ -470,6 +589,10 @@ function mouseMove(e) {
   const { mouseY: ogY, mouseX: ogX } = mouseChange;
   if (ogY != undefined) {
     const char = (() => {
+      const videoArr = window.IAVideoLayer?.[ogY];
+      if (videoArr?.[ogX]) {
+        return videoArr[ogX];
+      }
       let intensity = 0;
       const fixedArr = window.fixedLayer?.[ogY];
       if (fixedArr?.[ogX]) {
@@ -521,7 +644,8 @@ function mouseEnter(i) {
   window.imgsecs[i].isHover = true;
   drawFewRect(window.absoluteLayer, [hoverchild], [hoverrect]);
   drawTxt(window.absoluteLayer, [hoverchild]);
-  cmtRenderScreen();
+  const { top, topbot, left, leftright } = hoverrect;
+  cmtRenderScreen(top - scrollTop, topbot - scrollTop + 1, left, leftright + 1);
 }
 
 function mouseLeave(i) {
@@ -531,7 +655,8 @@ function mouseLeave(i) {
   const { hoverchild, hoverrect } = window.imgsecs[i];
   window.imgsecs[i].isHover = false;
   drawFewRect(window.absoluteLayer, [hoverchild], [hoverrect], null);
-  cmtRenderScreen();
+  const { top, topbot, left, leftright } = hoverrect;
+  cmtRenderScreen(top - scrollTop, topbot - scrollTop + 1, left, leftright + 1);
 }
 
 function drawImgHolderFixed(intensity = 3, key, isFinal = true) {
@@ -591,7 +716,12 @@ function slideAscii(i, curnow, curprev, time) {
         canvasData[y][x] = newchar;
       }
     }
-    cmtRenderScreen();
+    cmtRenderScreen(
+      top - scrollTop,
+      topbot - scrollTop + 1,
+      left,
+      leftright + 1
+    );
     count++;
     await wait(delay_);
     if (!stop && imgsecs[i].ascii && count <= lim) {
@@ -641,7 +771,7 @@ function getNoteResponsiveClass(w) {
 }
 
 function duoResponsive(isFinal = true) {
-  stopEvething = true;
+  stopEvething = 'rsps';
   lazyList = {};
   lazyQ = [];
   lazyQCur = -1;
@@ -651,6 +781,8 @@ function duoResponsive(isFinal = true) {
   const width = Math.max(outerWidth - innerWidth - 100, 0);
 
   if (width < widthLimit) {
+    stopEvething = true;
+    setprop('--ow', `100vw`);
     window.canvasData = Array.from({ length: screenlength }, () =>
       'This-is-too-small'.split('')
     );
@@ -669,12 +801,13 @@ function duoResponsive(isFinal = true) {
     });
     return;
   }
+  setprop('--ow', `${outerWidth}px`);
   isFinal && console.log('responsive rerender');
   copy.style.width = `${width}px`;
   manualResponsive(copy);
   // canvas
   const canvas = {
-    w: reMsrX(width),
+    w: (screenwidth = reMsrX(width)),
     h: reMsrY(realh.clientHeight),
   };
   window.canvasData = Array.from({ length: canvas.h }, () =>
@@ -689,6 +822,9 @@ function duoResponsive(isFinal = true) {
   );
   window.hoverLayer = Array.from({ length: canvas.h }, () =>
     Array.from({ length: canvas.w }, () => char.trans)
+  );
+  window.IAVideoLayer = Array.from({ length: screenlength }, () =>
+    Array.from({ length: screenwidth }, () => char.trans)
   );
   calcScrollTop();
   // draw rects
@@ -817,31 +953,47 @@ function cmtRender(cmtContents) {
   cmts = cmtsNew;
 }
 
-function cmtRenderScreen() {
+function cmtRenderScreen(
+  ystart = 0,
+  yend = screenlength,
+  xstart = 0,
+  xend = screenwidth
+) {
   if (window.scrollTop == undefined) {
     return;
   }
-  for (let y = 0; y < screenlength; y++) {
+  for (let y = ystart; y < yend; y++) {
     const fixedArr = window.fixedLayer?.[y];
+    const IAVideoArr = window.IAVideoLayer?.[y];
     const absArr = window.absoluteLayer?.[y + scrollTop];
-    const canvasArr =
-      canvasData[y + scrollTop]
-        ?.map((v, x) => {
-          let intensity = 0;
-          if (fixedArr?.[x]) {
-            if (fixedArr[x].intensity) {
-              intensity = fixedArr[x].intensity;
-            } else {
-              return fixedArr?.[x];
-            }
+    const cvsArr = window.canvasData[y + scrollTop];
+    let nstr = '';
+    if (cvsArr && cmts[y]) {
+      for (let x = xstart; x < xend; x++) {
+        let intensity = 0;
+        if (IAVideoArr?.[x]) {
+          nstr += IAVideoArr[x];
+          continue;
+        }
+        if (fixedArr?.[x]) {
+          if (fixedArr[x].intensity) {
+            intensity = fixedArr[x].intensity;
+          } else {
+            nstr += fixedArr?.[x];
+            continue;
           }
-          if (absArr?.[x]) {
-            return filterGrayRamp(absArr[x], intensity);
-          }
-          return filterGrayRamp(v, intensity);
-        })
-        .join('') || '';
-    cmts[y].nodeValue = canvasArr;
+        }
+        if (absArr?.[x]) {
+          nstr += filterGrayRamp(absArr[x], intensity);
+          continue;
+        }
+        nstr += filterGrayRamp(cvsArr[x], intensity);
+      }
+      cmts[y].nodeValue =
+        (xstart == 0 ? '' : cmts[y].nodeValue.slice(0, xstart)) +
+        nstr +
+        (xend == screenwidth ? '' : cmts[y].nodeValue.slice(xend, screenwidth));
+    }
   }
 }
 
