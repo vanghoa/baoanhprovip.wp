@@ -171,17 +171,23 @@ async function fetchNoteBook() {
   }
 }
 
-function inactivityTime(fnout, fnin) {
+function inactivityTime(start, stop) {
   let time;
+  let flag = true;
   resetTimer();
   document.body.onmousemove = resetTimer;
 
   function logout() {
-    fnout();
+    start();
+    flag = true;
   }
 
   function resetTimer() {
-    fnin();
+    if (flag) {
+      stop();
+      console.log('resettimer');
+      flag = false;
+    }
     clearTimeout(time);
     time = setTimeout(logout, 20000);
   }
