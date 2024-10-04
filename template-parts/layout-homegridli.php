@@ -23,8 +23,9 @@ $imgs = array_merge(
 					<?php pods_view('template-parts/layout-arrow.php', null, YEAR_IN_SECONDS, 'transient'); ?>
 				</button>
 				<a href="<?= $permalink ?>" class="no-underline basis-1/3 shrink-0 flex justify-center items-center group hover-layer">
-					<div class="group-hover:opacity-100 hover-child opacity-0 h-fit w-fit <?= outline(['noBgLayer' => true]) ?> flex justify-center items-center p-3 text-center break-all">
-						see this <br> project
+					<div class="group-hover:opacity-100 hover-child opacity-0 h-fit w-fit <?= outline(['noBgLayer' => true]) ?> flex justify-center items-center p-3 text-center">
+						see this
+						project
 					</div>
 				</a>
 				<button class="px-4 rbtn basis-full shrink" aria-label="sliding right">

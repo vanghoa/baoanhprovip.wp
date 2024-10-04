@@ -46,6 +46,7 @@ get_template_part('template-parts/layout', 'function');
 			</ul>
 		</nav>
 		<div class="absolute left-0 top-0 bottom-0 right-0 pointer-events-none z-10 notebookholder"></div>
+		<div class="absolute z-20 videolayer pointer-events-none"></div>
 		<div class="mainbody absolute left-0 top-0 w-full h-full overflow-x-hidden overflow-y-auto">
 			<div class="realheight min-h-full px-4 flex flex-col">
 				<div class="grow">
