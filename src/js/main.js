@@ -138,22 +138,23 @@ iavideo.style.visibility = 'hidden';
 iasource.type = 'video/webm';
 iavideo.append(iasource);
 videolayerMain.append(iavideo);
-const scalemspF = 4;
 
 function drawVideoLayer(name) {
   let stop = true;
-  const { c, h, mspF, str, w } = vid[name];
-  let cur = 0;
+  const { h, mspF, str, w } = vid[name];
   iasource.src = `/wp-content/themes/baoanhprovip.wp/assets/images/${name}.webm`;
   iavideo.load();
   //requestAnimationFrame(animation);
-  async function animation(now) {
+  async function animation() {
     if (!stopEvething || stopEvething == 'rsps') {
-      const { leftright, topbot, left, top, ogwidth, ogheight } =
-        getRect(videolayerCopy);
+      let cur = Math.round((iavideo.currentTime * 1000) / mspF);
+      let { leftright, topbot, left, top, ogwidth } = getRect(videolayerCopy);
+      topbot--;
+      leftright--;
       const rx = w / ogwidth;
       const ystart = top < 0 ? 0 : top;
       const xstart = left < 0 ? 0 : left;
+      const aleft = left > 0 ? 0 : left;
       for (
         let y = ystart;
         y <= (topbot > screenlength ? screenlength : topbot);
@@ -170,7 +171,7 @@ function drawVideoLayer(name) {
                 str[
                   cur * h * w +
                     Math.round((y - ystart) * rx) * w +
-                    Math.round((x - xstart) * rx)
+                    Math.round((x - xstart - aleft) * rx)
                 ];
               newstr && (window.IAVideoLayer[y][x] = newstr);
             }
@@ -184,11 +185,7 @@ function drawVideoLayer(name) {
         clamp(leftright + 1, 0, screenwidth)
       );
     }
-    await wait(mspF * scalemspF);
-    cur += scalemspF;
-    if (cur >= c) {
-      cur = 0;
-    }
+    await wait(120);
     if (stop) {
       cmtRenderScreen();
       return;

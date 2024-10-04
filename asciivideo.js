@@ -21,9 +21,12 @@ if (!fs.existsSync(framesDir)) {
   fs.mkdirSync(framesDir);
 }
 
-// Extract frames for each video using ffmpeg
-function extractFrames(videoPath, outputDir, callback) {
+// Extract frames dynamically based on the desired interval
+function extractFrames(videoPath, outputDir, msPerFrame, callback) {
+  const fps = 1000 / msPerFrame; // Calculate frames per second based on the desired ms per frame
+
   ffmpeg(videoPath)
+    .outputOptions('-vf', `fps=${fps}`) // Dynamically set fps based on ms per frame
     .on('end', function () {
       console.log(`Frames extracted for video: ${path.basename(videoPath)}`);
       callback();
@@ -31,7 +34,7 @@ function extractFrames(videoPath, outputDir, callback) {
     .on('error', function (err) {
       console.error(`Error extracting frames from ${videoPath}:`, err);
     })
-    .saveToFile(path.join(outputDir, 'frame_%04d.png'));
+    .save(path.join(outputDir, 'frame_%04d.png'));
 }
 
 // Get video resolution (width and height) using ffmpeg
@@ -46,17 +49,9 @@ function getVideoInfo(videoPath) {
       );
       const originalWidth = videoStream.width;
       const originalHeight = videoStream.height;
-      const frameRate = eval(videoStream.r_frame_rate); // Convert frame rate to number
-      const mspF = 1000 / frameRate; // Calculate ms per frame
-      resolve({ originalWidth, originalHeight, mspF });
+      resolve({ originalWidth, originalHeight });
     });
   });
-}
-
-// Convert brightness to ASCII based on gray ramp
-function brightnessToAscii(brightness) {
-  const index = Math.floor((brightness / 255) * (grayRamp.length - 1));
-  return grayRamp[index];
 }
 
 function getCharacterForGrayScale(grayScale) {
@@ -90,7 +85,7 @@ function toGrayScale(r, g, b) {
 }
 
 // Convert all frames to a single string of ASCII characters
-async function convertFramesToAscii(framesDir, width, height) {
+async function convertFramesToAscii(framesDir, width, height, msPerFrame) {
   const frameFiles = fs
     .readdirSync(framesDir)
     .filter((file) => file.endsWith('.png'));
@@ -110,11 +105,12 @@ async function convertFramesToAscii(framesDir, width, height) {
     w: width,
     h: height,
     c: frameCount,
+    mspF: msPerFrame, // Dynamically set ms per frame
   };
 }
 
 // Process multiple videos in the directory
-async function processVideosInFolder() {
+async function processVideosInFolder(msPerFrame = 100) {
   const videoFiles = fs
     .readdirSync(videosDir)
     .filter((file) => file.endsWith('.webm'));
@@ -127,9 +123,7 @@ async function processVideosInFolder() {
     console.log(`Processing video: ${videoFile}`);
 
     // Get the original resolution of the video
-    const { originalWidth, originalHeight, mspF } = await getVideoInfo(
-      videoPath
-    );
+    const { originalWidth, originalHeight } = await getVideoInfo(videoPath);
     console.log(`Video resolution: ${originalWidth}x${originalHeight}`);
 
     // Calculate new height to maintain aspect ratio
@@ -138,18 +132,18 @@ async function processVideosInFolder() {
     );
     console.log(`Resizing to: ${desiredWidth}x${newHeight}`);
 
-    // Extract frames from the video
+    // Extract frames from the video with the desired interval
     await new Promise((resolve) => {
-      extractFrames(videoPath, framesDir, resolve);
+      extractFrames(videoPath, framesDir, msPerFrame, resolve);
     });
 
     // Convert frames to ASCII and store in videoDataObject
     const asciiVideoObject = await convertFramesToAscii(
       framesDir,
       desiredWidth,
-      newHeight
+      newHeight,
+      msPerFrame
     );
-    asciiVideoObject.mspF = mspF; // Include milliseconds per frame
     videoDataObject[videoName] = asciiVideoObject;
 
     // Clean up framesDir for the next video
@@ -174,5 +168,5 @@ async function processVideosInFolder() {
   console.log(`Gzipped JSON file saved to ${gzipFilePath}`);
 }
 
-// Run the conversion for all videos
-processVideosInFolder();
+// Run the conversion for all videos with a dynamic interval (default is 100ms)
+processVideosInFolder(100); // You can change the value to any other ms value, like 50, 200, etc.

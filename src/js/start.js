@@ -176,6 +176,7 @@ function inactivityTime(start, stop) {
   let flag = true;
   resetTimer();
   document.body.onmousemove = resetTimer;
+  mainbody.addEventListener('scroll', resetTimer);
 
   function logout() {
     start();
@@ -185,7 +186,6 @@ function inactivityTime(start, stop) {
   function resetTimer() {
     if (flag) {
       stop();
-      console.log('resettimer');
       flag = false;
     }
     clearTimeout(time);

@@ -28,6 +28,6 @@ jobs:
         run: |
           lftp -e "
             open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST -p $FTP_PORT;
-            mirror -R --delete ./ /nguyen.baoanhpro.vip/htdocs/wp-content/themes/baoanhprovip.wp-main;
+            mirror -R --delete ./ /nguyen.baoanhpro.vip/htdocs/wp-content/themes/baoanhprovip.wp;
             bye
           "
