@@ -79,6 +79,8 @@ const cacheKey = {
   storyS: { name: 'storySection' },
 };
 let grayRamp = '█▒░@%*=--..__';
+const contrast = 1.2; //convert to decimal & shift range: [0..2]
+const intercept = 128 * (1 - contrast);
 const grayRampObj = {
   ...grayRamp.split('').reduce((p, c, i) => {
     return {
@@ -786,9 +788,11 @@ function duoResponsive(isFinal = true) {
     window.canvasData = Array.from({ length: screenlength }, () =>
       'This-is-too-small'.split('')
     );
-    window.fixedLayer = Array.from({ length: screenlength }, () =>
-      Array.from({ length: 'This-is-too-small'.length }, () => null)
-    );
+    screenwidth = 'This-is-too-small'.length;
+    window.fixedLayer = null;
+    window.IAVideoLayer = null;
+    window.absoluteLayer = null;
+    window.hoverLayer = null;
     cmtRenderScreen();
     setEvent(mainbody, 'onscroll', null);
     setEvent(document, 'onmousemove', null);
@@ -1115,12 +1119,7 @@ function drawImg(
         imgcanvas.height = height;
         ctx.imageSmoothingEnabled = false;
         containObj = await image2Canvas(img, width, height, 0, isCover);
-        const grayScales = convertToGrayScales(
-          ctx,
-          imgcanvas.width,
-          imgcanvas.height
-        );
-        ascii = drawAscii(grayScales, imgcanvas.width);
+        ascii = drawAscii();
         setCache(cacheKey, {
           objectFit,
           isCover,
@@ -1192,12 +1191,7 @@ function drawImgHome(data, allImg) {
           objectFit == 'cover'
         );
       }
-      const grayScales = convertToGrayScales(
-        ctx,
-        imgcanvas.width,
-        imgcanvas.height
-      );
-      const ascii = drawAscii(grayScales, imgcanvas.width);
+      const ascii = drawAscii();
       str2CanvasArr(
         imgcanvas.width,
         top,
@@ -1252,53 +1246,26 @@ function drawAbs(btn, ascii, w, h) {
   );
 }
 
-function convertToGrayScales(context, width, height) {
-  const imageData = context.getImageData(0, 0, width, height);
-  const contrast = 1.2; //convert to decimal & shift range: [0..2]
-  const intercept = 128 * (1 - contrast);
-  const grayScales = [];
-
-  for (let i = 0; i < imageData.data.length; i += 4) {
-    const r = imageData.data[i] * contrast + intercept;
-    const g = imageData.data[i + 1] * contrast + intercept;
-    const b = imageData.data[i + 2] * contrast + intercept;
-
-    const grayScale = toGrayScale(r, g, b);
-    imageData.data[i] =
-      imageData.data[i + 1] =
-      imageData.data[i + 2] =
-        grayScale;
-
-    grayScales.push(grayScale);
-  }
-
-  // context.putImageData(imageData, 0, 0);
-
-  return grayScales;
-}
-
 function toGrayScale(r, g, b) {
   const v = 0.21 * r + 0.72 * g + 0.07 * b;
   return v < 0 ? 0 : v > 255 ? 255 : v;
 }
 
-function drawAscii(grayScales, width) {
+function drawAscii() {
+  const imageData = ctx.getImageData(
+    0,
+    0,
+    imgcanvas.width,
+    imgcanvas.height
+  ).data;
   let str = '';
-  for (let i = 0; i < grayScales.length; i++) {
-    str += getCharacterForGrayScale(grayScales[i]);
+  for (let i = 0; i < imageData.length; i += 4) {
+    const r = imageData[i] * contrast + intercept;
+    const g = imageData[i + 1] * contrast + intercept;
+    const b = imageData[i + 2] * contrast + intercept;
+    str += getCharacterForGrayScale(toGrayScale(r, g, b));
   }
   return str;
-  //
-  const ascii = [[]];
-  for (let i = 0; i < grayScales.length; i++) {
-    const grayScale = grayScales[i];
-    const nextChars = getCharacterForGrayScale(grayScale);
-    ascii[ascii.length - 1].push(nextChars);
-    if ((i + 1) % width === 0) {
-      ascii.push([]);
-    }
-  }
-  return ascii;
 }
 
 function getCharacterForGrayScale(grayScale) {
