@@ -135,17 +135,22 @@ function getQueryParamPart() {
   }
 }
 
-async function fetchAndUnzipJson(url, storageKey) {
-  const storedData = sessionStorage.getItem(storageKey);
+async function fetchAndUnzipJson() {
+  const nameList = await fetchNameList();
+  const name = nameList[Math.floor(Math.random() * nameList.length)];
+  const storedData = sessionStorage.getItem(name);
   if (storedData) {
+    console.log('cache ', name);
     return JSON.parse(storedData);
   }
-  const response = await fetch(url);
+  const response = await fetch(
+    `/wp-content/themes/baoanhprovip.wp/assets/unprocessedjs/${name}.gz`
+  );
   const arrayBuffer = await response.arrayBuffer();
   const uint8Array = new Uint8Array(arrayBuffer);
   const decompressed = pako.inflate(uint8Array, { to: 'string' });
   const jsonData = JSON.parse(decompressed);
-  sessionStorage.setItem(storageKey, JSON.stringify(jsonData));
+  sessionStorage.setItem(name, JSON.stringify(jsonData));
   return jsonData;
 }
 
@@ -165,6 +170,31 @@ async function fetchNoteBook() {
 
     // Save the data in sessionStorage
     sessionStorage.setItem('jsonData', JSON.stringify(data));
+    return data;
+  } catch (error) {
+    console.error('Error fetching JSON:', error);
+  }
+}
+
+async function fetchNameList() {
+  const cachedData = sessionStorage.getItem('nameList');
+
+  if (cachedData) {
+    console.log('cache nameList');
+    return JSON.parse(cachedData);
+  }
+
+  try {
+    const response = await fetch(
+      '/wp-content/themes/baoanhprovip.wp/assets/unprocessedjs/nameList.json'
+    );
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const data = await response.json();
+
+    // Save the data in sessionStorage
+    sessionStorage.setItem('nameList', JSON.stringify(data));
     return data;
   } catch (error) {
     console.error('Error fetching JSON:', error);

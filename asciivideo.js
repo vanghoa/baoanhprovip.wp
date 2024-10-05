@@ -114,7 +114,13 @@ async function processVideosInFolder(msPerFrame = 100) {
   const videoFiles = fs
     .readdirSync(videosDir)
     .filter((file) => file.endsWith('.webm'));
-  const videoDataObject = {};
+  const nameList = [];
+
+  // Ensure the destination directory exists
+  const outputDir = path.join(__dirname, 'assets/unprocessedjs');
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, { recursive: true });
+  }
 
   for (const videoFile of videoFiles) {
     const videoName = path.basename(videoFile, '.webm'); // Get video name without extension
@@ -144,28 +150,29 @@ async function processVideosInFolder(msPerFrame = 100) {
       newHeight,
       msPerFrame
     );
-    videoDataObject[videoName] = asciiVideoObject;
+    asciiVideoObject.name = videoName;
 
     // Clean up framesDir for the next video
     fs.readdirSync(framesDir).forEach((file) =>
       fs.unlinkSync(path.join(framesDir, file))
     );
+
+    // Gzip the JSON data without saving it to a file
+    const jsonString = JSON.stringify(asciiVideoObject, null, 2);
+    const gzippedBuffer = zlib.gzipSync(jsonString); // Gzip the JSON string synchronously
+
+    // Save the gzipped data to a .gz file
+    const gzipFilePath = path.join(outputDir, `${videoName}.gz`);
+    fs.writeFileSync(gzipFilePath, gzippedBuffer); // Write the gzipped buffer to a file
+    console.log(`Gzipped JSON file saved to ${gzipFilePath}`);
+
+    // save namelist
+    nameList.push(videoName);
   }
 
-  // Ensure the destination directory exists
-  const outputDir = path.join(__dirname, 'assets/unprocessedjs');
-  if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
-  }
-
-  // Gzip the JSON data without saving it to a file
-  const jsonString = JSON.stringify(videoDataObject, null, 2);
-  const gzippedBuffer = zlib.gzipSync(jsonString); // Gzip the JSON string synchronously
-
-  // Save the gzipped data to a .gz file
-  const gzipFilePath = path.join(outputDir, 'asciiVideos.json.gz');
-  fs.writeFileSync(gzipFilePath, gzippedBuffer); // Write the gzipped buffer to a file
-  console.log(`Gzipped JSON file saved to ${gzipFilePath}`);
+  const str = JSON.stringify(nameList, null, 2);
+  const pathfile = path.join(outputDir, `nameList.json`);
+  fs.writeFileSync(pathfile, str);
 }
 
 // Run the conversion for all videos with a dynamic interval (default is 100ms)

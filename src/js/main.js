@@ -139,15 +139,16 @@ iasource.type = 'video/webm';
 iavideo.append(iasource);
 videolayerMain.append(iavideo);
 
-function drawVideoLayer(name) {
+function drawVideoLayer() {
   let stop = true;
-  const { h, mspF, str, w } = vid[name];
+  const { c, h, mspF, str, w, name } = vid;
   iasource.src = `/wp-content/themes/baoanhprovip.wp/assets/images/${name}.webm`;
   iavideo.load();
   //requestAnimationFrame(animation);
   async function animation() {
     if (!stopEvething || stopEvething == 'rsps') {
-      let cur = Math.round((iavideo.currentTime * 1000) / mspF);
+      let cur = Math.round((iavideo.currentTime * 1000 + 200) / mspF);
+      cur > c && (cur -= c);
       let { leftright, topbot, left, top, ogwidth } = getRect(videolayerCopy);
       topbot--;
       leftright--;
@@ -337,9 +338,7 @@ if (isDesQ || isDevQ || isDeveloper || isDesigner || isStory) {
     );
 }
 
-let vid = fetchAndUnzipJson(
-  '/wp-content/themes/baoanhprovip.wp/assets/unprocessedjs/asciiVideos.json.gz'
-).catch((e) => null);
+let vid = fetchAndUnzipJson().catch((e) => null);
 
 if (isHome) {
   console.log('home page');
@@ -527,10 +526,9 @@ window.onload = async () => {
       'only screen and (max-width: 768px) and (pointer: coarse)'
     ).matches
   ) {
-    const vidList = Object.keys(vid);
-    setprop('--vidw', vid[vidList[0]].w);
-    setprop('--vidh', vid[vidList[0]].h * hratio);
-    const videoFn = drawVideoLayer(vidList[0]);
+    setprop('--vidw', vid.w);
+    setprop('--vidh', vid.h * hratio);
+    const videoFn = drawVideoLayer();
     inactivityTime(videoFn.start, videoFn.stop);
   }
 
