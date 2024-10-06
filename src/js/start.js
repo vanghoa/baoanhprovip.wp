@@ -140,7 +140,6 @@ async function fetchAndUnzipJson() {
   const name = nameList[Math.floor(Math.random() * nameList.length)];
   const storedData = sessionStorage.getItem(name);
   if (storedData) {
-    console.log('cache ', name);
     return JSON.parse(storedData);
   }
   const response = await fetch(
@@ -180,7 +179,6 @@ async function fetchNameList() {
   const cachedData = sessionStorage.getItem('nameList');
 
   if (cachedData) {
-    console.log('cache nameList');
     return JSON.parse(cachedData);
   }
 

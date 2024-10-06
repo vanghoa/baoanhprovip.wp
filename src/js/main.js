@@ -527,7 +527,7 @@ window.onload = async () => {
     ).matches
   ) {
     setprop('--vidw', vid.w);
-    setprop('--vidh', vid.h * hratio);
+    setprop('--vidh', +(vid.h * hratio).toFixed(2));
     const videoFn = drawVideoLayer();
     inactivityTime(videoFn.start, videoFn.stop);
   }
@@ -800,7 +800,7 @@ function duoResponsive(isFinal = true) {
     });
     return;
   }
-  setprop('--ow', `${outerWidth}px`);
+  setprop('--ow', `${outerWidth + 10}px`);
   isFinal && console.log('responsive rerender');
   copy.style.width = `${width}px`;
   manualResponsive(copy);
