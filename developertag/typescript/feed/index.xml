@@ -12,7 +12,7 @@
 	<atom:link href="/developertag/typescript/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Wed, 02 Oct 2024 08:16:19 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 31 Oct 2024 17:01:17 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -160,7 +160,7 @@
 		<pubDate>Mon, 09 Sep 2024 16:50:44 +0000</pubDate>
 				<guid isPermaLink="false">/?post_type=work#038;p=37</guid>
 
-					<description><![CDATA[This site packs a lot of my thoughts on how a website and its iterations through time can be tracked and viewed, much like the act of capturing and storing physical images.]]></description>
+					<description><![CDATA[This site packs a lot of my thoughts on how a website and its iterations through time can be tracked and viewed, much like the act of capturing and storing physical images. Under the hood, it uses Github API to visualize the history of developments, like whenever a page/file gets updated, edited or deleted.]]></description>
 										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html><body><ul class="wp-block-list">
 <li>Visit the site here <a href="https://victoria-hertel-site.vercel.app/" target="_blank" rel="noreferrer noopener">victoria-hertel-site.vercel.app</a></li>
@@ -172,7 +172,7 @@
 
 
 
-<p>This site packs a lot of my thoughts on how a website and its iterations through time can be tracked and viewed, much like the act of capturing and storing physical images.</p>
+<p>This site packs a lot of my thoughts on how a website and its iterations through time can be tracked and viewed, much like the act of capturing and storing physical images. Under the hood, it uses Github API to visualize the history of developments, like whenever a page/file gets updated, edited or deleted.</p>
 
 
 
