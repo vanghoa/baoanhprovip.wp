@@ -12,7 +12,7 @@
 	<atom:link href="/designertag/print/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Thu, 31 Oct 2024 17:26:58 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 01 Nov 2024 20:31:11 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -142,9 +142,23 @@
 		<pubDate>Mon, 16 Sep 2024 03:49:46 +0000</pubDate>
 				<guid isPermaLink="false">/?post_type=work#038;p=100</guid>
 
-					<description><![CDATA[Work is still in progress and they made me cannot speak about anything &#129296;]]></description>
+					<description><![CDATA[Check it out at your local supermarket!]]></description>
 										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body><p>Work is still in progress and they made me cannot speak about anything &#129296;</p>
+<html><body><p>Check it out at your local supermarket!</p>
+
+
+
+<ul class="wp-block-list">
+<li>Partial credits: Megan Bowker, Tr&acirc;n Nguy&#7877;n, Minh Ph&#432;&#417;ng, Kelly, Minh Tuy&#7873;n, Xu&acirc;n Qu&#7923;nh, Minh H&#432;&#417;ng, Anh Th&#432;, and lots of other people that I don&rsquo;t know.</li>
+
+
+
+<li>B&#7843;o Anh as <em>freelance designer</em> (helping w adaptations &amp; some designs)</li>
+
+
+
+<li>Works are done for Vinamilk</li>
+</ul>
 </body></html>
 ]]></content:encoded>
 					
