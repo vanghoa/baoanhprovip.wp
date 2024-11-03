@@ -12,7 +12,7 @@
 	<atom:link href="/designertag/website/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Fri, 01 Nov 2024 20:33:39 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 03 Nov 2024 17:19:50 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -558,7 +558,15 @@
 
 
 
-<figure class="wp-block-image size-large" style="--width:1024; --height:645;"><img loading="lazy" decoding="async" width="1024" height="645" src="" alt="" class="wp-image-288" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-37-1024x645.jpeg" data-srcset="/wp-content/uploads/2024/09/image-37-1024x645.jpeg 1024w, /wp-content/uploads/2024/09/image-37-300x189.jpeg 300w, /wp-content/uploads/2024/09/image-37-768x484.jpeg 768w, /wp-content/uploads/2024/09/image-37-1536x967.jpeg 1536w, /wp-content/uploads/2024/09/image-37-2048x1290.jpeg 2048w"></figure>
+<p>Each project tab on hover will toggle down a preview of the corresponding project. During this interaction, the styling of the window frame is altered to create the illusion that you&rsquo;re looking in a different direction.</p>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:645;"><img loading="lazy" decoding="async" width="1024" height="645" src="" alt="" class="wp-image-288" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-37-1024x645.jpeg" data-srcset="/wp-content/uploads/2024/09/image-37-1024x645.jpeg 1024w, /wp-content/uploads/2024/09/image-37-300x189.jpeg 300w, /wp-content/uploads/2024/09/image-37-768x484.jpeg 768w, /wp-content/uploads/2024/09/image-37-1536x967.jpeg 1536w, /wp-content/uploads/2024/09/image-37-2048x1290.jpeg 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-large span2 row2" style="--width:1024; --height:645;"><img loading="lazy" decoding="async" width="1024" height="645" src="" alt="" class="wp-image-291" style="object-fit:cover" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-40-1024x645.jpeg" data-srcset="/wp-content/uploads/2024/09/image-40-1024x645.jpeg 1024w, /wp-content/uploads/2024/09/image-40-300x189.jpeg 300w, /wp-content/uploads/2024/09/image-40-768x484.jpeg 768w, /wp-content/uploads/2024/09/image-40-1536x967.jpeg 1536w, /wp-content/uploads/2024/09/image-40-2048x1290.jpeg 2048w"></figure>
 
 
 
@@ -570,15 +578,7 @@
 
 
 
-<figure class="wp-block-image size-large is-resized span2 row2" style="--width:1024; --height:645;"><img loading="lazy" decoding="async" width="1024" height="645" src="" alt="" class="wp-image-291" style="width:794px;height:auto" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-40-1024x645.jpeg" data-srcset="/wp-content/uploads/2024/09/image-40-1024x645.jpeg 1024w, /wp-content/uploads/2024/09/image-40-300x189.jpeg 300w, /wp-content/uploads/2024/09/image-40-768x484.jpeg 768w, /wp-content/uploads/2024/09/image-40-1536x967.jpeg 1536w, /wp-content/uploads/2024/09/image-40-2048x1290.jpeg 2048w"></figure>
-
-
-
-<figure class="wp-block-image size-large" style="--width:1024; --height:645;"><img loading="lazy" decoding="async" width="1024" height="645" src="" alt="" class="wp-image-292" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-41-1024x645.jpeg" data-srcset="/wp-content/uploads/2024/09/image-41-1024x645.jpeg 1024w, /wp-content/uploads/2024/09/image-41-300x189.jpeg 300w, /wp-content/uploads/2024/09/image-41-768x484.jpeg 768w, /wp-content/uploads/2024/09/image-41-1536x967.jpeg 1536w, /wp-content/uploads/2024/09/image-41-2048x1290.jpeg 2048w"></figure>
-
-
-
-<figure class="wp-block-image size-large" style="--width:1024; --height:645;"><img loading="lazy" decoding="async" width="1024" height="645" src="" alt="" class="wp-image-293" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-42-1024x645.jpeg" data-srcset="/wp-content/uploads/2024/09/image-42-1024x645.jpeg 1024w, /wp-content/uploads/2024/09/image-42-300x189.jpeg 300w, /wp-content/uploads/2024/09/image-42-768x484.jpeg 768w, /wp-content/uploads/2024/09/image-42-1536x967.jpeg 1536w, /wp-content/uploads/2024/09/image-42-2048x1290.jpeg 2048w"></figure>
+<p class="span2">It comes with a basic sort &amp; filter as well.</p>
 
 
 
@@ -594,7 +594,15 @@
 
 
 
-<figure class="wp-block-image size-large span3 thumb" style="--width:1024; --height:399;"><img loading="lazy" decoding="async" width="1024" height="399" src="" alt="" class="wp-image-297" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-46-1024x399.jpeg" data-srcset="/wp-content/uploads/2024/09/image-46-1024x399.jpeg 1024w, /wp-content/uploads/2024/09/image-46-300x117.jpeg 300w, /wp-content/uploads/2024/09/image-46-768x299.jpeg 768w, /wp-content/uploads/2024/09/image-46-1536x599.jpeg 1536w, /wp-content/uploads/2024/09/image-46-2048x798.jpeg 2048w"></figure>
+<p>This is how it is responsive.</p>
+
+
+
+<figure class="wp-block-image size-full span3" style="--width:2355; --height:918;"><img loading="lazy" decoding="async" width="2355" height="918" src="" alt="" class="wp-image-471" srcset="" sizes="(max-width: 2355px) 100vw, 2355px" data-src="/wp-content/uploads/2024/09/image-2-2.jpeg" data-srcset="/wp-content/uploads/2024/09/image-2-2.jpeg 2355w, /wp-content/uploads/2024/09/image-2-2-300x117.jpeg 300w, /wp-content/uploads/2024/09/image-2-2-1024x399.jpeg 1024w, /wp-content/uploads/2024/09/image-2-2-768x299.jpeg 768w, /wp-content/uploads/2024/09/image-2-2-1536x599.jpeg 1536w, /wp-content/uploads/2024/09/image-2-2-2048x798.jpeg 2048w"></figure>
+
+
+
+<p class="span2">Because the web experience and the layout are quite odd&hellip; I have to put up an instruction screen to show how to navigate around.</p>
 
 
 
@@ -1088,7 +1096,7 @@
 
 
 
-<p>However, there isn&rsquo;t an existing OpenType feature for this particular type of &lsquo;weird&rsquo; ligature. Moreover, creating the vertical ligature is a more intricate technical process than the usual ligature because it relies on the positioning of letters vertically adjacent, which can shift significantly when we adjust the width of the text box.</p>
+<p class="span2md">However, there isn&rsquo;t an existing OpenType feature for this particular type of &lsquo;weird&rsquo; ligature. Moreover, creating the vertical ligature is a more intricate technical process than the usual ligature because it relies on the positioning of letters vertically adjacent, which can shift significantly when we adjust the width of the text box.<br><br>That&rsquo;s when Darius approached me for a collaboration, with the goal of bringing this feature to life through coding.</p>
 
 
 
@@ -1096,7 +1104,27 @@
 
 
 
-<p>That&rsquo;s when Darius approached me for a collaboration, with the goal of bringing this feature to life through coding.</p>
+<p class="span2md">Technically, Darius could use the font without coding, but it would require painstaking manual calculation and replacement of each character with its long-ligature counterpart. To simplify and streamline this process, my primary task was to develop a tool that would enable Darius to efficiently implement the font across all the graphic design assets. The tool would be deployed as a website for convenient use.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2 thumb"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:571;"><img decoding="async" style="--twidth:960; --theight:571;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736949056-ddb725d7c815a0d62e9cadcc0fa2e30e4bdd5614725d663cd0c0ff4bab76b34d-d_960" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; type tool" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873443735?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p class="span2md">I even went as far as creating an Indesign script so that it can be even more adjustable within the design softwares. No need to switch to a separate online tool, streamlining the process.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:610;"><img decoding="async" style="--twidth:960; --theight:610;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1738973536-8e49451113a012742cfd7ee16d8cd421c3a96ed13b6c744ee907728b777bf58a-d_960" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; indesign script" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/874736241?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p class="span2md">This website is another tiring journey to develop. I started the process of design and development all together just two weeks before the exhibition&rsquo;s opening, which was a hectic speed run.</p>
 
 
 
@@ -1104,7 +1132,15 @@
 
 
 
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<p>Here&rsquo;s an extraction from Darius&rsquo;s writings on the exhibition visual identity: &lsquo;We think of ligatures as inherently generative, (connecting/aligning parts of letters) yet born from adversarial conditions (clashing of letters&rsquo; forms). One of the concepts (borrowed from biology) in cybernetics is autopoiesis: described as living entities/ machinic systems with versatile adaptive behavior capable of maintaining themselves, grow, and reproduce. As above, so below&mdash;through code&mdash;gains the ability to form vertical ligatures across lines, binding entire texts as &lsquo;organisms&rsquo;. <br><br>These texts adapt to external (adversarial) influences, re-organise, and react; while always maintaining these ligatures through letter stem(cells), rhizomatic, shapeshifting into new forms.&rsquo;</p>
+
+
+
+<p>The website continues the identity&rsquo;s obsession with the threshold, this time splitting the browser into 2 separate spaces. The navigation bar texts exist in a space of their own, linked to the content space on the right. This allows for the &lsquo;live&rsquo; texts to be shaped by the browser, and in turn, the typeface adapts to the space.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2md"><div class="wp-block-embed__wrapper">
 <div style="--width:933; --height:1000;"><img decoding="async" style="--twidth:640; --theight:686;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736892336-423741d9fcf6b9f55f9760bd6d2b88a6f7fe538ee518df7f518d8ad1042cb55b-d_640" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; navbar randomness" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873404639?dnt=1&amp;app_id=122963"></iframe></div>
 </div></figure>
 
@@ -1116,21 +1152,17 @@
 
 
 
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo thumb"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:622;"><img decoding="async" style="--twidth:960; --theight:622;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736892171-e564fa5096cacd3913f9f02760297c0c957ac45222fa8f7a98a572676b66aa3e-d_960" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; ligature toggle" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873404720?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2 thumb"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:571;"><img decoding="async" style="--twidth:960; --theight:571;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736949056-ddb725d7c815a0d62e9cadcc0fa2e30e4bdd5614725d663cd0c0ff4bab76b34d-d_960" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; type tool" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873443735?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
 <figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:610;"><img decoding="async" style="--twidth:960; --theight:610;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1738973536-8e49451113a012742cfd7ee16d8cd421c3a96ed13b6c744ee907728b777bf58a-d_960" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; indesign script" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/874736241?dnt=1&amp;app_id=122963"></iframe></div>
+<div style="--width:461; --height:1000;"><img decoding="async" style="--twidth:295; --theight:639;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1739042862-8dfda3ec2b260735091ffac73911c6748143ab3dbf34b9b2f66201258c7f8c6f-d_295x166" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; mobile" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/874784800?dnt=1&amp;app_id=122963"></iframe></div>
 </div></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:819; --height:1024;"><img loading="lazy" decoding="async" width="819" height="1024" src="" alt="" class="wp-image-460" srcset="" sizes="(max-width: 819px) 100vw, 819px" data-src="/wp-content/uploads/2024/09/image-1-1-819x1024.jpeg" data-srcset="/wp-content/uploads/2024/09/image-1-1-819x1024.jpeg 819w, /wp-content/uploads/2024/09/image-1-1-240x300.jpeg 240w, /wp-content/uploads/2024/09/image-1-1-768x960.jpeg 768w, /wp-content/uploads/2024/09/image-1-1.jpeg 1080w"><figcaption class="wp-element-caption">Photography by Jonathan Tan <a href="https://www.instagram.com/jonathantyl/">@jonathantyl</a></figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:819; --height:1024;"><img loading="lazy" decoding="async" width="819" height="1024" src="" alt="" class="wp-image-461" srcset="" sizes="(max-width: 819px) 100vw, 819px" data-src="/wp-content/uploads/2024/09/image-131-819x1024.jpeg" data-srcset="/wp-content/uploads/2024/09/image-131-819x1024.jpeg 819w, /wp-content/uploads/2024/09/image-131-240x300.jpeg 240w, /wp-content/uploads/2024/09/image-131-768x960.jpeg 768w, /wp-content/uploads/2024/09/image-131.jpeg 1080w"><figcaption class="wp-element-caption">Photography by Jonathan Tan <a href="https://www.instagram.com/jonathantyl/">@jonathantyl</a></figcaption></figure>
 
 
 

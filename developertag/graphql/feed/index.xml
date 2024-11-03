@@ -12,7 +12,7 @@
 	<atom:link href="/developertag/graphql/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Thu, 31 Oct 2024 17:09:11 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 03 Nov 2024 14:45:20 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -45,7 +45,7 @@
 
 
 
-<p>The DatoCMS integration involved designing the CMS schema, types, fields, and pages on DatoCMS platform, and mapping the data structure to the actual website on the backend side. I chose static generation for optimal site performance, as the site functions more like a blog without real-time data transfer. Hence, the data will be fetched at the start of each build into individual .JSON files, and then passed into the build. The tech stack primarily includes Node.js, Next.js, and GraphQL.</p>
+<p class="span2md">The DatoCMS integration involved designing the CMS schema, types, fields, and pages on DatoCMS platform, and mapping the data structure to the actual website on the backend side. I chose static generation for optimal site performance, as the site functions more like a blog without real-time data transfer. Hence, the data will be fetched at the start of each build into individual .JSON files, and then passed into the build. The tech stack primarily includes Node.js, Next.js, and GraphQL.</p>
 
 
 
@@ -55,7 +55,7 @@
 
 
 
-<p>I wrote a script in Node.js to handle the data fetching, manipulate the data (like slugify), and write them into multiple .JSON files. Why don&rsquo;t I use Next.js? Because the previous developer used page router for Next.js and I didn&rsquo;t really know if my app router knowledge could be applied to this. That&rsquo;s why I wrote the script independently to the Next.js structure.</p>
+<p class="span2md">I wrote a script in Node.js to handle the data fetching, manipulate the data (like slugify), and write them into multiple .JSON files. Why don&rsquo;t I use Next.js? Because the previous developer used page router for Next.js and I didn&rsquo;t really know if my app router knowledge could be applied to this. That&rsquo;s why I wrote the script independently to the Next.js structure.</p>
 
 
 
@@ -112,7 +112,7 @@
 		<pubDate>Mon, 09 Sep 2024 16:50:44 +0000</pubDate>
 				<guid isPermaLink="false">/?post_type=work#038;p=37</guid>
 
-					<description><![CDATA[This site packs a lot of my thoughts on how a website and its iterations through time can be tracked and viewed, much like the act of capturing and storing physical images. Under the hood, it uses Github API to visualize the history of developments, like whenever a page/file gets updated, edited or deleted.]]></description>
+					<description><![CDATA[This site packs a lot of my thoughts on how a website and its iterations through time can be tracked and viewed, much like the act of capturing and storing physical images. Under the hood, it uses Github API, querying the commit history to visualize the history of developments, like whenever a page/file gets updated, [&#8230;]]]></description>
 										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html><body><ul class="wp-block-list">
 <li>Visit the site here <a href="https://victoria-hertel-site.vercel.app/" target="_blank" rel="noreferrer noopener">victoria-hertel-site.vercel.app</a></li>
@@ -124,7 +124,7 @@
 
 
 
-<p>This site packs a lot of my thoughts on how a website and its iterations through time can be tracked and viewed, much like the act of capturing and storing physical images. Under the hood, it uses Github API to visualize the history of developments, like whenever a page/file gets updated, edited or deleted.</p>
+<p>This site packs a lot of my thoughts on how a website and its iterations through time can be tracked and viewed, much like the act of capturing and storing physical images.<br><br>Under the hood, it uses Github API, querying the commit history to visualize the history of developments, like whenever a page/file gets updated, edited or deleted.</p>
 
 
 

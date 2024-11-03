@@ -12,7 +12,7 @@
 	<atom:link href="/developertag/react-js/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Thu, 31 Oct 2024 17:09:11 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 03 Nov 2024 15:33:41 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -364,7 +364,7 @@
 
 
 
-<p>The DatoCMS integration involved designing the CMS schema, types, fields, and pages on DatoCMS platform, and mapping the data structure to the actual website on the backend side. I chose static generation for optimal site performance, as the site functions more like a blog without real-time data transfer. Hence, the data will be fetched at the start of each build into individual .JSON files, and then passed into the build. The tech stack primarily includes Node.js, Next.js, and GraphQL.</p>
+<p class="span2md">The DatoCMS integration involved designing the CMS schema, types, fields, and pages on DatoCMS platform, and mapping the data structure to the actual website on the backend side. I chose static generation for optimal site performance, as the site functions more like a blog without real-time data transfer. Hence, the data will be fetched at the start of each build into individual .JSON files, and then passed into the build. The tech stack primarily includes Node.js, Next.js, and GraphQL.</p>
 
 
 
@@ -374,7 +374,7 @@
 
 
 
-<p>I wrote a script in Node.js to handle the data fetching, manipulate the data (like slugify), and write them into multiple .JSON files. Why don&rsquo;t I use Next.js? Because the previous developer used page router for Next.js and I didn&rsquo;t really know if my app router knowledge could be applied to this. That&rsquo;s why I wrote the script independently to the Next.js structure.</p>
+<p class="span2md">I wrote a script in Node.js to handle the data fetching, manipulate the data (like slugify), and write them into multiple .JSON files. Why don&rsquo;t I use Next.js? Because the previous developer used page router for Next.js and I didn&rsquo;t really know if my app router knowledge could be applied to this. That&rsquo;s why I wrote the script independently to the Next.js structure.</p>
 
 
 
@@ -449,7 +449,7 @@
 
 
 
-<p>However, there isn&rsquo;t an existing OpenType feature for this particular type of &lsquo;weird&rsquo; ligature. Moreover, creating the vertical ligature is a more intricate technical process than the usual ligature because it relies on the positioning of letters vertically adjacent, which can shift significantly when we adjust the width of the text box.</p>
+<p class="span2md">However, there isn&rsquo;t an existing OpenType feature for this particular type of &lsquo;weird&rsquo; ligature. Moreover, creating the vertical ligature is a more intricate technical process than the usual ligature because it relies on the positioning of letters vertically adjacent, which can shift significantly when we adjust the width of the text box.<br><br>That&rsquo;s when Darius approached me for a collaboration, with the goal of bringing this feature to life through coding.</p>
 
 
 
@@ -457,7 +457,27 @@
 
 
 
-<p>That&rsquo;s when Darius approached me for a collaboration, with the goal of bringing this feature to life through coding.</p>
+<p class="span2md">Technically, Darius could use the font without coding, but it would require painstaking manual calculation and replacement of each character with its long-ligature counterpart. To simplify and streamline this process, my primary task was to develop a tool that would enable Darius to efficiently implement the font across all the graphic design assets. The tool would be deployed as a website for convenient use.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2 thumb"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:571;"><img decoding="async" style="--twidth:960; --theight:571;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736949056-ddb725d7c815a0d62e9cadcc0fa2e30e4bdd5614725d663cd0c0ff4bab76b34d-d_960" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; type tool" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873443735?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p class="span2md">I even went as far as creating an Indesign script so that it can be even more adjustable within the design softwares. No need to switch to a separate online tool, streamlining the process.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:610;"><img decoding="async" style="--twidth:960; --theight:610;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1738973536-8e49451113a012742cfd7ee16d8cd421c3a96ed13b6c744ee907728b777bf58a-d_960" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; indesign script" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/874736241?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p class="span2md">This website is another tiring journey to develop. I started the process of design and development all together just two weeks before the exhibition&rsquo;s opening, which was a hectic speed run.</p>
 
 
 
@@ -465,7 +485,15 @@
 
 
 
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<p>Here&rsquo;s an extraction from Darius&rsquo;s writings on the exhibition visual identity: &lsquo;We think of ligatures as inherently generative, (connecting/aligning parts of letters) yet born from adversarial conditions (clashing of letters&rsquo; forms). One of the concepts (borrowed from biology) in cybernetics is autopoiesis: described as living entities/ machinic systems with versatile adaptive behavior capable of maintaining themselves, grow, and reproduce. As above, so below&mdash;through code&mdash;gains the ability to form vertical ligatures across lines, binding entire texts as &lsquo;organisms&rsquo;. <br><br>These texts adapt to external (adversarial) influences, re-organise, and react; while always maintaining these ligatures through letter stem(cells), rhizomatic, shapeshifting into new forms.&rsquo;</p>
+
+
+
+<p>The website continues the identity&rsquo;s obsession with the threshold, this time splitting the browser into 2 separate spaces. The navigation bar texts exist in a space of their own, linked to the content space on the right. This allows for the &lsquo;live&rsquo; texts to be shaped by the browser, and in turn, the typeface adapts to the space.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2md"><div class="wp-block-embed__wrapper">
 <div style="--width:933; --height:1000;"><img decoding="async" style="--twidth:640; --theight:686;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736892336-423741d9fcf6b9f55f9760bd6d2b88a6f7fe538ee518df7f518d8ad1042cb55b-d_640" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; navbar randomness" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873404639?dnt=1&amp;app_id=122963"></iframe></div>
 </div></figure>
 
@@ -477,21 +505,17 @@
 
 
 
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo thumb"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:622;"><img decoding="async" style="--twidth:960; --theight:622;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736892171-e564fa5096cacd3913f9f02760297c0c957ac45222fa8f7a98a572676b66aa3e-d_960" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; ligature toggle" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873404720?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2 thumb"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:571;"><img decoding="async" style="--twidth:960; --theight:571;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736949056-ddb725d7c815a0d62e9cadcc0fa2e30e4bdd5614725d663cd0c0ff4bab76b34d-d_960" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; type tool" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873443735?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
 <figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:610;"><img decoding="async" style="--twidth:960; --theight:610;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1738973536-8e49451113a012742cfd7ee16d8cd421c3a96ed13b6c744ee907728b777bf58a-d_960" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; indesign script" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/874736241?dnt=1&amp;app_id=122963"></iframe></div>
+<div style="--width:461; --height:1000;"><img decoding="async" style="--twidth:295; --theight:639;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1739042862-8dfda3ec2b260735091ffac73911c6748143ab3dbf34b9b2f66201258c7f8c6f-d_295x166" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; mobile" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/874784800?dnt=1&amp;app_id=122963"></iframe></div>
 </div></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:819; --height:1024;"><img loading="lazy" decoding="async" width="819" height="1024" src="" alt="" class="wp-image-460" srcset="" sizes="(max-width: 819px) 100vw, 819px" data-src="/wp-content/uploads/2024/09/image-1-1-819x1024.jpeg" data-srcset="/wp-content/uploads/2024/09/image-1-1-819x1024.jpeg 819w, /wp-content/uploads/2024/09/image-1-1-240x300.jpeg 240w, /wp-content/uploads/2024/09/image-1-1-768x960.jpeg 768w, /wp-content/uploads/2024/09/image-1-1.jpeg 1080w"><figcaption class="wp-element-caption">Photography by Jonathan Tan <a href="https://www.instagram.com/jonathantyl/">@jonathantyl</a></figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:819; --height:1024;"><img loading="lazy" decoding="async" width="819" height="1024" src="" alt="" class="wp-image-461" srcset="" sizes="(max-width: 819px) 100vw, 819px" data-src="/wp-content/uploads/2024/09/image-131-819x1024.jpeg" data-srcset="/wp-content/uploads/2024/09/image-131-819x1024.jpeg 819w, /wp-content/uploads/2024/09/image-131-240x300.jpeg 240w, /wp-content/uploads/2024/09/image-131-768x960.jpeg 768w, /wp-content/uploads/2024/09/image-131.jpeg 1080w"><figcaption class="wp-element-caption">Photography by Jonathan Tan <a href="https://www.instagram.com/jonathantyl/">@jonathantyl</a></figcaption></figure>
 
 
 
@@ -556,7 +580,7 @@
 		<pubDate>Mon, 09 Sep 2024 16:50:44 +0000</pubDate>
 				<guid isPermaLink="false">/?post_type=work#038;p=37</guid>
 
-					<description><![CDATA[This site packs a lot of my thoughts on how a website and its iterations through time can be tracked and viewed, much like the act of capturing and storing physical images. Under the hood, it uses Github API to visualize the history of developments, like whenever a page/file gets updated, edited or deleted.]]></description>
+					<description><![CDATA[This site packs a lot of my thoughts on how a website and its iterations through time can be tracked and viewed, much like the act of capturing and storing physical images. Under the hood, it uses Github API, querying the commit history to visualize the history of developments, like whenever a page/file gets updated, [&#8230;]]]></description>
 										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html><body><ul class="wp-block-list">
 <li>Visit the site here <a href="https://victoria-hertel-site.vercel.app/" target="_blank" rel="noreferrer noopener">victoria-hertel-site.vercel.app</a></li>
@@ -568,7 +592,7 @@
 
 
 
-<p>This site packs a lot of my thoughts on how a website and its iterations through time can be tracked and viewed, much like the act of capturing and storing physical images. Under the hood, it uses Github API to visualize the history of developments, like whenever a page/file gets updated, edited or deleted.</p>
+<p>This site packs a lot of my thoughts on how a website and its iterations through time can be tracked and viewed, much like the act of capturing and storing physical images.<br><br>Under the hood, it uses Github API, querying the commit history to visualize the history of developments, like whenever a page/file gets updated, edited or deleted.</p>
 
 
 

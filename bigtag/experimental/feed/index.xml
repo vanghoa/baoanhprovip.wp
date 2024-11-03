@@ -12,7 +12,7 @@
 	<atom:link href="/bigtag/experimental/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Fri, 01 Nov 2024 20:33:39 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 03 Nov 2024 17:19:50 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -55,7 +55,19 @@
 
 
 
-<figure class="wp-block-image size-large thumb" style="--width:1024; --height:1024;"><img decoding="async" width="1024" height="1024" src="/wp-content/uploads/2024/09/image-38-1024x1024.png" alt="" class="wp-image-286" srcset="/wp-content/uploads/2024/09/image-38-1024x1024.png 1024w, /wp-content/uploads/2024/09/image-38-300x300.png 300w, /wp-content/uploads/2024/09/image-38-150x150.png 150w, /wp-content/uploads/2024/09/image-38-768x768.png 768w, /wp-content/uploads/2024/09/image-38-1536x1536.png 1536w, /wp-content/uploads/2024/09/image-38.png 2000w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+<p>The idea to utilize the developer tool as an output display had been on my mind for quite some time. In fact, the inspiration for this concept traces back to the moment I first came across Everest Pipkin&rsquo;s work&ndash;bodies.html at <a href="https://ifyoulived.org/bodies">ifyoulived.org/bodies</a>. This project replicates the human body within the console log, as the name suggests, and it left a lasting impression on me.</p>
+
+
+
+<figure class="wp-block-image size-large span2md" style="--width:1024; --height:645;"><img decoding="async" width="1024" height="645" src="/wp-content/uploads/2024/09/image-5-1-1024x645.png" alt="" class="wp-image-466" srcset="/wp-content/uploads/2024/09/image-5-1-1024x645.png 1024w, /wp-content/uploads/2024/09/image-5-1-300x189.png 300w, /wp-content/uploads/2024/09/image-5-1-768x484.png 768w, /wp-content/uploads/2024/09/image-5-1-1536x967.png 1536w, /wp-content/uploads/2024/09/image-5-1-2048x1289.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<p class="span2md">My project deals with similar concept of exposing the internal structure of digital entities with the Web Development Tools. I find that web browsers&rsquo; built-in WebDev tools are the easiest for regular folks to use without having to install anything extra. Plus, since developers use them a lot, they&rsquo;re pretty like everyday objects and have the potential to be repurposed for things other than development, like art.<br><br>On top of using developer tools as an output display, I introduced an additional layer of concept by transforming the website interface into a remote control (resembling a TV or aircon remote control). This twist effectively switched the roles, with the front-end now operating as the back-end and the back-end serving as the front-end.</p>
+
+
+
+<figure class="wp-block-image size-large thumb" style="--width:1024; --height:1024;"><img decoding="async" width="1024" height="1024" src="" alt="" class="wp-image-286" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-38-1024x1024.png" data-srcset="/wp-content/uploads/2024/09/image-38-1024x1024.png 1024w, /wp-content/uploads/2024/09/image-38-300x300.png 300w, /wp-content/uploads/2024/09/image-38-150x150.png 150w, /wp-content/uploads/2024/09/image-38-768x768.png 768w, /wp-content/uploads/2024/09/image-38-1536x1536.png 1536w, /wp-content/uploads/2024/09/image-38.png 2000w"></figure>
 
 
 
@@ -142,11 +154,19 @@
 
 
 
-<figure class="wp-block-image size-large thumb" style="--width:1024; --height:645;"><img decoding="async" width="1024" height="645" src="/wp-content/uploads/2024/09/image-36-1024x645.jpeg" alt="" class="wp-image-287" srcset="/wp-content/uploads/2024/09/image-36-1024x645.jpeg 1024w, /wp-content/uploads/2024/09/image-36-300x189.jpeg 300w, /wp-content/uploads/2024/09/image-36-768x484.jpeg 768w, /wp-content/uploads/2024/09/image-36-1536x967.jpeg 1536w, /wp-content/uploads/2024/09/image-36-2048x1290.jpeg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+<figure class="wp-block-image size-large thumb" style="--width:1024; --height:645;"><img loading="lazy" decoding="async" width="1024" height="645" src="/wp-content/uploads/2024/09/image-36-1024x645.jpeg" alt="" class="wp-image-287" srcset="/wp-content/uploads/2024/09/image-36-1024x645.jpeg 1024w, /wp-content/uploads/2024/09/image-36-300x189.jpeg 300w, /wp-content/uploads/2024/09/image-36-768x484.jpeg 768w, /wp-content/uploads/2024/09/image-36-1536x967.jpeg 1536w, /wp-content/uploads/2024/09/image-36-2048x1290.jpeg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
 
 
 
-<figure class="wp-block-image size-large" style="--width:1024; --height:645;"><img loading="lazy" decoding="async" width="1024" height="645" src="" alt="" class="wp-image-288" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-37-1024x645.jpeg" data-srcset="/wp-content/uploads/2024/09/image-37-1024x645.jpeg 1024w, /wp-content/uploads/2024/09/image-37-300x189.jpeg 300w, /wp-content/uploads/2024/09/image-37-768x484.jpeg 768w, /wp-content/uploads/2024/09/image-37-1536x967.jpeg 1536w, /wp-content/uploads/2024/09/image-37-2048x1290.jpeg 2048w"></figure>
+<p>Each project tab on hover will toggle down a preview of the corresponding project. During this interaction, the styling of the window frame is altered to create the illusion that you&rsquo;re looking in a different direction.</p>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:645;"><img loading="lazy" decoding="async" width="1024" height="645" src="" alt="" class="wp-image-288" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-37-1024x645.jpeg" data-srcset="/wp-content/uploads/2024/09/image-37-1024x645.jpeg 1024w, /wp-content/uploads/2024/09/image-37-300x189.jpeg 300w, /wp-content/uploads/2024/09/image-37-768x484.jpeg 768w, /wp-content/uploads/2024/09/image-37-1536x967.jpeg 1536w, /wp-content/uploads/2024/09/image-37-2048x1290.jpeg 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-large span2 row2" style="--width:1024; --height:645;"><img loading="lazy" decoding="async" width="1024" height="645" src="" alt="" class="wp-image-291" style="object-fit:cover" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-40-1024x645.jpeg" data-srcset="/wp-content/uploads/2024/09/image-40-1024x645.jpeg 1024w, /wp-content/uploads/2024/09/image-40-300x189.jpeg 300w, /wp-content/uploads/2024/09/image-40-768x484.jpeg 768w, /wp-content/uploads/2024/09/image-40-1536x967.jpeg 1536w, /wp-content/uploads/2024/09/image-40-2048x1290.jpeg 2048w"></figure>
 
 
 
@@ -158,15 +178,7 @@
 
 
 
-<figure class="wp-block-image size-large is-resized span2 row2" style="--width:1024; --height:645;"><img loading="lazy" decoding="async" width="1024" height="645" src="" alt="" class="wp-image-291" style="width:794px;height:auto" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-40-1024x645.jpeg" data-srcset="/wp-content/uploads/2024/09/image-40-1024x645.jpeg 1024w, /wp-content/uploads/2024/09/image-40-300x189.jpeg 300w, /wp-content/uploads/2024/09/image-40-768x484.jpeg 768w, /wp-content/uploads/2024/09/image-40-1536x967.jpeg 1536w, /wp-content/uploads/2024/09/image-40-2048x1290.jpeg 2048w"></figure>
-
-
-
-<figure class="wp-block-image size-large" style="--width:1024; --height:645;"><img loading="lazy" decoding="async" width="1024" height="645" src="" alt="" class="wp-image-292" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-41-1024x645.jpeg" data-srcset="/wp-content/uploads/2024/09/image-41-1024x645.jpeg 1024w, /wp-content/uploads/2024/09/image-41-300x189.jpeg 300w, /wp-content/uploads/2024/09/image-41-768x484.jpeg 768w, /wp-content/uploads/2024/09/image-41-1536x967.jpeg 1536w, /wp-content/uploads/2024/09/image-41-2048x1290.jpeg 2048w"></figure>
-
-
-
-<figure class="wp-block-image size-large" style="--width:1024; --height:645;"><img loading="lazy" decoding="async" width="1024" height="645" src="" alt="" class="wp-image-293" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-42-1024x645.jpeg" data-srcset="/wp-content/uploads/2024/09/image-42-1024x645.jpeg 1024w, /wp-content/uploads/2024/09/image-42-300x189.jpeg 300w, /wp-content/uploads/2024/09/image-42-768x484.jpeg 768w, /wp-content/uploads/2024/09/image-42-1536x967.jpeg 1536w, /wp-content/uploads/2024/09/image-42-2048x1290.jpeg 2048w"></figure>
+<p class="span2">It comes with a basic sort &amp; filter as well.</p>
 
 
 
@@ -182,7 +194,15 @@
 
 
 
-<figure class="wp-block-image size-large span3 thumb" style="--width:1024; --height:399;"><img loading="lazy" decoding="async" width="1024" height="399" src="" alt="" class="wp-image-297" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-46-1024x399.jpeg" data-srcset="/wp-content/uploads/2024/09/image-46-1024x399.jpeg 1024w, /wp-content/uploads/2024/09/image-46-300x117.jpeg 300w, /wp-content/uploads/2024/09/image-46-768x299.jpeg 768w, /wp-content/uploads/2024/09/image-46-1536x599.jpeg 1536w, /wp-content/uploads/2024/09/image-46-2048x798.jpeg 2048w"></figure>
+<p>This is how it is responsive.</p>
+
+
+
+<figure class="wp-block-image size-full span3" style="--width:2355; --height:918;"><img loading="lazy" decoding="async" width="2355" height="918" src="" alt="" class="wp-image-471" srcset="" sizes="(max-width: 2355px) 100vw, 2355px" data-src="/wp-content/uploads/2024/09/image-2-2.jpeg" data-srcset="/wp-content/uploads/2024/09/image-2-2.jpeg 2355w, /wp-content/uploads/2024/09/image-2-2-300x117.jpeg 300w, /wp-content/uploads/2024/09/image-2-2-1024x399.jpeg 1024w, /wp-content/uploads/2024/09/image-2-2-768x299.jpeg 768w, /wp-content/uploads/2024/09/image-2-2-1536x599.jpeg 1536w, /wp-content/uploads/2024/09/image-2-2-2048x798.jpeg 2048w"></figure>
+
+
+
+<p class="span2">Because the web experience and the layout are quite odd&hellip; I have to put up an instruction screen to show how to navigate around.</p>
 
 
 
