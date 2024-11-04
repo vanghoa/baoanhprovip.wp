@@ -8,11 +8,11 @@
 	>
 
 <channel>
-	<title>Three.js &#8211; Bảo Anh Bùi</title>
+	<title>THREE.js &#8211; Bảo Anh Bùi</title>
 	<atom:link href="/developertag/three-js/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Wed, 02 Oct 2024 07:51:27 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 04 Nov 2024 13:18:31 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -22,7 +22,7 @@
 
 <image>
 	<url>/wp-content/uploads/2024/09/cropped-Asset-2njkiys-32x32.png</url>
-	<title>Three.js &#8211; Bảo Anh Bùi</title>
+	<title>THREE.js &#8211; Bảo Anh Bùi</title>
 	<link>/</link>
 	<width>32</width>
 	<height>32</height>
@@ -35,9 +35,17 @@
 		<pubDate>Mon, 16 Sep 2024 03:54:26 +0000</pubDate>
 				<guid isPermaLink="false">/?post_type=work#038;p=102</guid>
 
-					<description><![CDATA[]]></description>
+					<description><![CDATA[1. Karaoke PoetryA participatory, choose-your-own-ending poetry reading or interactive fiction game This experience invites a duo to engage with the poem by taking turns reading lines into a microphone, akin to a karaoke setup. Throughout the different scenes, participants will encounter a range of aural and interactive elements, both digital and physical, interspersed throughout the [&#8230;]]]></description>
 										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body><figure class="wp-block-image size-large" style="--width:1024; --height:722;"><img fetchpriority="high" decoding="async" width="1024" height="722" src="/wp-content/uploads/2024/09/image-12-1024x722.png" alt="" class="wp-image-256" srcset="/wp-content/uploads/2024/09/image-12-1024x722.png 1024w, /wp-content/uploads/2024/09/image-12-300x212.png 300w, /wp-content/uploads/2024/09/image-12-768x542.png 768w, /wp-content/uploads/2024/09/image-12.png 1324w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+<html><body><p><strong>1. Karaoke Poetry</strong><br><strong><br></strong><em>A participatory, choose-your-own-ending poetry reading or interactive fiction game</em></p>
+
+
+
+<p>This experience invites a duo to engage with the poem by taking turns reading lines into a microphone, akin to a karaoke setup. Throughout the different scenes, participants will encounter a range of aural and interactive elements, both digital and physical, interspersed throughout the performance.</p>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:722;"><img fetchpriority="high" decoding="async" width="1024" height="722" src="/wp-content/uploads/2024/09/image-12-1024x722.png" alt="" class="wp-image-256" srcset="/wp-content/uploads/2024/09/image-12-1024x722.png 1024w, /wp-content/uploads/2024/09/image-12-300x212.png 300w, /wp-content/uploads/2024/09/image-12-768x542.png 768w, /wp-content/uploads/2024/09/image-12.png 1324w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
 
 
 
@@ -48,6 +56,10 @@
 <figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
 <div style="--width:563; --height:1000;"><img decoding="async" style="--twidth:295; --theight:524;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1905001133-ceb265ede9fa67c1468b24ad132bce965c51f7ee9da2fcd3a347ab5d029ed569-d_295x166" data-srcset="" srcset=""><iframe title="Karaoke Poetry Testing" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/989303238?dnt=1&amp;app_id=122963"></iframe></div>
 </div></figure>
+
+
+
+<p>Below is a work-in-progress version of the online reading experience</p>
 
 
 
@@ -75,9 +87,17 @@
 
 
 
+<p>Besides, I also did the QR code page, in which people will scan the QR code to answer some questions and get assigned their role number for the poem reading. It was also my first time using WebSocket to transfer data. To enhance security and prevent external interference, I implemented session IDs to ensure each session had a unique URL.</p>
+
+
+
 <figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
 <div style="--width:960; --height:556;"><img decoding="async" style="--twidth:960; --theight:556;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1852900545-369e11cf2f9ccb138a915e8c80a147a53edbb2e2e4b7121acb9ba6baece7f228-d_960" data-srcset="" srcset=""><iframe title="Karaoke Poetry Web Socket" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/946697218?dnt=1&amp;app_id=122963"></iframe></div>
 </div></figure>
+
+
+
+<p><strong>2. Souvenirs</strong><br><strong><br></strong><em>A location-based AR experience at Fort Canning Park. This experience invites people to explore Fort Canning Park and uncover hidden AR secrets along the way!</em></p>
 
 
 
@@ -93,15 +113,35 @@
 
 
 
+<p>One of the interesting thing I did was creating this raindrop scene that changes based on the user&rsquo;s camera angle. When the camera points toward the sky, raindrops appear on the screen gradually.</p>
+
+
+
 <figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
 <div style="--width:465; --height:1000;"><img decoding="async" style="--twidth:295; --theight:634;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1853120283-e6d602e385c0a303f51a8e1abc0d3b001862a51d0c3756320fe9b50df0865655-d_295x166" data-srcset="" srcset=""><iframe title="Souvenirs Raindrop" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/946838269?dnt=1&amp;app_id=122963"></iframe></div>
 </div></figure>
 
 
 
+<p class="span2md">This was also my first time trying to integrate GLSL shaders to perform some post-processing effect. All of this was so new to me. To pull out this raindrop shader, luckily I found a piece on Shadertoy <a href="https://www.shadertoy.com/view/ltffzl">https://www.shadertoy.com/view/ltffzl</a> &ndash; Heartfelt by BigWIngs, which was beautifully done! I carefully read through the code but didn&rsquo;t fully understand it &#128549;. GLSL operates on a level that&rsquo;s still a bit beyond me. So, I ended up copying the code and tweaking some arguments to see what triggers what.</p>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:650;"><img loading="lazy" decoding="async" width="1024" height="650" src="" alt="" class="wp-image-482" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-6-1-1024x650.png" data-srcset="/wp-content/uploads/2024/09/image-6-1-1024x650.png 1024w, /wp-content/uploads/2024/09/image-6-1-300x190.png 300w, /wp-content/uploads/2024/09/image-6-1-768x487.png 768w, /wp-content/uploads/2024/09/image-6-1-1536x975.png 1536w, /wp-content/uploads/2024/09/image-6-1-2048x1299.png 2048w"></figure>
+
+
+
+<p>This is the final composite scene, the whole visibility will only be toggled on once the user scans the nearby standing poster.</p>
+
+
+
 <figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
 <div style="--width:465; --height:1000;"><img decoding="async" style="--twidth:295; --theight:634;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1853134440-c6649488a0c89f250abc53d6f88c4c25bbc294dd44aaea3d0e4abf392bbdc141-d_295x166" data-srcset="" srcset=""><iframe title="Souvenirs Timber-obsta Scene" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/946846962?dnt=1&amp;app_id=122963"></iframe></div>
 </div></figure>
+
+
+
+<p>Here are some images of me conducting on-site testing in nature! Remote development of AR can often miss the mark, so hands-on testing is crucial.</p>
 
 
 

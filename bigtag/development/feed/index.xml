@@ -12,7 +12,7 @@
 	<atom:link href="/bigtag/development/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Sun, 03 Nov 2024 17:19:50 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 04 Nov 2024 13:57:02 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -47,7 +47,7 @@
 
 
 
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2md"><div class="wp-block-embed__wrapper">
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
 <div style="--width:536; --height:1000;"><img decoding="async" style="--twidth:295; --theight:550;" alt="thumbnail" src="https://i.vimeocdn.com/video/1932353584-6c9f55f5cdff2fafbade79369a7e0f256fe702b04d53606ab43ac351b25db919-d_295x166" fetchpriority="high"><iframe title="SDW-BBB microsite" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1014278805?dnt=1&amp;app_id=122963"></iframe></div>
 </div></figure>
 
@@ -98,33 +98,57 @@
 		<pubDate>Tue, 17 Sep 2024 11:34:07 +0000</pubDate>
 				<guid isPermaLink="false">/?post_type=work#038;p=115</guid>
 
-					<description><![CDATA[Variable-Case&#8217;s unique trait lies in its ability to switch between uppercase and lowercase letters based on where they sit vertically. I made a website to see the font in action. * Font testing site here vanghoa.github.io/VariableCase.* Take a look at the github repository.]]></description>
+					<description><![CDATA[Variable-Case&#8217;s unique trait lies in its ability to switch between uppercase and lowercase letters based on where they sit vertically. I made a website to see the font in action. * Font testing site here vanghoa.github.io/VariableCase.* Take a look at the github repository. Initially, the project brief was to choose a fashion designer and craft [&#8230;]]]></description>
 										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html><body><p>Variable-Case&rsquo;s unique trait lies in its ability to switch between uppercase and lowercase letters based on where they sit vertically. I made a website to see the font in action.<br><br>* Font testing site here <a href="https://vanghoa.github.io/VariableCase/" target="_blank" rel="noreferrer noopener">vanghoa.github.io/VariableCase</a>.<br>* Take a look at the <a href="https://github.com/vanghoa/VariableCase" target="_blank" rel="noreferrer noopener">github repository</a>.</p>
 
 
 
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span12"><div class="wp-block-embed__wrapper">
 <div style="--width:960; --height:960;"><img decoding="async" style="--twidth:960; --theight:960;" alt="thumbnail" src="https://i.vimeocdn.com/video/1736705561-681a1cf941ba9be9aa6a862bc2e6da5084a03a6d66c2a309a73c1021e03c52c5-d_960" fetchpriority="high"><iframe title="Variable-Case" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873272916?dnt=1&amp;app_id=122963"></iframe></div>
 </div></figure>
 
 
 
-<figure class="wp-block-image size-large" style="--width:1024; --height:550;"><img loading="lazy" decoding="async" width="1024" height="550" src="/wp-content/uploads/2024/09/image-1024x550.png" alt="" class="wp-image-208" srcset="/wp-content/uploads/2024/09/image-1024x550.png 1024w, /wp-content/uploads/2024/09/image-300x161.png 300w, /wp-content/uploads/2024/09/image-768x413.png 768w, /wp-content/uploads/2024/09/image-1536x826.png 1536w, /wp-content/uploads/2024/09/image.png 2000w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+<p>Initially, the project brief was to choose a fashion designer and craft a modular typeface inspired by that designer, their approach, philosophy, or a specific work. I picked Martin Margiela, a highly influential figure in the fashion world. What piqued my interest the most was his <em>Spring 1996 Collection</em>.</p>
 
 
 
-<figure class="wp-block-image size-large" style="--width:1024; --height:550;"><img loading="lazy" decoding="async" width="1024" height="550" src="" alt="" class="wp-image-210" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-1-1024x550.png" data-srcset="/wp-content/uploads/2024/09/image-1-1024x550.png 1024w, /wp-content/uploads/2024/09/image-1-300x161.png 300w, /wp-content/uploads/2024/09/image-1-768x413.png 768w, /wp-content/uploads/2024/09/image-1-1536x826.png 1536w, /wp-content/uploads/2024/09/image-1.png 2000w"></figure>
+<figure class="wp-block-image size-large" style="--width:1024; --height:809;"><img loading="lazy" decoding="async" width="1024" height="809" src="/wp-content/uploads/2024/09/image-10-1-1024x809.jpeg" alt="" class="wp-image-507" srcset="/wp-content/uploads/2024/09/image-10-1-1024x809.jpeg 1024w, /wp-content/uploads/2024/09/image-10-1-300x237.jpeg 300w, /wp-content/uploads/2024/09/image-10-1-768x607.jpeg 768w, /wp-content/uploads/2024/09/image-10-1-1536x1214.jpeg 1536w, /wp-content/uploads/2024/09/image-10-1.jpeg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
 
 
 
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<p>The collection is remarkable for its incorporation of photographs of vintage garments, screenprinted onto plain, blank clothing. This unique approach fosters a captivating dialogue between the past and present.</p>
+
+
+
+<p>Past and present, embodied in a single garment. By the same token, my typeface conceptually focuses on the relationship between uppercase and lowercase characters. Functionwise, different letter case variations can emphasize hierarchy, use for abbreviation, control reading flow, act as punctuation, and more, all with the goal of differentiation. This typeface unites both cases into a single silhouette; and the differentiation is achieved simply through moving the character up or down.</p>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:550;"><img loading="lazy" decoding="async" width="1024" height="550" src="" alt="" class="wp-image-208" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-1024x550.png" data-srcset="/wp-content/uploads/2024/09/image-1024x550.png 1024w, /wp-content/uploads/2024/09/image-300x161.png 300w, /wp-content/uploads/2024/09/image-768x413.png 768w, /wp-content/uploads/2024/09/image-1536x826.png 1536w, /wp-content/uploads/2024/09/image.png 2000w"></figure>
+
+
+
+<p>One key design aspect is the use of lowercase shapes for the tops of characters. This involves initially designing each character in lowercase with a consistent x-height, followed by the addition of descenders to create the impression of uppercase letters. This way, when a portion of the text is covered, it will still display the conventional look of the capitals taller than the lowercase.</p>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:550;"><img loading="lazy" decoding="async" width="1024" height="550" src="" alt="" class="wp-image-210" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-1-1024x550.png" data-srcset="/wp-content/uploads/2024/09/image-1-1024x550.png 1024w, /wp-content/uploads/2024/09/image-1-300x161.png 300w, /wp-content/uploads/2024/09/image-1-768x413.png 768w, /wp-content/uploads/2024/09/image-1-1536x826.png 1536w, /wp-content/uploads/2024/09/image-1.png 2000w"></figure>
+
+
+
+<p>Besides the default uppercase and lowercase, the typeface also has a variable function allowing custom case (mostly for display purpose because there is already a similar function in Adobe Illustrator&ndash;baseline shifting)</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span12"><div class="wp-block-embed__wrapper">
 <div style="--width:960; --height:791;"><img decoding="async" style="--twidth:960; --theight:791;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1738663735-89b1f5c3294528e1ad9f696cda2ea8799426a4c95def37a748a0640981f19647-d_960" data-srcset="" srcset=""><iframe title="Variable-Case &ndash; variable test" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/874543303?dnt=1&amp;app_id=122963"></iframe></div>
 </div></figure>
 
 
 
-<figure class="wp-block-image size-large span2" style="--width:1024; --height:523;"><img loading="lazy" decoding="async" width="1024" height="523" src="" alt="" class="wp-image-211" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-2-1024x523.png" data-srcset="/wp-content/uploads/2024/09/image-2-1024x523.png 1024w, /wp-content/uploads/2024/09/image-2-300x153.png 300w, /wp-content/uploads/2024/09/image-2-768x392.png 768w, /wp-content/uploads/2024/09/image-2-1536x784.png 1536w, /wp-content/uploads/2024/09/image-2.png 2000w"></figure>
+<figure class="wp-block-image size-large span3" style="--width:1024; --height:523;"><img loading="lazy" decoding="async" width="1024" height="523" src="" alt="" class="wp-image-211" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-2-1024x523.png" data-srcset="/wp-content/uploads/2024/09/image-2-1024x523.png 1024w, /wp-content/uploads/2024/09/image-2-300x153.png 300w, /wp-content/uploads/2024/09/image-2-768x392.png 768w, /wp-content/uploads/2024/09/image-2-1536x784.png 1536w, /wp-content/uploads/2024/09/image-2.png 2000w"></figure>
 
 
 
@@ -234,9 +258,17 @@
 		<pubDate>Mon, 16 Sep 2024 03:54:26 +0000</pubDate>
 				<guid isPermaLink="false">/?post_type=work#038;p=102</guid>
 
-					<description><![CDATA[]]></description>
+					<description><![CDATA[1. Karaoke PoetryA participatory, choose-your-own-ending poetry reading or interactive fiction game This experience invites a duo to engage with the poem by taking turns reading lines into a microphone, akin to a karaoke setup. Throughout the different scenes, participants will encounter a range of aural and interactive elements, both digital and physical, interspersed throughout the [&#8230;]]]></description>
 										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body><figure class="wp-block-image size-large" style="--width:1024; --height:722;"><img loading="lazy" decoding="async" width="1024" height="722" src="/wp-content/uploads/2024/09/image-12-1024x722.png" alt="" class="wp-image-256" srcset="/wp-content/uploads/2024/09/image-12-1024x722.png 1024w, /wp-content/uploads/2024/09/image-12-300x212.png 300w, /wp-content/uploads/2024/09/image-12-768x542.png 768w, /wp-content/uploads/2024/09/image-12.png 1324w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+<html><body><p><strong>1. Karaoke Poetry</strong><br><strong><br></strong><em>A participatory, choose-your-own-ending poetry reading or interactive fiction game</em></p>
+
+
+
+<p>This experience invites a duo to engage with the poem by taking turns reading lines into a microphone, akin to a karaoke setup. Throughout the different scenes, participants will encounter a range of aural and interactive elements, both digital and physical, interspersed throughout the performance.</p>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:722;"><img loading="lazy" decoding="async" width="1024" height="722" src="/wp-content/uploads/2024/09/image-12-1024x722.png" alt="" class="wp-image-256" srcset="/wp-content/uploads/2024/09/image-12-1024x722.png 1024w, /wp-content/uploads/2024/09/image-12-300x212.png 300w, /wp-content/uploads/2024/09/image-12-768x542.png 768w, /wp-content/uploads/2024/09/image-12.png 1324w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
 
 
 
@@ -247,6 +279,10 @@
 <figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
 <div style="--width:563; --height:1000;"><img decoding="async" style="--twidth:295; --theight:524;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1905001133-ceb265ede9fa67c1468b24ad132bce965c51f7ee9da2fcd3a347ab5d029ed569-d_295x166" data-srcset="" srcset=""><iframe title="Karaoke Poetry Testing" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/989303238?dnt=1&amp;app_id=122963"></iframe></div>
 </div></figure>
+
+
+
+<p>Below is a work-in-progress version of the online reading experience</p>
 
 
 
@@ -274,9 +310,17 @@
 
 
 
+<p>Besides, I also did the QR code page, in which people will scan the QR code to answer some questions and get assigned their role number for the poem reading. It was also my first time using WebSocket to transfer data. To enhance security and prevent external interference, I implemented session IDs to ensure each session had a unique URL.</p>
+
+
+
 <figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
 <div style="--width:960; --height:556;"><img decoding="async" style="--twidth:960; --theight:556;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1852900545-369e11cf2f9ccb138a915e8c80a147a53edbb2e2e4b7121acb9ba6baece7f228-d_960" data-srcset="" srcset=""><iframe title="Karaoke Poetry Web Socket" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/946697218?dnt=1&amp;app_id=122963"></iframe></div>
 </div></figure>
+
+
+
+<p><strong>2. Souvenirs</strong><br><strong><br></strong><em>A location-based AR experience at Fort Canning Park. This experience invites people to explore Fort Canning Park and uncover hidden AR secrets along the way!</em></p>
 
 
 
@@ -292,15 +336,35 @@
 
 
 
+<p>One of the interesting thing I did was creating this raindrop scene that changes based on the user&rsquo;s camera angle. When the camera points toward the sky, raindrops appear on the screen gradually.</p>
+
+
+
 <figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
 <div style="--width:465; --height:1000;"><img decoding="async" style="--twidth:295; --theight:634;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1853120283-e6d602e385c0a303f51a8e1abc0d3b001862a51d0c3756320fe9b50df0865655-d_295x166" data-srcset="" srcset=""><iframe title="Souvenirs Raindrop" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/946838269?dnt=1&amp;app_id=122963"></iframe></div>
 </div></figure>
 
 
 
+<p class="span2md">This was also my first time trying to integrate GLSL shaders to perform some post-processing effect. All of this was so new to me. To pull out this raindrop shader, luckily I found a piece on Shadertoy <a href="https://www.shadertoy.com/view/ltffzl">https://www.shadertoy.com/view/ltffzl</a> &ndash; Heartfelt by BigWIngs, which was beautifully done! I carefully read through the code but didn&rsquo;t fully understand it &#128549;. GLSL operates on a level that&rsquo;s still a bit beyond me. So, I ended up copying the code and tweaking some arguments to see what triggers what.</p>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:650;"><img loading="lazy" decoding="async" width="1024" height="650" src="" alt="" class="wp-image-482" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-6-1-1024x650.png" data-srcset="/wp-content/uploads/2024/09/image-6-1-1024x650.png 1024w, /wp-content/uploads/2024/09/image-6-1-300x190.png 300w, /wp-content/uploads/2024/09/image-6-1-768x487.png 768w, /wp-content/uploads/2024/09/image-6-1-1536x975.png 1536w, /wp-content/uploads/2024/09/image-6-1-2048x1299.png 2048w"></figure>
+
+
+
+<p>This is the final composite scene, the whole visibility will only be toggled on once the user scans the nearby standing poster.</p>
+
+
+
 <figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
 <div style="--width:465; --height:1000;"><img decoding="async" style="--twidth:295; --theight:634;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1853134440-c6649488a0c89f250abc53d6f88c4c25bbc294dd44aaea3d0e4abf392bbdc141-d_295x166" data-srcset="" srcset=""><iframe title="Souvenirs Timber-obsta Scene" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/946846962?dnt=1&amp;app_id=122963"></iframe></div>
 </div></figure>
+
+
+
+<p>Here are some images of me conducting on-site testing in nature! Remote development of AR can often miss the mark, so hands-on testing is crucial.</p>
 
 
 
@@ -359,11 +423,27 @@
 
 
 
-<figure class="wp-block-image size-large span2 row2" style="--width:1024; --height:779;"><img loading="lazy" decoding="async" width="1024" height="779" src="/wp-content/uploads/2024/09/image-16-1024x779.png" alt="" class="wp-image-263" srcset="/wp-content/uploads/2024/09/image-16-1024x779.png 1024w, /wp-content/uploads/2024/09/image-16-300x228.png 300w, /wp-content/uploads/2024/09/image-16-768x584.png 768w, /wp-content/uploads/2024/09/image-16-1536x1168.png 1536w, /wp-content/uploads/2024/09/image-16-2048x1558.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+<p><strong>1. tr&#259;m&#273;&#7889;t web platform:<br></strong><br>tr&#259;m&#273;&#7889;t design tries capture the nostalgic aesthetics of massively multiplayer online games (MMOs) from the 2010s. The design takes special inspiration from the main menu pages of these games, which often resembled a vibrant city, a bustling town, or a lively island.</p>
 
 
 
-<figure class="wp-block-image size-large thumb" style="--width:1024; --height:779;"><img loading="lazy" decoding="async" width="1024" height="779" src="/wp-content/uploads/2024/09/image-17-1024x779.png" alt="" class="wp-image-264" srcset="/wp-content/uploads/2024/09/image-17-1024x779.png 1024w, /wp-content/uploads/2024/09/image-17-300x228.png 300w, /wp-content/uploads/2024/09/image-17-768x584.png 768w, /wp-content/uploads/2024/09/image-17-1536x1168.png 1536w, /wp-content/uploads/2024/09/image-17-2048x1558.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+<figure class="wp-block-image size-full" style="--width:801; --height:534;"><img loading="lazy" decoding="async" width="801" height="534" src="/wp-content/uploads/2024/09/image-7-1.png" alt="" class="wp-image-485" srcset="/wp-content/uploads/2024/09/image-7-1.png 801w, /wp-content/uploads/2024/09/image-7-1-300x200.png 300w, /wp-content/uploads/2024/09/image-7-1-768x512.png 768w" sizes="(max-width: 801px) 100vw, 801px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:848;"><img loading="lazy" decoding="async" width="1024" height="848" src="/wp-content/uploads/2024/09/image-8-1-1024x848.png" alt="" class="wp-image-486" srcset="/wp-content/uploads/2024/09/image-8-1-1024x848.png 1024w, /wp-content/uploads/2024/09/image-8-1-300x248.png 300w, /wp-content/uploads/2024/09/image-8-1-768x636.png 768w, /wp-content/uploads/2024/09/image-8-1.png 1360w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:683;"><img loading="lazy" decoding="async" width="1024" height="683" src="" alt="" class="wp-image-487" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-9-1-1024x683.png" data-srcset="/wp-content/uploads/2024/09/image-9-1-1024x683.png 1024w, /wp-content/uploads/2024/09/image-9-1-300x200.png 300w, /wp-content/uploads/2024/09/image-9-1-768x512.png 768w, /wp-content/uploads/2024/09/image-9-1.png 1180w"></figure>
+
+
+
+<figure class="wp-block-image size-large span2 row2" style="--width:1024; --height:779;"><img loading="lazy" decoding="async" width="1024" height="779" src="" alt="" class="wp-image-263" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-16-1024x779.png" data-srcset="/wp-content/uploads/2024/09/image-16-1024x779.png 1024w, /wp-content/uploads/2024/09/image-16-300x228.png 300w, /wp-content/uploads/2024/09/image-16-768x584.png 768w, /wp-content/uploads/2024/09/image-16-1536x1168.png 1536w, /wp-content/uploads/2024/09/image-16-2048x1558.png 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-large thumb" style="--width:1024; --height:779;"><img loading="lazy" decoding="async" width="1024" height="779" src="" alt="" class="wp-image-264" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-17-1024x779.png" data-srcset="/wp-content/uploads/2024/09/image-17-1024x779.png 1024w, /wp-content/uploads/2024/09/image-17-300x228.png 300w, /wp-content/uploads/2024/09/image-17-768x584.png 768w, /wp-content/uploads/2024/09/image-17-1536x1168.png 1536w, /wp-content/uploads/2024/09/image-17-2048x1558.png 2048w"></figure>
 
 
 
@@ -411,6 +491,10 @@
 
 
 
+<p>Some mobile screen sizes:</p>
+
+
+
 <figure class="wp-block-image size-large vertical" style="--width:532; --height:1024;"><img loading="lazy" decoding="async" width="532" height="1024" src="" alt="" class="wp-image-277" srcset="" sizes="(max-width: 532px) 100vw, 532px" data-src="/wp-content/uploads/2024/09/image-29-532x1024.png" data-srcset="/wp-content/uploads/2024/09/image-29-532x1024.png 532w, /wp-content/uploads/2024/09/image-29-156x300.png 156w, /wp-content/uploads/2024/09/image-29-768x1479.png 768w, /wp-content/uploads/2024/09/image-29-798x1536.png 798w, /wp-content/uploads/2024/09/image-29-1063x2048.png 1063w, /wp-content/uploads/2024/09/image-29.png 1160w"></figure>
 
 
@@ -419,7 +503,11 @@
 
 
 
-<figure class="wp-block-image size-large span2" style="--width:1024; --height:851;"><img loading="lazy" decoding="async" width="1024" height="851" src="" alt="" class="wp-image-279" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-31-1024x851.png" data-srcset="/wp-content/uploads/2024/09/image-31-1024x851.png 1024w, /wp-content/uploads/2024/09/image-31-300x249.png 300w, /wp-content/uploads/2024/09/image-31-768x638.png 768w, /wp-content/uploads/2024/09/image-31-1536x1277.png 1536w, /wp-content/uploads/2024/09/image-31.png 1564w"></figure>
+<p><strong>2. Visual Identity:<br></strong><br>Given that the platform will primarily cater to the Vietnamese community, it would be beneficial to integrate cultural elements into its identity in a unique and meaningful way. With this in mind, and aligning with the MMO game theme, we drew inspiration from ASCII art but added a distinctive twist by incorporating Vietnamese diacritics.</p>
+
+
+
+<figure class="wp-block-image size-large span2 row2" style="--width:1024; --height:851;"><img loading="lazy" decoding="async" width="1024" height="851" src="" alt="" class="wp-image-279" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-31-1024x851.png" data-srcset="/wp-content/uploads/2024/09/image-31-1024x851.png 1024w, /wp-content/uploads/2024/09/image-31-300x249.png 300w, /wp-content/uploads/2024/09/image-31-768x638.png 768w, /wp-content/uploads/2024/09/image-31-1536x1277.png 1536w, /wp-content/uploads/2024/09/image-31.png 1564w"></figure>
 
 
 
@@ -427,11 +515,15 @@
 
 
 
-<figure class="wp-block-image size-large" style="--width:1024; --height:680;"><img loading="lazy" decoding="async" width="1024" height="680" src="" alt="" class="wp-image-281" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-33-1024x680.png" data-srcset="/wp-content/uploads/2024/09/image-33-1024x680.png 1024w, /wp-content/uploads/2024/09/image-33-300x199.png 300w, /wp-content/uploads/2024/09/image-33-768x510.png 768w, /wp-content/uploads/2024/09/image-33-1536x1020.png 1536w, /wp-content/uploads/2024/09/image-33-2048x1360.png 2048w"></figure>
+<p>The main typeface originally comes from Jgs Font by Adel Faure, which has been specifically designed to draw ASCII art. I tried to Vietnamize the font and add in some decorative details like the balls at the terminals, swashes, while keeping its technical feat to draw ASCII art.</p>
 
 
 
 <figure class="wp-block-image size-large" style="--width:1024; --height:651;"><img loading="lazy" decoding="async" width="1024" height="651" src="" alt="" class="wp-image-282" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-34-1024x651.png" data-srcset="/wp-content/uploads/2024/09/image-34-1024x651.png 1024w, /wp-content/uploads/2024/09/image-34-300x191.png 300w, /wp-content/uploads/2024/09/image-34-768x488.png 768w, /wp-content/uploads/2024/09/image-34-1536x976.png 1536w, /wp-content/uploads/2024/09/image-34-2048x1301.png 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:680;"><img loading="lazy" decoding="async" width="1024" height="680" src="" alt="" class="wp-image-281" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-33-1024x680.png" data-srcset="/wp-content/uploads/2024/09/image-33-1024x680.png 1024w, /wp-content/uploads/2024/09/image-33-300x199.png 300w, /wp-content/uploads/2024/09/image-33-768x510.png 768w, /wp-content/uploads/2024/09/image-33-1536x1020.png 1536w, /wp-content/uploads/2024/09/image-33-2048x1360.png 2048w"></figure>
 
 
 
@@ -894,7 +986,7 @@
 
 
 
-<p>The CI/CD pipeline is customized for staging and production site, with caching for dependencies package to save time on the build time, and handling of concurrent builds. For the trigger request, I used webhook to link the CMS to the hosted server via github actions.</p>
+<p class="span2md">The CI/CD pipeline is customized for staging and production site, with caching for dependencies package to save time on the build time, and handling of concurrent builds. For the trigger request, I used webhook to link the CMS to the hosted server via github actions.</p>
 
 
 
@@ -902,7 +994,7 @@
 
 
 
-<p>Besides backend, I also had to restructure and refactor the front-end so that the data can be populated properly with correct types. Since the previous front-end developer didn&rsquo;t optimize the code in a way that data can be spread out, it was quite a tiring time for me to do this process.</p>
+<p class="span2md">Besides backend, I also had to restructure and refactor the front-end so that the data can be populated properly with correct types. Since the previous front-end developer didn&rsquo;t optimize the code in a way that data can be spread out, it was quite a tiring time for me to do this process.</p>
 
 
 
