@@ -37,6 +37,10 @@
 		aspect-ratio: var(--width) / var(--height);
 		width: 100%;
 	}
+	figure {
+		display: flex;
+		flex-direction: column;
+	}
 	.wp-block-embed {
 		height: fit-content;
 		.wp-block-embed__wrapper > div {
