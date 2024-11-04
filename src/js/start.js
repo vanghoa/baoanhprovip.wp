@@ -217,6 +217,6 @@ function inactivityTime(start, stop) {
       flag = false;
     }
     clearTimeout(time);
-    time = setTimeout(logout, 20000);
+    time = setTimeout(logout, 25000);
   }
 }

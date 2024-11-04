@@ -278,6 +278,7 @@ const allImgMain = [...$$('#main .mainbody img')];
 const allTxt = [
   ...$$('#copy .mainbody .txt-layer'),
   ...$$('#copy .mainbody .txtp-layer > *:not(figure)'),
+  ...$$('#copy .mainbody .txtp-layer figcaption'),
 ];
 const allDivider = [...$$('#copy .divider')];
 const storySection = {
@@ -548,8 +549,8 @@ window.onload = async () => {
       return p;
     }));
   notebookHolder.append(frag);
-  drawNotes();
-  cmtRenderScreen();
+  stopEvething || drawNotes();
+  stopEvething || cmtRenderScreen();
 };
 onresize = throttle_debounce(
   function (isFinal) {
@@ -755,11 +756,12 @@ function manualResponsive(el) {
 }
 
 function getNoteResponsiveClass(w) {
-  if (w > 1280) {
+  /*if (w > 1280) {
     return 'xl';
   } else if (w > 1024) {
     return 'lg';
-  } else if (w > 768) {
+  } else */
+  if (w > 768) {
     return 'md';
   } else if (w > 640) {
     return 'sm';
