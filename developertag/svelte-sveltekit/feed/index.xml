@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Svelte/SvelteKit &#8211; Bảo Anh Bùi</title>
+	<atom:link href="/developertag/svelte-sveltekit/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 07 Nov 2024 13:54:27 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2024/09/cropped-Asset-2njkiys-32x32.png</url>
+	<title>Svelte/SvelteKit &#8211; Bảo Anh Bùi</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>google sheet + google doc ?</title>
+		<link>/work/google-sheet-google-doc/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Thu, 07 Nov 2024 10:08:06 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=544</guid>
+
+					<description><![CDATA[1. Website Concept KIRTI explores contemporary art from Southeast Asia in alternative ways. This effort is vital as a countermeasure to art world silos and stratifications.Hunter (KIRTI founder) came to me to ask for a digital solution that can aggregate all of his archived interviews (currently in Google Docs), is easy to update himself (with [&#8230;]]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><ul class="wp-block-list">
+<li>Visit the site here <a href="https://kirti.baoanh1buinguyen.workers.dev/" target="_blank" rel="noreferrer noopener">kirti.baoanh1buinguyen.workers.dev</a></li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full span12" style="--width:2238; --height:1900;"><img fetchpriority="high" decoding="async" width="2238" height="1900" src="/wp-content/uploads/2024/11/kirti.png" alt="" class="wp-image-546" srcset="/wp-content/uploads/2024/11/kirti.png 2238w, /wp-content/uploads/2024/11/kirti-300x255.png 300w, /wp-content/uploads/2024/11/kirti-1024x869.png 1024w, /wp-content/uploads/2024/11/kirti-768x652.png 768w, /wp-content/uploads/2024/11/kirti-1536x1304.png 1536w, /wp-content/uploads/2024/11/kirti-2048x1739.png 2048w" sizes="(max-width: 2238px) 100vw, 2238px"></figure>
+
+
+
+<p class="row2"><strong>1. Website Concept</strong><br><br><em>KIRTI explores contemporary art from Southeast Asia in alternative ways. This effort is vital as a countermeasure to art world silos and stratifications.<br></em><br>Hunter (KIRTI founder) came to me to ask for a digital solution that can aggregate all of his archived interviews (currently in Google Docs), is easy to update himself (with no technical skill), while providing a nice reading and browsing experience for the visitors. Of course, the site&rsquo;s design and concept should align to the <em>energy</em> of the project, that is <strong>experimental, impromptu, and open-ended</strong>.<br><br>We have discussed through various ways from a dedicated CMS to using Google Drive as a platform. In the end, we conclude on combining Google Sheet and Google Doc into a website.</p>
+
+
+
+<figure class="wp-block-image size-large" style="--width:922; --height:1024;"><img decoding="async" width="922" height="1024" src="/wp-content/uploads/2024/11/kirti1-922x1024.png" alt="" class="wp-image-550" srcset="/wp-content/uploads/2024/11/kirti1-922x1024.png 922w, /wp-content/uploads/2024/11/kirti1-270x300.png 270w, /wp-content/uploads/2024/11/kirti1-768x853.png 768w, /wp-content/uploads/2024/11/kirti1-1383x1536.png 1383w, /wp-content/uploads/2024/11/kirti1.png 1712w" sizes="(max-width: 922px) 100vw, 922px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:922; --height:1024;"><img decoding="async" width="922" height="1024" src="" alt="" class="wp-image-551" srcset="" sizes="(max-width: 922px) 100vw, 922px" data-src="/wp-content/uploads/2024/11/kirti2-922x1024.png" data-srcset="/wp-content/uploads/2024/11/kirti2-922x1024.png 922w, /wp-content/uploads/2024/11/kirti2-270x300.png 270w, /wp-content/uploads/2024/11/kirti2-768x853.png 768w, /wp-content/uploads/2024/11/kirti2-1383x1536.png 1383w, /wp-content/uploads/2024/11/kirti2.png 1712w"></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span3"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:463;"><img decoding="async" style="--twidth:960; --theight:463;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947149107-ddbfc0aa2d29f8d0d9e253026af316280a06df3e93719f83bbc31e04ea984f21-d_960" data-srcset="" srcset=""><iframe title="KIRTI website" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027222634?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p class="span2md"><strong>2. Frontend Development</strong><br><br>Using iframes, I was able to hijack the visual interface of Google Sheet and Google Doc with ease. For the interactivity, I found a solution by using data from the Google Sheets API to create an interactive, transparent overlay positioned directly and precisely on top of the sheet iframe.</p>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:2706; --height:1792;"><img loading="lazy" decoding="async" width="2706" height="1792" src="" alt="" class="wp-image-553" srcset="" sizes="(max-width: 2706px) 100vw, 2706px" data-src="/wp-content/uploads/2024/11/kirti3.png" data-srcset="/wp-content/uploads/2024/11/kirti3.png 2706w, /wp-content/uploads/2024/11/kirti3-300x199.png 300w, /wp-content/uploads/2024/11/kirti3-1024x678.png 1024w, /wp-content/uploads/2024/11/kirti3-768x509.png 768w, /wp-content/uploads/2024/11/kirti3-1536x1017.png 1536w, /wp-content/uploads/2024/11/kirti3-2048x1356.png 2048w"><figcaption class="wp-element-caption">Diagram to show how all of this works together.</figcaption></figure>
+
+
+
+<p class="span2md">The site includes a basic sort and filter function to help users browse the archive, made possible through Google Sheets&rsquo; Filter Views feature. Unfortunately, due to limitations in Google Sheets, this feature only works on the desktop version.</p>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:160;"><img loading="lazy" decoding="async" width="1024" height="160" src="" alt="" class="wp-image-558" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/kirti5-1024x160.png" data-srcset="/wp-content/uploads/2024/11/kirti5-1024x160.png 1024w, /wp-content/uploads/2024/11/kirti5-300x47.png 300w, /wp-content/uploads/2024/11/kirti5-768x120.png 768w, /wp-content/uploads/2024/11/kirti5-1536x240.png 1536w, /wp-content/uploads/2024/11/kirti5-2048x320.png 2048w"></figure>
+
+
+
+<p>Google sheet is not responsive to screen size at all, which makes the mobile version of the sheet horrible in terms of user experience. To improve usability on smaller screens, I designed a separate sheet specifically optimized for mobile viewing.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:505; --height:1000;"><img decoding="async" style="--twidth:295; --theight:584;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947200559-67296fd40115102a08d9bf2fbbff9408d42c1cdb6e77ee0a93cd975f67bac4f1-d_295x166" data-srcset="" srcset=""><iframe title="KIRTI website mobile" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027265929?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image size-large span2md" style="--width:1024; --height:837;"><img loading="lazy" decoding="async" width="1024" height="837" src="" alt="" class="wp-image-555" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/kirti4-1024x837.png" data-srcset="/wp-content/uploads/2024/11/kirti4-1024x837.png 1024w, /wp-content/uploads/2024/11/kirti4-300x245.png 300w, /wp-content/uploads/2024/11/kirti4-768x628.png 768w, /wp-content/uploads/2024/11/kirti4-1536x1256.png 1536w, /wp-content/uploads/2024/11/kirti4-2048x1675.png 2048w"></figure>
+
+
+
+<p class="span2md"><strong>3. Backend Development</strong><br><br>For this project, I used Sveltekit as a fullstack framework and Cloudflare for deployment out of curiosity. I want to implement ISR function to allow immediate website updates without a full rebuild. However, unlike Next.js, SvelteKit didn&rsquo;t natively support ISR at the time. <br><br>To work around this, I developed a custom Cloudflare Workers adapter for SvelteKit, utilizing Workers KV to handle caching and revalidation.</p>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:2614; --height:1346;"><img loading="lazy" decoding="async" width="2614" height="1346" src="" alt="" class="wp-image-561" srcset="" sizes="(max-width: 2614px) 100vw, 2614px" data-src="/wp-content/uploads/2024/11/kirti6.png" data-srcset="/wp-content/uploads/2024/11/kirti6.png 2614w, /wp-content/uploads/2024/11/kirti6-300x154.png 300w, /wp-content/uploads/2024/11/kirti6-1024x527.png 1024w, /wp-content/uploads/2024/11/kirti6-768x395.png 768w, /wp-content/uploads/2024/11/kirti6-1536x791.png 1536w, /wp-content/uploads/2024/11/kirti6-2048x1055.png 2048w"></figure>
+
+
+
+<p class="span2md"><strong>4. Documentation and handoff</strong><br><br>For Hunter to use and populate the content into the sheet without disrupting the site&rsquo;s functionality, I created detailed documentation on best practices and potential pitfalls. This guide covered what to avoid and how to perform key tasks correctly. <br><br>I also made a couple of phone calls to clarify specific steps, which helped me better understand how Hunter would actually work with the sheet.</p>
+
+
+
+<figure class="wp-block-image size-full span2 row2" style="--width:2400; --height:1898;"><img loading="lazy" decoding="async" width="2400" height="1898" src="" alt="" class="wp-image-564" srcset="" sizes="(max-width: 2400px) 100vw, 2400px" data-src="/wp-content/uploads/2024/11/kirti7.png" data-srcset="/wp-content/uploads/2024/11/kirti7.png 2400w, /wp-content/uploads/2024/11/kirti7-300x237.png 300w, /wp-content/uploads/2024/11/kirti7-1024x810.png 1024w, /wp-content/uploads/2024/11/kirti7-768x607.png 768w, /wp-content/uploads/2024/11/kirti7-1536x1215.png 1536w, /wp-content/uploads/2024/11/kirti7-2048x1620.png 2048w"></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Tech Stack: Svelte/Sveltekit web framework, Typescript, SCSS, Google Sheet API, Cloudflare Workers</li>
+
+
+
+<li>Bao Anh <em>as designer &amp; developer</em></li>
+
+
+
+<li>This work is done for KIRTI Project</li>
+</ul>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

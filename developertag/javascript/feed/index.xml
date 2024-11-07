@@ -8,11 +8,11 @@
 	>
 
 <channel>
-	<title>javascript &#8211; Bảo Anh Bùi</title>
+	<title>JavaScript &#8211; Bảo Anh Bùi</title>
 	<atom:link href="/developertag/javascript/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Mon, 04 Nov 2024 13:57:02 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 07 Nov 2024 20:41:28 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -22,12 +22,353 @@
 
 <image>
 	<url>/wp-content/uploads/2024/09/cropped-Asset-2njkiys-32x32.png</url>
-	<title>javascript &#8211; Bảo Anh Bùi</title>
+	<title>JavaScript &#8211; Bảo Anh Bùi</title>
 	<link>/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
+		<title>Personal website 2024</title>
+		<link>/work/personal-website-2024/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Thu, 07 Nov 2024 16:33:11 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=569</guid>
+
+					<description><![CDATA[1. FrontendMy third personal website began with the question, &#8220;How tf am I still struggling to secure a full-time job?&#8221; With my Long Term Visit Pass nearing its expiration, finding a job has become extremely urgent. I do need to tone the shit down my portfolio, stripping away anything that looks too much. I got [&#8230;]]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><ul class="wp-block-list">
+<li>Visit the <a href="https://bui.baoanhpro.vip/">bui.baoanhpro.vip</a> to see the website (this website).</li>
+
+
+
+<li>Take a look at the <a href="https://github.com/vanghoa/baoanhprovip.wp" data-type="link" data-id="https://github.com/vanghoa/baoanhprovip.wp" target="_blank" rel="noreferrer noopener">github repository</a>.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:2200; --height:1407;"><img fetchpriority="high" decoding="async" width="2200" height="1407" src="/wp-content/uploads/2024/11/p4-2.png" alt="" class="wp-image-574" srcset="/wp-content/uploads/2024/11/p4-2.png 2200w, /wp-content/uploads/2024/11/p4-2-300x192.png 300w, /wp-content/uploads/2024/11/p4-2-1024x655.png 1024w, /wp-content/uploads/2024/11/p4-2-768x491.png 768w, /wp-content/uploads/2024/11/p4-2-1536x982.png 1536w, /wp-content/uploads/2024/11/p4-2-2048x1310.png 2048w" sizes="(max-width: 2200px) 100vw, 2200px"></figure>
+
+
+
+<p><strong>1. Frontend<br></strong><br>My third personal website began with the question, <em>&ldquo;How tf am I still struggling to secure a full-time job?&rdquo;</em> With my Long Term Visit Pass nearing its expiration, finding a job has become extremely urgent.<br><br>I do need to tone the shit down my portfolio, stripping away anything that looks too much.</p>
+
+
+
+<p>I got feedback that my website looks too much artistic&hellip;&hellip;.</p>
+
+
+
+<figure class="wp-block-image size-large span2md" style="--width:1024; --height:786;"><img decoding="async" width="1024" height="786" src="/wp-content/uploads/2024/11/ps1-1024x786.png" alt="" class="wp-image-521" srcset="/wp-content/uploads/2024/11/ps1-1024x786.png 1024w, /wp-content/uploads/2024/11/ps1-300x230.png 300w, /wp-content/uploads/2024/11/ps1-768x590.png 768w, /wp-content/uploads/2024/11/ps1-1536x1180.png 1536w, /wp-content/uploads/2024/11/ps1-2048x1573.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<p class="span2md">Also, during this time, I visited <a href="https://laurelschwulst.com/" target="_blank" rel="noreferrer noopener">Laurel Schwulst website</a> quite often.<br><br>I love the honesty, extruded from this site, the small text in opaque color, the thank you note in the footer&hellip; (I don&rsquo;t know if it is actually because of her portfolio of work rather than the site design itself or the fact that I kind of know about the site owner beforehand (&amp; really like her work as well)).</p>
+
+
+
+<figure class="wp-block-image size-large span2 row2" style="--width:1024; --height:551;"><img decoding="async" width="1024" height="551" src="" alt="" class="wp-image-577" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/laurel-1024x551.png" data-srcset="/wp-content/uploads/2024/11/laurel-1024x551.png 1024w, /wp-content/uploads/2024/11/laurel-300x161.png 300w, /wp-content/uploads/2024/11/laurel-768x413.png 768w, /wp-content/uploads/2024/11/laurel-1536x826.png 1536w, /wp-content/uploads/2024/11/laurel-2048x1101.png 2048w"></figure>
+
+
+
+<p class="span2md">Even though her works are a bit unconventional; the website itself is really easy to look at and navigate as well. It just feels good at first impression. I really want my website to be like this.</p>
+
+
+
+<p class="span2md">Hence, after lots of layout tests, I decided on this lockup. Also, I want to keep the center-aligned structure as a tribute to my 2023 site.</p>
+
+
+
+<figure class="wp-block-image size-full" style="--width:2200; --height:1407;"><img loading="lazy" decoding="async" width="2200" height="1407" src="" alt="" class="wp-image-582" srcset="" sizes="(max-width: 2200px) 100vw, 2200px" data-src="/wp-content/uploads/2024/11/p1.png" data-srcset="/wp-content/uploads/2024/11/p1.png 2200w, /wp-content/uploads/2024/11/p1-300x192.png 300w, /wp-content/uploads/2024/11/p1-1024x655.png 1024w, /wp-content/uploads/2024/11/p1-768x491.png 768w, /wp-content/uploads/2024/11/p1-1536x982.png 1536w, /wp-content/uploads/2024/11/p1-2048x1310.png 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-full" style="--width:2968; --height:1898;"><img loading="lazy" decoding="async" width="2968" height="1898" src="" alt="" class="wp-image-583" srcset="" sizes="(max-width: 2968px) 100vw, 2968px" data-src="/wp-content/uploads/2024/11/p2.png" data-srcset="/wp-content/uploads/2024/11/p2.png 2968w, /wp-content/uploads/2024/11/p2-300x192.png 300w, /wp-content/uploads/2024/11/p2-1024x655.png 1024w, /wp-content/uploads/2024/11/p2-768x491.png 768w, /wp-content/uploads/2024/11/p2-1536x982.png 1536w, /wp-content/uploads/2024/11/p2-2048x1310.png 2048w"></figure>
+
+
+
+<p class="row2 span2md">To streamline the portfolio checking process for recruiters, I had thought of separating works in design from works in development and let the recruiters choose what they want to see. It is available at <a href="https://bui.baoanhpro.vip/story">bui.baoanhpro.vip/story</a></p>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:2968; --height:1898;"><img loading="lazy" decoding="async" width="2968" height="1898" src="" alt="" class="wp-image-585" srcset="" sizes="(max-width: 2968px) 100vw, 2968px" data-src="/wp-content/uploads/2024/11/p4-3.png" data-srcset="/wp-content/uploads/2024/11/p4-3.png 2968w, /wp-content/uploads/2024/11/p4-3-300x192.png 300w, /wp-content/uploads/2024/11/p4-3-1024x655.png 1024w, /wp-content/uploads/2024/11/p4-3-768x491.png 768w, /wp-content/uploads/2024/11/p4-3-1536x982.png 1536w, /wp-content/uploads/2024/11/p4-3-2048x1310.png 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:655;"><img loading="lazy" decoding="async" width="1024" height="655" src="" alt="" class="wp-image-586" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/p4-4-1024x655.png" data-srcset="/wp-content/uploads/2024/11/p4-4-1024x655.png 1024w, /wp-content/uploads/2024/11/p4-4-300x192.png 300w, /wp-content/uploads/2024/11/p4-4-768x491.png 768w, /wp-content/uploads/2024/11/p4-4-1536x982.png 1536w, /wp-content/uploads/2024/11/p4-4-2048x1310.png 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:655;"><img loading="lazy" decoding="async" width="1024" height="655" src="" alt="" class="wp-image-587" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/p4-5-1024x655.png" data-srcset="/wp-content/uploads/2024/11/p4-5-1024x655.png 1024w, /wp-content/uploads/2024/11/p4-5-300x192.png 300w, /wp-content/uploads/2024/11/p4-5-768x491.png 768w, /wp-content/uploads/2024/11/p4-5-1536x982.png 1536w, /wp-content/uploads/2024/11/p4-5-2048x1310.png 2048w"></figure>
+
+
+
+<p>A single &lsquo;next project&rsquo; link at the bottom right for faster navigation.</p>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:927;"><img loading="lazy" decoding="async" width="1024" height="927" src="" alt="" class="wp-image-589" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/p4-6-1024x927.png" data-srcset="/wp-content/uploads/2024/11/p4-6-1024x927.png 1024w, /wp-content/uploads/2024/11/p4-6-300x272.png 300w, /wp-content/uploads/2024/11/p4-6-768x695.png 768w, /wp-content/uploads/2024/11/p4-6.png 1266w"></figure>
+
+
+
+<p class="span2md">After addressing all the issues from my previous site, I still felt it lacked something. So, I decided to reintroduce a unique gimmick I experimented with in 2023 for <em>&ldquo;Measure a Machine&rsquo;s Heart&rdquo;</em>&mdash;developer tool rendering. This time, I took it further, crafting a more intentional experience by capturing the entire interface responsively as ASCII art in real time.<br><br>This was quite a ride, since I had to build the rendering engine from vanilla JavaScript, from calculating positions, analyzing styles, animating, layering, structuring the paint order, ascii-izing data, to caching repaints, lazy-painting elements, &hellip; I also had to do a few tricks here and there to ensure smooth performance.<br><br><strong>To see best, please click on the devtool &amp; zoom out a bit by Ctrl/Cmd + Minus (-) to avoid line breaks.</strong></p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2 row2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:651;"><img decoding="async" style="--twidth:960; --theight:651;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947317605-3a0cdeaa80c87bf9610895dfa2d6d71420713ce99b230eef05e55437143cda80-d_960" data-srcset="" srcset=""><iframe title="Personal Website 2024" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027363425?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2md"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:651;"><img decoding="async" style="--twidth:960; --theight:651;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947316382-2e1a50f69146de6aa3dd748d4637b3f9121e21df7f753b52eb094ba0945e3450-d_960" data-srcset="" srcset=""><iframe title="Personal Website 2024 - Idle screen" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027363378?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p class="span2md">For the idle video, I pre-processed the entire video into ASCII on the server side before sending it to the browser for painting. This approach avoids the significant performance hit that real-time rendering would cause.</p>
+
+
+
+<p class="span2md"><strong>2. Backend<br></strong><br>This time, I chose WordPress as my main CMS out of curiosity, which led me to dive into PHP. For essential plugins, I used Pods to manage custom content types and fields, providing the flexibility I needed for this project.<br><br>Initially, I planned to host the site on InfinityFree because of its free service. However, I soon realized my site would quickly exceed the service&rsquo;s limits&mdash;which even led to a one-day suspension. To avoid further interruptions, I migrated everything to my local setup, used Simply Static to export the site, and deployed it on GitHub Pages.</p>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:3536; --height:1908;"><img loading="lazy" decoding="async" width="3536" height="1908" src="" alt="" class="wp-image-595" srcset="" sizes="(max-width: 3536px) 100vw, 3536px" data-src="/wp-content/uploads/2024/11/pt4-7.png" data-srcset="/wp-content/uploads/2024/11/pt4-7.png 3536w, /wp-content/uploads/2024/11/pt4-7-300x162.png 300w, /wp-content/uploads/2024/11/pt4-7-1024x553.png 1024w, /wp-content/uploads/2024/11/pt4-7-768x414.png 768w, /wp-content/uploads/2024/11/pt4-7-1536x829.png 1536w, /wp-content/uploads/2024/11/pt4-7-2048x1105.png 2048w"></figure>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>google sheet + google doc ?</title>
+		<link>/work/google-sheet-google-doc/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Thu, 07 Nov 2024 10:08:06 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=544</guid>
+
+					<description><![CDATA[1. Website Concept KIRTI explores contemporary art from Southeast Asia in alternative ways. This effort is vital as a countermeasure to art world silos and stratifications.Hunter (KIRTI founder) came to me to ask for a digital solution that can aggregate all of his archived interviews (currently in Google Docs), is easy to update himself (with [&#8230;]]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><ul class="wp-block-list">
+<li>Visit the site here <a href="https://kirti.baoanh1buinguyen.workers.dev/" target="_blank" rel="noreferrer noopener">kirti.baoanh1buinguyen.workers.dev</a></li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full span12" style="--width:2238; --height:1900;"><img loading="lazy" decoding="async" width="2238" height="1900" src="/wp-content/uploads/2024/11/kirti.png" alt="" class="wp-image-546" srcset="/wp-content/uploads/2024/11/kirti.png 2238w, /wp-content/uploads/2024/11/kirti-300x255.png 300w, /wp-content/uploads/2024/11/kirti-1024x869.png 1024w, /wp-content/uploads/2024/11/kirti-768x652.png 768w, /wp-content/uploads/2024/11/kirti-1536x1304.png 1536w, /wp-content/uploads/2024/11/kirti-2048x1739.png 2048w" sizes="(max-width: 2238px) 100vw, 2238px" fetchpriority="high"></figure>
+
+
+
+<p class="row2"><strong>1. Website Concept</strong><br><br><em>KIRTI explores contemporary art from Southeast Asia in alternative ways. This effort is vital as a countermeasure to art world silos and stratifications.<br></em><br>Hunter (KIRTI founder) came to me to ask for a digital solution that can aggregate all of his archived interviews (currently in Google Docs), is easy to update himself (with no technical skill), while providing a nice reading and browsing experience for the visitors. Of course, the site&rsquo;s design and concept should align to the <em>energy</em> of the project, that is <strong>experimental, impromptu, and open-ended</strong>.<br><br>We have discussed through various ways from a dedicated CMS to using Google Drive as a platform. In the end, we conclude on combining Google Sheet and Google Doc into a website.</p>
+
+
+
+<figure class="wp-block-image size-large" style="--width:922; --height:1024;"><img loading="lazy" decoding="async" width="922" height="1024" src="/wp-content/uploads/2024/11/kirti1-922x1024.png" alt="" class="wp-image-550" srcset="/wp-content/uploads/2024/11/kirti1-922x1024.png 922w, /wp-content/uploads/2024/11/kirti1-270x300.png 270w, /wp-content/uploads/2024/11/kirti1-768x853.png 768w, /wp-content/uploads/2024/11/kirti1-1383x1536.png 1383w, /wp-content/uploads/2024/11/kirti1.png 1712w" sizes="(max-width: 922px) 100vw, 922px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:922; --height:1024;"><img loading="lazy" decoding="async" width="922" height="1024" src="" alt="" class="wp-image-551" srcset="" sizes="(max-width: 922px) 100vw, 922px" data-src="/wp-content/uploads/2024/11/kirti2-922x1024.png" data-srcset="/wp-content/uploads/2024/11/kirti2-922x1024.png 922w, /wp-content/uploads/2024/11/kirti2-270x300.png 270w, /wp-content/uploads/2024/11/kirti2-768x853.png 768w, /wp-content/uploads/2024/11/kirti2-1383x1536.png 1383w, /wp-content/uploads/2024/11/kirti2.png 1712w"></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span3"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:463;"><img decoding="async" style="--twidth:960; --theight:463;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947149107-ddbfc0aa2d29f8d0d9e253026af316280a06df3e93719f83bbc31e04ea984f21-d_960" data-srcset="" srcset=""><iframe title="KIRTI website" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027222634?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p class="span2md"><strong>2. Frontend Development</strong><br><br>Using iframes, I was able to hijack the visual interface of Google Sheet and Google Doc with ease. For the interactivity, I found a solution by using data from the Google Sheets API to create an interactive, transparent overlay positioned directly and precisely on top of the sheet iframe.</p>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:2706; --height:1792;"><img loading="lazy" decoding="async" width="2706" height="1792" src="" alt="" class="wp-image-553" srcset="" sizes="(max-width: 2706px) 100vw, 2706px" data-src="/wp-content/uploads/2024/11/kirti3.png" data-srcset="/wp-content/uploads/2024/11/kirti3.png 2706w, /wp-content/uploads/2024/11/kirti3-300x199.png 300w, /wp-content/uploads/2024/11/kirti3-1024x678.png 1024w, /wp-content/uploads/2024/11/kirti3-768x509.png 768w, /wp-content/uploads/2024/11/kirti3-1536x1017.png 1536w, /wp-content/uploads/2024/11/kirti3-2048x1356.png 2048w"><figcaption class="wp-element-caption">Diagram to show how all of this works together.</figcaption></figure>
+
+
+
+<p class="span2md">The site includes a basic sort and filter function to help users browse the archive, made possible through Google Sheets&rsquo; Filter Views feature. Unfortunately, due to limitations in Google Sheets, this feature only works on the desktop version.</p>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:160;"><img loading="lazy" decoding="async" width="1024" height="160" src="" alt="" class="wp-image-558" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/kirti5-1024x160.png" data-srcset="/wp-content/uploads/2024/11/kirti5-1024x160.png 1024w, /wp-content/uploads/2024/11/kirti5-300x47.png 300w, /wp-content/uploads/2024/11/kirti5-768x120.png 768w, /wp-content/uploads/2024/11/kirti5-1536x240.png 1536w, /wp-content/uploads/2024/11/kirti5-2048x320.png 2048w"></figure>
+
+
+
+<p>Google sheet is not responsive to screen size at all, which makes the mobile version of the sheet horrible in terms of user experience. To improve usability on smaller screens, I designed a separate sheet specifically optimized for mobile viewing.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:505; --height:1000;"><img decoding="async" style="--twidth:295; --theight:584;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947200559-67296fd40115102a08d9bf2fbbff9408d42c1cdb6e77ee0a93cd975f67bac4f1-d_295x166" data-srcset="" srcset=""><iframe title="KIRTI website mobile" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027265929?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image size-large span2md" style="--width:1024; --height:837;"><img loading="lazy" decoding="async" width="1024" height="837" src="" alt="" class="wp-image-555" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/kirti4-1024x837.png" data-srcset="/wp-content/uploads/2024/11/kirti4-1024x837.png 1024w, /wp-content/uploads/2024/11/kirti4-300x245.png 300w, /wp-content/uploads/2024/11/kirti4-768x628.png 768w, /wp-content/uploads/2024/11/kirti4-1536x1256.png 1536w, /wp-content/uploads/2024/11/kirti4-2048x1675.png 2048w"></figure>
+
+
+
+<p class="span2md"><strong>3. Backend Development</strong><br><br>For this project, I used Sveltekit as a fullstack framework and Cloudflare for deployment out of curiosity. I want to implement ISR function to allow immediate website updates without a full rebuild. However, unlike Next.js, SvelteKit didn&rsquo;t natively support ISR at the time. <br><br>To work around this, I developed a custom Cloudflare Workers adapter for SvelteKit, utilizing Workers KV to handle caching and revalidation.</p>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:2614; --height:1346;"><img loading="lazy" decoding="async" width="2614" height="1346" src="" alt="" class="wp-image-561" srcset="" sizes="(max-width: 2614px) 100vw, 2614px" data-src="/wp-content/uploads/2024/11/kirti6.png" data-srcset="/wp-content/uploads/2024/11/kirti6.png 2614w, /wp-content/uploads/2024/11/kirti6-300x154.png 300w, /wp-content/uploads/2024/11/kirti6-1024x527.png 1024w, /wp-content/uploads/2024/11/kirti6-768x395.png 768w, /wp-content/uploads/2024/11/kirti6-1536x791.png 1536w, /wp-content/uploads/2024/11/kirti6-2048x1055.png 2048w"></figure>
+
+
+
+<p class="span2md"><strong>4. Documentation and handoff</strong><br><br>For Hunter to use and populate the content into the sheet without disrupting the site&rsquo;s functionality, I created detailed documentation on best practices and potential pitfalls. This guide covered what to avoid and how to perform key tasks correctly. <br><br>I also made a couple of phone calls to clarify specific steps, which helped me better understand how Hunter would actually work with the sheet.</p>
+
+
+
+<figure class="wp-block-image size-full span2 row2" style="--width:2400; --height:1898;"><img loading="lazy" decoding="async" width="2400" height="1898" src="" alt="" class="wp-image-564" srcset="" sizes="(max-width: 2400px) 100vw, 2400px" data-src="/wp-content/uploads/2024/11/kirti7.png" data-srcset="/wp-content/uploads/2024/11/kirti7.png 2400w, /wp-content/uploads/2024/11/kirti7-300x237.png 300w, /wp-content/uploads/2024/11/kirti7-1024x810.png 1024w, /wp-content/uploads/2024/11/kirti7-768x607.png 768w, /wp-content/uploads/2024/11/kirti7-1536x1215.png 1536w, /wp-content/uploads/2024/11/kirti7-2048x1620.png 2048w"></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Tech Stack: Svelte/Sveltekit web framework, Typescript, SCSS, Google Sheet API, Cloudflare Workers</li>
+
+
+
+<li>Bao Anh <em>as designer &amp; developer</em></li>
+
+
+
+<li>This work is done for KIRTI Project</li>
+</ul>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Personal website 2023</title>
+		<link>/work/personal-website-2023/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Thu, 07 Nov 2024 04:49:35 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=516</guid>
+
+					<description><![CDATA[While working on this, I have looked into a lot of other personal website references from my friends and people I&#160;know on the Internet:&#160;Rachel Yeeun Kim,&#160;Katherine Yang,&#160;Mai Nguyen, and countless other sources but those 3 are the&#160;main&#160;influences with a twist of my personality. Ascii-ish stylized frames and decorative web elements sprinkled here and there. Another [&#8230;]]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><ul class="wp-block-list">
+<li>Visit the <a href="https://baoanhpro.vip/" target="_blank" rel="noreferrer noopener">baoanhpro.vip</a> to see the website.</li>
+
+
+
+<li>Take a look at the <a href="https://github.com/vanghoa/new-est-website" target="_blank" rel="noreferrer noopener">github repository</a>.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:3530; --height:1894;"><img loading="lazy" decoding="async" width="3530" height="1894" src="/wp-content/uploads/2024/11/ps4.png" alt="" class="wp-image-523" srcset="/wp-content/uploads/2024/11/ps4.png 3530w, /wp-content/uploads/2024/11/ps4-300x161.png 300w, /wp-content/uploads/2024/11/ps4-1024x549.png 1024w, /wp-content/uploads/2024/11/ps4-768x412.png 768w, /wp-content/uploads/2024/11/ps4-1536x824.png 1536w, /wp-content/uploads/2024/11/ps4-2048x1099.png 2048w" sizes="(max-width: 3530px) 100vw, 3530px" fetchpriority="high"></figure>
+
+
+
+<p class="row2md">While working on this, I have looked into a lot of other personal website references from my friends and people I&nbsp;know on the Internet:&nbsp;<a href="https://www.rachelyeeunkim.com/" target="_blank" rel="noreferrer noopener">Rachel Yeeun Kim</a>,&nbsp;<a href="https://kayserifserif.place/" target="_blank" rel="noreferrer noopener">Katherine Yang</a>,&nbsp;<a href="https://www.themainwork.com/" target="_blank" rel="noreferrer noopener">Mai Nguyen</a>, and countless other sources but those 3 are the&nbsp;main&nbsp;influences with a twist of my personality.</p>
+
+
+
+<figure class="wp-block-image size-large is-resized" style="--width:1024; --height:549;"><img loading="lazy" decoding="async" width="1024" height="549" src="/wp-content/uploads/2024/11/ps5-1024x549.png" alt="" class="wp-image-524" style="width:659px;height:auto" srcset="/wp-content/uploads/2024/11/ps5-1024x549.png 1024w, /wp-content/uploads/2024/11/ps5-300x161.png 300w, /wp-content/uploads/2024/11/ps5-768x412.png 768w, /wp-content/uploads/2024/11/ps5-1536x824.png 1536w, /wp-content/uploads/2024/11/ps5-2048x1099.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:579;"><img loading="lazy" decoding="async" width="1024" height="579" src="" alt="" class="wp-image-525" style="object-fit:cover" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/internet-gems-rachel-yeeun-kim2-1024x579.jpg" data-srcset="/wp-content/uploads/2024/11/internet-gems-rachel-yeeun-kim2-1024x579.jpg 1024w, /wp-content/uploads/2024/11/internet-gems-rachel-yeeun-kim2-300x170.jpg 300w, /wp-content/uploads/2024/11/internet-gems-rachel-yeeun-kim2-768x434.jpg 768w, /wp-content/uploads/2024/11/internet-gems-rachel-yeeun-kim2.jpg 1432w"></figure>
+
+
+
+<p class="row2">Ascii-ish stylized frames and decorative web elements sprinkled here and there.</p>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:602;"><img loading="lazy" decoding="async" width="1024" height="602" src="" alt="" class="wp-image-530" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/scr3-1024x602.png" data-srcset="/wp-content/uploads/2024/11/scr3-1024x602.png 1024w, /wp-content/uploads/2024/11/scr3-300x176.png 300w, /wp-content/uploads/2024/11/scr3-768x451.png 768w, /wp-content/uploads/2024/11/scr3-1536x902.png 1536w, /wp-content/uploads/2024/11/scr3-2048x1203.png 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:625;"><img loading="lazy" decoding="async" width="1024" height="625" src="" alt="" class="wp-image-529" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/scr1-1024x625.png" data-srcset="/wp-content/uploads/2024/11/scr1-1024x625.png 1024w, /wp-content/uploads/2024/11/scr1-300x183.png 300w, /wp-content/uploads/2024/11/scr1-768x469.png 768w, /wp-content/uploads/2024/11/scr1-1536x938.png 1536w, /wp-content/uploads/2024/11/scr1-2048x1250.png 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:602;"><img loading="lazy" decoding="async" width="1024" height="602" src="" alt="" class="wp-image-528" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/scr4-1024x602.png" data-srcset="/wp-content/uploads/2024/11/scr4-1024x602.png 1024w, /wp-content/uploads/2024/11/scr4-300x176.png 300w, /wp-content/uploads/2024/11/scr4-768x451.png 768w, /wp-content/uploads/2024/11/scr4-1536x902.png 1536w, /wp-content/uploads/2024/11/scr4-2048x1203.png 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:602;"><img loading="lazy" decoding="async" width="1024" height="602" src="" alt="" class="wp-image-527" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/scr2-1024x602.png" data-srcset="/wp-content/uploads/2024/11/scr2-1024x602.png 1024w, /wp-content/uploads/2024/11/scr2-300x176.png 300w, /wp-content/uploads/2024/11/scr2-768x451.png 768w, /wp-content/uploads/2024/11/scr2-1536x902.png 1536w, /wp-content/uploads/2024/11/scr2-2048x1203.png 2048w"></figure>
+
+
+
+<p>Another subtle concept is playing around with the text-highlighting/user-select interaction to reveal hidden messages.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:804; --height:1000;"><img decoding="async" style="--twidth:640; --theight:796;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947113516-edce2372220c0f9d5b502a3e215d1bffa26d20b4ac39166bc51adfe2913a2254-d_640" data-srcset="" srcset=""><iframe title="Personal Website 2023 - Highlighting text" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027192852?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image size-large span2md" style="--width:1024; --height:613;"><img loading="lazy" decoding="async" width="1024" height="613" src="" alt="" class="wp-image-538" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/hili-1024x613.png" data-srcset="/wp-content/uploads/2024/11/hili-1024x613.png 1024w, /wp-content/uploads/2024/11/hili-300x180.png 300w, /wp-content/uploads/2024/11/hili-768x460.png 768w, /wp-content/uploads/2024/11/hili.png 1530w"></figure>
+
+
+
+<p class="row2md">To tribute my previous website in 2022, I put its front-end in the rear (in terms of Z axis), which can only reveal itself via the button <strong>&ldquo;&rsquo;-&hellip;__&hellip;-&lsquo;&ldquo;</strong>. The place also acts as a holder for my &lsquo;Guestbook&rsquo; function, in which visitors can leave messages for me directly on the site.</p>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:741;"><img loading="lazy" decoding="async" width="1024" height="741" src="" alt="" class="wp-image-536" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/src7-1024x741.png" data-srcset="/wp-content/uploads/2024/11/src7-1024x741.png 1024w, /wp-content/uploads/2024/11/src7-300x217.png 300w, /wp-content/uploads/2024/11/src7-768x555.png 768w, /wp-content/uploads/2024/11/src7-1536x1111.png 1536w, /wp-content/uploads/2024/11/src7-2048x1481.png 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:602;"><img loading="lazy" decoding="async" width="1024" height="602" src="" alt="" class="wp-image-532" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/scr5-1024x602.png" data-srcset="/wp-content/uploads/2024/11/scr5-1024x602.png 1024w, /wp-content/uploads/2024/11/scr5-300x176.png 300w, /wp-content/uploads/2024/11/scr5-768x451.png 768w, /wp-content/uploads/2024/11/scr5-1536x902.png 1536w, /wp-content/uploads/2024/11/scr5-2048x1203.png 2048w"></figure>
+
+
+
+<p class="span2md">The initial conceptual idea of the site can be observed via the&nbsp;3D View&nbsp;of the developer tool of Microsoft Edge. Inspect the site to see.<br><br>Using a mix of &lsquo;z-index&rsquo; and &lsquo;transform-style: preserve-3d&rsquo; property, all the layers are arranged in a way that looks like a 3D sculpture when observed through the 3D View tool. This idea is to look at a website from a third-person perspective instead of the usual front-back view.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:510;"><img decoding="async" style="--twidth:960; --theight:510;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947091424-31c0bc1f18d6fad71f72ae6b21f70a02d2281bec083c8e6c0c235dc1c693a07f-d_960" data-srcset="" srcset=""><iframe title="Personal Website 2023 - 3D layer view" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027173378?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p>A special section to attribute to those crossing paths with me in work throughout the previous years.</p>
+
+
+
+<figure class="wp-block-image size-large span12" style="--width:1024; --height:768;"><img loading="lazy" decoding="async" width="1024" height="768" src="" alt="" class="wp-image-540" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/cre-1024x768.png" data-srcset="/wp-content/uploads/2024/11/cre-1024x768.png 1024w, /wp-content/uploads/2024/11/cre-300x225.png 300w, /wp-content/uploads/2024/11/cre-768x576.png 768w, /wp-content/uploads/2024/11/cre-1536x1152.png 1536w, /wp-content/uploads/2024/11/cre-2048x1536.png 2048w"></figure>
+
+
+
+<p>Under the hood, I used Notion as the CMS backend to update everything on the site. You can view the database on Notion here&nbsp;<a href="https://prickle-robe-9ad.notion.site/B-o-Anh-s-personal-website-database-74c4132872904ed9855e05567cb116c3" target="_blank" rel="noreferrer noopener">notion link</a>.&nbsp;</p>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:3546; --height:1882;"><img loading="lazy" decoding="async" width="3546" height="1882" src="" alt="" class="wp-image-535" srcset="" sizes="(max-width: 3546px) 100vw, 3546px" data-src="/wp-content/uploads/2024/11/src6.png" data-srcset="/wp-content/uploads/2024/11/src6.png 3546w, /wp-content/uploads/2024/11/src6-300x159.png 300w, /wp-content/uploads/2024/11/src6-1024x543.png 1024w, /wp-content/uploads/2024/11/src6-768x408.png 768w, /wp-content/uploads/2024/11/src6-1536x815.png 1536w, /wp-content/uploads/2024/11/src6-2048x1087.png 2048w"></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Site is built on&nbsp;Next.js&nbsp;with&nbsp;Tailwind CSS. CMS is from&nbsp;Notion</li>
+
+
+
+<li>API&nbsp;with&nbsp;<a href="https://github.com/9gustin/react-notion-render" target="_blank" rel="noreferrer noopener">react-notion-render</a> by @9gustin for data rendering and&nbsp;<a href="https://github.com/guillermodlpa/upload-notion-images-to-cloudinary" target="_blank" rel="noreferrer noopener">upload-notion-images-to-cloudinary</a> by @guillermodlpa for hosting images form Notion to Cloudinary. Other dependencies include&nbsp;Prisma + PostgreSQL,&nbsp;Framer Motion,&nbsp;probe-image-size,&nbsp;seedrandom,&nbsp;react-lazy-load, &hellip; See the Github repository of the site here&nbsp;<a href="https://github.com/vanghoa/new-est-website" target="_blank" rel="noreferrer noopener">github link</a>.</li>
+
+
+
+<li>Typeface is&nbsp;<a href="https://fonts.google.com/specimen/Alegreya" target="_blank" rel="noreferrer noopener">Alegreya</a> designed by Juan Pablo del Peral, Huerta Tipogr&aacute;fica. Mono typeface is&nbsp;<a href="https://michaeljmcmaster.com/selectmono" target="_blank" rel="noreferrer noopener">Select Mono</a> designed by MICHAEL McMASTER.</li>
+</ul>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Singapore Design Week 2024 &#124; Bras Basah.Bugis</title>
 		<link>/work/singapore-design-week-2024-bras-basah-bugis/</link>
 		
@@ -53,23 +394,23 @@
 
 
 
-<figure class="wp-block-image size-large span2md" style="--width:1024; --height:937;"><img fetchpriority="high" decoding="async" width="1024" height="937" src="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM-1024x937.avif" alt="" class="wp-image-195" srcset="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM-1024x937.avif 1024w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM-300x275.avif 300w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM-768x703.avif 768w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM-1536x1406.avif 1536w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM-2048x1874.avif 2048w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+<figure class="wp-block-image size-full span2md" style="--width:2148; --height:1966;"><img loading="lazy" decoding="async" width="2148" height="1966" src="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM.avif" alt="" class="wp-image-195" srcset="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM.avif 2148w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM-300x275.avif 300w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM-1024x937.avif 1024w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM-768x703.avif 768w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM-1536x1406.avif 1536w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM-2048x1874.avif 2048w" sizes="(max-width: 2148px) 100vw, 2148px" fetchpriority="high"></figure>
 
 
 
-<figure class="wp-block-image size-large span2" style="--width:1024; --height:937;"><img decoding="async" width="1024" height="937" src="" alt="" class="wp-image-196" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM-1024x937.avif" data-srcset="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM-1024x937.avif 1024w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM-300x275.avif 300w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM-768x703.avif 768w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM-1536x1406.avif 1536w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM-2048x1874.avif 2048w"></figure>
+<figure class="wp-block-image size-full span2" style="--width:2148; --height:1966;"><img loading="lazy" decoding="async" width="2148" height="1966" src="" alt="" class="wp-image-196" srcset="" sizes="(max-width: 2148px) 100vw, 2148px" data-src="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM.avif" data-srcset="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM.avif 2148w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM-300x275.avif 300w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM-1024x937.avif 1024w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM-768x703.avif 768w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM-1536x1406.avif 1536w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM-2048x1874.avif 2048w"></figure>
 
 
 
-<figure class="wp-block-image size-large" style="--width:606; --height:1024;"><img decoding="async" width="606" height="1024" src="" alt="" class="wp-image-203" srcset="" sizes="(max-width: 606px) 100vw, 606px" data-src="/wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-606x1024.avif" data-srcset="/wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-606x1024.avif 606w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-178x300.avif 178w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-768x1297.avif 768w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-909x1536.avif 909w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1.avif 1125w"></figure>
+<figure class="wp-block-image size-large" style="--width:606; --height:1024;"><img loading="lazy" decoding="async" width="606" height="1024" src="" alt="" class="wp-image-203" srcset="" sizes="(max-width: 606px) 100vw, 606px" data-src="/wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-606x1024.avif" data-srcset="/wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-606x1024.avif 606w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-178x300.avif 178w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-768x1297.avif 768w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-909x1536.avif 909w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1.avif 1125w"></figure>
 
 
 
-<figure class="wp-block-image size-large span2" style="--width:1024; --height:937;"><img loading="lazy" decoding="async" width="1024" height="937" src="" alt="" class="wp-image-194" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-1024x937.avif" data-srcset="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-1024x937.avif 1024w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-300x275.avif 300w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-768x703.avif 768w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-1536x1406.avif 1536w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-2048x1874.avif 2048w"></figure>
+<figure class="wp-block-image size-full span2" style="--width:2148; --height:1966;"><img loading="lazy" decoding="async" width="2148" height="1966" src="" alt="" class="wp-image-194" srcset="" sizes="(max-width: 2148px) 100vw, 2148px" data-src="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM.avif" data-srcset="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM.avif 2148w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-300x275.avif 300w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-1024x937.avif 1024w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-768x703.avif 768w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-1536x1406.avif 1536w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-2048x1874.avif 2048w"></figure>
 
 
 
-<figure class="wp-block-image size-large span2md" style="--width:1024; --height:937;"><img loading="lazy" decoding="async" width="1024" height="937" src="" alt="" class="wp-image-197" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-1024x937.avif" data-srcset="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-1024x937.avif 1024w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-300x275.avif 300w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-768x703.avif 768w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-1536x1406.avif 1536w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-2048x1874.avif 2048w"></figure>
+<figure class="wp-block-image size-full span2md" style="--width:2148; --height:1966;"><img loading="lazy" decoding="async" width="2148" height="1966" src="" alt="" class="wp-image-197" srcset="" sizes="(max-width: 2148px) 100vw, 2148px" data-src="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM.avif" data-srcset="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM.avif 2148w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-300x275.avif 300w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-1024x937.avif 1024w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-768x703.avif 768w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-1536x1406.avif 1536w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-2048x1874.avif 2048w"></figure>
 
 
 
@@ -775,285 +1116,6 @@
 
 
 <li>Big thanks to Stack Overflow for <em>all the solutions to my problems</em></li>
-</ul>
-</body></html>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>The navigation bar that is in the middle of nowhere</title>
-		<link>/work/the-navigation-bar-that-is-in-the-middle-of-nowhere/</link>
-		
-		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
-		<pubDate>Mon, 16 Sep 2024 03:34:13 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=work#038;p=92</guid>
-
-					<description><![CDATA[The concept of the &#8220;navigation bar in the middle of nowhere&#8221; had been on my checklist for a while. It could be seen as an additional meaning layer on top of the navigation bar surrounding the four sides on my previous &#8216;Personal website 2022&#8217;. Initially, the website&#8217;s objective is to archive all of my video [&#8230;]]]></description>
-										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body><ul class="wp-block-list">
-<li>Visit the <a href="https://vanghoa.github.io/vlog-template/" target="_blank" rel="noreferrer noopener">vanghoa.github.io/vlog-template/</a> to see the website.</li>
-
-
-
-<li>Take a look at the <a href="https://github.com/vanghoa/vlog-template" target="_blank" rel="noreferrer noopener">github repository</a>.</li>
-</ul>
-
-
-
-<p>The concept of the &ldquo;navigation bar in the middle of nowhere&rdquo; had been on my checklist for a while. It could be seen as an additional meaning layer on top of the navigation bar surrounding the four sides on my previous &lsquo;Personal website 2022&rsquo;.</p>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
-<div style="--width:892; --height:892;"><img decoding="async" style="--twidth:640; --theight:640;" alt="thumbnail" src="https://i.vimeocdn.com/video/1736687486-79fada06518ca8775b4b3b7a5b21f4c4821c895a780832b53d6dac110fe820ed-d_640" fetchpriority="high"><iframe title="The navigation bar that is in the middle of nowhere" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873260364?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<p>Initially, the website&rsquo;s objective is to archive all of my video footages and images during my internship at Practice Theory. The idea was to use the site as a presentation platform for my vlogs, where I would screen record and narrate them using my voice. It was a convenient way to showcase my experiences and work on a weekly basis.</p>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:510;"><img decoding="async" style="--twidth:960; --theight:510;" alt="thumbnail" src="https://i.vimeocdn.com/video/1736909099-c3cf30710290bc1f72e5466467ccd7968ab20ea3730a197dc4f7cd942af1f8f0-d_960" fetchpriority="high"><iframe title="Vlog_1" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873414747?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:510;"><img decoding="async" style="--twidth:960; --theight:510;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736906646-ab569dbb47a25c276e975c4712752ba770e64ce58122979b53c740854fe6dc0d-d_960" data-srcset="" srcset=""><iframe title="Vlog_2" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873414812?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:510;"><img decoding="async" style="--twidth:960; --theight:510;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736907953-c166e24c4cf21067d663edf604cae8f03d402e4a8ada3348b2108b508bb270b7-d_960" data-srcset="" srcset=""><iframe title="Vlog_3" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873414886?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:510;"><img decoding="async" style="--twidth:960; --theight:510;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736906997-5357081df12689a2195fc0de32a649413ef42b685decc0e2d9f878bf89e1e9d5-d_960" data-srcset="" srcset=""><iframe title="Vlog_4" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873414948?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:510;"><img decoding="async" style="--twidth:960; --theight:510;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736906938-2f2f5a34de5946345eb04118a715d972c040e47a831a36baafb7124c42239a7c-d_960" data-srcset="" srcset=""><iframe title="Vlog_5" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873415014?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:510;"><img decoding="async" style="--twidth:960; --theight:510;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736913085-7e625dfe27f02775da0e856e9f9e60bf61f84e3d5bcf89fd0744b9dd5e4f4d79-d_960" data-srcset="" srcset=""><iframe title="Vlog_6" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873415073?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:510;"><img decoding="async" style="--twidth:960; --theight:510;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736907000-857f81a1675a6b10acc89a378b5acb42a5900609fa149b64fd2c91206e818d05-d_960" data-srcset="" srcset=""><iframe title="Vlog_7" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873415134?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:510;"><img decoding="async" style="--twidth:960; --theight:510;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736908757-087b37902bf504314887bb5e674fcafb4e449337bf26c1f630a86d9836902468-d_960" data-srcset="" srcset=""><iframe title="Vlog_8" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873415196?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<ul class="wp-block-list">
-<li>B&#7843;o Anh as <em>web developer</em></li>
-
-
-
-<li>The website was done as part of an assignment at LASALLE College of the Arts</li>
-
-
-
-<li>Some materials of the site are from studio Practice Theory</li>
-</ul>
-</body></html>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Singapore Art Week 2023</title>
-		<link>/work/singapore-art-week-2023/</link>
-		
-		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
-		<pubDate>Sun, 15 Sep 2024 18:13:11 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=work#038;p=76</guid>
-
-					<description><![CDATA[Having previously undertaken the identity design for Singapore Art Week (SAW) in 2022, Practice Theory was once again entrusted with conceptualizing the identity for Singapore Art Week 2023. I was part of the team involved in this project and had been exploring various intriguing directions. The mascot was constructed using the letters S, A, and [&#8230;]]]></description>
-										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body><p>Having previously undertaken the identity design for Singapore Art Week (SAW) in 2022, Practice Theory was once again entrusted with conceptualizing the identity for Singapore Art Week 2023. I was part of the team involved in this project and had been exploring various intriguing directions.</p>
-
-
-
-<p>The mascot was constructed using the letters S, A, and W, creating an adorable yet somewhat bulky character reminiscent of Baymax from the movie &ldquo;Big Hero 6.&rdquo; The charm in this approach stemmed from its simplicity, making it both endearing and appealing despite its somewhat comical appearance</p>
-
-
-
-<figure class="wp-block-image size-large span2" style="--width:1024; --height:495;"><img loading="lazy" decoding="async" width="1024" height="495" src="/wp-content/uploads/2024/09/image-46-1024x495.png" alt="" class="wp-image-376" srcset="/wp-content/uploads/2024/09/image-46-1024x495.png 1024w, /wp-content/uploads/2024/09/image-46-300x145.png 300w, /wp-content/uploads/2024/09/image-46-768x371.png 768w, /wp-content/uploads/2024/09/image-46-1536x742.png 1536w, /wp-content/uploads/2024/09/image-46-2048x990.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
-
-
-
-<p>Here are several vector drafts where I experimented with different aspects of the mascot, including its form, body proportion, and various body parts.</p>
-
-
-
-<figure class="wp-block-image size-large vertical" style="--width:551; --height:1024;"><img loading="lazy" decoding="async" width="551" height="1024" src="/wp-content/uploads/2024/09/image-47-551x1024.png" alt="" class="wp-image-377" srcset="/wp-content/uploads/2024/09/image-47-551x1024.png 551w, /wp-content/uploads/2024/09/image-47-162x300.png 162w, /wp-content/uploads/2024/09/image-47-768x1426.png 768w, /wp-content/uploads/2024/09/image-47-827x1536.png 827w, /wp-content/uploads/2024/09/image-47-1103x2048.png 1103w" sizes="(max-width: 551px) 100vw, 551px" fetchpriority="high"></figure>
-
-
-
-<figure class="wp-block-image size-large" style="--width:1024; --height:1024;"><img loading="lazy" decoding="async" width="1024" height="1024" src="" alt="" class="wp-image-378" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-48-1024x1024.png" data-srcset="/wp-content/uploads/2024/09/image-48-1024x1024.png 1024w, /wp-content/uploads/2024/09/image-48-300x300.png 300w, /wp-content/uploads/2024/09/image-48-150x150.png 150w, /wp-content/uploads/2024/09/image-48-768x768.png 768w, /wp-content/uploads/2024/09/image-48-1536x1536.png 1536w, /wp-content/uploads/2024/09/image-48-2048x2048.png 2048w"></figure>
-
-
-
-<figure class="wp-block-image size-large" style="--width:1024; --height:530;"><img loading="lazy" decoding="async" width="1024" height="530" src="" alt="" class="wp-image-379" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-49-1024x530.png" data-srcset="/wp-content/uploads/2024/09/image-49-1024x530.png 1024w, /wp-content/uploads/2024/09/image-49-300x155.png 300w, /wp-content/uploads/2024/09/image-49-768x398.png 768w, /wp-content/uploads/2024/09/image-49-1536x796.png 1536w, /wp-content/uploads/2024/09/image-49.png 2000w"></figure>
-
-
-
-<figure class="wp-block-image size-large thumb" style="--width:1024; --height:516;"><img loading="lazy" decoding="async" width="1024" height="516" src="" alt="" class="wp-image-380" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-50-1024x516.png" data-srcset="/wp-content/uploads/2024/09/image-50-1024x516.png 1024w, /wp-content/uploads/2024/09/image-50-300x151.png 300w, /wp-content/uploads/2024/09/image-50-768x387.png 768w, /wp-content/uploads/2024/09/image-50-1536x773.png 1536w, /wp-content/uploads/2024/09/image-50.png 2000w"></figure>
-
-
-
-<figure class="wp-block-image size-large span2 thumb" style="--width:1024; --height:612;"><img loading="lazy" decoding="async" width="1024" height="612" src="" alt="" class="wp-image-381" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-51-1024x612.png" data-srcset="/wp-content/uploads/2024/09/image-51-1024x612.png 1024w, /wp-content/uploads/2024/09/image-51-300x179.png 300w, /wp-content/uploads/2024/09/image-51-768x459.png 768w, /wp-content/uploads/2024/09/image-51-1536x919.png 1536w, /wp-content/uploads/2024/09/image-51-2048x1225.png 2048w"></figure>
-
-
-
-<p>On the flip side, I was cooking up another idea for the mascot. I drew inspiration from variable fonts and decided to give it a whirl with our mascot, especially because it was crafted from letters in the first place. Imagine it being like different font weights, but in mascot form, with varying size, body width, height or even emotions. I thought it could be a neat twist!</p>
-
-
-
-<figure class="wp-block-image size-large span2" style="--width:1024; --height:547;"><img loading="lazy" decoding="async" width="1024" height="547" src="" alt="" class="wp-image-382" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-52-1024x547.png" data-srcset="/wp-content/uploads/2024/09/image-52-1024x547.png 1024w, /wp-content/uploads/2024/09/image-52-300x160.png 300w, /wp-content/uploads/2024/09/image-52-768x410.png 768w, /wp-content/uploads/2024/09/image-52.png 1113w"></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:649;"><img decoding="async" style="--twidth:960; --theight:649;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1737742675-0de2a1d6098b8833a5b99e799eeb61c55a983cd5b7acc33de4e4b7d6353445c3-d_960" data-srcset="" srcset=""><iframe title="Singapore Art Week &ndash; variable test" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873984581?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-image size-large" style="--width:778; --height:1024;"><img loading="lazy" decoding="async" width="778" height="1024" src="" alt="" class="wp-image-383" srcset="" sizes="(max-width: 778px) 100vw, 778px" data-src="/wp-content/uploads/2024/09/image-53-778x1024.png" data-srcset="/wp-content/uploads/2024/09/image-53-778x1024.png 778w, /wp-content/uploads/2024/09/image-53-228x300.png 228w, /wp-content/uploads/2024/09/image-53-768x1010.png 768w, /wp-content/uploads/2024/09/image-53-1168x1536.png 1168w, /wp-content/uploads/2024/09/image-53-1557x2048.png 1557w"></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:960;"><img decoding="async" style="--twidth:960; --theight:960;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736827673-057653dbb44775cf469a9e21744ba68a4842f3afb543aed312f740331ae7e22c-d_960" data-srcset="" srcset=""><iframe title="Singapore Art Week &ndash; final variable" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873358132?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<p>Although my mascot concepts didn&rsquo;t make it to the final design, I gained valuable experience in character creation and design research throughout the process. It was a fun learning journey that allowed me to explore different ideas and improve my character design skills.</p>
-
-
-
-<ul class="wp-block-list">
-<li>B&#7843;o Anh as <em>graphic designer</em></li>
-
-
-
-<li>Benjamin Lee as <em>graphic designer</em></li>
-
-
-
-<li>Miki Charwin as <em>graphic designer</em></li>
-
-
-
-<li>Randy Yeo as <em>design director</em></li>
-
-
-
-<li>Joey Lim as <em>project manager</em></li>
-
-
-
-<li>Works are done at studio Practice Theory</li>
-</ul>
-</body></html>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Open Systems website</title>
-		<link>/work/open-systems-website/</link>
-		
-		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
-		<pubDate>Sun, 15 Sep 2024 10:24:12 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=work#038;p=68</guid>
-
-					<description><![CDATA[Visit https://opensystems.sg/ to see website. My role involves continuing development from the previous developer (Syahrul), including integrating DatoCMS. This allows SAM staff to structure pages, and folders, and manage content independently without needing a developer. I also had to figure out the CI/CD pipeline to trigger build from DatoCMS to the website hosted on Microsoft [&#8230;]]]></description>
-										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body><p>Visit <a href="https://opensystems.sg/" target="_blank" rel="noreferrer noopener">https://opensystems.sg/</a> to see website.</p>
-
-
-
-<p>My role involves continuing development from the previous developer (Syahrul), including integrating DatoCMS. This allows SAM staff to structure pages, and folders, and manage content independently without needing a developer. I also had to figure out the CI/CD pipeline to trigger build from DatoCMS to the website hosted on Microsoft Azure Static Web App</p>
-
-
-
-<p class="span2md">The DatoCMS integration involved designing the CMS schema, types, fields, and pages on DatoCMS platform, and mapping the data structure to the actual website on the backend side. I chose static generation for optimal site performance, as the site functions more like a blog without real-time data transfer. Hence, the data will be fetched at the start of each build into individual .JSON files, and then passed into the build. The tech stack primarily includes Node.js, Next.js, and GraphQL.</p>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span3"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:519;"><img decoding="async" style="--twidth:960; --theight:519;" alt="thumbnail" src="https://i.vimeocdn.com/video/1871808689-7cc6f9546dabe348ccc9231c3d3bf47a10fa28b7aa3a02ef1e03f8ca55a32232-d_960" fetchpriority="high"><iframe title="Open Systems website" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/946442874?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<p class="span2md">I wrote a script in Node.js to handle the data fetching, manipulate the data (like slugify), and write them into multiple .JSON files. Why don&rsquo;t I use Next.js? Because the previous developer used page router for Next.js and I didn&rsquo;t really know if my app router knowledge could be applied to this. That&rsquo;s why I wrote the script independently to the Next.js structure.</p>
-
-
-
-<figure class="wp-block-image size-large span2" style="--width:1024; --height:791;"><img loading="lazy" decoding="async" width="1024" height="791" src="/wp-content/uploads/2024/09/image-73-1024x791.png" alt="" class="wp-image-423" srcset="/wp-content/uploads/2024/09/image-73-1024x791.png 1024w, /wp-content/uploads/2024/09/image-73-300x232.png 300w, /wp-content/uploads/2024/09/image-73-768x593.png 768w, /wp-content/uploads/2024/09/image-73-1536x1186.png 1536w, /wp-content/uploads/2024/09/image-73-2048x1582.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
-
-
-
-<p class="span2md">The CI/CD pipeline is customized for staging and production site, with caching for dependencies package to save time on the build time, and handling of concurrent builds. For the trigger request, I used webhook to link the CMS to the hosted server via github actions.</p>
-
-
-
-<figure class="wp-block-image size-large span2" style="--width:970; --height:1024;"><img loading="lazy" decoding="async" width="970" height="1024" src="" alt="" class="wp-image-424" srcset="" sizes="(max-width: 970px) 100vw, 970px" data-src="/wp-content/uploads/2024/09/image-74-970x1024.png" data-srcset="/wp-content/uploads/2024/09/image-74-970x1024.png 970w, /wp-content/uploads/2024/09/image-74-284x300.png 284w, /wp-content/uploads/2024/09/image-74-768x811.png 768w, /wp-content/uploads/2024/09/image-74-1454x1536.png 1454w, /wp-content/uploads/2024/09/image-74.png 1780w"></figure>
-
-
-
-<p class="span2md">Besides backend, I also had to restructure and refactor the front-end so that the data can be populated properly with correct types. Since the previous front-end developer didn&rsquo;t optimize the code in a way that data can be spread out, it was quite a tiring time for me to do this process.</p>
-
-
-
-<figure class="wp-block-image size-large span2" style="--width:1024; --height:850;"><img loading="lazy" decoding="async" width="1024" height="850" src="" alt="" class="wp-image-425" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-75-1024x850.png" data-srcset="/wp-content/uploads/2024/09/image-75-1024x850.png 1024w, /wp-content/uploads/2024/09/image-75-300x249.png 300w, /wp-content/uploads/2024/09/image-75-768x638.png 768w, /wp-content/uploads/2024/09/image-75-1536x1275.png 1536w, /wp-content/uploads/2024/09/image-75-2048x1701.png 2048w"></figure>
-
-
-
-<ul class="wp-block-list">
-<li>Currency Design <em>for creative direction and graphic design</em></li>
-
-
-
-<li>Syahrul Anuar (SERIAL CO_) <em>as front-end developer</em></li>
-
-
-
-<li>Bao Anh <em>as back-end developer and front-end maintainer</em></li>
-
-
-
-<li>Ernest Wu (SERIAL CO_) <em>as project manager</em></li>
-
-
-
-<li>This work is done for Singapore Art Museum</li>
 </ul>
 </body></html>
 ]]></content:encoded>

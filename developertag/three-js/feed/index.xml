@@ -12,7 +12,7 @@
 	<atom:link href="/developertag/three-js/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Mon, 04 Nov 2024 13:18:31 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 07 Nov 2024 08:42:32 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -175,6 +175,129 @@
 
 
 <li>Works are done for Tusitala</li>
+</ul>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>3D markup language</title>
+		<link>/work/3d-markup-language/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Mon, 16 Sep 2024 03:16:15 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=86</guid>
+
+					<description><![CDATA[The project developed a fictional language system controlled by a form of higher being in a four-dimensional space, discovered and utilized by humans. Its structure bears resemblances to markup languages like HTML, Markdown, or XML. However, unlike digital tools, the language is seamlessly integrated into physical reality. This means that all the scripting materials, platforms, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>The project developed a fictional language system controlled by a form of higher being in a four-dimensional space, discovered and utilized by humans. Its structure bears resemblances to markup languages like HTML, Markdown, or XML. </p>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:318;"><img loading="lazy" decoding="async" width="1024" height="318" src="/wp-content/uploads/2024/09/image-64-1024x318.jpeg" alt="" class="wp-image-317" srcset="/wp-content/uploads/2024/09/image-64-1024x318.jpeg 1024w, /wp-content/uploads/2024/09/image-64-300x93.jpeg 300w, /wp-content/uploads/2024/09/image-64-768x238.jpeg 768w, /wp-content/uploads/2024/09/image-64-1536x477.jpeg 1536w, /wp-content/uploads/2024/09/image-64.jpeg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<p>However, unlike digital tools, the language is seamlessly integrated into physical reality. This means that all the scripting materials, platforms, syntaxes, and more already exist in our surroundings. Its purpose is to assist humans in constructing, organizing, reproducing physical, site-specific data, and transforming spiritual, sensory data.</p>
+
+
+
+<figure class="wp-block-image size-large span2 row2" style="--width:1024; --height:539;"><img loading="lazy" decoding="async" width="1024" height="539" src="/wp-content/uploads/2024/09/image-65-1024x539.jpeg" alt="" class="wp-image-318" srcset="/wp-content/uploads/2024/09/image-65-1024x539.jpeg 1024w, /wp-content/uploads/2024/09/image-65-300x158.jpeg 300w, /wp-content/uploads/2024/09/image-65-768x404.jpeg 768w, /wp-content/uploads/2024/09/image-65-1536x809.jpeg 1536w, /wp-content/uploads/2024/09/image-65.jpeg 2044w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1283; --height:683;"><img loading="lazy" decoding="async" width="1283" height="683" src="" alt="" class="wp-image-319" data-src="/wp-content/uploads/2024/09/image-1.gif" data-srcset="" srcset=""></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1283; --height:683;"><img loading="lazy" decoding="async" width="1283" height="683" src="" alt="" class="wp-image-320" data-src="/wp-content/uploads/2024/09/image-2.gif" data-srcset="" srcset=""></figure>
+
+
+
+<p>Read more of our&nbsp;<a href="https://cloud-enquiry-e52.notion.site/Gamma-s-o-y-t-i-e-t-021021-e0cabd29fe604079963a6502a158ae61" target="_blank" rel="noreferrer noopener">document</a>&nbsp;to understand (It&rsquo;s only available in Vietnamese)</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:918;"><img decoding="async" style="--twidth:960; --theight:918;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1452211428-165ef41d6d06ed59e4c5173bd70266dd2031b77a027762a790ab631b79606853-d_960" data-srcset="" srcset=""><iframe title="3D Markup Language" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/721037374?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p>For the presentation of how this language works, I created this demo with Three.js. Visit&nbsp;<a href="https://vanghoa.github.io/3D-Markup-Language/" target="_blank" rel="noreferrer noopener">vanghoa.github.io/3D-Markup-Language/</a>&nbsp;to see the demo. Creating this experience was quite challenging because I had limited experience with JavaScript at the time. Therefore, it was a steep learning curve, and I had to pick up the skills on the fly.</p>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:504;"><img loading="lazy" decoding="async" width="1024" height="504" src="" alt="" class="wp-image-321" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-66-1024x504.jpeg" data-srcset="/wp-content/uploads/2024/09/image-66-1024x504.jpeg 1024w, /wp-content/uploads/2024/09/image-66-300x148.jpeg 300w, /wp-content/uploads/2024/09/image-66-768x378.jpeg 768w, /wp-content/uploads/2024/09/image-66-1536x755.jpeg 1536w, /wp-content/uploads/2024/09/image-66.jpeg 1763w"></figure>
+
+
+
+<figure class="wp-block-image size-large thumb" style="--width:1024; --height:504;"><img loading="lazy" decoding="async" width="1024" height="504" src="" alt="" class="wp-image-322" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-67-1024x504.jpeg" data-srcset="/wp-content/uploads/2024/09/image-67-1024x504.jpeg 1024w, /wp-content/uploads/2024/09/image-67-300x148.jpeg 300w, /wp-content/uploads/2024/09/image-67-768x378.jpeg 768w, /wp-content/uploads/2024/09/image-67-1536x755.jpeg 1536w, /wp-content/uploads/2024/09/image-67.jpeg 1763w"></figure>
+
+
+
+<p>The language system comprises a set of specialized units: anchor containers, ambient containers and attributes embodied in 3D physical structures. The design of these structures is influenced by the tag elements and attributes commonly found in HTML.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:918;"><img decoding="async" style="--twidth:960; --theight:918;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1452211437-7d5dd759a8c6e20c46c1ecffcf68d30da6cdddccd279922886036dd21f90d5fd-d_960" data-srcset="" srcset=""><iframe title="3D Markup Language" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/721037438?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p>Some sketches by me + 3D prototype by Di&#7879;u Ly.</p>
+
+
+
+<figure class="wp-block-image size-large" style="--width:991; --height:1024;"><img loading="lazy" decoding="async" width="991" height="1024" src="" alt="" class="wp-image-323" srcset="" sizes="(max-width: 991px) 100vw, 991px" data-src="/wp-content/uploads/2024/09/image-68-991x1024.jpeg" data-srcset="/wp-content/uploads/2024/09/image-68-991x1024.jpeg 991w, /wp-content/uploads/2024/09/image-68-290x300.jpeg 290w, /wp-content/uploads/2024/09/image-68-768x794.jpeg 768w, /wp-content/uploads/2024/09/image-68-1486x1536.jpeg 1486w, /wp-content/uploads/2024/09/image-68.jpeg 1645w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:1022;"><img loading="lazy" decoding="async" width="1024" height="1022" src="" alt="" class="wp-image-324" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-69-1024x1022.jpeg" data-srcset="/wp-content/uploads/2024/09/image-69-1024x1022.jpeg 1024w, /wp-content/uploads/2024/09/image-69-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-69-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-69-768x767.jpeg 768w, /wp-content/uploads/2024/09/image-69-1536x1533.jpeg 1536w, /wp-content/uploads/2024/09/image-69.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:512;"><img loading="lazy" decoding="async" width="1024" height="512" src="" alt="" class="wp-image-325" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-70-1024x512.jpeg" data-srcset="/wp-content/uploads/2024/09/image-70-1024x512.jpeg 1024w, /wp-content/uploads/2024/09/image-70-300x150.jpeg 300w, /wp-content/uploads/2024/09/image-70-768x384.jpeg 768w, /wp-content/uploads/2024/09/image-70-1536x768.jpeg 1536w, /wp-content/uploads/2024/09/image-70.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:512;"><img loading="lazy" decoding="async" width="1024" height="512" src="" alt="" class="wp-image-326" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-71-1024x512.jpeg" data-srcset="/wp-content/uploads/2024/09/image-71-1024x512.jpeg 1024w, /wp-content/uploads/2024/09/image-71-300x150.jpeg 300w, /wp-content/uploads/2024/09/image-71-768x384.jpeg 768w, /wp-content/uploads/2024/09/image-71-1536x768.jpeg 1536w, /wp-content/uploads/2024/09/image-71.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large span12 row2" style="--width:1024; --height:790;"><img loading="lazy" decoding="async" width="1024" height="790" src="" alt="" class="wp-image-327" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-72-1024x790.jpeg" data-srcset="/wp-content/uploads/2024/09/image-72-1024x790.jpeg 1024w, /wp-content/uploads/2024/09/image-72-300x232.jpeg 300w, /wp-content/uploads/2024/09/image-72-768x593.jpeg 768w, /wp-content/uploads/2024/09/image-72-1536x1185.jpeg 1536w, /wp-content/uploads/2024/09/image-72.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:512;"><img loading="lazy" decoding="async" width="1024" height="512" src="" alt="" class="wp-image-328" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-73-1024x512.jpeg" data-srcset="/wp-content/uploads/2024/09/image-73-1024x512.jpeg 1024w, /wp-content/uploads/2024/09/image-73-300x150.jpeg 300w, /wp-content/uploads/2024/09/image-73-768x384.jpeg 768w, /wp-content/uploads/2024/09/image-73-1536x768.jpeg 1536w, /wp-content/uploads/2024/09/image-73.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:512;"><img loading="lazy" decoding="async" width="1024" height="512" src="" alt="" class="wp-image-329" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-74-1024x512.jpeg" data-srcset="/wp-content/uploads/2024/09/image-74-1024x512.jpeg 1024w, /wp-content/uploads/2024/09/image-74-300x150.jpeg 300w, /wp-content/uploads/2024/09/image-74-768x384.jpeg 768w, /wp-content/uploads/2024/09/image-74-1536x768.jpeg 1536w, /wp-content/uploads/2024/09/image-74.jpeg 1700w"></figure>
+
+
+
+<ul class="wp-block-list">
+<li>B&#7843;o Anh as <em>web developer</em></li>
+
+
+
+<li>Di&#7879;u Ly as <em>3D designer</em></li>
+
+
+
+<li>Vot Dat for <em>support</em></li>
+
+
+
+<li>A Nh&#7853;t Minh for <em>consultation</em></li>
+
+
+
+<li>Work done at Design 101: The Fundamentals Online 2021</li>
 </ul>
 </body></html>
 ]]></content:encoded>

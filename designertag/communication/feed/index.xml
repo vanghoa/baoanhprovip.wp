@@ -12,7 +12,7 @@
 	<atom:link href="/designertag/communication/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Mon, 04 Nov 2024 13:50:43 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 07 Nov 2024 14:17:45 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,107 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>google sheet + google doc ?</title>
+		<link>/work/google-sheet-google-doc/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Thu, 07 Nov 2024 10:08:06 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=544</guid>
+
+					<description><![CDATA[1. Website Concept KIRTI explores contemporary art from Southeast Asia in alternative ways. This effort is vital as a countermeasure to art world silos and stratifications.Hunter (KIRTI founder) came to me to ask for a digital solution that can aggregate all of his archived interviews (currently in Google Docs), is easy to update himself (with [&#8230;]]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><ul class="wp-block-list">
+<li>Visit the site here <a href="https://kirti.baoanh1buinguyen.workers.dev/" target="_blank" rel="noreferrer noopener">kirti.baoanh1buinguyen.workers.dev</a></li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full span12" style="--width:2238; --height:1900;"><img fetchpriority="high" decoding="async" width="2238" height="1900" src="/wp-content/uploads/2024/11/kirti.png" alt="" class="wp-image-546" srcset="/wp-content/uploads/2024/11/kirti.png 2238w, /wp-content/uploads/2024/11/kirti-300x255.png 300w, /wp-content/uploads/2024/11/kirti-1024x869.png 1024w, /wp-content/uploads/2024/11/kirti-768x652.png 768w, /wp-content/uploads/2024/11/kirti-1536x1304.png 1536w, /wp-content/uploads/2024/11/kirti-2048x1739.png 2048w" sizes="(max-width: 2238px) 100vw, 2238px"></figure>
+
+
+
+<p class="row2"><strong>1. Website Concept</strong><br><br><em>KIRTI explores contemporary art from Southeast Asia in alternative ways. This effort is vital as a countermeasure to art world silos and stratifications.<br></em><br>Hunter (KIRTI founder) came to me to ask for a digital solution that can aggregate all of his archived interviews (currently in Google Docs), is easy to update himself (with no technical skill), while providing a nice reading and browsing experience for the visitors. Of course, the site&rsquo;s design and concept should align to the <em>energy</em> of the project, that is <strong>experimental, impromptu, and open-ended</strong>.<br><br>We have discussed through various ways from a dedicated CMS to using Google Drive as a platform. In the end, we conclude on combining Google Sheet and Google Doc into a website.</p>
+
+
+
+<figure class="wp-block-image size-large" style="--width:922; --height:1024;"><img decoding="async" width="922" height="1024" src="/wp-content/uploads/2024/11/kirti1-922x1024.png" alt="" class="wp-image-550" srcset="/wp-content/uploads/2024/11/kirti1-922x1024.png 922w, /wp-content/uploads/2024/11/kirti1-270x300.png 270w, /wp-content/uploads/2024/11/kirti1-768x853.png 768w, /wp-content/uploads/2024/11/kirti1-1383x1536.png 1383w, /wp-content/uploads/2024/11/kirti1.png 1712w" sizes="(max-width: 922px) 100vw, 922px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:922; --height:1024;"><img decoding="async" width="922" height="1024" src="" alt="" class="wp-image-551" srcset="" sizes="(max-width: 922px) 100vw, 922px" data-src="/wp-content/uploads/2024/11/kirti2-922x1024.png" data-srcset="/wp-content/uploads/2024/11/kirti2-922x1024.png 922w, /wp-content/uploads/2024/11/kirti2-270x300.png 270w, /wp-content/uploads/2024/11/kirti2-768x853.png 768w, /wp-content/uploads/2024/11/kirti2-1383x1536.png 1383w, /wp-content/uploads/2024/11/kirti2.png 1712w"></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span3"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:463;"><img decoding="async" style="--twidth:960; --theight:463;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947149107-ddbfc0aa2d29f8d0d9e253026af316280a06df3e93719f83bbc31e04ea984f21-d_960" data-srcset="" srcset=""><iframe title="KIRTI website" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027222634?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p class="span2md"><strong>2. Frontend Development</strong><br><br>Using iframes, I was able to hijack the visual interface of Google Sheet and Google Doc with ease. For the interactivity, I found a solution by using data from the Google Sheets API to create an interactive, transparent overlay positioned directly and precisely on top of the sheet iframe.</p>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:2706; --height:1792;"><img loading="lazy" decoding="async" width="2706" height="1792" src="" alt="" class="wp-image-553" srcset="" sizes="(max-width: 2706px) 100vw, 2706px" data-src="/wp-content/uploads/2024/11/kirti3.png" data-srcset="/wp-content/uploads/2024/11/kirti3.png 2706w, /wp-content/uploads/2024/11/kirti3-300x199.png 300w, /wp-content/uploads/2024/11/kirti3-1024x678.png 1024w, /wp-content/uploads/2024/11/kirti3-768x509.png 768w, /wp-content/uploads/2024/11/kirti3-1536x1017.png 1536w, /wp-content/uploads/2024/11/kirti3-2048x1356.png 2048w"><figcaption class="wp-element-caption">Diagram to show how all of this works together.</figcaption></figure>
+
+
+
+<p class="span2md">The site includes a basic sort and filter function to help users browse the archive, made possible through Google Sheets&rsquo; Filter Views feature. Unfortunately, due to limitations in Google Sheets, this feature only works on the desktop version.</p>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:160;"><img loading="lazy" decoding="async" width="1024" height="160" src="" alt="" class="wp-image-558" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/kirti5-1024x160.png" data-srcset="/wp-content/uploads/2024/11/kirti5-1024x160.png 1024w, /wp-content/uploads/2024/11/kirti5-300x47.png 300w, /wp-content/uploads/2024/11/kirti5-768x120.png 768w, /wp-content/uploads/2024/11/kirti5-1536x240.png 1536w, /wp-content/uploads/2024/11/kirti5-2048x320.png 2048w"></figure>
+
+
+
+<p>Google sheet is not responsive to screen size at all, which makes the mobile version of the sheet horrible in terms of user experience. To improve usability on smaller screens, I designed a separate sheet specifically optimized for mobile viewing.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:505; --height:1000;"><img decoding="async" style="--twidth:295; --theight:584;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947200559-67296fd40115102a08d9bf2fbbff9408d42c1cdb6e77ee0a93cd975f67bac4f1-d_295x166" data-srcset="" srcset=""><iframe title="KIRTI website mobile" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027265929?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image size-large span2md" style="--width:1024; --height:837;"><img loading="lazy" decoding="async" width="1024" height="837" src="" alt="" class="wp-image-555" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/kirti4-1024x837.png" data-srcset="/wp-content/uploads/2024/11/kirti4-1024x837.png 1024w, /wp-content/uploads/2024/11/kirti4-300x245.png 300w, /wp-content/uploads/2024/11/kirti4-768x628.png 768w, /wp-content/uploads/2024/11/kirti4-1536x1256.png 1536w, /wp-content/uploads/2024/11/kirti4-2048x1675.png 2048w"></figure>
+
+
+
+<p class="span2md"><strong>3. Backend Development</strong><br><br>For this project, I used Sveltekit as a fullstack framework and Cloudflare for deployment out of curiosity. I want to implement ISR function to allow immediate website updates without a full rebuild. However, unlike Next.js, SvelteKit didn&rsquo;t natively support ISR at the time. <br><br>To work around this, I developed a custom Cloudflare Workers adapter for SvelteKit, utilizing Workers KV to handle caching and revalidation.</p>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:2614; --height:1346;"><img loading="lazy" decoding="async" width="2614" height="1346" src="" alt="" class="wp-image-561" srcset="" sizes="(max-width: 2614px) 100vw, 2614px" data-src="/wp-content/uploads/2024/11/kirti6.png" data-srcset="/wp-content/uploads/2024/11/kirti6.png 2614w, /wp-content/uploads/2024/11/kirti6-300x154.png 300w, /wp-content/uploads/2024/11/kirti6-1024x527.png 1024w, /wp-content/uploads/2024/11/kirti6-768x395.png 768w, /wp-content/uploads/2024/11/kirti6-1536x791.png 1536w, /wp-content/uploads/2024/11/kirti6-2048x1055.png 2048w"></figure>
+
+
+
+<p class="span2md"><strong>4. Documentation and handoff</strong><br><br>For Hunter to use and populate the content into the sheet without disrupting the site&rsquo;s functionality, I created detailed documentation on best practices and potential pitfalls. This guide covered what to avoid and how to perform key tasks correctly. <br><br>I also made a couple of phone calls to clarify specific steps, which helped me better understand how Hunter would actually work with the sheet.</p>
+
+
+
+<figure class="wp-block-image size-full span2 row2" style="--width:2400; --height:1898;"><img loading="lazy" decoding="async" width="2400" height="1898" src="" alt="" class="wp-image-564" srcset="" sizes="(max-width: 2400px) 100vw, 2400px" data-src="/wp-content/uploads/2024/11/kirti7.png" data-srcset="/wp-content/uploads/2024/11/kirti7.png 2400w, /wp-content/uploads/2024/11/kirti7-300x237.png 300w, /wp-content/uploads/2024/11/kirti7-1024x810.png 1024w, /wp-content/uploads/2024/11/kirti7-768x607.png 768w, /wp-content/uploads/2024/11/kirti7-1536x1215.png 1536w, /wp-content/uploads/2024/11/kirti7-2048x1620.png 2048w"></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Tech Stack: Svelte/Sveltekit web framework, Typescript, SCSS, Google Sheet API, Cloudflare Workers</li>
+
+
+
+<li>Bao Anh <em>as designer &amp; developer</em></li>
+
+
+
+<li>This work is done for KIRTI Project</li>
+</ul>
+</body></html>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>LED text under Singapore MRT</title>
 		<link>/work/text-display-technology-on-led-screen-in-singapore-mrt/</link>
 		
@@ -45,15 +146,15 @@
 
 
 
-<figure class="wp-block-image size-large thumb" style="--width:1024; --height:1024;"><img fetchpriority="high" decoding="async" width="1024" height="1024" src="/wp-content/uploads/2024/09/image-1024x1024.jpeg" alt="" class="wp-image-212" srcset="/wp-content/uploads/2024/09/image-1024x1024.jpeg 1024w, /wp-content/uploads/2024/09/image-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-768x768.jpeg 768w, /wp-content/uploads/2024/09/image-1536x1536.jpeg 1536w, /wp-content/uploads/2024/09/image.jpeg 1700w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+<figure class="wp-block-image size-large thumb" style="--width:1024; --height:1024;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/wp-content/uploads/2024/09/image-1024x1024.jpeg" alt="" class="wp-image-212" srcset="/wp-content/uploads/2024/09/image-1024x1024.jpeg 1024w, /wp-content/uploads/2024/09/image-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-768x768.jpeg 768w, /wp-content/uploads/2024/09/image-1536x1536.jpeg 1536w, /wp-content/uploads/2024/09/image.jpeg 1700w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
 
 
 
-<figure class="wp-block-image size-large thumb" style="--width:1024; --height:1024;"><img decoding="async" width="1024" height="1024" src="/wp-content/uploads/2024/09/image-1-1024x1024.jpeg" alt="" class="wp-image-213" srcset="/wp-content/uploads/2024/09/image-1-1024x1024.jpeg 1024w, /wp-content/uploads/2024/09/image-1-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-1-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-1-768x768.jpeg 768w, /wp-content/uploads/2024/09/image-1-1536x1536.jpeg 1536w, /wp-content/uploads/2024/09/image-1.jpeg 1700w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+<figure class="wp-block-image size-large thumb" style="--width:1024; --height:1024;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/wp-content/uploads/2024/09/image-1-1024x1024.jpeg" alt="" class="wp-image-213" srcset="/wp-content/uploads/2024/09/image-1-1024x1024.jpeg 1024w, /wp-content/uploads/2024/09/image-1-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-1-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-1-768x768.jpeg 768w, /wp-content/uploads/2024/09/image-1-1536x1536.jpeg 1536w, /wp-content/uploads/2024/09/image-1.jpeg 1700w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
 
 
 
-<figure class="wp-block-image size-large thumb" style="--width:1024; --height:1024;"><img decoding="async" width="1024" height="1024" src="" alt="" class="wp-image-214" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-2-1024x1024.jpeg" data-srcset="/wp-content/uploads/2024/09/image-2-1024x1024.jpeg 1024w, /wp-content/uploads/2024/09/image-2-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-2-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-2-768x768.jpeg 768w, /wp-content/uploads/2024/09/image-2-1536x1536.jpeg 1536w, /wp-content/uploads/2024/09/image-2.jpeg 1700w"></figure>
+<figure class="wp-block-image size-large thumb" style="--width:1024; --height:1024;"><img loading="lazy" decoding="async" width="1024" height="1024" src="" alt="" class="wp-image-214" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-2-1024x1024.jpeg" data-srcset="/wp-content/uploads/2024/09/image-2-1024x1024.jpeg 1024w, /wp-content/uploads/2024/09/image-2-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-2-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-2-768x768.jpeg 768w, /wp-content/uploads/2024/09/image-2-1536x1536.jpeg 1536w, /wp-content/uploads/2024/09/image-2.jpeg 1700w"></figure>
 
 
 
@@ -913,143 +1014,6 @@
 
 
 <li>This work is under Vietnamme organization</li>
-</ul>
-</body></html>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Design Futures Symposium 2022</title>
-		<link>/work/design-futures-symposium-2022/</link>
-		
-		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
-		<pubDate>Mon, 16 Sep 2024 03:09:29 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=work#038;p=84</guid>
-
-					<description><![CDATA[Singapore Design Week 2023 featured a symposium curated by renowned curator Paola Antonelli. The event delved into the future of design and &#8216;design of the future,&#8217; gathering influential minds from Singapore and around the world. The core theme, &#8216;Design as an enzyme for progress,&#8217; envisioned the future of design as if viewed through a microscope, [&#8230;]]]></description>
-										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body><p>Singapore Design Week 2023 featured a symposium curated by renowned curator Paola Antonelli. The event delved into the future of design and &lsquo;design of the future,&rsquo; gathering influential minds from Singapore and around the world. </p>
-
-
-
-<p>The core theme, &lsquo;Design as an enzyme for progress,&rsquo; envisioned the future of design as if viewed through a microscope, drawing parallels with the processes of fermentation, synthesis, and mutation.</p>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo thumb"><div class="wp-block-embed__wrapper">
-<div style="--width:798; --height:724;"><img decoding="async" style="--twidth:640; --theight:581;" alt="thumbnail" src="https://i.vimeocdn.com/video/1737431909-91706fd848aa222d3b67ed8d8a54bb21111c6c40d49e560bc2d571a674d725ec-d_640" fetchpriority="high"><iframe title="Design Futures Symposium &ndash; draft" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873777229?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<p>The identity design embraced the metaphorical microscope, revealing a captivating cellular motif. My role was to create motion graphics that complemented this identity.</p>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:960;"><img decoding="async" style="--twidth:960; --theight:960;" alt="thumbnail" src="https://i.vimeocdn.com/video/1736800888-471c896f88a3d34b08e5578587dc6da9ea19fe0a8aab208b8ffb57aecbb544a6-d_960" fetchpriority="high"><iframe title="Design Futures Symposium &ndash; IGP ANIMATED" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873339108?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:300; --height:250;"><img decoding="async" style="--twidth:295; --theight:246;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736788917-ecff5654846ac89a639b672ab0f7d8c083ee6b8a057e8a976ca19a327833fcd5-d_295x166" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; ONLINE AD BANNER MEDIUM" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873330491?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo row2"><div class="wp-block-embed__wrapper">
-<div style="--width:300; --height:600;"><img decoding="async" style="--twidth:295; --theight:590;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736792719-defc4c2074bc62470b97fb8b4d5be3b8655aefe3e174ebcb9ae3dd60d7d3620c-d_295x166" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; ONLINE AD BANNER HALFPAGE" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873333261?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
-<div style="--width:320; --height:100;"><img decoding="async" style="--twidth:295; --theight:92;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736793816-133ba9358bf27841ca758cf5ae9e0f0acfe9ccd834e9c85c2a86e624dd833678-d_295x166" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; ONLINE AD BANNER BILLBOARD" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873334056?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:728; --height:90;"><img decoding="async" style="--twidth:640; --theight:79;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736795402-c82119a06f046d69cdf6b4c4f926dcedb1f56a32735edd8d50de5c90d3c5f7ee-d_640" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; ONLINE AD-BANNER LEADERBOARD V1" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873335252?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:728; --height:90;"><img decoding="async" style="--twidth:640; --theight:79;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736797520-901a5daf60575364d677b3506273714cd4a896cceebbeac333a6800cc81c3e83-d_640" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; ONLINE AD BANNER LEADERBOARD V2" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873336083?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:563; --height:1000;"><img decoding="async" style="--twidth:295; --theight:524;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736800839-a69a24a7199f8d16797341c52af4b838fb98cc053ecd03f2a8e0cae3a2e44e8e-d_295x166" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; IGS ANIMATED" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873339172?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:540;"><img decoding="async" style="--twidth:960; --theight:540;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736801119-7532b7bcc46a21558c031dd88fc9b739c110bfb0430d9ee62a8f76a0a3400a2c-d_960" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; COVER SLIDE ANIMATED" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873339217?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:282;"><img decoding="async" style="--twidth:960; --theight:282;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736802053-06e51e1a9dbfb98454beb7608f10f03fc63ea7e3da0560d24374c2da0cfb350c-d_960" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; WEBSITE EVENT BANNER" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873339260?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:540;"><img decoding="async" style="--twidth:960; --theight:540;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736809431-dd73f83b7a4eebfd35226607d37ea150c53af66108998d1708357173c2cc2521-d_960" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; Opener/Closer" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873345203?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<p>On top of crafting static animated clips, I also had to design some customizable After Effects templates for title screen and lowerthirds. These templates allowed others to easily edit the text and modify the layout according to their needs.</p>
-
-
-
-<figure class="wp-block-image size-large span2" style="--width:1024; --height:523;"><img loading="lazy" decoding="async" width="1024" height="523" src="" alt="" class="wp-image-331" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-75-1024x523.jpeg" data-srcset="/wp-content/uploads/2024/09/image-75-1024x523.jpeg 1024w, /wp-content/uploads/2024/09/image-75-300x153.jpeg 300w, /wp-content/uploads/2024/09/image-75-768x392.jpeg 768w, /wp-content/uploads/2024/09/image-75-1536x785.jpeg 1536w, /wp-content/uploads/2024/09/image-75.jpeg 1830w"></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2 row2"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:540;"><img decoding="async" style="--twidth:960; --theight:540;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736811417-f30efb01f1c938598665f035191290bbfa1481d16273b0b036986eaf04198928-d_960" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash;  LowerThirds Reference" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873346447?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-image size-large" style="--width:1024; --height:523;"><img loading="lazy" decoding="async" width="1024" height="523" src="" alt="" class="wp-image-332" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-76-1024x523.jpeg" data-srcset="/wp-content/uploads/2024/09/image-76-1024x523.jpeg 1024w, /wp-content/uploads/2024/09/image-76-300x153.jpeg 300w, /wp-content/uploads/2024/09/image-76-768x392.jpeg 768w, /wp-content/uploads/2024/09/image-76-1536x785.jpeg 1536w, /wp-content/uploads/2024/09/image-76.jpeg 1830w"></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:540;"><img decoding="async" style="--twidth:960; --theight:540;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736812690-b5e54c056f6dc13ebeb39eb4e821969ece59148a07b1b762cddffad3c694d767-d_960" data-srcset="" srcset=""><iframe title="Design Futures Symposium &ndash; Title Reference" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873347268?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<ul class="wp-block-list">
-<li>B&#7843;o Anh as <em>motion graphic designer</em></li>
-
-
-
-<li>Fabio Maragno as <em>graphic designer</em></li>
-
-
-
-<li>Randy Yeo as <em>design director</em></li>
-
-
-
-<li>Joey Lim as <em>project manager</em></li>
-
-
-
-<li>Works are done at studio Practice Theory</li>
 </ul>
 </body></html>
 ]]></content:encoded>
