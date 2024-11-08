@@ -12,7 +12,7 @@
 	<atom:link href="/developertag/javascript/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Thu, 07 Nov 2024 20:41:28 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 08 Nov 2024 10:39:51 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -63,19 +63,19 @@
 
 
 
-<p class="span2md">Also, during this time, I visited <a href="https://laurelschwulst.com/" target="_blank" rel="noreferrer noopener">Laurel Schwulst website</a> quite often.<br><br>I love the honesty, extruded from this site, the small text in opaque color, the thank you note in the footer&hellip; (I don&rsquo;t know if it is actually because of her portfolio of work rather than the site design itself or the fact that I kind of know about the site owner beforehand (&amp; really like her work as well)).</p>
+<p>Also, during this time, I visited <a href="https://laurelschwulst.com/" target="_blank" rel="noreferrer noopener">Laurel Schwulst website</a> quite often.<br><br>I love the honesty, extruded from this site, the small text in opaque color, the thank you note in the footer&hellip; (I don&rsquo;t know if it is actually because of her portfolio of work rather than the site design itself or the fact that I kind of know about the site owner beforehand (&amp; really like her work as well)).</p>
 
 
 
-<figure class="wp-block-image size-large span2 row2" style="--width:1024; --height:551;"><img decoding="async" width="1024" height="551" src="" alt="" class="wp-image-577" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/laurel-1024x551.png" data-srcset="/wp-content/uploads/2024/11/laurel-1024x551.png 1024w, /wp-content/uploads/2024/11/laurel-300x161.png 300w, /wp-content/uploads/2024/11/laurel-768x413.png 768w, /wp-content/uploads/2024/11/laurel-1536x826.png 1536w, /wp-content/uploads/2024/11/laurel-2048x1101.png 2048w"></figure>
+<figure class="wp-block-image size-large span12 row2" style="--width:1024; --height:551;"><img decoding="async" width="1024" height="551" src="" alt="" class="wp-image-577" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/laurel-1024x551.png" data-srcset="/wp-content/uploads/2024/11/laurel-1024x551.png 1024w, /wp-content/uploads/2024/11/laurel-300x161.png 300w, /wp-content/uploads/2024/11/laurel-768x413.png 768w, /wp-content/uploads/2024/11/laurel-1536x826.png 1536w, /wp-content/uploads/2024/11/laurel-2048x1101.png 2048w"></figure>
 
 
 
-<p class="span2md">Even though her works are a bit unconventional; the website itself is really easy to look at and navigate as well. It just feels good at first impression. I really want my website to be like this.</p>
+<p>Even though her works are a bit unconventional; the website itself is really easy to look at and navigate as well. It just feels good at first impression. I really want my website to be like this.</p>
 
 
 
-<p class="span2md">Hence, after lots of layout tests, I decided on this lockup. Also, I want to keep the center-aligned structure as a tribute to my 2023 site.</p>
+<p class="row2md">Hence, after lots of layout tests, I decided on this lockup. Also, I want to keep the center-aligned structure as a tribute to my 2023 site.</p>
 
 
 
@@ -87,7 +87,7 @@
 
 
 
-<p class="row2 span2md">To streamline the portfolio checking process for recruiters, I had thought of separating works in design from works in development and let the recruiters choose what they want to see. It is available at <a href="https://bui.baoanhpro.vip/story">bui.baoanhpro.vip/story</a></p>
+<p class="row2">To streamline the portfolio checking process for recruiters, I had thought of separating works in design from works in development and let the recruiters choose what they want to see. It is available at <a href="https://bui.baoanhpro.vip/story">bui.baoanhpro.vip/story</a></p>
 
 
 
@@ -111,7 +111,7 @@
 
 
 
-<p class="span2md">After addressing all the issues from my previous site, I still felt it lacked something. So, I decided to reintroduce a unique gimmick I experimented with in 2023 for <em>&ldquo;Measure a Machine&rsquo;s Heart&rdquo;</em>&mdash;developer tool rendering. This time, I took it further, crafting a more intentional experience by capturing the entire interface responsively as ASCII art in real time.<br><br>This was quite a ride, since I had to build the rendering engine from vanilla JavaScript, from calculating positions, analyzing styles, animating, layering, structuring the paint order, ascii-izing data, to caching repaints, lazy-painting elements, &hellip; I also had to do a few tricks here and there to ensure smooth performance.<br><br><strong>To see best, please click on the devtool &amp; zoom out a bit by Ctrl/Cmd + Minus (-) to avoid line breaks.</strong></p>
+<p>After addressing all the issues from my previous site, I still felt it lacked something. So, I decided to reintroduce a unique gimmick I experimented with in 2023 for <em>&ldquo;Measure a Machine&rsquo;s Heart&rdquo;</em>&mdash;developer tool rendering. This time, I took it further, crafting a more intentional experience by capturing the entire interface responsively as ASCII art in real time.<br><br>This was quite a ride, since I had to build the rendering engine from vanilla JavaScript, from calculating positions, analyzing styles, animating, layering, structuring the paint order, ascii-izing data, to caching repaints, lazy-painting elements, &hellip; I also had to do a few tricks here and there to ensure smooth performance.<br><br><strong>To see best, please click on the devtool &amp; zoom out a bit by Ctrl/Cmd + Minus (-) to avoid line breaks.</strong></p>
 
 
 
@@ -127,15 +127,33 @@
 
 
 
-<p class="span2md">For the idle video, I pre-processed the entire video into ASCII on the server side before sending it to the browser for painting. This approach avoids the significant performance hit that real-time rendering would cause.</p>
+<p>For the idle video, I pre-processed the entire video into ASCII on the server side before sending it to the browser for painting. This approach avoids the significant performance hit that real-time rendering would cause.</p>
 
 
 
-<p class="span2md"><strong>2. Backend<br></strong><br>This time, I chose WordPress as my main CMS out of curiosity, which led me to dive into PHP. For essential plugins, I used Pods to manage custom content types and fields, providing the flexibility I needed for this project.<br><br>Initially, I planned to host the site on InfinityFree because of its free service. However, I soon realized my site would quickly exceed the service&rsquo;s limits&mdash;which even led to a one-day suspension. To avoid further interruptions, I migrated everything to my local setup, used Simply Static to export the site, and deployed it on GitHub Pages.</p>
+<p class="space"></p>
 
 
 
-<figure class="wp-block-image size-full span2" style="--width:3536; --height:1908;"><img loading="lazy" decoding="async" width="3536" height="1908" src="" alt="" class="wp-image-595" srcset="" sizes="(max-width: 3536px) 100vw, 3536px" data-src="/wp-content/uploads/2024/11/pt4-7.png" data-srcset="/wp-content/uploads/2024/11/pt4-7.png 3536w, /wp-content/uploads/2024/11/pt4-7-300x162.png 300w, /wp-content/uploads/2024/11/pt4-7-1024x553.png 1024w, /wp-content/uploads/2024/11/pt4-7-768x414.png 768w, /wp-content/uploads/2024/11/pt4-7-1536x829.png 1536w, /wp-content/uploads/2024/11/pt4-7-2048x1105.png 2048w"></figure>
+<p>The link in the center of the navbar directs visitors to a message-sending page. Functionally, it&rsquo;s similar to the 2023 site, but with a unique twist in how messages are displayed. Instead of appearing directly on the page, all notes are hidden within the dev tools and only reveal themselves at specific screen sizes.</p>
+
+
+
+<figure class="wp-block-image size-full thumb" style="--width:3566; --height:1898;"><img loading="lazy" decoding="async" width="3566" height="1898" src="" alt="" class="wp-image-608" srcset="" sizes="(max-width: 3566px) 100vw, 3566px" data-src="/wp-content/uploads/2024/11/p49.png" data-srcset="/wp-content/uploads/2024/11/p49.png 3566w, /wp-content/uploads/2024/11/p49-300x160.png 300w, /wp-content/uploads/2024/11/p49-1024x545.png 1024w, /wp-content/uploads/2024/11/p49-768x409.png 768w, /wp-content/uploads/2024/11/p49-1536x818.png 1536w, /wp-content/uploads/2024/11/p49-2048x1090.png 2048w"></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:512;"><img decoding="async" style="--twidth:960; --theight:512;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947629463-b817411d0b313806239139df510fa201c8424884106f39322589cab1b2e2e377-d_960" data-srcset="" srcset=""><iframe title="Personal Website 2024 - Messages" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027625346?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p><strong>2. Backend<br></strong><br>This time, I chose WordPress as my main CMS out of curiosity, which led me to dive into PHP. For essential plugins, I used Pods to manage custom content types and fields.<br><br>Initially, I planned to host the site on InfinityFree because of its free service. However, I soon realized my site would quickly exceed the service&rsquo;s limits&mdash;which even led to a one-day suspension. To avoid further interruptions, I migrated almost everything (except for the message-sending page) to my local setup, used Simply Static to export the site, and deployed it on GitHub Pages.</p>
+
+
+
+<figure class="wp-block-image size-full span12" style="--width:3536; --height:1908;"><img loading="lazy" decoding="async" width="3536" height="1908" src="" alt="" class="wp-image-595" srcset="" sizes="(max-width: 3536px) 100vw, 3536px" data-src="/wp-content/uploads/2024/11/pt4-7.png" data-srcset="/wp-content/uploads/2024/11/pt4-7.png 3536w, /wp-content/uploads/2024/11/pt4-7-300x162.png 300w, /wp-content/uploads/2024/11/pt4-7-1024x553.png 1024w, /wp-content/uploads/2024/11/pt4-7-768x414.png 768w, /wp-content/uploads/2024/11/pt4-7-1536x829.png 1536w, /wp-content/uploads/2024/11/pt4-7-2048x1105.png 2048w"></figure>
 </body></html>
 ]]></content:encoded>
 					
@@ -180,7 +198,7 @@
 
 
 
-<p class="span2md"><strong>2. Frontend Development</strong><br><br>Using iframes, I was able to hijack the visual interface of Google Sheet and Google Doc with ease. For the interactivity, I found a solution by using data from the Google Sheets API to create an interactive, transparent overlay positioned directly and precisely on top of the sheet iframe.</p>
+<p><strong>2. Frontend Development</strong><br><br>Using iframes, I was able to hijack the visual interface of Google Sheet and Google Doc with ease. For the interactivity, I found a solution by using data from the Google Sheets API to create an interactive, transparent overlay positioned directly and precisely on top of the sheet iframe.</p>
 
 
 
@@ -188,7 +206,7 @@
 
 
 
-<p class="span2md">The site includes a basic sort and filter function to help users browse the archive, made possible through Google Sheets&rsquo; Filter Views feature. Unfortunately, due to limitations in Google Sheets, this feature only works on the desktop version.</p>
+<p>The site includes a basic sort and filter function to help users browse the archive, made possible through Google Sheets&rsquo; Filter Views feature. Unfortunately, due to limitations in Google Sheets, this feature only works on the desktop version.</p>
 
 
 
@@ -210,7 +228,7 @@
 
 
 
-<p class="span2md"><strong>3. Backend Development</strong><br><br>For this project, I used Sveltekit as a fullstack framework and Cloudflare for deployment out of curiosity. I want to implement ISR function to allow immediate website updates without a full rebuild. However, unlike Next.js, SvelteKit didn&rsquo;t natively support ISR at the time. <br><br>To work around this, I developed a custom Cloudflare Workers adapter for SvelteKit, utilizing Workers KV to handle caching and revalidation.</p>
+<p><strong>3. Backend Development</strong><br><br>For this project, I used Svelte/SvelteKit as a fullstack framework and Cloudflare for deployment out of curiosity. I want to implement ISR function to allow immediate website updates without a full rebuild. However, unlike Next.js, SvelteKit didn&rsquo;t natively support ISR at the time. <br><br>To work around this, I developed a custom Cloudflare Workers adapter for SvelteKit, utilizing Workers KV to handle caching and revalidation.</p>
 
 
 
@@ -218,7 +236,7 @@
 
 
 
-<p class="span2md"><strong>4. Documentation and handoff</strong><br><br>For Hunter to use and populate the content into the sheet without disrupting the site&rsquo;s functionality, I created detailed documentation on best practices and potential pitfalls. This guide covered what to avoid and how to perform key tasks correctly. <br><br>I also made a couple of phone calls to clarify specific steps, which helped me better understand how Hunter would actually work with the sheet.</p>
+<p><strong>4. Documentation and handoff</strong><br><br>For Hunter to use and populate the content into the sheet without disrupting the site&rsquo;s functionality, I created detailed documentation on best practices and potential pitfalls. This guide covered what to avoid and how to perform key tasks correctly. <br><br>I also made a couple of phone calls to clarify specific steps, which helped me better understand how Hunter would actually work with the sheet.</p>
 
 
 
@@ -227,7 +245,7 @@
 
 
 <ul class="wp-block-list">
-<li>Tech Stack: Svelte/Sveltekit web framework, Typescript, SCSS, Google Sheet API, Cloudflare Workers</li>
+<li>Tech Stack: Svelte/SvelteKit web framework, Typescript, SCSS, Google Sheet API, Cloudflare Workers</li>
 
 
 
@@ -325,7 +343,7 @@
 
 
 
-<p class="span2md">The initial conceptual idea of the site can be observed via the&nbsp;3D View&nbsp;of the developer tool of Microsoft Edge. Inspect the site to see.<br><br>Using a mix of &lsquo;z-index&rsquo; and &lsquo;transform-style: preserve-3d&rsquo; property, all the layers are arranged in a way that looks like a 3D sculpture when observed through the 3D View tool. This idea is to look at a website from a third-person perspective instead of the usual front-back view.</p>
+<p>The initial conceptual idea of the site can be observed via the&nbsp;3D View&nbsp;of the developer tool of Microsoft Edge. Inspect the site to see.<br><br>Using a mix of &lsquo;z-index&rsquo; and &lsquo;transform-style: preserve-3d&rsquo; property, all the layers are arranged in a way that looks like a 3D sculpture when observed through the 3D View tool. This idea is to look at a website from a third-person perspective instead of the usual front-back view.</p>
 
 
 
@@ -402,15 +420,15 @@
 
 
 
-<figure class="wp-block-image size-large" style="--width:606; --height:1024;"><img loading="lazy" decoding="async" width="606" height="1024" src="" alt="" class="wp-image-203" srcset="" sizes="(max-width: 606px) 100vw, 606px" data-src="/wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-606x1024.avif" data-srcset="/wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-606x1024.avif 606w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-178x300.avif 178w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-768x1297.avif 768w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-909x1536.avif 909w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1.avif 1125w"></figure>
+<figure class="wp-block-image size-full" style="--width:1125; --height:1900;"><img loading="lazy" decoding="async" width="1125" height="1900" src="" alt="" class="wp-image-203" srcset="" sizes="(max-width: 1125px) 100vw, 1125px" data-src="/wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1.avif" data-srcset="/wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1.avif 1125w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-178x300.avif 178w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-606x1024.avif 606w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-768x1297.avif 768w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-909x1536.avif 909w"></figure>
 
 
 
-<figure class="wp-block-image size-full span2" style="--width:2148; --height:1966;"><img loading="lazy" decoding="async" width="2148" height="1966" src="" alt="" class="wp-image-194" srcset="" sizes="(max-width: 2148px) 100vw, 2148px" data-src="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM.avif" data-srcset="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM.avif 2148w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-300x275.avif 300w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-1024x937.avif 1024w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-768x703.avif 768w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-1536x1406.avif 1536w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-2048x1874.avif 2048w"></figure>
+<figure class="wp-block-image size-full span12" style="--width:2148; --height:1966;"><img loading="lazy" decoding="async" width="2148" height="1966" src="" alt="" class="wp-image-194" srcset="" sizes="(max-width: 2148px) 100vw, 2148px" data-src="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM.avif" data-srcset="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM.avif 2148w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-300x275.avif 300w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-1024x937.avif 1024w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-768x703.avif 768w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-1536x1406.avif 1536w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-2048x1874.avif 2048w"></figure>
 
 
 
-<figure class="wp-block-image size-full span2md" style="--width:2148; --height:1966;"><img loading="lazy" decoding="async" width="2148" height="1966" src="" alt="" class="wp-image-197" srcset="" sizes="(max-width: 2148px) 100vw, 2148px" data-src="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM.avif" data-srcset="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM.avif 2148w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-300x275.avif 300w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-1024x937.avif 1024w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-768x703.avif 768w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-1536x1406.avif 1536w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-2048x1874.avif 2048w"></figure>
+<figure class="wp-block-image size-full" style="--width:2148; --height:1966;"><img loading="lazy" decoding="async" width="2148" height="1966" src="" alt="" class="wp-image-197" srcset="" sizes="(max-width: 2148px) 100vw, 2148px" data-src="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM.avif" data-srcset="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM.avif 2148w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-300x275.avif 300w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-1024x937.avif 1024w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-768x703.avif 768w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-1536x1406.avif 1536w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-2048x1874.avif 2048w"></figure>
 
 
 
@@ -687,7 +705,7 @@
 
 
 
-<p class="span2md">This was also my first time trying to integrate GLSL shaders to perform some post-processing effect. All of this was so new to me. To pull out this raindrop shader, luckily I found a piece on Shadertoy <a href="https://www.shadertoy.com/view/ltffzl">https://www.shadertoy.com/view/ltffzl</a> &ndash; Heartfelt by BigWIngs, which was beautifully done! I carefully read through the code but didn&rsquo;t fully understand it &#128549;. GLSL operates on a level that&rsquo;s still a bit beyond me. So, I ended up copying the code and tweaking some arguments to see what triggers what.</p>
+<p>This was also my first time trying to integrate GLSL shaders to perform some post-processing effect. All of this was so new to me. To pull out this raindrop shader, luckily I found a piece on Shadertoy <a href="https://www.shadertoy.com/view/ltffzl">https://www.shadertoy.com/view/ltffzl</a> &ndash; Heartfelt by BigWIngs, which was beautifully done! I carefully read through the code but didn&rsquo;t fully understand it &#128549;. GLSL operates on a level that&rsquo;s still a bit beyond me. So, I ended up copying the code and tweaking some arguments to see what triggers what.</p>
 
 
 

@@ -12,7 +12,7 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Mon, 09 Sep 2024 16:15:35 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 08 Nov 2024 10:39:51 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -27,26 +27,5 @@
 	<width>32</width>
 	<height>32</height>
 </image> 
-	<item>
-		<title>Hello world!</title>
-		<link>/hello-world/</link>
-					<comments>/hello-world/#comments</comments>
-		
-		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
-		<pubDate>Mon, 09 Sep 2024 16:15:35 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/?p=1</guid>
-
-					<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
-										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body><p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
-</body></html>
-]]></content:encoded>
-					
-					<wfw:commentRss>/hello-world/feed/</wfw:commentRss>
-			<slash:comments>1</slash:comments>
-		
-		
-			</item>
-	</channel>
+</channel>
 </rss>

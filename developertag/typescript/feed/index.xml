@@ -12,7 +12,7 @@
 	<atom:link href="/developertag/typescript/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Thu, 07 Nov 2024 14:40:13 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 08 Nov 2024 09:03:23 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -65,7 +65,7 @@
 
 
 
-<p class="span2md"><strong>2. Frontend Development</strong><br><br>Using iframes, I was able to hijack the visual interface of Google Sheet and Google Doc with ease. For the interactivity, I found a solution by using data from the Google Sheets API to create an interactive, transparent overlay positioned directly and precisely on top of the sheet iframe.</p>
+<p><strong>2. Frontend Development</strong><br><br>Using iframes, I was able to hijack the visual interface of Google Sheet and Google Doc with ease. For the interactivity, I found a solution by using data from the Google Sheets API to create an interactive, transparent overlay positioned directly and precisely on top of the sheet iframe.</p>
 
 
 
@@ -73,7 +73,7 @@
 
 
 
-<p class="span2md">The site includes a basic sort and filter function to help users browse the archive, made possible through Google Sheets&rsquo; Filter Views feature. Unfortunately, due to limitations in Google Sheets, this feature only works on the desktop version.</p>
+<p>The site includes a basic sort and filter function to help users browse the archive, made possible through Google Sheets&rsquo; Filter Views feature. Unfortunately, due to limitations in Google Sheets, this feature only works on the desktop version.</p>
 
 
 
@@ -95,7 +95,7 @@
 
 
 
-<p class="span2md"><strong>3. Backend Development</strong><br><br>For this project, I used Sveltekit as a fullstack framework and Cloudflare for deployment out of curiosity. I want to implement ISR function to allow immediate website updates without a full rebuild. However, unlike Next.js, SvelteKit didn&rsquo;t natively support ISR at the time. <br><br>To work around this, I developed a custom Cloudflare Workers adapter for SvelteKit, utilizing Workers KV to handle caching and revalidation.</p>
+<p><strong>3. Backend Development</strong><br><br>For this project, I used Svelte/SvelteKit as a fullstack framework and Cloudflare for deployment out of curiosity. I want to implement ISR function to allow immediate website updates without a full rebuild. However, unlike Next.js, SvelteKit didn&rsquo;t natively support ISR at the time. <br><br>To work around this, I developed a custom Cloudflare Workers adapter for SvelteKit, utilizing Workers KV to handle caching and revalidation.</p>
 
 
 
@@ -103,7 +103,7 @@
 
 
 
-<p class="span2md"><strong>4. Documentation and handoff</strong><br><br>For Hunter to use and populate the content into the sheet without disrupting the site&rsquo;s functionality, I created detailed documentation on best practices and potential pitfalls. This guide covered what to avoid and how to perform key tasks correctly. <br><br>I also made a couple of phone calls to clarify specific steps, which helped me better understand how Hunter would actually work with the sheet.</p>
+<p><strong>4. Documentation and handoff</strong><br><br>For Hunter to use and populate the content into the sheet without disrupting the site&rsquo;s functionality, I created detailed documentation on best practices and potential pitfalls. This guide covered what to avoid and how to perform key tasks correctly. <br><br>I also made a couple of phone calls to clarify specific steps, which helped me better understand how Hunter would actually work with the sheet.</p>
 
 
 
@@ -112,7 +112,7 @@
 
 
 <ul class="wp-block-list">
-<li>Tech Stack: Svelte/Sveltekit web framework, Typescript, SCSS, Google Sheet API, Cloudflare Workers</li>
+<li>Tech Stack: Svelte/SvelteKit web framework, Typescript, SCSS, Google Sheet API, Cloudflare Workers</li>
 
 
 
@@ -210,7 +210,7 @@
 
 
 
-<p class="span2md">The initial conceptual idea of the site can be observed via the&nbsp;3D View&nbsp;of the developer tool of Microsoft Edge. Inspect the site to see.<br><br>Using a mix of &lsquo;z-index&rsquo; and &lsquo;transform-style: preserve-3d&rsquo; property, all the layers are arranged in a way that looks like a 3D sculpture when observed through the 3D View tool. This idea is to look at a website from a third-person perspective instead of the usual front-back view.</p>
+<p>The initial conceptual idea of the site can be observed via the&nbsp;3D View&nbsp;of the developer tool of Microsoft Edge. Inspect the site to see.<br><br>Using a mix of &lsquo;z-index&rsquo; and &lsquo;transform-style: preserve-3d&rsquo; property, all the layers are arranged in a way that looks like a 3D sculpture when observed through the 3D View tool. This idea is to look at a website from a third-person perspective instead of the usual front-back view.</p>
 
 
 
@@ -279,15 +279,15 @@
 
 
 
-<p class="span2md">However, there isn&rsquo;t an existing OpenType feature for this particular type of &lsquo;weird&rsquo; ligature. Moreover, creating the vertical ligature is a more intricate technical process than the usual ligature because it relies on the positioning of letters vertically adjacent, which can shift significantly when we adjust the width of the text box.<br><br>That&rsquo;s when Darius approached me for a collaboration, with the goal of bringing this feature to life through coding.</p>
+<p>However, there isn&rsquo;t an existing OpenType feature for this particular type of &lsquo;weird&rsquo; ligature. Moreover, creating the vertical ligature is a more intricate technical process than the usual ligature because it relies on the positioning of letters vertically adjacent, which can shift significantly when we adjust the width of the text box.<br><br>That&rsquo;s when Darius approached me for a collaboration, with the goal of bringing this feature to life through coding.</p>
 
 
 
-<figure class="wp-block-image size-large span2 thumb" style="--width:1024; --height:764;"><img loading="lazy" decoding="async" width="1024" height="764" src="" alt="" class="wp-image-428" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-78-1024x764.png" data-srcset="/wp-content/uploads/2024/09/image-78-1024x764.png 1024w, /wp-content/uploads/2024/09/image-78-300x224.png 300w, /wp-content/uploads/2024/09/image-78-768x573.png 768w, /wp-content/uploads/2024/09/image-78-1536x1146.png 1536w, /wp-content/uploads/2024/09/image-78-2048x1527.png 2048w"></figure>
+<figure class="wp-block-image size-large span12 thumb" style="--width:1024; --height:764;"><img loading="lazy" decoding="async" width="1024" height="764" src="" alt="" class="wp-image-428" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-78-1024x764.png" data-srcset="/wp-content/uploads/2024/09/image-78-1024x764.png 1024w, /wp-content/uploads/2024/09/image-78-300x224.png 300w, /wp-content/uploads/2024/09/image-78-768x573.png 768w, /wp-content/uploads/2024/09/image-78-1536x1146.png 1536w, /wp-content/uploads/2024/09/image-78-2048x1527.png 2048w"></figure>
 
 
 
-<p class="span2md"><strong>1. Type tool for graphic design<br></strong><br>Technically, Darius could use the font without coding, but it would require painstaking manual calculation and replacement of each character with its long-ligature counterpart. To simplify and streamline this process, my primary task was to develop a tool that would enable Darius to efficiently implement the font across all the graphic design assets. The tool would be deployed as a website for convenient use.</p>
+<p><strong>1. Type tool for graphic design<br></strong><br>Technically, Darius could use the font without coding, but it would require painstaking manual calculation and replacement of each character with its long-ligature counterpart. To simplify and streamline this process, my primary task was to develop a tool that would enable Darius to efficiently implement the font across all the graphic design assets. The tool would be deployed as a website for convenient use.</p>
 
 
 
@@ -297,7 +297,7 @@
 
 
 
-<p class="span2md">I even went as far as creating an Indesign script so that it can be even more adjustable within the design softwares. No need to switch to a separate online tool, streamlining the process.</p>
+<p>I even went as far as creating an Indesign script so that it can be even more adjustable within the design softwares. No need to switch to a separate online tool, streamlining the process.</p>
 
 
 
@@ -315,7 +315,7 @@
 
 
 
-<p class="span2md"><strong>2. Website Development<br></strong><br>This website is another tiring journey to develop. I started the process of design and development all together just two weeks before the exhibition&rsquo;s opening, which was a hectic speed run.</p>
+<p><strong>2. Website Development<br></strong><br>This website is another tiring journey to develop. I started the process of design and development all together just two weeks before the exhibition&rsquo;s opening, which was a hectic speed run.</p>
 
 
 
@@ -331,14 +331,8 @@
 
 
 
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2md"><div class="wp-block-embed__wrapper">
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
 <div style="--width:933; --height:1000;"><img decoding="async" style="--twidth:640; --theight:686;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736892336-423741d9fcf6b9f55f9760bd6d2b88a6f7fe538ee518df7f518d8ad1042cb55b-d_640" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; navbar randomness" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873404639?dnt=1&amp;app_id=122963"></iframe></div>
-</div></figure>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
-<div style="--width:960; --height:604;"><img decoding="async" style="--twidth:960; --theight:604;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736894022-d7243cb648dd91fa16dce293375d821739901e6bc93506c363e3be159098acc8-d_960" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; full website" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873404595?dnt=1&amp;app_id=122963"></iframe></div>
 </div></figure>
 
 
@@ -349,7 +343,13 @@
 
 
 
-<p class="span2md"><strong>3. ETYM(YTH)OLOGY<br></strong><br>Throughout the identity development process, Darius crafted a fictional lore for the typeface as an integral part of the exhibition. This lore wove together a series of ideas rooted in the etymologies of the Latin alphabet, interwoven with semi-fictional myths. He published them on Instagram <a href="https://www.instagram.com/p/CxP1EbJSv_W/?img_index=7">www.instagram.com/p/CxP1EbJSv_W/?img_index=7</a>.</p>
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:604;"><img decoding="async" style="--twidth:960; --theight:604;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736894022-d7243cb648dd91fa16dce293375d821739901e6bc93506c363e3be159098acc8-d_960" data-srcset="" srcset=""><iframe title="Form and Agency &ndash; full website" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873404595?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p class="row2md"><strong>3. ETYM(YTH)OLOGY<br></strong><br>Throughout the identity development process, Darius crafted a fictional lore for the typeface as an integral part of the exhibition. This lore wove together a series of ideas rooted in the etymologies of the Latin alphabet, interwoven with semi-fictional myths. He published them on Instagram <a href="https://www.instagram.com/p/CxP1EbJSv_W/?img_index=7">www.instagram.com/p/CxP1EbJSv_W/?img_index=7</a>.</p>
 
 
 
@@ -454,11 +454,15 @@
 
 
 
-<p class="span2md">That idea resonated so much with what I felt about traces on the net. I wanted to make something like that, something that reflects the site growth/development on the site itself, showing the traces of the owner/developer behind this site.<br><br>Then I wondered how I could actually make this happen (obviously I don&rsquo;t expect myself to build something like wayback machine from scratch). I needed to find a way to pull it off with my web development skills (&amp; time budget). Fortunately, Git commit history came to mind. Git, a version control system for tracking file changes, was a perfect fit for what I wanted. GitHub should expose APIs that allow me to extract this data and visualise it in whatever way I want!</p>
+<p>That idea resonated so much with what I felt about traces on the net. I wanted to make something like that, something that reflects the site growth/development on the site itself, showing the traces of the owner/developer behind this site.</p>
 
 
 
-<figure class="wp-block-image size-large span2" style="--width:1024; --height:516;"><img loading="lazy" decoding="async" width="1024" height="516" src="" alt="" class="wp-image-431" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-80-1024x516.png" data-srcset="/wp-content/uploads/2024/09/image-80-1024x516.png 1024w, /wp-content/uploads/2024/09/image-80-300x151.png 300w, /wp-content/uploads/2024/09/image-80-768x387.png 768w, /wp-content/uploads/2024/09/image-80-1536x775.png 1536w, /wp-content/uploads/2024/09/image-80-2048x1033.png 2048w"></figure>
+<p>Then I wondered how I could actually make this happen (obviously I don&rsquo;t expect myself to build something like wayback machine from scratch). I needed to find a way to pull it off with my web development skills (&amp; time budget). Fortunately, Git commit history came to mind. Git, a version control system for tracking file changes, was a perfect fit for what I wanted. GitHub should expose APIs that allow me to extract this data and visualise it in whatever way I want!</p>
+
+
+
+<figure class="wp-block-image size-large span2md" style="--width:1024; --height:516;"><img loading="lazy" decoding="async" width="1024" height="516" src="" alt="" class="wp-image-431" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-80-1024x516.png" data-srcset="/wp-content/uploads/2024/09/image-80-1024x516.png 1024w, /wp-content/uploads/2024/09/image-80-300x151.png 300w, /wp-content/uploads/2024/09/image-80-768x387.png 768w, /wp-content/uploads/2024/09/image-80-1536x775.png 1536w, /wp-content/uploads/2024/09/image-80-2048x1033.png 2048w"></figure>
 
 
 
@@ -525,10 +529,6 @@
 
 <li>This work is done for Victoria Hertel Velasco</li>
 </ul>
-
-
-
-<p></p>
 </body></html>
 ]]></content:encoded>
 					
