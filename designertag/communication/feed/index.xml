@@ -12,7 +12,7 @@
 	<atom:link href="/designertag/communication/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Fri, 08 Nov 2024 08:46:18 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 08 Nov 2024 16:05:40 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -672,6 +672,20 @@
 
 
 <figure class="wp-block-image size-large" style="--width:768; --height:1024;"><img loading="lazy" decoding="async" width="768" height="1024" src="" alt="" class="wp-image-262" srcset="" sizes="(max-width: 768px) 100vw, 768px" data-src="/wp-content/uploads/2024/09/image-35-768x1024.jpeg" data-srcset="/wp-content/uploads/2024/09/image-35-768x1024.jpeg 768w, /wp-content/uploads/2024/09/image-35-225x300.jpeg 225w, /wp-content/uploads/2024/09/image-35-1152x1536.jpeg 1152w, /wp-content/uploads/2024/09/image-35.jpeg 1500w"></figure>
+
+
+
+<p class="space"></p>
+
+
+
+<p><strong>3. Company website</strong><br><br>The new company website will serve as a centralized showcase for all company projects, built on WordPress with Advanced Custom Fields (ACF). Unfortunately, my internship ends in middle of the development, so I had to leave the rest of the work to the lead dev.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span12"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:719;"><img decoding="async" style="--twidth:960; --theight:719;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947748057-2d54c802cbdd233e1ac88638e729c532a53d58efa1a248f6a0c65678ed06ddee-d_960" data-srcset="" srcset=""><iframe title="Tusitala company website" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027724422?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
 
 
 
