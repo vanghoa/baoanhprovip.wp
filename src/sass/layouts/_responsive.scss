@@ -7,6 +7,7 @@
 	display: block;
 }
 
+// notebook holder
 @include respond-to-general(sm) {
 	.notebookholder {
 		.ssm {
@@ -51,6 +52,7 @@
 	}
 }
 
+// responsive
 @include respond-to(sm) {
 	nav {
 		height: 6rem;
@@ -139,18 +141,24 @@
 	}
 }
 
-@include respond-to-copy(md) {
+@include respond-to-copy(lg) {
 	.the-content .wp-block-image.vertical {
 		width: fit-content;
 	}
 }
 
-@include respond-to(md) {
+@include respond-to(lg) {
 	.single-work-body {
 		.the-content {
+			.space {
+				display: block;
+			}
 			justify-items: start;
 			.wp-block-embed .wp-block-embed__wrapper > div {
 				margin: 0;
+			}
+			.row2md {
+				grid-row: span 2;
 			}
 			.span2md {
 				grid-column: span 2;
@@ -201,11 +209,17 @@
 @include respond-to(xl) {
 	.single-work-body {
 		.the-content {
+			.row2md {
+				grid-row: span 1;
+			}
 			.span2md {
 				grid-column: span 1;
 			}
 			.span12 {
 				grid-column: span 2;
+			}
+			.row12 {
+				grid-row: span 2;
 			}
 			.span3,
 			.span13 {

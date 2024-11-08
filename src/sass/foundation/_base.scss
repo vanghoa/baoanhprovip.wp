@@ -46,10 +46,15 @@
 	transform: translate(-50%, -50%);
 }
 
-#copy .videolayer {
-	aspect-ratio: var(--vidw) / var(--vidh);
-	right: var(--how);
-	transform: translate(50%, -50%);
+#copy {
+	.videolayer {
+		aspect-ratio: var(--vidw) / var(--vidh);
+		right: var(--how);
+		transform: translate(50%, -50%);
+	}
+	.homegrid {
+		gap: 2rem;
+	}
 }
 
 .mainbody {

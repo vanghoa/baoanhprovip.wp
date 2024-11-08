@@ -250,7 +250,7 @@ const nav = $('#copy nav .bg-layer');
 const navTxt = [...$$('#copy nav .txt-layer')];
 const allBg2 = [
   ...$$('#copy .mainbody .bg-layer'),
-  ...$$('#copy .mainbody .cp-layer > *:not(figure)'),
+  ...$$('#copy .mainbody .cp-layer > *:not(figure,.space)'),
   ...$$('#copy .mainbody .cp-layer img'),
   ...$$('#copy .odd-layer > :nth-child(even)'),
 ];
@@ -277,7 +277,7 @@ const allImg = [...$$('#copy .mainbody img')];
 const allImgMain = [...$$('#main .mainbody img')];
 const allTxt = [
   ...$$('#copy .mainbody .txt-layer'),
-  ...$$('#copy .mainbody .txtp-layer > *:not(figure)'),
+  ...$$('#copy .mainbody .txtp-layer > *:not(figure,.space)'),
   ...$$('#copy .mainbody .txtp-layer figcaption'),
 ];
 const allDivider = [...$$('#copy .divider')];
@@ -751,14 +751,14 @@ function easeInOut(t) {
 function manualResponsive(el) {
   const { clientWidth: w } = el;
   el.className = `${w > 1536 ? 'xxl' : ''} ${w > 1280 ? 'xl' : ''} ${
-    w > 1024 ? 'lg' : ''
+    w > 900 ? 'lg' : ''
   } ${w > 768 ? 'md' : ''} ${w > 640 ? 'sm' : ''}`;
 }
 
 function getNoteResponsiveClass(w) {
   /*if (w > 1280) {
     return 'xl';
-  } else if (w > 1024) {
+  } else if (w > 900) {
     return 'lg';
   } else */
   if (w > 768) {

@@ -1,5 +1,4 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
 
 @layer base {
@@ -89,11 +88,15 @@
 			font-size: 13px;
 		}
 		.homegrid {
-			@apply grid-cols-2 gap-4;
+			@apply grid-cols-2;
 		}
 		.single-work-body,
-		.single-work-head {
+		.single-work-head,
+		.single-work .footer {
 			@apply max-w-96 mx-auto;
+		}
+		.single-work .footer {
+			@apply w-full;
 		}
 	}
 

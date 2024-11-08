@@ -5,6 +5,13 @@
 	.row2 {
 		grid-row: span 2;
 	}
+	.row12 {
+		grid-row: span 1;
+	}
+	.space {
+		opacity: 0;
+		display: none;
+	}
 	.span12,
 	.span2,
 	.span13,
@@ -35,7 +42,7 @@
 		max-height: 80svh;
 		max-width: 100%;
 		aspect-ratio: var(--width) / var(--height);
-		width: 100%;
+		width: auto;
 	}
 	figure {
 		display: flex;
