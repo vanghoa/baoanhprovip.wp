@@ -11,7 +11,7 @@ $taxonomy_name = $flowtype . 'tag';
 		<?php the_content(); ?>
 	</div>
 
-	<ul class="homegrid grid grid-cols-1 gap-8 w-fit">
+	<ul class="homegrid grid grid-cols-1 gap-4 w-fit">
 		<?php
 		$is_story = $flowtype . '-0';
 		$liIndex = 0;

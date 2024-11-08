@@ -1,4 +1,4 @@
-<ul class="homegrid withlist grid grid-cols-1 gap-8 w-fit mx-auto">
+<ul class="homegrid withlist grid grid-cols-1 gap-4 w-fit mx-auto">
 	<?php
 	mapLi();
 	?>
