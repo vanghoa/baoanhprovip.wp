@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://wordpress-personal.test/sitemap_index.xml

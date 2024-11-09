@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>works Archive &#060; Bảo Anh Bùi</title>
+	<atom:link href="/work/feed/" rel="self" type="application/rss+xml" />
+	<link>/work/</link>
+	<description></description>
+	<lastBuildDate>Fri, 08 Nov 2024 15:04:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2024/09/cropped-Asset-2njkiys-32x32.png</url>
+	<title>works Archive &#060; Bảo Anh Bùi</title>
+	<link>/work/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Personal website 2024</title>
+		<link>/work/personal-website-2024/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Thu, 07 Nov 2024 16:33:11 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=569</guid>
+
+					<description><![CDATA[<p>1. FrontendMy third personal website began with the question, &#8220;How tf am I still struggling to secure a full-time job?&#8221; With my Long Term Visit Pass nearing its expiration, finding a job has become extremely urgent. I do need to tone the shit down my portfolio, stripping away anything that looks too much. I got [&#8230;]</p>
+<p>The post <a href="/work/personal-website-2024/">Personal website 2024</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><ul class="wp-block-list">
+<li>Visit the <a href="https://bui.baoanhpro.vip/">bui.baoanhpro.vip</a> to see the website (this website).</li>
+
+
+
+<li>Take a look at the <a href="https://github.com/vanghoa/baoanhprovip.wp" data-type="link" data-id="https://github.com/vanghoa/baoanhprovip.wp" target="_blank" rel="noreferrer noopener">github repository</a>.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:2200; --height:1407;"><img fetchpriority="high" decoding="async" width="2200" height="1407" src="/wp-content/uploads/2024/11/p4-2.png" alt="" class="wp-image-574" srcset="/wp-content/uploads/2024/11/p4-2.png 2200w, /wp-content/uploads/2024/11/p4-2-300x192.png 300w, /wp-content/uploads/2024/11/p4-2-1024x655.png 1024w, /wp-content/uploads/2024/11/p4-2-768x491.png 768w, /wp-content/uploads/2024/11/p4-2-1536x982.png 1536w, /wp-content/uploads/2024/11/p4-2-2048x1310.png 2048w" sizes="(max-width: 2200px) 100vw, 2200px"></figure>
+
+
+
+<p><strong>1. Frontend<br></strong><br>My third personal website began with the question, <em>&ldquo;How tf am I still struggling to secure a full-time job?&rdquo;</em> With my Long Term Visit Pass nearing its expiration, finding a job has become extremely urgent.<br><br>I do need to tone the shit down my portfolio, stripping away anything that looks too much.</p>
+
+
+
+<p>I got feedback that my website looks too much artistic&hellip;&hellip;.</p>
+
+
+
+<figure class="wp-block-image size-large span2md" style="--width:1024; --height:786;"><img decoding="async" width="1024" height="786" src="/wp-content/uploads/2024/11/ps1-1024x786.png" alt="" class="wp-image-521" srcset="/wp-content/uploads/2024/11/ps1-1024x786.png 1024w, /wp-content/uploads/2024/11/ps1-300x230.png 300w, /wp-content/uploads/2024/11/ps1-768x590.png 768w, /wp-content/uploads/2024/11/ps1-1536x1180.png 1536w, /wp-content/uploads/2024/11/ps1-2048x1573.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<p>Also, during this time, I visited <a href="https://laurelschwulst.com/" target="_blank" rel="noreferrer noopener">Laurel Schwulst website</a> quite often.<br><br>I love the honesty, extruded from this site, the small text in opaque color, the thank you note in the footer&hellip; (I don&rsquo;t know if it is actually because of her portfolio of work rather than the site design itself or the fact that I kind of know about the site owner beforehand (&amp; really like her work as well)).</p>
+
+
+
+<figure class="wp-block-image size-large span12 row2" style="--width:1024; --height:551;"><img decoding="async" width="1024" height="551" src="" alt="" class="wp-image-577" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/laurel-1024x551.png" data-srcset="/wp-content/uploads/2024/11/laurel-1024x551.png 1024w, /wp-content/uploads/2024/11/laurel-300x161.png 300w, /wp-content/uploads/2024/11/laurel-768x413.png 768w, /wp-content/uploads/2024/11/laurel-1536x826.png 1536w, /wp-content/uploads/2024/11/laurel-2048x1101.png 2048w"></figure>
+
+
+
+<p>Even though her works are a bit unconventional; the website itself is really easy to look at and navigate as well. It just feels good at first impression. I really want my website to be like this.</p>
+
+
+
+<p class="row2md">Hence, after lots of layout tests, I decided on this lockup. Also, I want to keep the center-aligned structure as a tribute to my 2023 site.</p>
+
+
+
+<figure class="wp-block-image size-full" style="--width:2200; --height:1407;"><img loading="lazy" decoding="async" width="2200" height="1407" src="" alt="" class="wp-image-582" srcset="" sizes="(max-width: 2200px) 100vw, 2200px" data-src="/wp-content/uploads/2024/11/p1.png" data-srcset="/wp-content/uploads/2024/11/p1.png 2200w, /wp-content/uploads/2024/11/p1-300x192.png 300w, /wp-content/uploads/2024/11/p1-1024x655.png 1024w, /wp-content/uploads/2024/11/p1-768x491.png 768w, /wp-content/uploads/2024/11/p1-1536x982.png 1536w, /wp-content/uploads/2024/11/p1-2048x1310.png 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-full" style="--width:2968; --height:1898;"><img loading="lazy" decoding="async" width="2968" height="1898" src="" alt="" class="wp-image-583" srcset="" sizes="(max-width: 2968px) 100vw, 2968px" data-src="/wp-content/uploads/2024/11/p2.png" data-srcset="/wp-content/uploads/2024/11/p2.png 2968w, /wp-content/uploads/2024/11/p2-300x192.png 300w, /wp-content/uploads/2024/11/p2-1024x655.png 1024w, /wp-content/uploads/2024/11/p2-768x491.png 768w, /wp-content/uploads/2024/11/p2-1536x982.png 1536w, /wp-content/uploads/2024/11/p2-2048x1310.png 2048w"></figure>
+
+
+
+<p class="row2">To streamline the portfolio checking process for recruiters, I had thought of separating works in design from works in development and let the recruiters choose what they want to see. It is available at <a href="https://bui.baoanhpro.vip/story">bui.baoanhpro.vip/story</a></p>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:2968; --height:1898;"><img loading="lazy" decoding="async" width="2968" height="1898" src="" alt="" class="wp-image-585" srcset="" sizes="(max-width: 2968px) 100vw, 2968px" data-src="/wp-content/uploads/2024/11/p4-3.png" data-srcset="/wp-content/uploads/2024/11/p4-3.png 2968w, /wp-content/uploads/2024/11/p4-3-300x192.png 300w, /wp-content/uploads/2024/11/p4-3-1024x655.png 1024w, /wp-content/uploads/2024/11/p4-3-768x491.png 768w, /wp-content/uploads/2024/11/p4-3-1536x982.png 1536w, /wp-content/uploads/2024/11/p4-3-2048x1310.png 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:655;"><img loading="lazy" decoding="async" width="1024" height="655" src="" alt="" class="wp-image-586" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/p4-4-1024x655.png" data-srcset="/wp-content/uploads/2024/11/p4-4-1024x655.png 1024w, /wp-content/uploads/2024/11/p4-4-300x192.png 300w, /wp-content/uploads/2024/11/p4-4-768x491.png 768w, /wp-content/uploads/2024/11/p4-4-1536x982.png 1536w, /wp-content/uploads/2024/11/p4-4-2048x1310.png 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:655;"><img loading="lazy" decoding="async" width="1024" height="655" src="" alt="" class="wp-image-587" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/p4-5-1024x655.png" data-srcset="/wp-content/uploads/2024/11/p4-5-1024x655.png 1024w, /wp-content/uploads/2024/11/p4-5-300x192.png 300w, /wp-content/uploads/2024/11/p4-5-768x491.png 768w, /wp-content/uploads/2024/11/p4-5-1536x982.png 1536w, /wp-content/uploads/2024/11/p4-5-2048x1310.png 2048w"></figure>
+
+
+
+<p>A single &lsquo;next project&rsquo; link at the bottom right for faster navigation.</p>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:927;"><img loading="lazy" decoding="async" width="1024" height="927" src="" alt="" class="wp-image-589" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/p4-6-1024x927.png" data-srcset="/wp-content/uploads/2024/11/p4-6-1024x927.png 1024w, /wp-content/uploads/2024/11/p4-6-300x272.png 300w, /wp-content/uploads/2024/11/p4-6-768x695.png 768w, /wp-content/uploads/2024/11/p4-6.png 1266w"></figure>
+
+
+
+<p>After addressing all the issues from my previous site, I still felt it lacked something. So, I decided to reintroduce a unique gimmick I experimented with in 2023 for <em>&ldquo;Measure a Machine&rsquo;s Heart&rdquo;</em>&mdash;developer tool rendering. This time, I took it further, crafting a more intentional experience by capturing the entire interface responsively as ASCII art in real time.<br><br>This was quite a ride, since I had to build the rendering engine from vanilla JavaScript, from calculating positions, analyzing styles, animating, layering, structuring the paint order, ascii-izing data, to caching repaints, lazy-painting elements, &hellip; I also had to do a few tricks here and there to ensure smooth performance.<br><br><strong>To see best, please click on the devtool &amp; zoom out a bit by Ctrl/Cmd + Minus (-) to avoid line breaks.</strong></p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2 row2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:651;"><img decoding="async" style="--twidth:960; --theight:651;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947317605-3a0cdeaa80c87bf9610895dfa2d6d71420713ce99b230eef05e55437143cda80-d_960" data-srcset="" srcset=""><iframe title="Personal Website 2024" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027363425?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2md"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:651;"><img decoding="async" style="--twidth:960; --theight:651;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947316382-2e1a50f69146de6aa3dd748d4637b3f9121e21df7f753b52eb094ba0945e3450-d_960" data-srcset="" srcset=""><iframe title="Personal Website 2024 - Idle screen" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027363378?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p>For the idle video, I pre-processed the entire video into ASCII on the server side before sending it to the browser for painting. This approach avoids the significant performance hit that real-time rendering would cause.</p>
+
+
+
+<p class="space"></p>
+
+
+
+<p>The link in the center of the navbar directs visitors to a message-sending page. Functionally, it&rsquo;s similar to the 2023 site, but with a unique twist in how messages are displayed. Instead of appearing directly on the page, all notes are hidden within the dev tools and only reveal themselves at specific screen sizes.</p>
+
+
+
+<figure class="wp-block-image size-full thumb" style="--width:3566; --height:1898;"><img loading="lazy" decoding="async" width="3566" height="1898" src="" alt="" class="wp-image-608" srcset="" sizes="(max-width: 3566px) 100vw, 3566px" data-src="/wp-content/uploads/2024/11/p49.png" data-srcset="/wp-content/uploads/2024/11/p49.png 3566w, /wp-content/uploads/2024/11/p49-300x160.png 300w, /wp-content/uploads/2024/11/p49-1024x545.png 1024w, /wp-content/uploads/2024/11/p49-768x409.png 768w, /wp-content/uploads/2024/11/p49-1536x818.png 1536w, /wp-content/uploads/2024/11/p49-2048x1090.png 2048w"></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:512;"><img decoding="async" style="--twidth:960; --theight:512;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947629463-b817411d0b313806239139df510fa201c8424884106f39322589cab1b2e2e377-d_960" data-srcset="" srcset=""><iframe title="Personal Website 2024 - Messages" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027625346?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p><strong>2. Backend<br></strong><br>This time, I chose WordPress as my main CMS out of curiosity, which led me to dive into PHP. For essential plugins, I used Pods to manage custom content types and fields.<br><br>Initially, I planned to host the site on InfinityFree because of its free service. However, I soon realized my site would quickly exceed the service&rsquo;s limits&mdash;which even led to a one-day suspension. To avoid further interruptions, I migrated almost everything (except for the message-sending page) to my local setup, used Simply Static to export the site, and deployed it on GitHub Pages.</p>
+
+
+
+<figure class="wp-block-image size-full span12" style="--width:3536; --height:1908;"><img loading="lazy" decoding="async" width="3536" height="1908" src="" alt="" class="wp-image-595" srcset="" sizes="(max-width: 3536px) 100vw, 3536px" data-src="/wp-content/uploads/2024/11/pt4-7.png" data-srcset="/wp-content/uploads/2024/11/pt4-7.png 3536w, /wp-content/uploads/2024/11/pt4-7-300x162.png 300w, /wp-content/uploads/2024/11/pt4-7-1024x553.png 1024w, /wp-content/uploads/2024/11/pt4-7-768x414.png 768w, /wp-content/uploads/2024/11/pt4-7-1536x829.png 1536w, /wp-content/uploads/2024/11/pt4-7-2048x1105.png 2048w"></figure>
+</body></html>
+<p>The post <a href="/work/personal-website-2024/">Personal website 2024</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>google sheet + google doc ?</title>
+		<link>/work/google-sheet-google-doc/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Thu, 07 Nov 2024 10:08:06 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=544</guid>
+
+					<description><![CDATA[<p>1. Website Concept KIRTI explores contemporary art from Southeast Asia in alternative ways. This effort is vital as a countermeasure to art world silos and stratifications.Hunter (KIRTI founder) came to me to ask for a digital solution that can aggregate all of his archived interviews (currently in Google Docs), is easy to update himself (with [&#8230;]</p>
+<p>The post <a href="/work/google-sheet-google-doc/">google sheet + google doc ?</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><ul class="wp-block-list">
+<li>Visit the site here <a href="https://kirti.baoanh1buinguyen.workers.dev/" target="_blank" rel="noreferrer noopener">kirti.baoanh1buinguyen.workers.dev</a></li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full span12" style="--width:2238; --height:1900;"><img loading="lazy" decoding="async" width="2238" height="1900" src="/wp-content/uploads/2024/11/kirti.png" alt="" class="wp-image-546" srcset="/wp-content/uploads/2024/11/kirti.png 2238w, /wp-content/uploads/2024/11/kirti-300x255.png 300w, /wp-content/uploads/2024/11/kirti-1024x869.png 1024w, /wp-content/uploads/2024/11/kirti-768x652.png 768w, /wp-content/uploads/2024/11/kirti-1536x1304.png 1536w, /wp-content/uploads/2024/11/kirti-2048x1739.png 2048w" sizes="(max-width: 2238px) 100vw, 2238px" fetchpriority="high"></figure>
+
+
+
+<p class="row2"><strong>1. Website Concept</strong><br><br><em>KIRTI explores contemporary art from Southeast Asia in alternative ways. This effort is vital as a countermeasure to art world silos and stratifications.<br></em><br>Hunter (KIRTI founder) came to me to ask for a digital solution that can aggregate all of his archived interviews (currently in Google Docs), is easy to update himself (with no technical skill), while providing a nice reading and browsing experience for the visitors. Of course, the site&rsquo;s design and concept should align to the <em>energy</em> of the project, that is <strong>experimental, impromptu, and open-ended</strong>.<br><br>We have discussed through various ways from a dedicated CMS to using Google Drive as a platform. In the end, we conclude on combining Google Sheet and Google Doc into a website.</p>
+
+
+
+<figure class="wp-block-image size-large" style="--width:922; --height:1024;"><img loading="lazy" decoding="async" width="922" height="1024" src="/wp-content/uploads/2024/11/kirti1-922x1024.png" alt="" class="wp-image-550" srcset="/wp-content/uploads/2024/11/kirti1-922x1024.png 922w, /wp-content/uploads/2024/11/kirti1-270x300.png 270w, /wp-content/uploads/2024/11/kirti1-768x853.png 768w, /wp-content/uploads/2024/11/kirti1-1383x1536.png 1383w, /wp-content/uploads/2024/11/kirti1.png 1712w" sizes="(max-width: 922px) 100vw, 922px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:922; --height:1024;"><img loading="lazy" decoding="async" width="922" height="1024" src="" alt="" class="wp-image-551" srcset="" sizes="(max-width: 922px) 100vw, 922px" data-src="/wp-content/uploads/2024/11/kirti2-922x1024.png" data-srcset="/wp-content/uploads/2024/11/kirti2-922x1024.png 922w, /wp-content/uploads/2024/11/kirti2-270x300.png 270w, /wp-content/uploads/2024/11/kirti2-768x853.png 768w, /wp-content/uploads/2024/11/kirti2-1383x1536.png 1383w, /wp-content/uploads/2024/11/kirti2.png 1712w"></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span3"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:463;"><img decoding="async" style="--twidth:960; --theight:463;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947149107-ddbfc0aa2d29f8d0d9e253026af316280a06df3e93719f83bbc31e04ea984f21-d_960" data-srcset="" srcset=""><iframe title="KIRTI website" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027222634?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p><strong>2. Frontend Development</strong><br><br>Using iframes, I was able to hijack the visual interface of Google Sheet and Google Doc with ease. For the interactivity, I found a solution by using data from the Google Sheets API to create an interactive, transparent overlay positioned directly and precisely on top of the sheet iframe.</p>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:2706; --height:1792;"><img loading="lazy" decoding="async" width="2706" height="1792" src="" alt="" class="wp-image-553" srcset="" sizes="(max-width: 2706px) 100vw, 2706px" data-src="/wp-content/uploads/2024/11/kirti3.png" data-srcset="/wp-content/uploads/2024/11/kirti3.png 2706w, /wp-content/uploads/2024/11/kirti3-300x199.png 300w, /wp-content/uploads/2024/11/kirti3-1024x678.png 1024w, /wp-content/uploads/2024/11/kirti3-768x509.png 768w, /wp-content/uploads/2024/11/kirti3-1536x1017.png 1536w, /wp-content/uploads/2024/11/kirti3-2048x1356.png 2048w"><figcaption class="wp-element-caption">Diagram to show how all of this works together.</figcaption></figure>
+
+
+
+<p>The site includes a basic sort and filter function to help users browse the archive, made possible through Google Sheets&rsquo; Filter Views feature. Unfortunately, due to limitations in Google Sheets, this feature only works on the desktop version.</p>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:160;"><img loading="lazy" decoding="async" width="1024" height="160" src="" alt="" class="wp-image-558" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/kirti5-1024x160.png" data-srcset="/wp-content/uploads/2024/11/kirti5-1024x160.png 1024w, /wp-content/uploads/2024/11/kirti5-300x47.png 300w, /wp-content/uploads/2024/11/kirti5-768x120.png 768w, /wp-content/uploads/2024/11/kirti5-1536x240.png 1536w, /wp-content/uploads/2024/11/kirti5-2048x320.png 2048w"></figure>
+
+
+
+<p>Google sheet is not responsive to screen size at all, which makes the mobile version of the sheet horrible in terms of user experience. To improve usability on smaller screens, I designed a separate sheet specifically optimized for mobile viewing.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:505; --height:1000;"><img decoding="async" style="--twidth:295; --theight:584;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947200559-67296fd40115102a08d9bf2fbbff9408d42c1cdb6e77ee0a93cd975f67bac4f1-d_295x166" data-srcset="" srcset=""><iframe title="KIRTI website mobile" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027265929?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image size-large span2md" style="--width:1024; --height:837;"><img loading="lazy" decoding="async" width="1024" height="837" src="" alt="" class="wp-image-555" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/kirti4-1024x837.png" data-srcset="/wp-content/uploads/2024/11/kirti4-1024x837.png 1024w, /wp-content/uploads/2024/11/kirti4-300x245.png 300w, /wp-content/uploads/2024/11/kirti4-768x628.png 768w, /wp-content/uploads/2024/11/kirti4-1536x1256.png 1536w, /wp-content/uploads/2024/11/kirti4-2048x1675.png 2048w"></figure>
+
+
+
+<p><strong>3. Backend Development</strong><br><br>For this project, I used Svelte/SvelteKit as a fullstack framework and Cloudflare for deployment out of curiosity. I want to implement ISR function to allow immediate website updates without a full rebuild. However, unlike Next.js, SvelteKit didn&rsquo;t natively support ISR at the time. <br><br>To work around this, I developed a custom Cloudflare Workers adapter for SvelteKit, utilizing Workers KV to handle caching and revalidation.</p>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:2614; --height:1346;"><img loading="lazy" decoding="async" width="2614" height="1346" src="" alt="" class="wp-image-561" srcset="" sizes="(max-width: 2614px) 100vw, 2614px" data-src="/wp-content/uploads/2024/11/kirti6.png" data-srcset="/wp-content/uploads/2024/11/kirti6.png 2614w, /wp-content/uploads/2024/11/kirti6-300x154.png 300w, /wp-content/uploads/2024/11/kirti6-1024x527.png 1024w, /wp-content/uploads/2024/11/kirti6-768x395.png 768w, /wp-content/uploads/2024/11/kirti6-1536x791.png 1536w, /wp-content/uploads/2024/11/kirti6-2048x1055.png 2048w"></figure>
+
+
+
+<p><strong>4. Documentation and handoff</strong><br><br>For Hunter to use and populate the content into the sheet without disrupting the site&rsquo;s functionality, I created detailed documentation on best practices and potential pitfalls. This guide covered what to avoid and how to perform key tasks correctly. <br><br>I also made a couple of phone calls to clarify specific steps, which helped me better understand how Hunter would actually work with the sheet.</p>
+
+
+
+<figure class="wp-block-image size-full span2 row2" style="--width:2400; --height:1898;"><img loading="lazy" decoding="async" width="2400" height="1898" src="" alt="" class="wp-image-564" srcset="" sizes="(max-width: 2400px) 100vw, 2400px" data-src="/wp-content/uploads/2024/11/kirti7.png" data-srcset="/wp-content/uploads/2024/11/kirti7.png 2400w, /wp-content/uploads/2024/11/kirti7-300x237.png 300w, /wp-content/uploads/2024/11/kirti7-1024x810.png 1024w, /wp-content/uploads/2024/11/kirti7-768x607.png 768w, /wp-content/uploads/2024/11/kirti7-1536x1215.png 1536w, /wp-content/uploads/2024/11/kirti7-2048x1620.png 2048w"></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Tech Stack: Svelte/SvelteKit web framework, Typescript, SCSS, Google Sheet API, Cloudflare Workers</li>
+
+
+
+<li>Bao Anh <em>as designer &amp; developer</em></li>
+
+
+
+<li>This work is done for KIRTI Project</li>
+</ul>
+</body></html>
+<p>The post <a href="/work/google-sheet-google-doc/">google sheet + google doc ?</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Personal website 2023</title>
+		<link>/work/personal-website-2023/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Thu, 07 Nov 2024 04:49:35 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=516</guid>
+
+					<description><![CDATA[<p>While working on this, I have looked into a lot of other personal website references from my friends and people I&#160;know on the Internet:&#160;Rachel Yeeun Kim,&#160;Katherine Yang,&#160;Mai Nguyen, and countless other sources but those 3 are the&#160;main&#160;influences with a twist of my personality. Ascii-ish stylized frames and decorative web elements sprinkled here and there. Another [&#8230;]</p>
+<p>The post <a href="/work/personal-website-2023/">Personal website 2023</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><ul class="wp-block-list">
+<li>Visit the <a href="https://baoanhpro.vip/" target="_blank" rel="noreferrer noopener">baoanhpro.vip</a> to see the website.</li>
+
+
+
+<li>Take a look at the <a href="https://github.com/vanghoa/new-est-website" target="_blank" rel="noreferrer noopener">github repository</a>.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:3530; --height:1894;"><img loading="lazy" decoding="async" width="3530" height="1894" src="/wp-content/uploads/2024/11/ps4.png" alt="" class="wp-image-523" srcset="/wp-content/uploads/2024/11/ps4.png 3530w, /wp-content/uploads/2024/11/ps4-300x161.png 300w, /wp-content/uploads/2024/11/ps4-1024x549.png 1024w, /wp-content/uploads/2024/11/ps4-768x412.png 768w, /wp-content/uploads/2024/11/ps4-1536x824.png 1536w, /wp-content/uploads/2024/11/ps4-2048x1099.png 2048w" sizes="(max-width: 3530px) 100vw, 3530px" fetchpriority="high"></figure>
+
+
+
+<p class="row2md">While working on this, I have looked into a lot of other personal website references from my friends and people I&nbsp;know on the Internet:&nbsp;<a href="https://www.rachelyeeunkim.com/" target="_blank" rel="noreferrer noopener">Rachel Yeeun Kim</a>,&nbsp;<a href="https://kayserifserif.place/" target="_blank" rel="noreferrer noopener">Katherine Yang</a>,&nbsp;<a href="https://www.themainwork.com/" target="_blank" rel="noreferrer noopener">Mai Nguyen</a>, and countless other sources but those 3 are the&nbsp;main&nbsp;influences with a twist of my personality.</p>
+
+
+
+<figure class="wp-block-image size-large is-resized" style="--width:1024; --height:549;"><img loading="lazy" decoding="async" width="1024" height="549" src="/wp-content/uploads/2024/11/ps5-1024x549.png" alt="" class="wp-image-524" style="width:659px;height:auto" srcset="/wp-content/uploads/2024/11/ps5-1024x549.png 1024w, /wp-content/uploads/2024/11/ps5-300x161.png 300w, /wp-content/uploads/2024/11/ps5-768x412.png 768w, /wp-content/uploads/2024/11/ps5-1536x824.png 1536w, /wp-content/uploads/2024/11/ps5-2048x1099.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:579;"><img loading="lazy" decoding="async" width="1024" height="579" src="" alt="" class="wp-image-525" style="object-fit:cover" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/internet-gems-rachel-yeeun-kim2-1024x579.jpg" data-srcset="/wp-content/uploads/2024/11/internet-gems-rachel-yeeun-kim2-1024x579.jpg 1024w, /wp-content/uploads/2024/11/internet-gems-rachel-yeeun-kim2-300x170.jpg 300w, /wp-content/uploads/2024/11/internet-gems-rachel-yeeun-kim2-768x434.jpg 768w, /wp-content/uploads/2024/11/internet-gems-rachel-yeeun-kim2.jpg 1432w"></figure>
+
+
+
+<p class="row2">Ascii-ish stylized frames and decorative web elements sprinkled here and there.</p>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:602;"><img loading="lazy" decoding="async" width="1024" height="602" src="" alt="" class="wp-image-530" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/scr3-1024x602.png" data-srcset="/wp-content/uploads/2024/11/scr3-1024x602.png 1024w, /wp-content/uploads/2024/11/scr3-300x176.png 300w, /wp-content/uploads/2024/11/scr3-768x451.png 768w, /wp-content/uploads/2024/11/scr3-1536x902.png 1536w, /wp-content/uploads/2024/11/scr3-2048x1203.png 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:625;"><img loading="lazy" decoding="async" width="1024" height="625" src="" alt="" class="wp-image-529" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/scr1-1024x625.png" data-srcset="/wp-content/uploads/2024/11/scr1-1024x625.png 1024w, /wp-content/uploads/2024/11/scr1-300x183.png 300w, /wp-content/uploads/2024/11/scr1-768x469.png 768w, /wp-content/uploads/2024/11/scr1-1536x938.png 1536w, /wp-content/uploads/2024/11/scr1-2048x1250.png 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:602;"><img loading="lazy" decoding="async" width="1024" height="602" src="" alt="" class="wp-image-528" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/scr4-1024x602.png" data-srcset="/wp-content/uploads/2024/11/scr4-1024x602.png 1024w, /wp-content/uploads/2024/11/scr4-300x176.png 300w, /wp-content/uploads/2024/11/scr4-768x451.png 768w, /wp-content/uploads/2024/11/scr4-1536x902.png 1536w, /wp-content/uploads/2024/11/scr4-2048x1203.png 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:602;"><img loading="lazy" decoding="async" width="1024" height="602" src="" alt="" class="wp-image-527" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/scr2-1024x602.png" data-srcset="/wp-content/uploads/2024/11/scr2-1024x602.png 1024w, /wp-content/uploads/2024/11/scr2-300x176.png 300w, /wp-content/uploads/2024/11/scr2-768x451.png 768w, /wp-content/uploads/2024/11/scr2-1536x902.png 1536w, /wp-content/uploads/2024/11/scr2-2048x1203.png 2048w"></figure>
+
+
+
+<p>Another subtle concept is playing around with the text-highlighting/user-select interaction to reveal hidden messages.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:804; --height:1000;"><img decoding="async" style="--twidth:640; --theight:796;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947113516-edce2372220c0f9d5b502a3e215d1bffa26d20b4ac39166bc51adfe2913a2254-d_640" data-srcset="" srcset=""><iframe title="Personal Website 2023 - Highlighting text" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027192852?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image size-large span2md" style="--width:1024; --height:613;"><img loading="lazy" decoding="async" width="1024" height="613" src="" alt="" class="wp-image-538" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/hili-1024x613.png" data-srcset="/wp-content/uploads/2024/11/hili-1024x613.png 1024w, /wp-content/uploads/2024/11/hili-300x180.png 300w, /wp-content/uploads/2024/11/hili-768x460.png 768w, /wp-content/uploads/2024/11/hili.png 1530w"></figure>
+
+
+
+<p class="row2md">To tribute my previous website in 2022, I put its front-end in the rear (in terms of Z axis), which can only reveal itself via the button <strong>&ldquo;&rsquo;-&hellip;__&hellip;-&lsquo;&ldquo;</strong>. The place also acts as a holder for my &lsquo;Guestbook&rsquo; function, in which visitors can leave messages for me directly on the site.</p>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:741;"><img loading="lazy" decoding="async" width="1024" height="741" src="" alt="" class="wp-image-536" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/src7-1024x741.png" data-srcset="/wp-content/uploads/2024/11/src7-1024x741.png 1024w, /wp-content/uploads/2024/11/src7-300x217.png 300w, /wp-content/uploads/2024/11/src7-768x555.png 768w, /wp-content/uploads/2024/11/src7-1536x1111.png 1536w, /wp-content/uploads/2024/11/src7-2048x1481.png 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:602;"><img loading="lazy" decoding="async" width="1024" height="602" src="" alt="" class="wp-image-532" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/scr5-1024x602.png" data-srcset="/wp-content/uploads/2024/11/scr5-1024x602.png 1024w, /wp-content/uploads/2024/11/scr5-300x176.png 300w, /wp-content/uploads/2024/11/scr5-768x451.png 768w, /wp-content/uploads/2024/11/scr5-1536x902.png 1536w, /wp-content/uploads/2024/11/scr5-2048x1203.png 2048w"></figure>
+
+
+
+<p>The initial conceptual idea of the site can be observed via the&nbsp;3D View&nbsp;of the developer tool of Microsoft Edge. Inspect the site to see.<br><br>Using a mix of &lsquo;z-index&rsquo; and &lsquo;transform-style: preserve-3d&rsquo; property, all the layers are arranged in a way that looks like a 3D sculpture when observed through the 3D View tool. This idea is to look at a website from a third-person perspective instead of the usual front-back view.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:510;"><img decoding="async" style="--twidth:960; --theight:510;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1947091424-31c0bc1f18d6fad71f72ae6b21f70a02d2281bec083c8e6c0c235dc1c693a07f-d_960" data-srcset="" srcset=""><iframe title="Personal Website 2023 - 3D layer view" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1027173378?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p>A special section to attribute to those crossing paths with me in work throughout the previous years.</p>
+
+
+
+<figure class="wp-block-image size-large span12" style="--width:1024; --height:768;"><img loading="lazy" decoding="async" width="1024" height="768" src="" alt="" class="wp-image-540" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/11/cre-1024x768.png" data-srcset="/wp-content/uploads/2024/11/cre-1024x768.png 1024w, /wp-content/uploads/2024/11/cre-300x225.png 300w, /wp-content/uploads/2024/11/cre-768x576.png 768w, /wp-content/uploads/2024/11/cre-1536x1152.png 1536w, /wp-content/uploads/2024/11/cre-2048x1536.png 2048w"></figure>
+
+
+
+<p>Under the hood, I used Notion as the CMS backend to update everything on the site. You can view the database on Notion here&nbsp;<a href="https://prickle-robe-9ad.notion.site/B-o-Anh-s-personal-website-database-74c4132872904ed9855e05567cb116c3" target="_blank" rel="noreferrer noopener">notion link</a>.&nbsp;</p>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:3546; --height:1882;"><img loading="lazy" decoding="async" width="3546" height="1882" src="" alt="" class="wp-image-535" srcset="" sizes="(max-width: 3546px) 100vw, 3546px" data-src="/wp-content/uploads/2024/11/src6.png" data-srcset="/wp-content/uploads/2024/11/src6.png 3546w, /wp-content/uploads/2024/11/src6-300x159.png 300w, /wp-content/uploads/2024/11/src6-1024x543.png 1024w, /wp-content/uploads/2024/11/src6-768x408.png 768w, /wp-content/uploads/2024/11/src6-1536x815.png 1536w, /wp-content/uploads/2024/11/src6-2048x1087.png 2048w"></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Site is built on&nbsp;Next.js&nbsp;with&nbsp;Tailwind CSS. CMS is from&nbsp;Notion</li>
+
+
+
+<li>API&nbsp;with&nbsp;<a href="https://github.com/9gustin/react-notion-render" target="_blank" rel="noreferrer noopener">react-notion-render</a> by @9gustin for data rendering and&nbsp;<a href="https://github.com/guillermodlpa/upload-notion-images-to-cloudinary" target="_blank" rel="noreferrer noopener">upload-notion-images-to-cloudinary</a> by @guillermodlpa for hosting images form Notion to Cloudinary. Other dependencies include&nbsp;Prisma + PostgreSQL,&nbsp;Framer Motion,&nbsp;probe-image-size,&nbsp;seedrandom,&nbsp;react-lazy-load, &hellip; See the Github repository of the site here&nbsp;<a href="https://github.com/vanghoa/new-est-website" target="_blank" rel="noreferrer noopener">github link</a>.</li>
+
+
+
+<li>Typeface is&nbsp;<a href="https://fonts.google.com/specimen/Alegreya" target="_blank" rel="noreferrer noopener">Alegreya</a> designed by Juan Pablo del Peral, Huerta Tipogr&aacute;fica. Mono typeface is&nbsp;<a href="https://michaeljmcmaster.com/selectmono" target="_blank" rel="noreferrer noopener">Select Mono</a> designed by MICHAEL McMASTER.</li>
+</ul>
+</body></html>
+<p>The post <a href="/work/personal-website-2023/">Personal website 2023</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Singapore Design Week 2024 &#124; Bras Basah.Bugis</title>
+		<link>/work/singapore-design-week-2024-bras-basah-bugis/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Mon, 30 Sep 2024 09:59:08 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=193</guid>
+
+					<description><![CDATA[<p>The post <a href="/work/singapore-design-week-2024-bras-basah-bugis/">Singapore Design Week 2024 | Bras Basah.Bugis</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><ul class="wp-block-list">
+<li>Visit the site here <a href="https://sdw-bbb.sg/" target="_blank" rel="noreferrer noopener">sdw-bbb.sg</a>.</li>
+
+
+
+<li>Take a look at the <a href="https://github.com/vanghoa/Bras-Basah.-Bugis-SDW-map" target="_blank" rel="noreferrer noopener">github repository</a>.</li>
+</ul>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:536; --height:1000;"><img decoding="async" style="--twidth:295; --theight:550;" alt="thumbnail" src="https://i.vimeocdn.com/video/1932353584-6c9f55f5cdff2fafbade79369a7e0f256fe702b04d53606ab43ac351b25db919-d_295x166" fetchpriority="high"><iframe title="SDW-BBB microsite" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/1014278805?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image size-full span2md" style="--width:2148; --height:1966;"><img loading="lazy" decoding="async" width="2148" height="1966" src="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM.avif" alt="" class="wp-image-195" srcset="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM.avif 2148w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM-300x275.avif 300w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM-1024x937.avif 1024w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM-768x703.avif 768w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM-1536x1406.avif 1536w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM-2048x1874.avif 2048w" sizes="(max-width: 2148px) 100vw, 2148px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-full span2" style="--width:2148; --height:1966;"><img loading="lazy" decoding="async" width="2148" height="1966" src="" alt="" class="wp-image-196" srcset="" sizes="(max-width: 2148px) 100vw, 2148px" data-src="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM.avif" data-srcset="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM.avif 2148w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM-300x275.avif 300w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM-1024x937.avif 1024w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM-768x703.avif 768w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM-1536x1406.avif 1536w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM-2048x1874.avif 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-full" style="--width:1125; --height:1900;"><img loading="lazy" decoding="async" width="1125" height="1900" src="" alt="" class="wp-image-203" srcset="" sizes="(max-width: 1125px) 100vw, 1125px" data-src="/wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1.avif" data-srcset="/wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1.avif 1125w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-178x300.avif 178w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-606x1024.avif 606w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-768x1297.avif 768w, /wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1-909x1536.avif 909w"></figure>
+
+
+
+<figure class="wp-block-image size-full span12" style="--width:2148; --height:1966;"><img loading="lazy" decoding="async" width="2148" height="1966" src="" alt="" class="wp-image-194" srcset="" sizes="(max-width: 2148px) 100vw, 2148px" data-src="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM.avif" data-srcset="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM.avif 2148w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-300x275.avif 300w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-1024x937.avif 1024w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-768x703.avif 768w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-1536x1406.avif 1536w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM-2048x1874.avif 2048w"></figure>
+
+
+
+<figure class="wp-block-image size-full" style="--width:2148; --height:1966;"><img loading="lazy" decoding="async" width="2148" height="1966" src="" alt="" class="wp-image-197" srcset="" sizes="(max-width: 2148px) 100vw, 2148px" data-src="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM.avif" data-srcset="/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM.avif 2148w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-300x275.avif 300w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-1024x937.avif 1024w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-768x703.avif 768w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-1536x1406.avif 1536w, /wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM-2048x1874.avif 2048w"></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Bao Anh <em>as website designer &amp; developer</em></li>
+
+
+
+<li>gideon-jamie <em>as graphic designer</em></li>
+
+
+
+<li>Ying Tong Tan <em>as type designer of BB.B typeface</em></li>
+</ul>
+</body></html>
+<p>The post <a href="/work/singapore-design-week-2024-bras-basah-bugis/">Singapore Design Week 2024 | Bras Basah.Bugis</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>lowercase &#060;-&gt; uppercase</title>
+		<link>/work/variable-case-modular-font/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Tue, 17 Sep 2024 11:34:07 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=115</guid>
+
+					<description><![CDATA[<p>Variable-Case&#8217;s unique trait lies in its ability to switch between uppercase and lowercase letters based on where they sit vertically. I made a website to see the font in action. * Font testing site here vanghoa.github.io/VariableCase.* Take a look at the github repository. Initially, the project brief was to choose a fashion designer and craft [&#8230;]</p>
+<p>The post <a href="/work/variable-case-modular-font/">lowercase &lt;-&gt; uppercase</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Variable-Case&rsquo;s unique trait lies in its ability to switch between uppercase and lowercase letters based on where they sit vertically. I made a website to see the font in action.<br><br>* Font testing site here <a href="https://vanghoa.github.io/VariableCase/" target="_blank" rel="noreferrer noopener">vanghoa.github.io/VariableCase</a>.<br>* Take a look at the <a href="https://github.com/vanghoa/VariableCase" target="_blank" rel="noreferrer noopener">github repository</a>.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span12"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:960;"><img decoding="async" style="--twidth:960; --theight:960;" alt="thumbnail" src="https://i.vimeocdn.com/video/1736705561-681a1cf941ba9be9aa6a862bc2e6da5084a03a6d66c2a309a73c1021e03c52c5-d_960" fetchpriority="high"><iframe title="Variable-Case" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873272916?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<p>Initially, the project brief was to choose a fashion designer and craft a modular typeface inspired by that designer, their approach, philosophy, or a specific work. I picked Martin Margiela, a highly influential figure in the fashion world. What piqued my interest the most was his <em>Spring 1996 Collection</em>.</p>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:809;"><img loading="lazy" decoding="async" width="1024" height="809" src="/wp-content/uploads/2024/09/image-10-1-1024x809.jpeg" alt="" class="wp-image-507" srcset="/wp-content/uploads/2024/09/image-10-1-1024x809.jpeg 1024w, /wp-content/uploads/2024/09/image-10-1-300x237.jpeg 300w, /wp-content/uploads/2024/09/image-10-1-768x607.jpeg 768w, /wp-content/uploads/2024/09/image-10-1-1536x1214.jpeg 1536w, /wp-content/uploads/2024/09/image-10-1.jpeg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<p>The collection is remarkable for its incorporation of photographs of vintage garments, screenprinted onto plain, blank clothing. This unique approach fosters a captivating dialogue between the past and present.</p>
+
+
+
+<p>Past and present, embodied in a single garment. By the same token, my typeface conceptually focuses on the relationship between uppercase and lowercase characters. Functionwise, different letter case variations can emphasize hierarchy, use for abbreviation, control reading flow, act as punctuation, and more, all with the goal of differentiation. This typeface unites both cases into a single silhouette; and the differentiation is achieved simply through moving the character up or down.</p>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:550;"><img loading="lazy" decoding="async" width="1024" height="550" src="" alt="" class="wp-image-208" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-1024x550.png" data-srcset="/wp-content/uploads/2024/09/image-1024x550.png 1024w, /wp-content/uploads/2024/09/image-300x161.png 300w, /wp-content/uploads/2024/09/image-768x413.png 768w, /wp-content/uploads/2024/09/image-1536x826.png 1536w, /wp-content/uploads/2024/09/image.png 2000w"></figure>
+
+
+
+<p>One key design aspect is the use of lowercase shapes for the tops of characters. This involves initially designing each character in lowercase with a consistent x-height, followed by the addition of descenders to create the impression of uppercase letters. This way, when a portion of the text is covered, it will still display the conventional look of the capitals taller than the lowercase.</p>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:550;"><img loading="lazy" decoding="async" width="1024" height="550" src="" alt="" class="wp-image-210" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-1-1024x550.png" data-srcset="/wp-content/uploads/2024/09/image-1-1024x550.png 1024w, /wp-content/uploads/2024/09/image-1-300x161.png 300w, /wp-content/uploads/2024/09/image-1-768x413.png 768w, /wp-content/uploads/2024/09/image-1-1536x826.png 1536w, /wp-content/uploads/2024/09/image-1.png 2000w"></figure>
+
+
+
+<p>Besides the default uppercase and lowercase, the typeface also has a variable function allowing custom case (mostly for display purpose because there is already a similar function in Adobe Illustrator&ndash;baseline shifting)</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span12"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:791;"><img decoding="async" style="--twidth:960; --theight:791;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1738663735-89b1f5c3294528e1ad9f696cda2ea8799426a4c95def37a748a0640981f19647-d_960" data-srcset="" srcset=""><iframe title="Variable-Case &ndash; variable test" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/874543303?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image size-large span3" style="--width:1024; --height:523;"><img loading="lazy" decoding="async" width="1024" height="523" src="" alt="" class="wp-image-211" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-2-1024x523.png" data-srcset="/wp-content/uploads/2024/09/image-2-1024x523.png 1024w, /wp-content/uploads/2024/09/image-2-300x153.png 300w, /wp-content/uploads/2024/09/image-2-768x392.png 768w, /wp-content/uploads/2024/09/image-2-1536x784.png 1536w, /wp-content/uploads/2024/09/image-2.png 2000w"></figure>
+
+
+
+<ul class="wp-block-list">
+<li>B&#7843;o Anh as <em>graphic designer</em></li>
+
+
+
+<li>Darius Ou for <em>consultation</em></li>
+
+
+
+<li>This project was done as part of a course module at LASALLE College of the Arts</li>
+</ul>
+</body></html>
+<p>The post <a href="/work/variable-case-modular-font/">lowercase &lt;-&gt; uppercase</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>LED text under Singapore MRT</title>
+		<link>/work/text-display-technology-on-led-screen-in-singapore-mrt/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Tue, 17 Sep 2024 11:25:27 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=113</guid>
+
+					<description><![CDATA[<p>A school study of localized text display technology on LED screen as well as the font rasterization method developed throughout the history of SMRT trains in SG. Various intriguing letterforms and typeface categories/treatments are documented.</p>
+<p>The post <a href="/work/text-display-technology-on-led-screen-in-singapore-mrt/">LED text under Singapore MRT</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>A school study of localized text display technology on LED screen as well as the font rasterization method developed throughout the history of SMRT trains in SG.</p>
+
+
+
+<p>Various intriguing letterforms and typeface categories/treatments are documented.</p>
+
+
+
+<figure class="wp-block-image size-large thumb" style="--width:1024; --height:1024;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/wp-content/uploads/2024/09/image-1024x1024.jpeg" alt="" class="wp-image-212" srcset="/wp-content/uploads/2024/09/image-1024x1024.jpeg 1024w, /wp-content/uploads/2024/09/image-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-768x768.jpeg 768w, /wp-content/uploads/2024/09/image-1536x1536.jpeg 1536w, /wp-content/uploads/2024/09/image.jpeg 1700w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-large thumb" style="--width:1024; --height:1024;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/wp-content/uploads/2024/09/image-1-1024x1024.jpeg" alt="" class="wp-image-213" srcset="/wp-content/uploads/2024/09/image-1-1024x1024.jpeg 1024w, /wp-content/uploads/2024/09/image-1-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-1-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-1-768x768.jpeg 768w, /wp-content/uploads/2024/09/image-1-1536x1536.jpeg 1536w, /wp-content/uploads/2024/09/image-1.jpeg 1700w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-large thumb" style="--width:1024; --height:1024;"><img loading="lazy" decoding="async" width="1024" height="1024" src="" alt="" class="wp-image-214" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-2-1024x1024.jpeg" data-srcset="/wp-content/uploads/2024/09/image-2-1024x1024.jpeg 1024w, /wp-content/uploads/2024/09/image-2-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-2-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-2-768x768.jpeg 768w, /wp-content/uploads/2024/09/image-2-1536x1536.jpeg 1536w, /wp-content/uploads/2024/09/image-2.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:1024;"><img loading="lazy" decoding="async" width="1024" height="1024" src="" alt="" class="wp-image-215" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-3-1024x1024.jpeg" data-srcset="/wp-content/uploads/2024/09/image-3-1024x1024.jpeg 1024w, /wp-content/uploads/2024/09/image-3-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-3-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-3-768x768.jpeg 768w, /wp-content/uploads/2024/09/image-3-1536x1536.jpeg 1536w, /wp-content/uploads/2024/09/image-3.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:1024;"><img loading="lazy" decoding="async" width="1024" height="1024" src="" alt="" class="wp-image-216" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-4-1024x1024.jpeg" data-srcset="/wp-content/uploads/2024/09/image-4-1024x1024.jpeg 1024w, /wp-content/uploads/2024/09/image-4-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-4-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-4-768x768.jpeg 768w, /wp-content/uploads/2024/09/image-4-1536x1536.jpeg 1536w, /wp-content/uploads/2024/09/image-4.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:1024;"><img loading="lazy" decoding="async" width="1024" height="1024" src="" alt="" class="wp-image-217" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-5-1024x1024.jpeg" data-srcset="/wp-content/uploads/2024/09/image-5-1024x1024.jpeg 1024w, /wp-content/uploads/2024/09/image-5-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-5-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-5-768x768.jpeg 768w, /wp-content/uploads/2024/09/image-5-1536x1536.jpeg 1536w, /wp-content/uploads/2024/09/image-5.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:1024;"><img loading="lazy" decoding="async" width="1024" height="1024" src="" alt="" class="wp-image-218" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-6-1024x1024.jpeg" data-srcset="/wp-content/uploads/2024/09/image-6-1024x1024.jpeg 1024w, /wp-content/uploads/2024/09/image-6-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-6-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-6-768x768.jpeg 768w, /wp-content/uploads/2024/09/image-6-1536x1536.jpeg 1536w, /wp-content/uploads/2024/09/image-6.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:1024;"><img loading="lazy" decoding="async" width="1024" height="1024" src="" alt="" class="wp-image-219" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-7-1024x1024.jpeg" data-srcset="/wp-content/uploads/2024/09/image-7-1024x1024.jpeg 1024w, /wp-content/uploads/2024/09/image-7-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-7-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-7-768x768.jpeg 768w, /wp-content/uploads/2024/09/image-7-1536x1536.jpeg 1536w, /wp-content/uploads/2024/09/image-7.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:1024;"><img loading="lazy" decoding="async" width="1024" height="1024" src="" alt="" class="wp-image-220" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-8-1024x1024.jpeg" data-srcset="/wp-content/uploads/2024/09/image-8-1024x1024.jpeg 1024w, /wp-content/uploads/2024/09/image-8-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-8-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-8-768x768.jpeg 768w, /wp-content/uploads/2024/09/image-8-1536x1536.jpeg 1536w, /wp-content/uploads/2024/09/image-8.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:1024;"><img loading="lazy" decoding="async" width="1024" height="1024" src="" alt="" class="wp-image-221" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-9-1024x1024.jpeg" data-srcset="/wp-content/uploads/2024/09/image-9-1024x1024.jpeg 1024w, /wp-content/uploads/2024/09/image-9-300x300.jpeg 300w, /wp-content/uploads/2024/09/image-9-150x150.jpeg 150w, /wp-content/uploads/2024/09/image-9-768x768.jpeg 768w, /wp-content/uploads/2024/09/image-9-1536x1536.jpeg 1536w, /wp-content/uploads/2024/09/image-9.jpeg 1700w"></figure>
+
+
+
+<ul class="wp-block-list">
+<li>B&#7843;o Anh as <em>photographer and graphic designer</em></li>
+
+
+
+<li>Timothy Wee as <em>instructor</em></li>
+
+
+
+<li>Work done at LASALLE College of the Arts</li>
+</ul>
+</body></html>
+<p>The post <a href="/work/text-display-technology-on-led-screen-in-singapore-mrt/">LED text under Singapore MRT</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Love is Hard, HIV Prevention is Easy website</title>
+		<link>/work/love-is-hard-hiv-prevention-is-easy-website/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Tue, 17 Sep 2024 11:19:56 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=111</guid>
+
+					<description><![CDATA[<p>UI/UX design for a public health campaign website to raise awareness about HIV prevention, reduce new HIV infections, and eliminate HIV stigma in Vietnam&#8211;Love is Hard, HIV Prevention is Easy. The website acts as an online repository for the public audience to learn about the issues and the campaign itself. Visit&#160;yeumoikho.com&#160;to see website.</p>
+<p>The post <a href="/work/love-is-hard-hiv-prevention-is-easy-website/">Love is Hard, HIV Prevention is Easy website</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>UI/UX design for a public health campaign website to raise awareness about HIV prevention, reduce new HIV infections, and eliminate HIV stigma in Vietnam&ndash;Love is Hard, HIV Prevention is Easy. The website acts as an online repository for the public audience to learn about the issues and the campaign itself.</p>
+
+
+
+<figure class="wp-block-image size-large" style="--width:2062; --height:522;"><img decoding="async" src="/wp-content/uploads/2024/09/image.gif" alt="" fetchpriority="high"></figure>
+
+
+
+<p>Visit&nbsp;<a href="https://yeumoikho.com/" target="_blank" rel="noreferrer noopener">yeumoikho.com</a>&nbsp;to see website.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2 row2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:510;"><img decoding="async" style="--twidth:960; --theight:510;" alt="thumbnail" src="https://i.vimeocdn.com/video/1453734021-7c5cc4aca056fcceff70850548a8631c95a954b59a362f949c0c2b7abb10fa9c-d_960" fetchpriority="high"><iframe title="Love is hard website" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/721837031?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:552;"><img loading="lazy" decoding="async" width="1024" height="552" src="" alt="" class="wp-image-225" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-10-1024x552.jpeg" data-srcset="/wp-content/uploads/2024/09/image-10-1024x552.jpeg 1024w, /wp-content/uploads/2024/09/image-10-300x162.jpeg 300w, /wp-content/uploads/2024/09/image-10-768x414.jpeg 768w, /wp-content/uploads/2024/09/image-10.jpeg 1448w"></figure>
+
+
+
+<figure class="wp-block-image size-large thumb" style="--width:1024; --height:551;"><img loading="lazy" decoding="async" width="1024" height="551" src="" alt="" class="wp-image-226" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-11-1024x551.jpeg" data-srcset="/wp-content/uploads/2024/09/image-11-1024x551.jpeg 1024w, /wp-content/uploads/2024/09/image-11-300x161.jpeg 300w, /wp-content/uploads/2024/09/image-11-768x413.jpeg 768w, /wp-content/uploads/2024/09/image-11.jpeg 1450w"></figure>
+
+
+
+<figure class="wp-block-image size-large span12 thumb" style="--width:1024; --height:552;"><img loading="lazy" decoding="async" width="1024" height="552" src="" alt="" class="wp-image-227" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-12-1024x552.jpeg" data-srcset="/wp-content/uploads/2024/09/image-12-1024x552.jpeg 1024w, /wp-content/uploads/2024/09/image-12-300x162.jpeg 300w, /wp-content/uploads/2024/09/image-12-768x414.jpeg 768w, /wp-content/uploads/2024/09/image-12.jpeg 1448w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:552;"><img loading="lazy" decoding="async" width="1024" height="552" src="" alt="" class="wp-image-228" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-13-1024x552.jpeg" data-srcset="/wp-content/uploads/2024/09/image-13-1024x552.jpeg 1024w, /wp-content/uploads/2024/09/image-13-300x162.jpeg 300w, /wp-content/uploads/2024/09/image-13-768x414.jpeg 768w, /wp-content/uploads/2024/09/image-13.jpeg 1448w"></figure>
+
+
+
+<figure class="wp-block-image size-large span2 thumb" style="--width:1024; --height:542;"><img loading="lazy" decoding="async" width="1024" height="542" src="" alt="" class="wp-image-229" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-14-1024x542.jpeg" data-srcset="/wp-content/uploads/2024/09/image-14-1024x542.jpeg 1024w, /wp-content/uploads/2024/09/image-14-300x159.jpeg 300w, /wp-content/uploads/2024/09/image-14-768x406.jpeg 768w, /wp-content/uploads/2024/09/image-14.jpeg 1459w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:549;"><img loading="lazy" decoding="async" width="1024" height="549" src="" alt="" class="wp-image-230" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-15-1024x549.jpeg" data-srcset="/wp-content/uploads/2024/09/image-15-1024x549.jpeg 1024w, /wp-content/uploads/2024/09/image-15-300x161.jpeg 300w, /wp-content/uploads/2024/09/image-15-768x412.jpeg 768w, /wp-content/uploads/2024/09/image-15.jpeg 1454w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:552;"><img loading="lazy" decoding="async" width="1024" height="552" src="" alt="" class="wp-image-231" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-16-1024x552.jpeg" data-srcset="/wp-content/uploads/2024/09/image-16-1024x552.jpeg 1024w, /wp-content/uploads/2024/09/image-16-300x162.jpeg 300w, /wp-content/uploads/2024/09/image-16-768x414.jpeg 768w, /wp-content/uploads/2024/09/image-16.jpeg 1448w"></figure>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:552;"><img loading="lazy" decoding="async" width="1024" height="552" src="" alt="" class="wp-image-232" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-17-1024x552.jpeg" data-srcset="/wp-content/uploads/2024/09/image-17-1024x552.jpeg 1024w, /wp-content/uploads/2024/09/image-17-300x162.jpeg 300w, /wp-content/uploads/2024/09/image-17-768x414.jpeg 768w, /wp-content/uploads/2024/09/image-17.jpeg 1448w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:552;"><img loading="lazy" decoding="async" width="1024" height="552" src="" alt="" class="wp-image-233" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-18-1024x552.jpeg" data-srcset="/wp-content/uploads/2024/09/image-18-1024x552.jpeg 1024w, /wp-content/uploads/2024/09/image-18-300x162.jpeg 300w, /wp-content/uploads/2024/09/image-18-768x414.jpeg 768w, /wp-content/uploads/2024/09/image-18.jpeg 1448w"></figure>
+
+
+
+<ul class="wp-block-list">
+<li>B&#7843;o Anh as <em>UI/UX designer</em></li>
+
+
+
+<li>Kh&ecirc; Nguy&#7877;n as <em>UI/UX designer</em></li>
+
+
+
+<li>Trang &#272;inh as <em>UI/UX designer</em></li>
+
+
+
+<li>Tu&acirc;n L&ecirc; as <em>Creative director</em></li>
+
+
+
+<li>Digitop for <em>web development</em></li>
+
+
+
+<li>Work done as part of <a href="https://www.behance.net/gallery/139885003/LOVE-IS-HARD-HIV-PREVENTION-IS-EASY">&lsquo;LOVE IS HARD. HIV PREVENTION IS EASY.&rsquo;</a> communication campagin by The Lab Saigon</li>
+</ul>
+</body></html>
+<p>The post <a href="/work/love-is-hard-hiv-prevention-is-easy-website/">Love is Hard, HIV Prevention is Easy website</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Vietnamme Magazine</title>
+		<link>/work/vietnamme-magazine/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Tue, 17 Sep 2024 10:36:07 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=109</guid>
+
+					<description><![CDATA[<p>Vietnamme, an art organization in Vietnam, had been proposing the idea of a web magazine platform dedicated to exploring how the youth redefine and push the boundaries of art, irrespective of its form. I&#8217;m initially tasked with producing digital illustrations for two articles within the magazine.</p>
+<p>The post <a href="/work/vietnamme-magazine/">Vietnamme Magazine</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Vietnamme, an art organization in Vietnam, had been proposing the idea of a web magazine platform dedicated to exploring how the youth redefine and push the boundaries of art, irrespective of its form. I&rsquo;m initially tasked with producing digital illustrations for two articles within the magazine.</p>
+
+
+
+<figure class="wp-block-image size-large span2 thumb" style="--width:1024; --height:640;"><img loading="lazy" decoding="async" width="1024" height="640" src="/wp-content/uploads/2024/09/image-19-1024x640.jpeg" alt="" class="wp-image-234" srcset="/wp-content/uploads/2024/09/image-19-1024x640.jpeg 1024w, /wp-content/uploads/2024/09/image-19-300x188.jpeg 300w, /wp-content/uploads/2024/09/image-19-768x480.jpeg 768w, /wp-content/uploads/2024/09/image-19-1536x960.jpeg 1536w, /wp-content/uploads/2024/09/image-19.jpeg 1700w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-large thumb" style="--width:1024; --height:640;"><img loading="lazy" decoding="async" width="1024" height="640" src="/wp-content/uploads/2024/09/image-20-1024x640.jpeg" alt="" class="wp-image-235" srcset="/wp-content/uploads/2024/09/image-20-1024x640.jpeg 1024w, /wp-content/uploads/2024/09/image-20-300x188.jpeg 300w, /wp-content/uploads/2024/09/image-20-768x480.jpeg 768w, /wp-content/uploads/2024/09/image-20-1536x960.jpeg 1536w, /wp-content/uploads/2024/09/image-20.jpeg 1700w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:640;"><img loading="lazy" decoding="async" width="1024" height="640" src="" alt="" class="wp-image-236" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-21-1024x640.jpeg" data-srcset="/wp-content/uploads/2024/09/image-21-1024x640.jpeg 1024w, /wp-content/uploads/2024/09/image-21-300x188.jpeg 300w, /wp-content/uploads/2024/09/image-21-768x480.jpeg 768w, /wp-content/uploads/2024/09/image-21-1536x960.jpeg 1536w, /wp-content/uploads/2024/09/image-21.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:640;"><img loading="lazy" decoding="async" width="1024" height="640" src="" alt="" class="wp-image-237" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-22-1024x640.jpeg" data-srcset="/wp-content/uploads/2024/09/image-22-1024x640.jpeg 1024w, /wp-content/uploads/2024/09/image-22-300x188.jpeg 300w, /wp-content/uploads/2024/09/image-22-768x480.jpeg 768w, /wp-content/uploads/2024/09/image-22-1536x960.jpeg 1536w, /wp-content/uploads/2024/09/image-22.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span3"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:540;"><img decoding="async" style="--twidth:960; --theight:540;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1452284119-9f738375b16c77a5a5fb03a785ee30762048d02ea174e3dfd899b4f4752c6272-d_960" data-srcset="" srcset=""><iframe title="Vietnamme magazine website" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/721083427?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:640;"><img loading="lazy" decoding="async" width="1024" height="640" src="" alt="" class="wp-image-238" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-23-1024x640.jpeg" data-srcset="/wp-content/uploads/2024/09/image-23-1024x640.jpeg 1024w, /wp-content/uploads/2024/09/image-23-300x188.jpeg 300w, /wp-content/uploads/2024/09/image-23-768x480.jpeg 768w, /wp-content/uploads/2024/09/image-23-1536x960.jpeg 1536w, /wp-content/uploads/2024/09/image-23.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:510;"><img decoding="async" style="--twidth:960; --theight:510;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1452286782-b81afd90dcaab087c2942db5928e000814db73bbd9bd85188bf6082e7a9db74b-d_960" data-srcset="" srcset=""><iframe title="&#258;ng -ten _ Th&#432; &#272;&#7847;u Th&aacute;ng - Vietnamme Magazine and 5 more pages - Personal - Microsoft&#8203; Edge 2022-06-16 21-05-20" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/721084570?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image size-large thumb" style="--width:1024; --height:640;"><img loading="lazy" decoding="async" width="1024" height="640" src="" alt="" class="wp-image-239" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-24-1024x640.jpeg" data-srcset="/wp-content/uploads/2024/09/image-24-1024x640.jpeg 1024w, /wp-content/uploads/2024/09/image-24-300x188.jpeg 300w, /wp-content/uploads/2024/09/image-24-768x480.jpeg 768w, /wp-content/uploads/2024/09/image-24-1536x960.jpeg 1536w, /wp-content/uploads/2024/09/image-24.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:510;"><img decoding="async" style="--twidth:960; --theight:510;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1452286906-9a1df2c6df26b8e3f75628d2809bf550bd327b1a83f7ef16d07ea21904703fe6-d_960" data-srcset="" srcset=""><iframe title="Ra-&#273;i-&ocirc; 2 _ G&oacute;c nh&igrave;n th&#7845;u c&#7843;m c&#7911;a ngh&#7879; thu&#7853;t - Vietnamme Magazine and 6 more pages - Personal - Microsoft&#8203; Edge" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/721084620?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<ul class="wp-block-list">
+<li>B&#7843;o Anh as <em>website co-developer, website designer and illustrator</em></li>
+
+
+
+<li>Di&#7879;u Ly as <em>website co-developer and graphic designer</em></li>
+
+
+
+<li>Minh Anh, and My H&agrave; as <em>graphic designer</em></li>
+
+
+
+<li>Minh Ph&#432;&#417;ng, Anh Huy, and Chi Doan as <em>illustrator</em></li>
+
+
+
+<li>Vietnamme Magazine team for <em>other content, and copy</em></li>
+</ul>
+</body></html>
+<p>The post <a href="/work/vietnamme-magazine/">Vietnamme Magazine</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>on Swiss Design</title>
+		<link>/work/kasper-florio-atypical-swiss-visual-analysis/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Tue, 17 Sep 2024 10:28:52 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=107</guid>
+
+					<description><![CDATA[<p>Swiss Grid has long been a solemn pillar within the graphic design discipline. However, compared to itself half a century ago, the Grid system in the 21st century has evolved into, more or less flexible and dynamic. Today I look into the contemporary application of the Grid by researching both visually and textually on a [&#8230;]</p>
+<p>The post <a href="/work/kasper-florio-atypical-swiss-visual-analysis/">on Swiss Design</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Swiss Grid has long been a solemn pillar within the graphic design discipline. However, compared to itself half a century ago, the Grid system in the 21st century has evolved into, more or less flexible and dynamic.<br><br>Today I look into the contemporary application of the Grid by researching both visually and textually on a Swiss graphic designer duo, Kasper Florio for a better insight into how that tool is intensively practiced based on a variety of typographic standards in the industry.</p>
+
+
+
+<figure class="wp-block-image size-large span12" style="--width:1024; --height:724;"><img loading="lazy" decoding="async" width="1024" height="724" src="/wp-content/uploads/2024/09/image-4-1024x724.png" alt="" class="wp-image-240" srcset="/wp-content/uploads/2024/09/image-4-1024x724.png 1024w, /wp-content/uploads/2024/09/image-4-300x212.png 300w, /wp-content/uploads/2024/09/image-4-768x543.png 768w, /wp-content/uploads/2024/09/image-4.png 1192w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:683;"><img loading="lazy" decoding="async" width="1024" height="683" src="/wp-content/uploads/2024/09/image-25-1024x683.jpeg" alt="" class="wp-image-241" srcset="/wp-content/uploads/2024/09/image-25-1024x683.jpeg 1024w, /wp-content/uploads/2024/09/image-25-300x200.jpeg 300w, /wp-content/uploads/2024/09/image-25-768x512.jpeg 768w, /wp-content/uploads/2024/09/image-25-1536x1025.jpeg 1536w, /wp-content/uploads/2024/09/image-25.jpeg 1700w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:954;"><img decoding="async" style="--twidth:960; --theight:954;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1735250769-6e25d28b4d98027f824f2bc3f69edff3208fdec0032065773609f1c8e6eaee09-d_960" data-srcset="" srcset=""><iframe title="Book preview" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/872290337?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:540;"><img decoding="async" style="--twidth:960; --theight:540;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1735241454-788afdabb076eb187a799cbdc96971208f8e5618edf1f0c31e3ebd1167a1fed9-d_960" data-srcset="" srcset=""><iframe title="First version of Kasper Florio - Atypical Swiss | Visual Analysis" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/872284717?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<figure class="wp-block-image size-large span2 row2 thumb" style="--width:1024; --height:683;"><img loading="lazy" decoding="async" width="1024" height="683" src="" alt="" class="wp-image-242" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-26-1024x683.jpeg" data-srcset="/wp-content/uploads/2024/09/image-26-1024x683.jpeg 1024w, /wp-content/uploads/2024/09/image-26-300x200.jpeg 300w, /wp-content/uploads/2024/09/image-26-768x512.jpeg 768w, /wp-content/uploads/2024/09/image-26-1536x1025.jpeg 1536w, /wp-content/uploads/2024/09/image-26.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large thumb" style="--width:1024; --height:683;"><img loading="lazy" decoding="async" width="1024" height="683" src="" alt="" class="wp-image-243" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-27-1024x683.jpeg" data-srcset="/wp-content/uploads/2024/09/image-27-1024x683.jpeg 1024w, /wp-content/uploads/2024/09/image-27-300x200.jpeg 300w, /wp-content/uploads/2024/09/image-27-768x512.jpeg 768w, /wp-content/uploads/2024/09/image-27-1536x1025.jpeg 1536w, /wp-content/uploads/2024/09/image-27.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large thumb" style="--width:1024; --height:683;"><img loading="lazy" decoding="async" width="1024" height="683" src="" alt="" class="wp-image-244" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-28-1024x683.jpeg" data-srcset="/wp-content/uploads/2024/09/image-28-1024x683.jpeg 1024w, /wp-content/uploads/2024/09/image-28-300x200.jpeg 300w, /wp-content/uploads/2024/09/image-28-768x512.jpeg 768w, /wp-content/uploads/2024/09/image-28-1536x1025.jpeg 1536w, /wp-content/uploads/2024/09/image-28.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large span2md" style="--width:1024; --height:683;"><img loading="lazy" decoding="async" width="1024" height="683" src="" alt="" class="wp-image-245" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-29-1024x683.jpeg" data-srcset="/wp-content/uploads/2024/09/image-29-1024x683.jpeg 1024w, /wp-content/uploads/2024/09/image-29-300x200.jpeg 300w, /wp-content/uploads/2024/09/image-29-768x512.jpeg 768w, /wp-content/uploads/2024/09/image-29-1536x1025.jpeg 1536w, /wp-content/uploads/2024/09/image-29.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large span2 row2" style="--width:1024; --height:683;"><img loading="lazy" decoding="async" width="1024" height="683" src="" alt="" class="wp-image-246" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-30-1024x683.jpeg" data-srcset="/wp-content/uploads/2024/09/image-30-1024x683.jpeg 1024w, /wp-content/uploads/2024/09/image-30-300x200.jpeg 300w, /wp-content/uploads/2024/09/image-30-768x512.jpeg 768w, /wp-content/uploads/2024/09/image-30-1536x1025.jpeg 1536w, /wp-content/uploads/2024/09/image-30.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large span2md" style="--width:1024; --height:683;"><img loading="lazy" decoding="async" width="1024" height="683" src="" alt="" class="wp-image-247" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-31-1024x683.jpeg" data-srcset="/wp-content/uploads/2024/09/image-31-1024x683.jpeg 1024w, /wp-content/uploads/2024/09/image-31-300x200.jpeg 300w, /wp-content/uploads/2024/09/image-31-768x512.jpeg 768w, /wp-content/uploads/2024/09/image-31-1536x1025.jpeg 1536w, /wp-content/uploads/2024/09/image-31.jpeg 1700w"></figure>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:487;"><img loading="lazy" decoding="async" width="1024" height="487" src="" alt="" class="wp-image-248" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-32-1024x487.jpeg" data-srcset="/wp-content/uploads/2024/09/image-32-1024x487.jpeg 1024w, /wp-content/uploads/2024/09/image-32-300x143.jpeg 300w, /wp-content/uploads/2024/09/image-32-768x365.jpeg 768w, /wp-content/uploads/2024/09/image-32-1536x730.jpeg 1536w, /wp-content/uploads/2024/09/image-32.jpeg 1700w"></figure>
+
+
+
+<p>I&rsquo;m so happy that it received the TDC and the Red Dot in 2021!</p>
+
+
+
+<figure class="wp-block-image size-full" style="--width:301; --height:301;"><img loading="lazy" decoding="async" width="301" height="301" src="" alt="" class="wp-image-249" srcset="" sizes="(max-width: 301px) 100vw, 301px" data-src="/wp-content/uploads/2024/09/image-5.png" data-srcset="/wp-content/uploads/2024/09/image-5.png 301w, /wp-content/uploads/2024/09/image-5-150x150.png 150w"></figure>
+
+
+
+<figure class="wp-block-image size-full" style="--width:338; --height:198;"><img loading="lazy" decoding="async" width="338" height="198" src="" alt="" class="wp-image-250" srcset="" sizes="(max-width: 338px) 100vw, 338px" data-src="/wp-content/uploads/2024/09/image-6.png" data-srcset="/wp-content/uploads/2024/09/image-6.png 338w, /wp-content/uploads/2024/09/image-6-300x176.png 300w"></figure>
+
+
+
+<ul class="wp-block-list">
+<li>B&#7843;o Anh as <em>visual designer and copywriter</em> Chen Michael as <em>instructor</em></li>
+
+
+
+<li>Yellow Type Foundry for <em>Xanh Mono</em> &amp; <em>Darker Grotesque</em> typefaces</li>
+
+
+
+<li>Design Boom for <em>interviewing content</em></li>
+
+
+
+<li>AIGAEyeonDesign for <em>interviewing content</em></li>
+
+
+
+<li>Ligature for <em>interviewing content</em></li>
+
+
+
+<li>Work done at LASALLE College of the Arts</li>
+
+
+
+<li>Printing done at Pixel Tech Pte Ltd</li>
+</ul>
+</body></html>
+<p>The post <a href="/work/kasper-florio-atypical-swiss-visual-analysis/">on Swiss Design</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Google Translate: Uncut</title>
+		<link>/work/google-translate-uncut/</link>
+		
+		<dc:creator><![CDATA[baoanhbui]]></dc:creator>
+		<pubDate>Mon, 16 Sep 2024 04:00:20 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=work#038;p=104</guid>
+
+					<description><![CDATA[<p>This is an entry for the D&#38;AD New Blood competition in 2023, under the Google Fonts &#38; HMCT brief. The brief was about creating a typographically-led campaign that is a call to action or raises awareness of a selected social issue.</p>
+<p>The post <a href="/work/google-translate-uncut/">Google Translate: Uncut</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>This is an entry for the D&amp;AD New Blood competition in 2023, under the Google Fonts &amp; HMCT brief. The brief was about creating a typographically-led campaign that is a call to action or raises awareness of a selected social issue.</p>
+
+
+
+<figure class="wp-block-image size-large span2 thumb" style="--width:1024; --height:576;"><img loading="lazy" decoding="async" width="1024" height="576" src="/wp-content/uploads/2024/09/image-7-1024x576.png" alt="" class="wp-image-251" srcset="/wp-content/uploads/2024/09/image-7-1024x576.png 1024w, /wp-content/uploads/2024/09/image-7-300x169.png 300w, /wp-content/uploads/2024/09/image-7-768x432.png 768w, /wp-content/uploads/2024/09/image-7-1536x864.png 1536w, /wp-content/uploads/2024/09/image-7-2048x1152.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-large span2" style="--width:1024; --height:576;"><img loading="lazy" decoding="async" width="1024" height="576" src="/wp-content/uploads/2024/09/image-8-1024x576.png" alt="" class="wp-image-252" srcset="/wp-content/uploads/2024/09/image-8-1024x576.png 1024w, /wp-content/uploads/2024/09/image-8-300x169.png 300w, /wp-content/uploads/2024/09/image-8-768x432.png 768w, /wp-content/uploads/2024/09/image-8-1536x864.png 1536w, /wp-content/uploads/2024/09/image-8.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" fetchpriority="high"></figure>
+
+
+
+<figure class="wp-block-image size-large span2 thumb" style="--width:1024; --height:576;"><img loading="lazy" decoding="async" width="1024" height="576" src="" alt="" class="wp-image-253" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-9-1024x576.png" data-srcset="/wp-content/uploads/2024/09/image-9-1024x576.png 1024w, /wp-content/uploads/2024/09/image-9-300x169.png 300w, /wp-content/uploads/2024/09/image-9-768x432.png 768w, /wp-content/uploads/2024/09/image-9-1536x864.png 1536w, /wp-content/uploads/2024/09/image-9.png 1920w"></figure>
+
+
+
+<figure class="wp-block-image size-large" style="--width:1024; --height:576;"><img loading="lazy" decoding="async" width="1024" height="576" src="" alt="" class="wp-image-254" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-10-1024x576.png" data-srcset="/wp-content/uploads/2024/09/image-10-1024x576.png 1024w, /wp-content/uploads/2024/09/image-10-300x169.png 300w, /wp-content/uploads/2024/09/image-10-768x432.png 768w, /wp-content/uploads/2024/09/image-10-1536x864.png 1536w, /wp-content/uploads/2024/09/image-10.png 1920w"></figure>
+
+
+
+<figure class="wp-block-image size-large thumb" style="--width:1024; --height:576;"><img loading="lazy" decoding="async" width="1024" height="576" src="" alt="" class="wp-image-255" srcset="" sizes="(max-width: 1024px) 100vw, 1024px" data-src="/wp-content/uploads/2024/09/image-11-1024x576.png" data-srcset="/wp-content/uploads/2024/09/image-11-1024x576.png 1024w, /wp-content/uploads/2024/09/image-11-300x169.png 300w, /wp-content/uploads/2024/09/image-11-768x432.png 768w, /wp-content/uploads/2024/09/image-11-1536x864.png 1536w, /wp-content/uploads/2024/09/image-11.png 2000w"></figure>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo span2"><div class="wp-block-embed__wrapper">
+<div style="--width:960; --height:540;"><img decoding="async" style="--twidth:960; --theight:540;" alt="thumbnail" src="" data-src="https://i.vimeocdn.com/video/1736698700-684c2590601e7d7e1e4863b620bbbb5e6144cd8270d9ce14f7cc24b9d2245bf5-d_960" data-srcset="" srcset=""><iframe title="Google Translate: Uncut" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" data-src="https://player.vimeo.com/video/873268395?dnt=1&amp;app_id=122963"></iframe></div>
+</div></figure>
+
+
+
+<ul class="wp-block-list">
+<li>B&#7843;o Anh as <em>motion/animation designer and graphic designer</em></li>
+
+
+
+<li>Pauline Theodora Tandiah as <em>graphic designer and voice actor</em></li>
+
+
+
+<li>Tiara Rivera as <em>graphic designer</em></li>
+
+
+
+<li>Felix Sng, David Lee, and Jaygo Bloom for <em>consultation</em></li>
+
+
+
+<li>This project was done as part of a course module at LASALLE College of the Arts</li>
+</ul>
+</body></html>
+<p>The post <a href="/work/google-translate-uncut/">Google Translate: Uncut</a> appeared first on <a href="/">Bảo Anh Bùi</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
