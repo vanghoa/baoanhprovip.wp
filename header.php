@@ -58,7 +58,7 @@ if ($is_designer || ($is_work && $type == 'designer') || ($is_storyq && $taxonom
 
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 	<meta name="description" content="Bao Anh Bui's personal website">
 	<?php wp_head(); ?>
 </head>
@@ -104,7 +104,7 @@ if ($is_designer || ($is_work && $type == 'designer') || ($is_storyq && $taxonom
 					</div>
 					<div class="text-center m-4 flex flex-col gap-4 justify-center items-center">
 						<div class="txt-layer"> <span class="underline">Next work -></span>
-							<h3><?= $podsflow->display('title') ?></h3>
+							<h2><?= $podsflow->display('title') ?></h2>
 						</div>
 					</div>
 				</a>
@@ -138,7 +138,7 @@ if ($is_designer || ($is_work && $type == 'designer') || ($is_storyq && $taxonom
 						</div>
 						<div class="text-center m-4 flex flex-col gap-4 justify-center items-center">
 							<div class="txt-layer"> <span class="underline">Next work -></span>
-								<h3><?= $podsflow->display('title') ?></h3>
+								<h2><?= $podsflow->display('title') ?></h2>
 							</div>
 						</div>
 					</a>
