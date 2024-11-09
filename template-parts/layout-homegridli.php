@@ -42,9 +42,9 @@ $imgs = array_merge(
 		</div>
 		<div class="text-center m-4 flex flex-col gap-4 justify-center items-center">
 			<div class="">
-				<h3 class="txt-layer">
+				<h2 class="txt-layer">
 					<?= $pods->display('title') ?>
-				</h3>
+				</h2>
 				<p class="txt-layer"><?php outputTaxonomy() ?>
 				</p>
 			</div>
