@@ -38,7 +38,7 @@ function renderBigTags($txnm)
 ?>
 
 <section class="single-work-head mt-12 mb-12 flex flex-col justify-between items-center gap-4">
-	<h1 class="text-2xl text-center mono-600 txt-layer"><?php echo get_the_title(); ?></h1>
+	<h1 class="text-2xl text-center txt-layer"><?php echo get_the_title(); ?></h1>
 	<?php
 	foreach ($txnms as $txnm) {
 		renderBigTags($txnm);
