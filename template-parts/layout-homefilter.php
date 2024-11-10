@@ -19,4 +19,4 @@
 	<?php endwhile; ?>
 </p>
 
-<p class="txt-layer mb-4 viewmode">view mode: <button onclick="toggleViewmode(false)" class="galleryview">gallery</button> | <button onclick="toggleViewmode(true)" class="listview">list</button></p>
+<p class="txt-layer mb-4 viewmode">view: <button onclick="toggleViewmode(false)" class="galleryview">gallery</button> | <button onclick="toggleViewmode(true)" class="listview">list</button></p>

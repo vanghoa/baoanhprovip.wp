@@ -1,7 +1,6 @@
 @use '../global' as *;
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400..600;1,400..600&display=swap');
 
-@each $weight in (100, 200, 300, 400, 500, 600, 700, 800, 900) {
+@each $weight in (400, 700) {
 	.mono-#{$weight} {
 		font-family: 'JetBrains Mono', monospace;
 		font-kerning: normal;

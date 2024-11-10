@@ -19,8 +19,19 @@ get_template_part('template-parts/layout', 'function');
 
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Bao Anh Bui's personal website">
+	<link
+		rel="preload"
+		href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		as="style"
+		onload="this.onload=null;this.rel='stylesheet'" />
+	<noscript>
+		<link
+			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+			type="text/css" />
+	</noscript>
 	<?php wp_head(); ?>
 </head>
 
