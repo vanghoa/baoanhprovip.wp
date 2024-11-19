@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://bui.baoanhpro.vip/work/</loc>
-		<lastmod>2024-11-08T16:05:40+00:00</lastmod>
+		<lastmod>2024-11-19T04:57:10+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bui.baoanhpro.vip/work/the-navigation-bar-that-is-in-the-middle-of-nowhere/</loc>
@@ -681,25 +681,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://bui.baoanhpro.vip/work/singapore-design-week-2024-bras-basah-bugis/</loc>
-		<lastmod>2024-11-08T08:31:24+00:00</lastmod>
-		<image:image>
-			<image:loc>https://bui.baoanhpro.vip/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM.avif</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://bui.baoanhpro.vip/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM.avif</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://bui.baoanhpro.vip/wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1.avif</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://bui.baoanhpro.vip/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM.avif</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://bui.baoanhpro.vip/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM.avif</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://bui.baoanhpro.vip/work/form-agency-exhibition-website/</loc>
 		<lastmod>2024-11-08T08:42:29+00:00</lastmod>
 		<image:image>
@@ -924,6 +905,25 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://bui.baoanhpro.vip/wp-content/uploads/2024/09/image-35.jpeg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://bui.baoanhpro.vip/work/singapore-design-week-2024-bras-basah-bugis/</loc>
+		<lastmod>2024-11-19T04:57:10+00:00</lastmod>
+		<image:image>
+			<image:loc>https://bui.baoanhpro.vip/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.52.28-PM.avif</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://bui.baoanhpro.vip/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.51.49-PM.avif</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://bui.baoanhpro.vip/wp-content/uploads/2024/09/IMG_DEC9E62E32B4-1.avif</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://bui.baoanhpro.vip/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.53.30-PM.avif</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://bui.baoanhpro.vip/wp-content/uploads/2024/09/Screenshot-2024-09-30-at-5.55.21-PM.avif</image:loc>
 		</image:image>
 	</url>
 </urlset>
