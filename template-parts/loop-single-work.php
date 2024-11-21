@@ -1,6 +1,5 @@
 <?php
 global $pods;
-$pods = pods('work', get_the_ID());
 $txnms = get_object_taxonomies('work', 'names');
 
 function renderBigTags($txnm)
