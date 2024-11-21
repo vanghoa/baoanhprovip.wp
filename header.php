@@ -59,7 +59,17 @@ if ($is_designer || ($is_work && $type == 'designer') || ($is_storyq && $taxonom
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Bao Anh Bui's personal website">
+	<?php
+	if ($is_work) {
+		global $pods;
+		$pods = pods('work', get_the_ID());
+		$des = wp_strip_all_tags($pods->field('long_description'), true);
+	?>
+		<meta name="description" content="<?= $des ?>">
+		<meta name="og:description" content="<?= $des ?>">
+	<?php
+	}
+	?>
 	<link
 		rel="preload"
 		href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -96,6 +106,7 @@ if ($is_designer || ($is_work && $type == 'designer') || ($is_storyq && $taxonom
 					<a class="txt-layer no-underline hover:text-hilight" href="<?= home_url('/info'); ?>">Info</a>
 				</li>
 			</ul>
+			<button id="themebutton" class="<?= outline() ?> absolute right-4 top-4 no-underline px-3 py-2 shrink-0 txt-layer pointer-events-auto" onclick="toggleTheme(this)" aria-label="toggle dark/light mode">☾</button>
 		</nav>
 		<?php /*
 		if ($flow) {

@@ -57,8 +57,13 @@
 	}
 }
 
-.mainbody {
+.mainbody,
+nav {
 	scrollbar-gutter: stable both-edges;
+}
+
+nav {
+	overflow: auto;
 }
 
 #error {

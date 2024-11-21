@@ -220,3 +220,19 @@ function inactivityTime(start, stop) {
     time = setTimeout(logout, 25000);
   }
 }
+
+const defaultTheme = localStorage.getItem('theme');
+let isDark = defaultTheme
+  ? defaultTheme === 'dark'
+  : window.matchMedia('(prefers-color-scheme: dark)').matches;
+if (defaultTheme) {
+  root.setAttribute('data-theme', isDark ? 'dark' : 'light');
+}
+
+function toggleTheme() {
+  isDark = !isDark;
+  root.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light'); // Save preference
+  toggleThemeASCII();
+  duoResponsive();
+}

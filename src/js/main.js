@@ -52,45 +52,77 @@ let lazyList = {};
 let lazyQ = [];
 let lazyQCur = -1;
 let lazyQBlock = false;
-const char = {
-  note: '"',
-  bg: '`',
-  bg2: '_',
-  trans: null,
-  // prettier-ignore
-  lbtn: stringifyASCII([
-    ` █ `,
-    `█◄█`,
-    ` █ `,
-  ]),
-  // prettier-ignore
-  rbtn: stringifyASCII([
-    ` █ `,
-    `█►█`,
-    ` █ `
-  ]),
-  idc: '●',
-  mouse: '█',
-  divider: '|',
-  hL: '-',
-};
 const cacheKey = {
   imgH: { name: 'imgHolder', allkeys: [] },
   storyS: { name: 'storySection' },
 };
-let grayRamp = '█▒░@%*=--..__';
+let char = {};
+let grayRamp = '';
+let grayRampObj = '';
+toggleThemeASCII();
+function toggleThemeASCII() {
+  if (isDark) {
+    grayRamp = '▒@%*=--..__"`'.split('').reverse().join('');
+    char = {
+      note: '░',
+      bg: '█',
+      bg2: '▒',
+      trans: null,
+      // prettier-ignore
+      lbtn: stringifyASCII([
+        ` " `,
+        `"◄"`,
+        ` " `,
+      ]),
+      // prettier-ignore
+      rbtn: stringifyASCII([
+        ` " `,
+        `"►"`,
+        ` " `
+      ]),
+      idc: '●',
+      mouse: '`',
+      divider: '|',
+      hL: '-',
+    };
+  } else {
+    grayRamp = '█▒░@%*=--..__';
+    char = {
+      note: '"',
+      bg: '`',
+      bg2: '_',
+      trans: null,
+      // prettier-ignore
+      lbtn: stringifyASCII([
+        ` █ `,
+        `█◄█`,
+        ` █ `,
+      ]),
+      // prettier-ignore
+      rbtn: stringifyASCII([
+        ` █ `,
+        `█►█`,
+        ` █ `
+      ]),
+      idc: '●',
+      mouse: '█',
+      divider: '|',
+      hL: '-',
+    };
+  }
+  grayRampObj = {
+    ...grayRamp.split('').reduce((p, c, i) => {
+      return {
+        ...p,
+        [c]: i,
+      };
+    }, {}),
+    [char.bg2]: grayRamp.length - 1,
+    [char.bg]: grayRamp.length - 3,
+  };
+}
 const contrast = 1.2; //convert to decimal & shift range: [0..2]
 const intercept = 128 * (1 - contrast);
-const grayRampObj = {
-  ...grayRamp.split('').reduce((p, c, i) => {
-    return {
-      ...p,
-      [c]: i,
-    };
-  }, {}),
-  [char.bg2]: grayRamp.length - 1,
-  [char.bg]: grayRamp.length - 3,
-};
 const rampLength = grayRamp.length;
 
 function stringifyASCII(arr) {
@@ -246,7 +278,7 @@ function scrollToTop() {
 }
 const realh = $('#copy .realheight');
 const realhmain = $('main .realheight');
-const nav = $('#copy nav .bg-layer');
+const nav = [...$$('#copy nav .bg-layer')];
 const navTxt = [...$$('#copy nav .txt-layer')];
 const allBg2 = [
   ...$$('#copy .mainbody .bg-layer'),
@@ -895,7 +927,7 @@ function duoResponsive(isFinal = true) {
 }
 
 function drawNav(intensity = null, isFinal = true) {
-  drawFewRect(window.fixedLayer, [nav]);
+  drawFewRect(window.fixedLayer, nav);
   drawTxt(window.fixedLayer, navTxt);
   if (storySection.bg) {
     const charbg = filterGrayRamp(char.bg2, intensity); //
