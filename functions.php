@@ -96,8 +96,8 @@ add_action(
 add_action(
 	'wp_enqueue_scripts',
 	function () {
-		wp_enqueue_style('main', get_theme_file_uri('assets/css/main.css'), array(), '3.0.1');
-		wp_enqueue_style('tailwind', get_theme_file_uri('assets/css/tailwind.css'), array(), '3.3.2');
+		wp_enqueue_style('main', get_theme_file_uri('assets/css/main.css'), array(), '4.0.1');
+		wp_enqueue_style('tailwind', get_theme_file_uri('assets/css/tailwind.css'), array(), '4.3.2');
 		wp_enqueue_script(
 			'pako-js',
 			'https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js',
@@ -105,10 +105,10 @@ add_action(
 			null,
 			true // Load in footer (set to true to load before </body>)
 		);
-		wp_enqueue_script('start_script', get_theme_file_uri('assets/js/start.js'), array(), '3.0.1', false);
-		wp_enqueue_script('lodash_script', get_theme_file_uri('assets/unprocessedjs/lodash.custom.min.js'), array(), '3.0.1', false);
+		wp_enqueue_script('start_script', get_theme_file_uri('assets/js/start.js'), array(), '4.0.1', false);
+		wp_enqueue_script('lodash_script', get_theme_file_uri('assets/unprocessedjs/lodash.custom.min.js'), array(), '4.0.1', false);
 
-		wp_enqueue_script('end_script', get_theme_file_uri('assets/js/main.js'), array(), '3.0.1', true);
+		wp_enqueue_script('end_script', get_theme_file_uri('assets/js/main.js'), array(), '4.0.1', true);
 
 		if (is_singular() && comments_open() && get_option('thread_comments')) {
 			wp_enqueue_script('comment-reply');
