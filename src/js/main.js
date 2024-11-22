@@ -62,7 +62,7 @@ let grayRampObj = '';
 toggleThemeASCII();
 function toggleThemeASCII() {
   if (isDark) {
-    grayRamp = '▒@%*=--..__"`'.split('').reverse().join('');
+    grayRamp = '▒░#@%0*+=-._"'.split('').reverse().join('');
     char = {
       note: '░',
       bg: '█',
