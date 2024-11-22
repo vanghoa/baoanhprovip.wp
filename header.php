@@ -43,7 +43,7 @@ get_template_part('template-parts/layout', 'function');
 		<nav class="absolute left-0 top-0 w-full z-20 p-4 h-20 pointer-events-none">
 			<ul class="mx-auto w-full max-w-56 <?php outline() ?> p-4 flex justify-between content-center items-center h-full pointer-events-auto">
 				<li>
-					<a class="txt-layer no-underline hover:text-hilight" href=" <?= $mainurl ?>">Home</a>
+					<a class="txt-layer no-underline hover:text-hilight homelink" href=" <?= $mainurl ?>">Home</a>
 				</li>
 				<li class="text-hilight">
 					<a class="baoanhbui flex flex-col justify-center text-center w-full h-full no-underline hover:text-hilight" href="<?= home_url('/') ?>">
