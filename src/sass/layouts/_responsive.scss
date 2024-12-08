@@ -196,6 +196,9 @@
 			}
 		}
 	}
+	footer {
+		max-width: 40rem;
+	}
 }
 
 @include respond-to(lg) {
@@ -210,6 +213,9 @@
 }
 
 @include respond-to(xl) {
+	footer {
+		max-width: 60rem;
+	}
 	.single-work-body {
 		.the-content {
 			.row2md {
