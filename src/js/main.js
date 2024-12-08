@@ -23,6 +23,9 @@ const isStory = isPage('page-story') || isQueryParamPart('true');
     });
   isWork && $$('.storysection').length > 1 && $$('.storysection')[0].remove();
 }
+$$('.wp-block-list li').forEach((item) => {
+  item.innerHTML = `* ${item.innerHTML}`;
+});
 
 // binding method
 const body = document.body;

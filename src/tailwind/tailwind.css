@@ -98,6 +98,9 @@
 		.single-work .footer {
 			@apply w-full;
 		}
+		.footer .desktoptext {
+			@apply hidden;
+		}
 	}
 
 	@media screen and (max-width: 600px) {
