@@ -56,6 +56,9 @@ get_template_part('template-parts/layout', 'function');
 				</li>
 			</ul>
 			<button id="themebutton" class="<?= outline() ?> absolute right-4 top-4 no-underline px-3 py-2 shrink-0 txt-layer pointer-events-auto" onclick="toggleTheme(this)" aria-label="toggle dark/light mode">☾</button>
+			<a id="storymode" href="<?= home_url('/story'); ?>" class="<?= outline() ?> text-center absolute left-4 top-4 no-underline px-3 py-2 shrink-0 txt-layer pointer-events-auto" aria-label="story mode">
+				<span>💼</span><span class="hidden">story</span><span class="hidden">mode</span><span class="hidden">&nbsp;(for recruiters)</span>
+			</a>
 		</nav>
 		<div class="absolute left-0 top-0 bottom-0 right-0 pointer-events-none z-10 notebookholder"></div>
 		<div class="absolute z-20 videolayer pointer-events-none"></div>

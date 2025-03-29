@@ -355,6 +355,12 @@ if (isDesQ || isDevQ || isDeveloper || isDesigner || isStory) {
       el.href = url.toString();
     }
   });
+  $$('#storymode span').forEach((el, i) => {
+    el.innerHTML = ['🖼️', 'portfolio', '-mode', `\xa0(for casual visitors)`][
+      i % 4
+    ];
+  });
+  $$('#storymode').forEach((el) => (el.href = '/'));
   isPage('page-story') ||
     isInfo ||
     inputNote ||

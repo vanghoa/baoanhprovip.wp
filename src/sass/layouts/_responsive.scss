@@ -142,6 +142,22 @@
 	.desktop {
 		display: block;
 	}
+	#storymode span {
+		&:first-child {
+			display: none;
+		}
+		&:nth-child(2) {
+			display: inline-block;
+		}
+	}
+}
+
+@include respond-to(md) {
+	#storymode span {
+		&:nth-child(3) {
+			display: inline-block;
+		}
+	}
 }
 
 @include respond-to-copy(lg) {
@@ -208,6 +224,11 @@
 	.story {
 		.storygrid {
 			column-gap: 4rem;
+		}
+	}
+	#storymode span {
+		&:nth-child(4) {
+			display: inline-block;
 		}
 	}
 }
