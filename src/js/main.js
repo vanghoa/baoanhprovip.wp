@@ -360,7 +360,9 @@ if (isDesQ || isDevQ || isDeveloper || isDesigner || isStory) {
       i % 4
     ];
   });
-  $$('#storymode').forEach((el) => (el.href = '/'));
+  $$('#storymode').forEach(
+    (el) => (el.href = inputNote ? 'https://bui.baoanhpro.vip/' : '/')
+  );
   isPage('page-story') ||
     isInfo ||
     inputNote ||
