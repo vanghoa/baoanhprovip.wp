@@ -248,3 +248,44 @@ function smartwp_remove_wp_block_library_css()
 add_action('wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100);
 
 add_filter('wp_sitemaps_enabled', '__return_false');
+
+/**
+ * Clean up WordPress Header - Remove Global and Block Inline Styles
+ */
+add_action('wp_enqueue_scripts', function() {
+    // 1. Remove the "Classic Theme" and "Global Styles" inline CSS
+    wp_dequeue_style('global-styles');
+    wp_dequeue_style('classic-theme-styles');
+    wp_dequeue_style('wp-block-library');
+    wp_dequeue_style('wp-block-library-theme');
+    wp_dequeue_style('wc-blocks-style'); // WooCommerce specific
+
+    // 2. Remove specific Core Block styles (Image, List, Embed)
+    wp_dequeue_style('wp-block-image');
+    wp_dequeue_style('wp-block-list');
+    wp_dequeue_style('wp-block-embed');
+    wp_dequeue_style('wp-block-image-inline');
+    wp_dequeue_style('wp-block-list-inline');
+    wp_dequeue_style('wp-block-embed-inline');
+
+    // 3. Remove any remaining block-level styles using a loop
+    global $wp_styles;
+    foreach ($wp_styles->queue as $handle) {
+        if (strpos($handle, 'wp-block-') === 0) {
+            wp_dequeue_style($handle);
+        }
+    }
+}, 100);
+
+// 4. Remove the "Image Auto Sizes" inline CSS and logic
+add_filter('wp_img_tag_add_auto_sizes', '__return_false');
+
+// 5. Remove the SVG Filters injected for Global Styles
+remove_action('wp_body_open', 'wp_global_styles_render_svg_filters');
+remove_action('in_admin_header', 'wp_global_styles_render_svg_filters');
+
+// 6. Completely disable the Global Styles / Theme.json engine
+add_action('init', function() {
+    remove_action('wp_enqueue_scripts', 'wp_enqueue_global_styles');
+    remove_action('wp_footer', 'wp_enqueue_global_styles', 1);
+});
