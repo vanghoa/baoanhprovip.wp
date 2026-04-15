@@ -46,6 +46,12 @@
 	}
 	.wp-block-embed {
 		height: fit-content;
+		&.autoplay {
+			pointer-events: none;
+		}
+		figcaption {
+			pointer-events: auto;
+		}
 		.wp-block-embed__wrapper > div {
 			aspect-ratio: var(--width) / var(--height);
 			max-height: 80svh;

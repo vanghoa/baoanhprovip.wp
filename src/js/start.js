@@ -11,7 +11,7 @@ const isDevQ = isQueryParamPart('developer');
 const isDesQ = isQueryParamPart('designer');
 
 root.classList.add(
-  getRandItem(Array.from({ length: 2 }, (v, i) => `color_${i + 1}`))
+  getRandItem(Array.from({ length: 2 }, (v, i) => `color_${i + 1}`)),
 );
 
 // function
@@ -91,15 +91,21 @@ function deleteCache(key) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+  document
+    .querySelectorAll('figure.wp-block-embed-vimeo.autoplay iframe')
+    .forEach((el) => {
+      el.dataset.src += '&background=1';
+    });
+
   const lazyImages = document.querySelectorAll(
-    '#main .mainbody :is(img[data-src],iframe[data-src])'
+    '#main .mainbody :is(img[data-src],iframe[data-src])',
   );
 
   const imageObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const img = entry.target;
-        img.src = img.getAttribute('data-src'); // Load the actual image
+        img.src = img.dataset.src; // Load the actual image
         observer.unobserve(img);
       }
     });
@@ -143,7 +149,7 @@ async function fetchAndUnzipJson() {
     return JSON.parse(storedData);
   }
   const response = await fetch(
-    `/wp-content/themes/baoanhprovip.wp/assets/unprocessedjs/${name}.gz`
+    `/wp-content/themes/baoanhprovip.wp/assets/unprocessedjs/${name}.gz`,
   );
   const arrayBuffer = await response.arrayBuffer();
   const uint8Array = new Uint8Array(arrayBuffer);
@@ -184,7 +190,7 @@ async function fetchNameList() {
 
   try {
     const response = await fetch(
-      '/wp-content/themes/baoanhprovip.wp/assets/unprocessedjs/nameList.json'
+      '/wp-content/themes/baoanhprovip.wp/assets/unprocessedjs/nameList.json',
     );
     if (!response.ok) {
       throw new Error('Network response was not ok');
