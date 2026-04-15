@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://bui.baoanhpro.vip/work/</loc>
-		<lastmod>2026-04-12T09:00:21+00:00</lastmod>
+		<lastmod>2026-04-15T14:09:30+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bui.baoanhpro.vip/work/the-navigation-bar-that-is-in-the-middle-of-nowhere/</loc>
@@ -928,12 +928,18 @@
 	</url>
 	<url>
 		<loc>https://bui.baoanhpro.vip/work/at-kinetic/</loc>
-		<lastmod>2026-04-12T09:00:21+00:00</lastmod>
+		<lastmod>2026-04-15T14:09:30+00:00</lastmod>
 		<image:image>
 			<image:loc>https://bui.baoanhpro.vip/wp-content/uploads/2026/04/UnnaturalHistoryMuseum_Kinetic_Newater-3-1.png</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>https://bui.baoanhpro.vip/wp-content/uploads/2026/04/UnnaturalHistoryMuseum_Kinetic_Newater-2-1.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://bui.baoanhpro.vip/wp-content/uploads/2026/04/uhmsgif_1.gif</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://bui.baoanhpro.vip/wp-content/uploads/2026/04/gifmer-2.gif</image:loc>
 		</image:image>
 	</url>
 </urlset>
